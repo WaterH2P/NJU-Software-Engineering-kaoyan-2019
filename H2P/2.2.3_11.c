@@ -108,7 +108,8 @@ int findMedianFromTwoOrderlyArrays_logN( int* arrayA, int lenOfA, int* arrayB, i
     int indexOfL = ceil( lenOfL / 2.0 ) - 1;
     
     while(1){
-        int moveDistance = -1;
+        int moveDistance = lenOfS;
+        
         if( indexOfS == 0 && indexOfL == 0 ){
             if( *( arrayS + indexOfS ) >= *( arrayL + indexOfL ) ){
                 if( *( arrayS + indexOfS ) <= *( arrayL + indexOfL + 1 ) ){
@@ -137,7 +138,7 @@ int findMedianFromTwoOrderlyArrays_logN( int* arrayA, int lenOfA, int* arrayB, i
                         break;
                     }
                     else {
-                        moveDistance = moveDistance == -1 ? ceil ( lenOfS / 2.0 ) : ceil( moveDistance / 2.0 );
+                        moveDistance = ceil( moveDistance / 2.0 );
                         indexOfS += moveDistance;
                         indexOfL -= moveDistance;
                     }
@@ -163,7 +164,7 @@ int findMedianFromTwoOrderlyArrays_logN( int* arrayA, int lenOfA, int* arrayB, i
                         median = !twoOddLen ? *( arrayL + indexOfL ) : *( arrayS + indexOfS );
                     }
                     else {
-                        moveDistance = moveDistance == -1 ? ceil ( lenOfS / 2.0 ) : ceil( moveDistance / 2.0 );
+                        moveDistance = ceil( moveDistance / 2.0 );
                         indexOfS -= moveDistance;
                         indexOfL += moveDistance;
                     }
@@ -183,7 +184,7 @@ int findMedianFromTwoOrderlyArrays_logN( int* arrayA, int lenOfA, int* arrayB, i
             break;
         }
         else if( *( arrayS + indexOfS ) >= *( arrayL + indexOfL ) && *( arrayS + indexOfS ) >= *( arrayL + indexOfL + 1 ) ){
-            moveDistance = moveDistance == -1 ? ceil( indexOfS / 2.0 ) : ceil( moveDistance / 2.0 );
+            moveDistance = ceil( moveDistance / 2.0 );
             indexOfS -= moveDistance;
             indexOfL += moveDistance;
         }
@@ -196,7 +197,7 @@ int findMedianFromTwoOrderlyArrays_logN( int* arrayA, int lenOfA, int* arrayB, i
             break;
         }
         else if( *( arrayS + indexOfS ) <= *( arrayL + indexOfL ) && *( arrayS + indexOfS ) <= *( arrayL + indexOfL - 1 ) ){
-            moveDistance = moveDistance == -1 ? ceil( indexOfS / 2.0 ) : ceil( moveDistance / 2.0 );
+            moveDistance = ceil( moveDistance / 2.0 );
             indexOfS += moveDistance;
             indexOfL -= moveDistance;
         }
