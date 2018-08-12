@@ -20,6 +20,7 @@
 // 未考虑题目中的 等长
 int findMedianFromTwoOrderlyArrays_N( int* arrayA, int lenOfA, int* arrayB, int lenOfB );
 int findMedianFromTwoOrderlyArrays_logN( int* arrayA, int lenOfA, int* arrayB, int lenOfB );
+int M_Search(int A[], int B[], int n);
 
 // 时间复杂度 O(n)
 // 空间复杂度 O(1)
@@ -211,6 +212,45 @@ int findMedianFromTwoOrderlyArrays_logN( int* arrayA, int lenOfA, int* arrayB, i
     printf( "clock : %lu -> %lu : %lu\n", clock_start, clock_end, ( clock_end - clock_start ) );
     
     return median;
+}
+
+// 书中参考解答（感觉书中注释有错误）
+// 分别求两个升序序列 A 和 B 的中位数，设为 a 和 b。
+// 1. 若 a=b，则 a 或 b 即所求中位数，算法结束。
+// 2. 若 a<b，则舍弃序列 A 中较 小 的一半，同时舍弃序列 B 中较 大 的一半，要求两次舍弃的长度相等。
+// 3. 若 a>b，则舍弃序列 A 中较 大 的一半，同时舍弃序列 B 中较 小 的一半，要求两次舍弃的长度相等。
+// 4. 在保留的两个升序序列中，重复过程 1/2/3，直到两个序列中均只含一个元素时为止，较小者即为所求的中位数。
+int M_Search(int A[], int B[], int n){
+    int s1=0, d1=n-1, m1, s2, d2=n-1, m2;
+    // 分别表示升序 A 和 B 的首位数，末位数和中位数
+    while( s1 != d1 || s2 != d2 ){
+        m1 = ( s1 + d1 ) / 2;
+        m2 = ( s2 + d2 ) / 2;
+        if( A[m1] == B[m2] ){
+            return A[m1];                       // 满足条件 1
+        }
+        if( A[m1] < B[m2] ){                    // 满足条件 2
+            if( ( s1 + d1 ) % 2 == 0 ){         // 若元素个数为奇数
+                s1 = m1;                        // 舍弃 A 中间点 以前 部分且保留中间点
+                d2 = m2;                        // 舍弃 B 中间点 以后 部分且保留中间点
+            }
+            else {                              // 元素个数为偶数
+                s1 = m1 + 1;                    // 舍弃 A 中间点以及中间点 以前 部分
+                d2 = m2;                        // 舍弃 B 中间点 以后 部分且保留中间点
+            }
+        }
+        else {                                  // 满足条件 3
+            if( ( s2 + d2 ) % 2 == 0 ){         // 若元素个数为奇数
+                d1 = m1;                        // 舍弃 A 中间点 以后 部分且保留中间点
+                s2 = m2;                        // 舍弃 B 中间点 以前 部分且保留中间点
+            }
+            else {                              // 元素个数为偶数
+                d1 = m1;                        // 舍弃 A 中间点 以后 部分且保留中间点
+                s2 = m2 + 1;                    // 舍弃 B 中间点以及中间点 以前 部分
+            }
+        }
+    }
+    return A[s1] < B[s2] ? A[s1] : B[s2];
 }
 
 int main(){
