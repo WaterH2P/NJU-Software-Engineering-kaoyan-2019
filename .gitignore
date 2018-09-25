@@ -77,4 +77,4 @@ WEB-INF/lib/
 *.ipr
 
 ### VS Code ###
-settings.json
+.vscode
