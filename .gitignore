@@ -75,3 +75,6 @@ WEB-INF/lib/
 *.iws
 *.iml
 *.ipr
+
+### VS Code ###
+settings.json
