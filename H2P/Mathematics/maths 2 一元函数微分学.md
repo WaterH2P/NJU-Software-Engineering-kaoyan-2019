@@ -122,7 +122,7 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
        - $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{ {\rm d}(\dfrac{ {\rm d}y }{ {\rm d}x }) }{ {\rm d}x } = \dfrac{ {\rm d}(\dfrac{ {\rm d}y }{ {\rm d}x }) / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{ \dfrac{ \varphi''(t)(2 + 2t) - 2\varphi'(t) }{(2 + 2t)^2} }{2 + 2t}$ 
        - $\therefore \dfrac{ \varphi''(t)(2 + 2t) - 2\varphi'(t) }{(2 + 2t)^3 } = \dfrac{ \varphi''(t)(1 + 1t) - \varphi'(t) }{4(1 + t)^3 } = \dfrac{3}{4(1 + t)}$ 
        - $\implies \varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
-     - 设 $\begin{cases} x = t + e^t \\ y = \sin t \end{cases}$ ，则 $\left. \dfrac{ {\rm d}^2 y}{ {\rm d}x^2 } \right|_{t = 0} = \_\_\_\_\_\_$ 。
+     - 设 $\begin{cases} x = t + e^t \\ y = \sin t \end{cases}$ ，则 $\left. \dfrac{ {\rm d}^2 y}{ {\rm d}x^2 } \right|_{t = 0} = $ \_\_\_\_\_\_。
        - $-\dfrac{1}{8}$ 
 6. 高阶导数
   - $\text{高阶导数} \begin{cases} \text{莱布尼兹公式} \\ \text{找规律用数学归纳法} \\ \text{展开式法} \end{cases}$ 
