@@ -1,8 +1,19 @@
+---
+title: 一元函数微分学
+date: 2018-9-28
+updated: 2018-9-28
+tags: [maths,cs,kaoyan]
+mathjax: true
+
+description: 做笔记，喝凉茶，看高数
+---
+
+
 ### 定义
 
 $lim_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$ 记为 $f'(x_0)$ ：（瞬时）变化率。
 
-- $f$ 对 $x$ 的变化率：$\dfrac{{\rm d} f}{{\rm d} x} = f'_x$ 。
+- $f$ 对 $x$ 的变化率：$\dfrac{ {\rm d} f}{ {\rm d} x} = f'_x$ 。
 - $\begin{cases} \lim_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\ \lim_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases}$ 
 - 【注】
   1. 【左右有别】
@@ -57,11 +68,11 @@ $lim_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$ 记为 $f'(x
 
 $\begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\ (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\ (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array}$ 
 
-$\begin{array}{l} (\arcsin x)' = \dfrac{1}{\sqrt{1 - x^2}} & (\arccos x)' = - \dfrac{1}{\sqrt{1 - x^2}} \\ (\arctan x)' = \dfrac{1}{1 + x^2} & (\arccot x)' = - \dfrac{1}{1 + x^2} \end{array}$
+$\begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\ (\arctan x)' = \dfrac{1}{1 + x^2} & (\arccot x)' = - \dfrac{1}{1 + x^2} \end{array}$
 
-$\begin{array}{l} (\ln(x + \sqrt{x^2 + 1}))' = \dfrac{1}{\sqrt{x^2 + 1}} \end{array}$ 
+$\begin{array}{l} (\ln(x + \sqrt{x^2 + 1}))' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array}​$ 
 
-$\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{\sqrt{x^2 - 1}} \end{array}$ 
+$\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{array}$ 
 
 
 
@@ -69,7 +80,7 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{\sqrt{x^2 - 1}} \end{ar
 
 1. 复合函数求导
 
-  - 求函数 $y = (\tan 2x)^{\cot\frac{x}{2}}$ 的导数。
+  - 求函数 $y = (\tan 2x)^{ \cot\frac{x}{2} }$ 的导数。
 2. 隐函数求导
   - 显函数：$y = f(x)$ ，隐函数：$F(x, y) = 0$ 。
   - 方法：在 $F(x, y) = 0$ 两边同时对 $x$ 求导，只需注意 $y = y(x)$ 即可（复合求导）。
@@ -100,8 +111,8 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{\sqrt{x^2 - 1}} \end{ar
        - 令 $u =  \sqrt[4]{1 + x^4}$ ，$y = \dfrac{1}{2} \arctan u + \ln \sqrt[4]{ \dfrac{u + 1}{u - 1} }$ 。
        - $y = \dfrac{1}{2} \arctan u + \dfrac{1}{4}( \ln (u + 1) - \ln(u - 1) )$ 
        - $y'_x = [\dfrac{1}{2} \cdot \dfrac{1}{u^2 + 1} + \dfrac{1}{4}(\dfrac{1}{u + 1} - \dfrac{1}{u - 1})] \cdot u'_x = - \dfrac{u'_x}{u^4 - 1}$ 
-       - 将 $u = \sqrt[4]{1 + x^4}$ 代入得： $y'_x = - \dfrac{ \frac{1}{4} (1 + x^4)^{-\frac{3}{4}} \cdot 4x^3 }{1 + x^4 - 1} = -\dfrac{1}{x(1 + x^4)^{\frac{3}{4}}}$ 。
-       - 所以 $x'_y = \dfrac{1}{y'_x} = -x(1 + x^4)^{\frac{3}{4}}$ 。
+       - 将 $u = \sqrt[4]{1 + x^4}$ 代入得： $y'_x = - \dfrac{ \frac{1}{4} (1 + x^4)^{ -\frac{3}{4} } \cdot 4x^3 }{1 + x^4 - 1} = -\dfrac{1}{ x(1 + x^4)^{ \frac{3}{4} } }$ 。
+       - 所以 $x'_y = \dfrac{1}{y'_x} = -x(1 + x^4)^{ \frac{3}{4} }$ 。
 5. 参数方程求导
    - $\begin{cases} x = x(t) \\ y = y(t) \end{cases}$ ，$t$ 为参数
    - $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ {\rm d}y / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{y'_t}{x'_t}$ ，类似于反函数求导，是谁的函数就对谁求导，缺什么补什么。
@@ -122,7 +133,7 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{\sqrt{x^2 - 1}} \end{ar
     - $(\cos kx)^{(n)} = k^n \cos( kx + \frac{\pi}{2} \cdot n  )$ 
     - $(\ln x)^{(n)} = (-1)^{(n - 1)} \cdot \dfrac{(n - 1)!}{x^n}, (x > 0)$ 
     - $[\ln(x + 1)]^{(n)} = (-1)^{(n - 1)} \cdot \dfrac{(n - 1)!}{(1 + x)^n}, (x > -1)$ 
-    - $(\dfrac{1}{x + a})^{(n)} = (-1)^n \cdot \dfrac{n!}{(x + a)^{(n + 1)}}$ 
+    - $(\dfrac{1}{x + a})^{(n)} = (-1)^n \cdot \dfrac{n!}{ (x + a)^{(n + 1)} }$ 
   - 例题
     - $y = x^2 \sin 2x$ ，求 $y^{(50)}$ 。
       - $\begin{array}{l} y^{(50)} & = x^2 \cdot (\sin 2x)^{(50)} + 50(x^2)' \cdot (\sin 2x)^{(49)} + \dfrac{50 \cdot 49}{2}(x^2)'' \cdot (\sin 2x)^{(48)} \\[1em] & = -2^{50}x^2 \sin 2x + 50 \cdot 2^{50}x \cos 2x + 50 \cdot 49 \cdot 2^{48} \sin 2x \end{array}$ 
@@ -189,7 +200,7 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{\sqrt{x^2 - 1}} \end{ar
 
   - 设 $f(x)$ 在 $[a, b]$ 上连续，证明 $\exists \xi \in [a, b]$ ，使 $\int_a^b{f(x) {\rm d} x = f(\xi)(b - a)}$ 。
     - 由于 $f(x)$ 在 $[a, b]$ 上连续，所以存在 $m \leq f(x) \leq M (x \in [a, b])$ ，$m$ 为最小值，$M$ 为最大值。
-    - 所以 $\begin{array}{l} & \int_a^b{m} {\rm d}x \leq \int_a^bf(x){\rm d}x \leq \int_a^b{M}{\rm d}x \\[1em] \implies & m(b - a) \leq \int_a^b{f(x)}{\rm d}x \leq M(b - a) \\[1em] \implies & m \leq \dfrac{\int_a^b{f(x){\rm d}x}}{b - a} \leq M \end{array}$ 。 
+    - 所以 $\begin{array}{l} & \int_a^b{m} {\rm d}x \leq \int_a^bf(x){\rm d}x \leq \int_a^b{M}{\rm d}x \\[1em] \implies & m(b - a) \leq \int_a^b{f(x)}{\rm d}x \leq M(b - a) \\[1em] \implies & m \leq \dfrac{ \int_a^b{f(x){\rm d}x} }{b - a} \leq M \end{array}$ 。 
     - 所以 $\exists \xi \in [a, b]$ ，使 $f(\xi) = \dfrac{\int_a^b{f(x)}{\rm d}x}{b - a}$ 。
 
 2. 罗尔定理的应用（6）
@@ -220,11 +231,11 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{\sqrt{x^2 - 1}} \end{ar
          - 所以 $F(0) = F(b) = F(c) = 0$ 。
            - 所以 $\exists \xi_1 \in (0, b)$ ，使得 $F'(\xi_1) = 0$ 。
            - 所以 $\exists \xi_2 \in (b, c)$ ，使得 $F'(\xi_2) = 0$ 。
-       - $f(x)$ 在 $[0, 1]$ 上连续，$(0, 1)$ 内可导，且 $f(1) = k \int_0^{\frac{1}{k}} x e^{1 - x} f(x) {\rm d} x, (k>1)$ ，证明 $\exists \xi \in (0, 1)$ ，使 $f'(\xi) = (1 - \dfrac{1}{\xi}) f(\xi)$ 。
+       - $f(x)$ 在 $[0, 1]$ 上连续，$(0, 1)$ 内可导，且 $f(1) = k \int_0^{ \frac{1}{k} } x e^{1 - x} f(x) {\rm d} x, (k>1)$ ，证明 $\exists \xi \in (0, 1)$ ，使 $f'(\xi) = (1 - \dfrac{1}{\xi}) f(\xi)$ 。
          - $f'(\xi) = (1 - \dfrac{1}{\xi}) f(\xi) \implies f'(\xi) + f(\xi)(\dfrac{1}{\xi - 1}) = 0$ 
            - 令 $F(x) = f(x) \cdot e^{\ln x - x} = f(x) \cdot x \cdot e^{-x}$ 
          - **【证明题中，见到 $\int_a^bf(x){\rm d}x$ 先用积分中值定理试试再说】** 
-           - $k \int_0^{\frac{1}{k}} x e^{1 - x} f(x) {\rm d} x = \eta \cdot e^{1 - \eta} \cdot f(\eta) = f(1) \quad (0 < \eta < \dfrac{1}{k} < 1)$ 
+           - $k \int_0^{ \frac{1}{k} } x e^{1 - x} f(x) {\rm d} x = \eta \cdot e^{1 - \eta} \cdot f(\eta) = f(1) \quad (0 < \eta < \dfrac{1}{k} < 1)$ 
            - $F(1) = f(1) \cdot 1 \cdot e^{-1} = \eta \cdot e^{-\eta} \cdot f(\eta) = F(\eta)$ 
    - 积分还原法
      - 分析
@@ -281,10 +292,10 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{\sqrt{x^2 - 1}} \end{ar
         - 又 $a^2 + b^2 > 2ab$ ，所以 $\arctan b - \arctan a < \dfrac{b - a}{b^2 + a^2} < \dfrac{b - a}{2ab}$ 。
    5. $\xi$ 的具体表达式
       - 设 $f(x) = \arcsin x$ ，$\xi$ 为 $f(x)$ 在 $[0, t]$ 上拉格朗日中值定理的中值点，$0 < t < 1$ ，求极限 $\lim_{t \to 0+}\dfrac{\xi}{t}$ 。
-        - $\arcsin t - \arcsin 0 = \dfrac{1}{\sqrt{1 - \xi^2}} \cdot (t - 0) \quad (0 < \xi < t < 1)$ 
-        - $\arcsin t = \dfrac{t}{\sqrt{1 - \xi^2}} \implies \xi = \sqrt{1 - (\dfrac{t}{\arcsin t})^2}$ 
+        - $\arcsin t - \arcsin 0 = \dfrac{1}{ \sqrt{1 - \xi^2} } \cdot (t - 0) \quad (0 < \xi < t < 1)$ 
+        - $\arcsin t = \dfrac{t}{ \sqrt{1 - \xi^2} } \implies \xi = \sqrt{1 - (\dfrac{t}{\arcsin t})^2}$ 
         - 令 $\arcsin t = u \quad ( t \to 0^+ \implies u \to 0^+ )$
-        - 所以 $\lim_{t \to 0^+}\dfrac{\xi}{t} = \lim_{u \to 0^+} \sqrt{ \dfrac{ 1 - (\dfrac{\sin u}{u})^2 }{ (\sin u)^2 } } = \lim_{u \to 0^+}\sqrt{ \dfrac{u^2 - (\sin u)^2}{u^2 \cdot (\sin u)^2} }  = \dfrac{1}{\sqrt{3}}$ 
+        - 所以 $\lim_{t \to 0^+}\dfrac{\xi}{t} = \lim_{u \to 0^+} \sqrt{ \dfrac{ 1 - (\dfrac{\sin u}{u})^2 }{ (\sin u)^2 } } = \lim_{u \to 0^+}\sqrt{ \dfrac{u^2 - (\sin u)^2}{u^2 \cdot (\sin u)^2} }  = \dfrac{1}{ \sqrt{3} }$ 
 
 4. 柯西中值定理的应用（8）
    - 例题

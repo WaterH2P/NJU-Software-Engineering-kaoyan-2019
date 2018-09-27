@@ -1,3 +1,14 @@
+---
+title: 极限
+date: 2018-9-21
+updated: 2018-9-28
+tags: [maths,cs,kaoyan]
+mathjax: true
+
+description: 做笔记，喝凉茶，看高数
+---
+
+
 ### x函数极限
 
 $\lim_{x \to x_0}f(x) = A​$ 
@@ -87,8 +98,8 @@ $\lim_{n \to \infty}x_n = A$
     - $U(x)^{V(x)} = e^{V(x) \ln U(x)}$ 
     - 例题
       - $\lim_{x \to \infty}(x + \sqrt{1 + x^2})^\frac{1}{x}$ 
-        - $(\ln (x + \sqrt{1 + x^2}))' = \dfrac{1}{\sqrt{1 + x^2}}$ 
-      - $\lim_{x \to \frac{\pi}{4}}(\tan x)^{\dfrac{1}{\cos x - \sin x}}$ 
+        - $(\ln (x + \sqrt{1 + x^2}))' = \dfrac{1}{ \sqrt{1 + x^2} }$ 
+      - $\lim_{ x \to \frac{\pi}{4} }(\tan x)^{ \dfrac{1}{\cos x - \sin x} }$ 
         - $1^\infty \implies \lim u^v = e^{\lim v\ln u} = e^{\lim v(u - 1)}$ 
 - 泰勒公式
   - 任何可导函数 $f(x) = \sum a_nx^n$ 
@@ -114,7 +125,7 @@ $\lim_{n \to \infty}x_n = A$
       - 见到 $A - B$ 型，用【幂次最低】原则
 
         - 将 $A, B$ 分别展开至系数不想等的 $x$ 的最低次幂为止。
-      - 当 $x \to 0$ 时，$\cos x - e^{-\frac{x^2}{2}}$ 与 $cx^k$ 为等价无穷小，求 $c, k$ 。
+      - 当 $x \to 0$ 时，$\cos x - e^{ -\frac{x^2}{2} }$ 与 $cx^k$ 为等价无穷小，求 $c, k$ 。
       - 设 $f(x)$ 在 $x = 0$ 的某邻域内有定义，且 $\lim_{x \to 0} \dfrac{f(x) \tan x - \sin 4x}{x^3} = 0$ ，计算 $\lim_{x \to 0} \dfrac{f(x) - 4}{x^2}$ 。
 
 
@@ -140,7 +151,7 @@ $\lim_{n \to \infty}x_n = A$
      - 先证存在，再求极限。
      1. 【数学归纳法】$\implies$ $\{x_n\}$ 单调增
      2. 根据递推式证明有界：$x_n < 2$ ，从而数列收敛，极限存在设为 $A$ 。
-     3. **对递推式两边取极限**，$\lim_{n \to \infty}x_n = \lim_{n \to \infty}(1 + \dfrac{x_{n - 1}}{1 + x_{n - 1}}) \quad \implies \quad A = 1 + \dfrac{A}{1 + A}​$ 。 
+     3. **对递推式两边取极限**，$\lim_{n \to \infty}x_n = \lim_{n \to \infty}(1 + \dfrac{ x_{n - 1} }{1 + x_{n - 1} }) \quad \implies \quad A = 1 + \dfrac{A}{1 + A}​$ 。 
 
 
 
@@ -172,6 +183,4 @@ $\lim_{n \to \infty}x_n = A$
      2. 无定义点
         - $x > 0$ 时，分母不为 $0$ ，$x = 1$ 。
         - $x < 0$ 时，$x_k = -k \pi - \dfrac{\pi}{2}, (k = 0, 1, ...)$ 。
-          - $x_0 = -\dfrac{\pi}{2}$ ，$\lim_{x \to -\frac{\pi}{2}}\dfrac{x(\pi + 2x)}{2 \cos x}$ 是 $\dfrac{0}{0}​$ 。
-
-
+          - $x_0 = -\dfrac{\pi}{2}$ ，$\lim_{ x \to -\frac{\pi}{2} }\dfrac{x(\pi + 2x)}{2 \cos x}$ 是 $\dfrac{0}{0}​$ 。
