@@ -1,7 +1,7 @@
 ---
 title: 一元函数微分学
-date: 2018-9-28
-updated: 2018-9-28
+date: 2018-9-26
+updated: 2018-10-2
 tags: [maths,cs,kaoyan]
 mathjax: true
 
@@ -9,7 +9,7 @@ description: 做笔记，喝凉茶，看高数
 ---
 
 
-### 一、定义
+## 一、定义
 
 - $\lim\limits_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}​$ 记为 $f'(x_0)​$ ：（瞬时）变化率。
 
@@ -61,10 +61,12 @@ description: 做笔记，喝凉茶，看高数
     - 若 $f(x)$ 是可导的奇函数，证明 $f'(x)$ 的偶函数。
 
 
+<br>
+## 二、导数计算
 
-### 导数计算
 
-##### 基本求导公式
+<br>
+#### ㊀、基本求导公式
 
 $\begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\ (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\ (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array}$ 
 
@@ -75,8 +77,8 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 + 1}))' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{
 $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{array}$ 
 
 
-
-##### 基本求导方法
+<br>
+#### ㊁、基本求导方法
 
 1. 复合函数求导
 
@@ -139,10 +141,12 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
       - $\begin{array}{l} y^{(50)} & = x^2 \cdot (\sin 2x)^{(50)} + 50(x^2)' \cdot (\sin 2x)^{(49)} + \dfrac{50 \cdot 49}{2}(x^2)'' \cdot (\sin 2x)^{(48)} \\[1em] & = -2^{50}x^2 \sin 2x + 50 \cdot 2^{50}x \cos 2x + 50 \cdot 49 \cdot 2^{48} \sin 2x \end{array}$ 
 
 
+<br>
+## 三、微分中值定理
 
-### 微分中值定理
 
-##### 十大定理
+<br>
+#### ㊀、十大定理
 
 1. 涉及到 $f(x)$ 的定理
 
@@ -193,8 +197,8 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
    10. 积分中值定理
 
 
-
-##### 五大方面的应用
+<br>
+#### ㊁、五大方面的应用
 
 1. 涉及 $f(x)$ 的应用（1-4）
 
@@ -320,14 +324,14 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
       - $ D $ 
 
 
-
-### 导数的几何应用
+<br>
+## 四、导数的几何应用
 
 三点两性一线：极值点、最值点、拐点；单调性、凹凸性；渐近线
 
 
-
-##### 极值与单调性
+<br>
+#### ㊀、极值与单调性
 1. 定义
   - 必须是双侧定义，否则不考虑极值
   - 若 $ f(x) $ 在 $ x = x_0 $ 处连续，在 $ \bigcup\limits^o (x_0, \delta) $ 内可导，则
@@ -346,12 +350,14 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
       - 所以 $ \ln (1 + x) - \ln x - \dfrac{1}{ 1 + x } > 0 $ 
     - 又因为 $ ( 1 + \dfrac{1}{x} )^x > 0 $，所以 $ f'(x) > 0 \quad ( x \in (0, \infty) ) $ 
   2. ⭐️设 $ f(x) $ 连续，其 $ f'(x) $ 的图像如下，则 $ f(x) $ 有几个极小值点，几个极大值点。
-    - ![](./images/2.3.1.2.3.png)
+    - ![](./images/2-4.1.2.3.png)
     - 看图说话
     - 4 个极值点
       - 3 个零点和 $ (0, 0) $ 
 
-##### 凹凸性 与 拐点
+
+<br>
+#### ㊁、凹凸性 与 拐点
 1. 凹凸性
   - $ \forall x_1, x_2 \in I $ ，有：
     - $ \dfrac{ f(x_1) + f(x_2) }{2} > f(\dfrac{ x_1 + x_2 }{2}) \implies f(x) $ 是凹曲线
@@ -381,7 +387,9 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
     - $ y''' = 6 \cdot g + (...) + (...) + (...)^2 + (...)^2 + (...)^3 \implies y'''(3) \not= 0 $ 
     - $ C $ 
 
-##### 渐近线
+
+<br>
+#### ㊂、渐近线
 1. 铅直渐近线
   - 若 $ \lim\limits_{x \to x_0^+ / x_0^-} f(x) = \infty $ ，则称 $ x = x_0 $ 为 $ f(x) $ 的一条铅直渐近线。
   - 出现在：无定义点 或者 开区间端点 
@@ -401,7 +409,9 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
     - 水平渐近线： $ y = \dfrac{\pi}{4} $ 
     - $ 2 $ 
 
-##### 最值
+
+<br>
+#### ㊃、最值
 1. 对于函数 $ f(x) $ ，在 $ [a, b] $ 上找出三类点
   - $ \begin{cases} f'(x) = 0 \implies x_0 \text{驻点} \\[1em] f'(x) \text{不} \exists \implies x_1 \text{不可导点} \\[1em] \text{端点} a, b  \end{cases} $ 
   - 比较 $ f(x_0) $ ，$ f(x_1) $ ，$ f(a) $ ，$ f(b) $ 大小，取其最大（小）者为最大（小）值。
@@ -409,7 +419,7 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
   - 若 $ (a, b) $ 内，考虑端点和可能存在的极值点即可。
 3. 例题
   1. 防空洞的截面拟建成矩形加半圆（如图所示），截面的面积为 $5 m^2$ ，问底宽 $ x $ 为多少时才能使建造时所用的材料最省？
-    - ![](./images/2.3.4.3.1.png)
+    - ![](./images/2-4.4.3.1.png)
     - 设矩形的高为 $ y $，则 $ \begin{cases} \text{周长为} L \\[1em] \text{面积为} S \end{cases} $ 
     - $ S = xy + \dfrac{\pi}{8}x^2 = 5 \implies y = \dfrac{5}{x} - \dfrac{\pi}{8}x > 0 \implies x < \sqrt{ \dfrac{40}{\pi} } $ 
     - $ L = x + 2y + \dfrac{\pi}{2}x = \dfrac{10}{x} + ( \dfrac{\pi}{4} + 1 ) x, \quad x \in ( 0, \sqrt{ \dfrac{40}{\pi} } ) $ 
@@ -422,32 +432,10 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
     - $ \lim\limits_{n \to \infty}M(n) = \lim\limits_{n \to \infty}( \dfrac{n}{n + 1} )^{(n + 1)} = e^{ \lim\limits_{n \to \infty} (n + 1)\dfrac{-1}{n + 1}  } = e^{-1} $ 
 
 
-### 四大块
+<br>
+## 五、四大块
+
 1. 单调性 + 极值
 2. 凹凸性 + 拐点
 3. 渐近线
 4. 最值问题（综合性）
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

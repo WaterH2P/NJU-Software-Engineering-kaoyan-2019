@@ -1,7 +1,7 @@
 ---
 title: 极限
 date: 2018-9-21
-updated: 2018-9-28
+updated: 2018-10-2
 tags: [maths,cs,kaoyan]
 mathjax: true
 
@@ -9,7 +9,7 @@ description: 做笔记，喝凉茶，看高数
 ---
 
 
-### x函数极限
+## 一、x函数极限
 
 $\lim\limits_{x \to x_0}f(x) = A$ 
 
@@ -17,31 +17,35 @@ $\lim\limits_{x \to x_0}f(x) = A$
 
 $\lim\limits_{x \to \infty}f(x) = A$ 
 
-- $\forall \varepsilon > 0$，$\exists X > 0$，当 $|x| > X$ 时，$|f(x) - A| < \varepsilon$ 。 
+- $\forall \varepsilon > 0$，$\exists X > 0$，当 $|x| > X$ 时，$|f(x) - A| < \varepsilon​$ 。 
 
 $\lim\limits_{x \to \infty}f(x) = \infty$
 
 - $\forall M > 0$，$\exists X > 0$，当 $|x| > X$ 时，$|f(x)| > M$ 。 
 
 
-
-### 数列极限
+<br>
+## 二、数列极限
 
 $\lim\limits_{n \to \infty}x_n = A$ 
 
 - $\forall \varepsilon > 0$，$\exists N > 0$，当 $n > N$ 时，$|x_n - A| < \varepsilon$ 。 
 
 
+<br>
+## 三、极限三大性质
 
-### 极限三大性质
 
-##### 唯一性
+<br>
+#### 3.1 唯一性
 
 - $x \to x_0$ 左右有别
   - $x \to x_o^+$ 
   - $x \to x_0^-$ 
 
-##### 局部有界性
+
+<br>
+#### 3.2 局部有界性
 
 - 若 $\lim\limits_{x \to x_0}f(x) = A$ ，则 $\exists M > 0$ ，$\delta >0$ ，当 $0 < |x - x_0| < \delta$ 时，恒有 $|f(x)| < M$ 。
 - 例题
@@ -55,8 +59,8 @@ $\lim\limits_{n \to \infty}x_n = A$
       - 初等函数在其定义区间内必连续
 
 
-
-##### 局部保号性
+<br>
+#### 3.3 局部保号性
 
 - 若 $\lim\limits_{x \to x_0}f(x) = A > 0$ ，则 $x \to x_0$ 时，$f(x) >0$ 。
 - 若 $\lim\limits_{x \to x_0}f(x) = A < 0$ ，则 $x \to x_0$ 时，$f(x) <0$ 。
@@ -64,8 +68,8 @@ $\lim\limits_{n \to \infty}x_n = A$
   - 将极限直接去掉
 
 
-
-### 函数极限的计算
+<br>
+## 四、函数极限的计算
 
 - 七种未定式： $\dfrac{0}{0}$ , $\dfrac{\infty}{\infty}$ , $\infty \times 0$ ; $\infty - \infty$ ; $\infty^0$ , $0^0$ , $1^\infty$ 。
 - 洛必达法则
@@ -130,8 +134,8 @@ $\lim\limits_{n \to \infty}x_n = A$
       - 设 $f(x)$ 在 $x = 0$ 的某邻域内有定义，且 $\lim\limits_{x \to 0} \dfrac{f(x) \tan x - \sin 4x}{x^3} = 0$ ，计算 $\lim\limits_{x \to 0} \dfrac{f(x) - 4}{x^2}$ 。
 
 
-
-### 数列极限的计算
+<br>
+## 五、数列极限的计算
 
 1. 若 $\lbrace x_n \rbrace$ 易于连续化，转化为函数极限计算。
    - 依据：若 $\lim\limits_{x \to +\infty}f(x) = A$ ，则 $\lim\limits_{n \to \infty}f(n) = A$ 。【归结定理】
@@ -155,33 +159,33 @@ $\lim\limits_{n \to \infty}x_n = A$
      3. **对递推式两边取极限**，$\lim\limits_{n \to \infty}x_n = \lim\limits_{n \to \infty}(1 + \dfrac{ x_{n - 1} }{1 + x_{n - 1} }) \quad \implies \quad A = 1 + \dfrac{A}{1 + A}​$ 。 
 
 
-
-### 极限的应用
+<br>
+## 六、极限的应用
 
 1. 基本常识
    - 任何初等函数在其定义区间内连续，故考研中之研究两类特殊的点：
      - 分段函数的分段点（可能间断）
      - 无定义点（必然间断）
 2. 连续的定义
-   - 若 $\lim\limits_{x \to x_0}f(x) = f(x_0)$ ，则 $f(x)$ 称在 $x = x_0$ 处连续。
+   - 若 $ \lim\limits_{x \to x_0}f(x) = f(x_0) $ ，则 $ f(x) $ 称在 $ x = x_0 $ 处连续。
    - 【注】
-     - $\lim\limits_{x \to x_0^+}f(x) = \lim\limits_{x \to x_0^-}f(x) = f(x_0)$ 三者相等才连续。
+     - $ \lim\limits_{x \to x_0^+}f(x) = \lim\limits_{x \to x_0^-}f(x) = f(x_0) $ 三者相等才连续。
 3. 间断的定义
    - 连续的对立事件
-   - 设 $f(x)$ 在 $x = x_0$ 点的某去心邻域有定义【双侧定义】
-   - $(1) \lim\limits_{x \to x_0^+}f(x) \quad (2) \lim\limits_{x \to x_0^-}f(x) \quad (3) f(x)$ 
-     - 第一类间断点 $(1)、(2)$ 均存在，且
-       - $(1) \not= (2)$ ：$x_0$ 为跳跃间断点
-       - $(1) = (2) \not= (3)$ ：$x_0$ 为可去间断点
-     - 第二类间断点 $(1)、(2)$ 至少一个不存在（目前考研只考 $(1)、(2)$ 均不存在）
-       - 若不存在 $=\infty \implies$ 无穷间断点
-       - 若不存在 $=$ 振荡 $\implies$ 振荡间断点
+   - 设 $ f(x) $ 在 $ x = x_0 $ 点的某去心邻域有定义【双侧定义】
+   - $ (1) \lim\limits_{x \to x_0^+}f(x) \quad (2) \lim\limits_{x \to x_0^-}f(x) \quad (3) f(x) $ 
+     - 第一类间断点 $ (1)、(2) $ 均存在，且
+       - $ (1) \not= (2) $ ：$ x_0 $ 为跳跃间断点
+       - $ (1) = (2) \not= (3) $ ：$ x_0 $ 为可去间断点
+     - 第二类间断点 $ (1)、(2) $ 至少一个不存在（目前考研只考 $ (1)、(2) $ 均不存在）
+       - 若不存在 $ =\infty \implies $ 无穷间断点
+       - 若不存在 $ = $ 振荡 $ \implies $ 振荡间断点
      - 【注】
        - 单侧定义不讨论间断性
        - 若出现左右一边是振荡间断，一边是无穷间断，应分侧讨论（超纲）
-   - 求函数 $F(x) = \begin{cases} \dfrac{x(\pi + 2x)}{2 \cos x}, & x \leq 0 \\ \sin\dfrac{1}{x^2 -1}, & x > 0 \end{cases}$ 的间断点，并判断它们的类型。
-     1. 分段点：$x = 0$ 
+   - 求函数 $ F(x) = \begin{cases} \dfrac{x(\pi + 2x)}{2 \cos x}, & x \leq 0 \\ \sin\dfrac{1}{x^2 -1}, & x > 0 \end{cases} $ 的间断点，并判断它们的类型。
+     1. 分段点：$ x = 0 $ 
      2. 无定义点
-        - $x > 0$ 时，分母不为 $0$ ，$x = 1$ 。
-        - $x < 0$ 时，$x_k = -k \pi - \dfrac{\pi}{2}, (k = 0, 1, ...)$ 。
-          - $x_0 = -\dfrac{\pi}{2}$ ，$\lim\limits_{ x \to -\frac{\pi}{2} }\dfrac{x(\pi + 2x)}{2 \cos x}$ 是 $\dfrac{0}{0}​$ 。
+        - $ x > 0 $ 时，分母不为 $ 0 $ ，$ x = 1 $ 。
+        - $ x < 0 $ 时，$ x_k = -k \pi - \dfrac{\pi}{2}, (k = 0, 1, ...) $ 。
+          - $ x_0 = -\dfrac{\pi}{2} $ ，$ \lim\limits_{ x \to -\frac{\pi}{2} }\dfrac{x(\pi + 2x)}{2 \cos x}$ 是 $\dfrac{0}{0} $ 。
