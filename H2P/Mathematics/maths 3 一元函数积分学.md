@@ -1,7 +1,7 @@
 ---
 title: 一元函数积分学
 date: 2018-10-2
-updated: 2018-10-3
+updated: 2018-10-4
 tags: [maths,cs,kaoyan]
 mathjax: true
 
@@ -33,10 +33,10 @@ description: 做笔记，喝凉茶，看高数
   - $ \begin{cases} \begin{cases} \int \sin x {\rm d}x = - \cos x + C \\[1em] \int \cos x {\rm d}x = \sin x + C \\[1em] \int \tan x{\rm d}x = - \ln | \cos x | + C \\[1em] \int \cot x {\rm d}x = \ln | \sin x | + C \end{cases}  \\[1em] \begin{cases} \int \sec x {\rm d}x = \ln | \sec x + \tan x | + C \\[1em] \int \csc x {\rm d}x = \ln | \csc x - \cot x | + C \\[1em] \int \sec^2 x {\rm d}x = \tan x + C \\[1em] \int \csc^2 x {\rm d}x = - \cot x + C \end{cases} \\[1em] \begin{cases} \int \sec x \tan x {\rm d}x = \sec x + C \\[1em] \int \csc x \cot x {\rm d}x = - \csc x + C \end{cases}  \end{cases} $ 
   - $ \begin{cases} \begin{cases} \int \dfrac{1}{ \sqrt{1 - x^2} }{\rm d}x = \arcsin x + C \\[1em] \int \dfrac{1}{ \sqrt{a^2 - x^2} }{\rm d}x = \arcsin \dfrac{x}{a} + C \end{cases} \\[1em] \begin{cases} \int \dfrac{1}{1 + x^2}{\rm d}x = \arctan x + C \\[1em] \int \dfrac{1}{a^2 + x^2}{\rm d}x = \dfrac{1}{a} \arctan \dfrac{x}{a} + C \end{cases} \\[1em] \begin{cases} \int \dfrac{1}{ \sqrt{x^2 + a^2} } = \ln ( x + \sqrt{x^2 + a^2} ) + C \\[1em] \int \dfrac{1}{ \sqrt{x^2 - a^2} } = \ln ( x + \sqrt{x^2 - a^2} ) + C \end{cases} \\[1em] \begin{cases} \int \dfrac{1}{a^2 - x^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{a + x}{a - x}| + C \\[1em] \int \dfrac{1}{x^2 - a^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{x - a}{x + a}| + C \end{cases} \\[1em] \int \sqrt{a^2 - x^2} {\rm d}x = \dfrac{a^2}{2} \arcsin \dfrac{x}{a} + \dfrac{x}{2} \sqrt{a^2 - x^2} + C \end{cases} $ 
 2. 例题
-   1. $ \int \dfrac{ {\rm d}x }{ (2 - x) \sqrt{1 - x} } $ 
+   1. $ \int \dfrac{1}{ (2 - x) \sqrt{1 - x} } {\rm d}x $ 
      - $ = - \int \dfrac{1}{2 - x} \cdot \dfrac{ {\rm d}(1 - x) }{ \sqrt{1 - x} } = -2 \int \dfrac{ {\rm d} \sqrt{1 - x} }{ 2 - x } $ 
      - $ = -2 \int \dfrac{ {\rm d} \sqrt{1 - x} }{ 1 + ( \sqrt{1 - x} )^2 } = -2 \arctan \sqrt{1 - x} + C $ 
-   2. $ \int \dfrac{x}{ (2 - x^2) \sqrt{1 - x^2} } {\rm d}x $ 
+   2. $ \int \dfrac{x}{ (2 - x^2) \sqrt{1 - x^2} } {\rm d}x ​$ 
    3. $ \int \dfrac{ \cos^2 x - \sin x }{ \cos x(1 + \cos x e^{\sin x}) } {\rm d}x $ 
       - **定理** 
         - 对于 $ \int f(x) {\rm d}x $ ，$ f(x) $ 越复杂 $ \implies $ 越有规律可循。
@@ -134,11 +134,78 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
      - $ \begin{array}{l} \int f(x) {\rm d}x & = \int \ln (1 + e^x) \cdot e^{-x} {\rm d}x \\[1em] & = - e^{-x} \ln(1 + e^x) + \int \dfrac{1 + e^x - e^x}{1 + e^x} {\rm d}x \\[1em] & = - e^{-x} \ln(1 + e^x) + x - \ln(1 + e^x) + C \\[1em] & = x - ( e^{-x} + 1 )\ln (1 + e^x) + C \end{array} $ 
 
 
+<br>
+#### ㊃、有理函数积分
+1. 定义
+  - 形如 $ \int \dfrac{ P_n(x) }{ Q_m(x) } {\rm d}x, \quad (n < m) $ 的积分。 
+2. 方法
+  1. 将 $ Q_m(x) $ 因式分解
+  2. 将 $ \dfrac{ P_n(x) }{ Q_m(x) } $ 拆成若干最简有理公式之和
+3. 拆分原则
+  1. $ Q_m(x) $ 分解出 $ (ax + b)^k \implies $ 产生 $ k $ 项。
+    - $ \dfrac{A_1}{ ax + b } + \dfrac{A_2}{ (ax + b)^2 } + ... + \dfrac{A_k}{ (ax + b)^k }, \quad k = 1, 2, ... $ 
+  2. $ Q_m(x) $ 分解出 $ (px^2 + qx + r)^k \implies $ 产生 $ k $ 项。
+    - $ \dfrac{ A_1x + B_1 }{ px^2 + qx +r } + \dfrac{ A_2x + B }{ (px^2 + qx + r)^2 } + ... + \dfrac{ A_kx + B_k }{ (px^2 + qx + r)^k }, \quad k = 1, 2, ... $ 
+4. 例题
+  1. 计算 $ I = \int \dfrac{ 4x^2 - 6x -1 }{ (x + 1)(2x - 1)^2 } {\rm d}x $ 。
+    - $ \dfrac{ 4x^2 - 6x -1 }{ (x + 1)(2x - 1)^2 } = \dfrac{1}{x + 1} - \dfrac{2}{ (2x - 1)^2 } $ 
+      - $ 4x^2 - 6x -1 = A(2x - 1)^2 + B(x - 1)(2x - 1) + C(x + 1) $ 
+        - $ \begin{cases} \text{取} x = \dfrac{1}{2}, \quad -3 = C( \dfrac{1}{2} + 1 ) & \implies C = -2 \\[1em] \text{取} x = -1, \quad 9 = 9A & \implies A = 1 \\[1em] \text{比较} x^2 \text{的系数}, \quad 4 = 4A + 2B & \implies B = 0 \end{cases} $
+    - $ I = \int \dfrac{1}{x + 1} {\rm d}x - 2 \int \dfrac{1}{ (2x - 1)^2 } {\rm d}x = \ln |x + 1| + \dfrac{1}{2x - 1} + C $ 
+  2. 计算 $ I = \int \dfrac{x}{x^3 - x^2 + x - 1} {\rm d}x $ 
+    - $ I = I = \int \dfrac{x}{ (x^2 + 1)(x - 1) } {\rm d}x $ 
+    - $ \dfrac{x}{ (x^2 + 1)(x - 1) } = \dfrac{1}{2} ( \dfrac{-x + 1}{x^2 + 1} + \dfrac{1}{x - 1} ) $ 
+    - $ \begin{array}{l} I & = -\dfrac{1}{2} \int ( \dfrac{ \dfrac{1}{2} \cdot 2x - 1 }{ x^2 + 1 } ) {\rm d}x -\dfrac{1}{2} \int \dfrac{1}{x - 1} {\rm d}x \\[1em] & = -\dfrac{1}{4} \ln(x^2 + 1) + \dfrac{1}{2} \arctan x + \dfrac{1}{2} \ln |x - 1| + C \end{array} $ 
+  3. 计算 $ I = \int \dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } {\rm d}t $
+     - $ \dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } = \dfrac{ \dfrac{1}{2} }{t - 1} + \dfrac{ -\dfrac{1}{2} }{ (t - 1)^2 } + \dfrac{ \dfrac{1}{2} }{t + 1} + \dfrac{ \dfrac{1}{2} }{ (t + 1)^2 } $ 
+     - $ \begin{array}{l} I & = \dfrac{1}{2} ( \ln |t - 1| + \dfrac{1}{t - 1} + \ln |t + 1| - \dfrac{1}{t + 1} ) + C \\[1em] & = \dfrac{1}{2} \ln |t^2 - 1| + \dfrac{1}{t^2 - 1} + C \end{array} $ 
 
+<br>
 
+## 定积分的计算
+1. 方法
+  - $ \int_a^b f(x) {\rm d}x = F(b) - F(a) $ 
+    - 若 $ a $ 或 $ b $ 不存在，则计算其极限。 
+2. 例题
+  1. $ I =  \int_1^4 \dfrac{1}{ 1 + \sqrt{x} } {\rm d}x $ 
 
+    - $ I = 2( 1 - \ln 3 + \ln 2 ) $ 
+  2. ⭐️ $ I_n = \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x $ ，$ n $ 为大于 $ 1 $ 的整数。
+    - 正弦曲线一股的面积是 $ 2 $，半股的面积是 $ 1 $。
 
+      - $ \int_0^{ \frac{\pi}{2} } \sin x {\rm d}x = 1 $ 
 
+    - 证 $ \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x = \int_0^{ \frac{\pi}{2} } \cos^n x {\rm d}x $ 。
+      - 令 $ x = \dfrac{\pi}{2} - t $ 
+      - $ \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x = \int_{ \frac{\pi}{2} }^0 \sin^n (\dfrac{\pi}{2} - t) {\rm d}(-t) = \int_0^{ \frac{\pi}{2} } \cos^n x {\rm d}x $ 
+    - 方法
+      - $ n > 1 $ 时
+        - $ \begin{array}{l} I_n & = \int_0^{ \frac{\pi}{2} } \sin^{n - 1} x \cdot \sin x {\rm d}x = - \int_0^{ \frac{\pi}{2} } \sin^{n - 1} x {\rm d} \cos x \\[1em] & = \left. - \sin^{n - 1} x \cos x \right|_0^{ \frac{\pi}{2} } + \int_0^{ \frac{\pi}{2} } \cos x \cdot (n - 1) \cdot \sin^{n - 2}x \cdot \cos x {\rm d}x \\[1em] & = (n - 1) \int_0^{ \frac{\pi}{2} } (1 - \sin^2 x) \sin^{n - 2} x {\rm d}x \\[1em] & = (n - 1) \int_0^{ \frac{\pi}{2} } \sin^{n - 2} x {\rm d}x - (n - 1) \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x \\[1em] & = (n - 1) I_{n - 2} - (n - 1) I_n \end{array} $ 
+        - $ \implies I_n = \dfrac{n - 1}{n} I_{n - 2}, \quad n = 2, 3, ... $ 
+        - ⭐️ $ I_n = \begin{cases} \dfrac{n - 1}{n} \cdot \dfrac{n - 2}{n - 3} ... \dfrac{1}{2} \cdot \dfrac{\pi}{2}, \quad & n \text{ 为正偶数} \\[1em] \dfrac{n - 1}{n} \cdot \dfrac{n - 2}{n - 3} ... \dfrac{2}{3} \cdot 1, \quad & n \text{ 为大于1的奇数} \end{cases} $ 
+          - 华里士公式
+  3. $ I = \int_{-1}^1 x^2 \sqrt{1 - x^2} {\rm d}x $ 
+    - $ I = 2 \int_0^1 x^2 \sqrt{1 - x^2} {\rm d}x $ 
+    - 令 $ x = \sin t $ 
+      - $ \begin{array}{l} I & = 2 \int_0^{ \frac{\pi}{2} } \sin^2 t \cos^2 t {\rm d}t \\[1em] & = 2 \int_0^{ \frac{\pi}{2} } \sin^2 t {\rm d}t - 2 \int_0^{ \frac{\pi}{2} } \sin^4 t {\rm d}t \\[1em] & = 2 \cdot \dfrac{1}{2} \cdot \dfrac{\pi}{2} - 2 \cdot \dfrac{3}{4} \cdot \dfrac{1}{2} \cdot \dfrac{\pi}{2} \\[1em] & = \dfrac{\pi}{8} \end{array} $ 
+  4. 求 $ I = \int_0^{2 \pi} \sin^n x {\rm d}x, \quad (n > 1) $ 
+    - 预备定理
+      - 若 $ f(x) $ 以 $ T $ 为周期，连续，则 
+        - $ \forall a $ ， $ \int_0^T f(x) {\rm d}x = \int_a^{a + T} f(x) {\rm d}x $ 
+      - 证明
+        - $ \int_a^{a + T} f(x) {\rm d}x = \int_a^0 f(x) {\rm d}x + \int_0^T f(x) {\rm d}x + \int_T^{a + T} f(x) {\rm d}x $ 
+        - 令 $ x - T = u $ ，$ \int_a^{a + T} f(x) {\rm d}x = \int_0^a f(u + T) {\rm d}u = \int_0^a f(u) {\rm d}u = - \int_a^0 f(x) {\rm d}x $ 
+        - 所以 $ \int_0^T f(x) {\rm d}x = \int_a^{a + T} f(x) {\rm d}x $ 。
+      - 延伸
+        - $ f(x) $ 是奇函数，$ T $ 为周期，连续，则：
+        - $ \int_0^T f(x) {\rm d}x = \int_{ -\frac{\pi}{2} }^{ \frac{\pi}{2} } f(x) {\rm d}x = 0 $ 
+    - 计算
+      - $ I = \int_{-\pi}^{\pi} \sin^n x {\rm d}x = \begin{cases} 0, & n \text{ 为奇数} \\[1em] 2 \int_0^{\pi} \sin^n x {\rm d}x, & n 为偶数 \end{cases} $ 
+      - 其中 $ \int_0^{\pi} \sin^n x {\rm d}x = \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x + \int_{ \frac{\pi}{2} }^{\pi} \sin^n x {\rm d}x $ 
+        - 令 $ t = {\pi} - x $ ，$ \int_{ \frac{\pi}{2} }^{\pi} \sin^n x {\rm d}x = \int_{ \frac{\pi}{2} }^0 \sin^n ( {\pi} - t )( - {\rm d}t ) = \int_0^{ \frac{\pi}{2} } \sin^n t {\rm d}t $ 
+      - ⭐️ $ \int_{0}^{2 \pi} \cos^n x {\rm d}x = \int_{0}^{2 \pi} \sin^n x {\rm d}x = \begin{cases} 0, & n \text{ 为奇数} \\[1em] 4 \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x, & n 为偶数 \end{cases} $ 
+    5. 计算 $ \int_0^6 x^2 \sqrt{6x - x^2} {\rm d}x $ 。
+       - 令 $ x = 3 + 3 \sin t $ 
 
 
 
