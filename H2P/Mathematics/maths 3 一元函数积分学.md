@@ -36,7 +36,7 @@ description: 做笔记，喝凉茶，看高数
    1. $ \int \dfrac{1}{ (2 - x) \sqrt{1 - x} } {\rm d}x $ 
      - $ = - \int \dfrac{1}{2 - x} \cdot \dfrac{ {\rm d}(1 - x) }{ \sqrt{1 - x} } = -2 \int \dfrac{ {\rm d} \sqrt{1 - x} }{ 2 - x } $ 
      - $ = -2 \int \dfrac{ {\rm d} \sqrt{1 - x} }{ 1 + ( \sqrt{1 - x} )^2 } = -2 \arctan \sqrt{1 - x} + C $ 
-   2. $ \int \dfrac{x}{ (2 - x^2) \sqrt{1 - x^2} } {\rm d}x ​$ 
+   2. $ \int \dfrac{x}{ (2 - x^2) \sqrt{1 - x^2} } {\rm d}x $ 
    3. $ \int \dfrac{ \cos^2 x - \sin x }{ \cos x(1 + \cos x e^{\sin x}) } {\rm d}x $ 
       - **定理** 
         - 对于 $ \int f(x) {\rm d}x $ ，$ f(x) $ 越复杂 $ \implies $ 越有规律可循。
@@ -52,7 +52,7 @@ description: 做笔记，喝凉茶，看高数
      - 分析
        - $ ( \dfrac{x - \ln x}{x} )' = - \dfrac{1 - \ln x}{x^2} $ 
      - 解答
-       - $ \begin{array}{l} I = \int \dfrac{ \dfrac{1 - \ln x}{x^2} }{ ( \dfrac{x - \ln x}{x} )^2 } {\rm d}x = - \int \dfrac{ {\rm d} \dfrac{x - \ln x}{x} }{ ( \dfrac{x - \ln x}{x} )^2 } = \dfrac{x}{x - \ln x} + C \end{array} ​$ 
+       - $ \begin{array}{l} I = \int \dfrac{ \dfrac{1 - \ln x}{x^2} }{ ( \dfrac{x - \ln x}{x} )^2 } {\rm d}x = - \int \dfrac{ {\rm d} \dfrac{x - \ln x}{x} }{ ( \dfrac{x - \ln x}{x} )^2 } = \dfrac{x}{x - \ln x} + C \end{array} $ 
 
 
 <br>
@@ -85,7 +85,7 @@ description: 做笔记，喝凉茶，看高数
      - $ \sqrt[n]{ax + b} = t $ ， $ \sqrt{ \dfrac{ax + b}{cx + d} } = t $ ， $ \sqrt{ ae^{bx} + c } = t $ （根式代换）
      - $ a^x, e^x = t $ （指数代换）
      - $ \ln x = t $ （对数代换）
-     - $ \arcsin x, \arctan x = t $ （反三角函数代换）$ ... $ 
+     - $ \arcsin x, \arctan x = t $ （反三角函数代换）$ \cdots $ 
    - 例题
      1. 求 $ I = \int \sqrt{ \dfrac{1 - x}{1 + x} } \cdot \dfrac{ {\rm d}x }{x} $ 。
        - 解1⃣️
@@ -114,16 +114,16 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
   3. 被积函数为 $ P_n(x) \ln x $ ，$ P_n(x) \arcsin x $ ，$ P_n(x) \arctan x $ ，选 $ \ln x， \text{arc-} = t $ 。
     - $ u $ 求导一次。 
   - 【注】分部积分公式的推广为：
-    - $ \int uv^{(n + 1)} {\rm d}x = uv^{(n)} - u'v^{(n - 1)} + u''v^{(n - 2)} - ... + (-1)^n u^{(n)}v + (-1)^{n + 1} \int u^{(n + 1)}v {\rm d}x $ 
+    - $ \int uv^{(n + 1)} {\rm d}x = uv^{(n)} - u'v^{(n - 1)} + u''v^{(n - 2)} - \cdots + (-1)^n u^{(n)}v + (-1)^{n + 1} \int u^{(n + 1)}v {\rm d}x $ 
 
-    - | $ u $ | $ u' $ | $ u'' $ | $ ... $ | $ u^{(n)} $ | $ u^{(n + 1)} $ |
+    - | $ u $ | $ u' $ | $ u'' $ | $ \cdots $ | $ u^{(n)} $ | $ u^{(n + 1)} $ |
       | :----: | :----: | :-----: | :-----: | :---------: | :-------------: |
-      | $ v^{(n + 1)} $ | $ v^{(n)} $ | $ v^{(n - 1)} $ | $ ... $ | ... | $ v $ |
+      | $ v^{(n + 1)} $ | $ v^{(n)} $ | $ v^{(n - 1)} $ | $ \cdots $ | $ \cdots $ | $ v $ |
 
     - 对 $ u $ 求导，对 $ v^{(n + 1)} $ 积分
     - 交错相乘、正负相间、首项为正
     - 最后一项（列）相乘再积分
-    - ![](./images/分部积分公式的推广.png)
+    - ![](./images/3-2.3 分部积分公式的推广.png)
 2. 例题  
    1. 求 $ \int x^2 \arctan x {\rm d}x $ 
      - $ = \dfrac{1}{2} x^2 - \dfrac{1}{2} \ln (1 + x^2) + C $ 
@@ -143,9 +143,9 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
   2. 将 $ \dfrac{ P_n(x) }{ Q_m(x) } $ 拆成若干最简有理公式之和
 3. 拆分原则
   1. $ Q_m(x) $ 分解出 $ (ax + b)^k \implies $ 产生 $ k $ 项。
-    - $ \dfrac{A_1}{ ax + b } + \dfrac{A_2}{ (ax + b)^2 } + ... + \dfrac{A_k}{ (ax + b)^k }, \quad k = 1, 2, ... $ 
+    - $ \dfrac{A_1}{ ax + b } + \dfrac{A_2}{ (ax + b)^2 } + \cdots + \dfrac{A_k}{ (ax + b)^k }, \quad k = 1, 2, \ldots $ 
   2. $ Q_m(x) $ 分解出 $ (px^2 + qx + r)^k \implies $ 产生 $ k $ 项。
-    - $ \dfrac{ A_1x + B_1 }{ px^2 + qx +r } + \dfrac{ A_2x + B }{ (px^2 + qx + r)^2 } + ... + \dfrac{ A_kx + B_k }{ (px^2 + qx + r)^k }, \quad k = 1, 2, ... $ 
+    - $ \dfrac{ A_1x + B_1 }{ px^2 + qx +r } + \dfrac{ A_2x + B }{ (px^2 + qx + r)^2 } + \cdots + \dfrac{ A_kx + B_k }{ (px^2 + qx + r)^k }, \quad k = 1, 2, \ldots $ 
 4. 例题
   1. 计算 $ I = \int \dfrac{ 4x^2 - 6x -1 }{ (x + 1)(2x - 1)^2 } {\rm d}x $ 。
     - $ \dfrac{ 4x^2 - 6x -1 }{ (x + 1)(2x - 1)^2 } = \dfrac{1}{x + 1} - \dfrac{2}{ (2x - 1)^2 } $ 
@@ -162,8 +162,8 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 
 <br>
 
-## 定积分的计算
-1. 方法
+## 三、定积分的计算
+1. 定义
   - $ \int_a^b f(x) {\rm d}x = F(b) - F(a) $ 
     - 若 $ a $ 或 $ b $ 不存在，则计算其极限。 
 2. 例题
@@ -181,8 +181,8 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
     - 方法
       - $ n > 1 $ 时
         - $ \begin{array}{l} I_n & = \int_0^{ \frac{\pi}{2} } \sin^{n - 1} x \cdot \sin x {\rm d}x = - \int_0^{ \frac{\pi}{2} } \sin^{n - 1} x {\rm d} \cos x \\[1em] & = \left. - \sin^{n - 1} x \cos x \right|_0^{ \frac{\pi}{2} } + \int_0^{ \frac{\pi}{2} } \cos x \cdot (n - 1) \cdot \sin^{n - 2}x \cdot \cos x {\rm d}x \\[1em] & = (n - 1) \int_0^{ \frac{\pi}{2} } (1 - \sin^2 x) \sin^{n - 2} x {\rm d}x \\[1em] & = (n - 1) \int_0^{ \frac{\pi}{2} } \sin^{n - 2} x {\rm d}x - (n - 1) \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x \\[1em] & = (n - 1) I_{n - 2} - (n - 1) I_n \end{array} $ 
-        - $ \implies I_n = \dfrac{n - 1}{n} I_{n - 2}, \quad n = 2, 3, ... $ 
-        - ⭐️ $ I_n = \begin{cases} \dfrac{n - 1}{n} \cdot \dfrac{n - 2}{n - 3} ... \dfrac{1}{2} \cdot \dfrac{\pi}{2}, \quad & n \text{ 为正偶数} \\[1em] \dfrac{n - 1}{n} \cdot \dfrac{n - 2}{n - 3} ... \dfrac{2}{3} \cdot 1, \quad & n \text{ 为大于1的奇数} \end{cases} $ 
+        - $ \implies I_n = \dfrac{n - 1}{n} I_{n - 2}, \quad n = 2, 3, \ldots $ 
+        - ⭐️ $ I_n = \begin{cases} \dfrac{n - 1}{n} \cdot \dfrac{n - 2}{n - 3} \cdots \dfrac{1}{2} \cdot \dfrac{\pi}{2}, \quad & n \text{ 为正偶数} \\[1em] \dfrac{n - 1}{n} \cdot \dfrac{n - 2}{n - 3} \cdots \dfrac{2}{3} \cdot 1, \quad & n \text{ 为大于1的奇数} \end{cases} $ 
           - 华里士公式
   3. $ I = \int_{-1}^1 x^2 \sqrt{1 - x^2} {\rm d}x $ 
     - $ I = 2 \int_0^1 x^2 \sqrt{1 - x^2} {\rm d}x $ 
@@ -206,6 +206,71 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
       - ⭐️ $ \int_{0}^{2 \pi} \cos^n x {\rm d}x = \int_{0}^{2 \pi} \sin^n x {\rm d}x = \begin{cases} 0, & n \text{ 为奇数} \\[1em] 4 \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x, & n 为偶数 \end{cases} $ 
     5. 计算 $ \int_0^6 x^2 \sqrt{6x - x^2} {\rm d}x $ 。
        - 令 $ x = 3 + 3 \sin t $ 
+
+
+<br>
+## 四、一元函数积分学的应用
+
+
+<br>
+#### ㊀、用积分表达和计算平面图形的面积
+1. 概念
+  - $ y = y_1(x), y = y_2(x), x = a, x = b, (a < b) $ 所围成的平面图形的面积。
+  - $ S = \int_a^b | y_2(x) - y_1(x) | {\rm d}x $ 
+2. 例题
+  1. 设函数 $ f(x) $ 在 $ [0, 1] $ 上连续，在 $ (0, 1) $ 内大于零，并且满足 $ xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数}) $ ，又曲线 $ y = f(x) $ 与 $ x = 1, y = 0 $ 所围的图形 $ S $ 的面积为 $ 2 $ 。1⃣️求函数 $ y = f(x) $ 。2⃣️ $ a $ 为何值时，图形 $ S $ 绕 $ x $ 轴旋转一周所得的旋转体的体积最小。
+    - 1⃣️
+    - $ x \not= 0 $ 时，$ ( \dfrac{ f(x) }{x} )' = \dfrac{ xf'(x) - f(x) }{x^2} = \dfrac{3a}{2} \\[1em] \implies \dfrac{ f(x) }{x} = \dfrac{3a}{2} x + C \\[1em] \implies f(x) = \dfrac{3a}{2} x^2 + Cx, \quad x \in [0, 1]  $ 
+    - 又 $ S = 2 = \int_0^1 [ ( \dfrac{3a}{2} x^2 + Cx ) - 0 ] {\rm d}x = \dfrac{a}{2} + \dfrac{C}{2} \\[1em] \implies C = 4 - a \\[1em] \implies f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
+
+
+<br>
+#### ㊁、用积分表达和计算旋转体的体积
+1. 概念
+  - $ y = y(x) $ 与 $ x = a, x = b, (a < b) $ 及 $ x $ 轴所围图形绕 $ x $ 轴旋转一周所得的旋转体体积。
+    - ![](./images/3-4.2 绕x轴旋转体的体积.png) 
+    - $ V_x = \int_a^b \pi f^2(x) {\rm d}x $ 
+  - $ y = y(x) $ 与 $ x = a, x = b, (a < b) $ 及 $ x $ 轴所围图形绕 $ y $ 轴旋转一周所得的旋转体体积。
+    - ![](./images/3-4.2 绕y轴旋转体的体积.png) 
+    - $ V_y = \int_a^b 2 \pi x | f(x) | {\rm d}x $
+      - 柱壳法 
+2. 例题
+  1. 设函数 $ f(x) $ 在 $ [0, 1] $ 上连续，在 $ (0, 1) $ 内大于零，并且满足 $ xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数}) $ ，又曲线 $ y = f(x) $ 与 $ x = 1, y = 0 $ 所围的图形 $ S $ 的面积为 $ 2 $ 。1⃣️求函数 $ y = f(x) $ 。2⃣️ $ a $ 为何值时，图形 $ S $ 绕 $ x $ 轴旋转一周所得的旋转体的体积最小。
+    - 1⃣️
+    - $ f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
+    - 2⃣️
+    - $ \begin{array}{l} V & = \int_0^1 \pi f^2(x) {\rm d}x \\[1em] & = \pi ( \dfrac{9}{4}a^2 \cdot \dfrac{1}{5} + 3a(4 - a) \cdot \dfrac{1}{4} + (4 - a)^2 \cdot \dfrac{1}{3} ) \\[1em] & = ( \dfrac{1}{30} a^2 + \dfrac{1}{3} a + \dfrac{16}{3} ) \pi  \end{array} $ 
+    - $ V_a' = ( \dfrac{1}{15} a + \dfrac{1}{3} ) \pi = 0 \implies a = -5 $ 
+    - 且 $ V_a'' = \dfrac{1}{15} \pi > 0 $ ，所以 $ a = -5 $ 时 $ V_{min} = \dfrac{9}{2} \pi $ 
+
+  2. 设平面图形 $ \sigma $ 由 $ y = x^2 - 2x, y = 0, x = 1, x = 3 $ 围成，求 $ \sigma $ 绕 $ y $ 轴旋转一周所得的旋转体体积。
+    - ![](./images/3-4.2.2.2.png) 
+    - $ \begin{array}{l} V & = \int_1^3 2 \pi x | f(x) | {\rm d}x \\[1em] & = 2 \pi [ -\int_1^2 x(x^2 - 2x) {\rm d}x - \int_2^3 x(x^2 - 2x) {\rm d}x ] \\[1em] & = 9 \pi \end{array} $ 
+
+  3. 过原点作 $ y = e^x $ 的切线，该切线与 $ y = e^x $、$ x $ 轴所围成的向 $ x $ 轴负向无限伸展的平面图形记为 $ D $ ，1⃣️求 $ D $ 的面积 $ S $ ，2⃣️ $ D $ 绕 $ x = 1 $ 旋转一周的旋转体的体积 $ V $ 。
+
+     - ![](./images/3-4.2.2.3.png)
+
+     - 1⃣️
+     - 设切点 $ ( x_0, e^{x_0} ) $，所以 $ k = y'(x_0) = e^{x_0} $ 
+       - 切线方程为 $ y - e^{x_0} = e^{x_0} (x - x_0) $ ，过原点，$ \implies x_0 = 1 $ 
+       - $ \implies $ 切线方程 $ y = ex $ 
+     - $ S = \int_{-\infty}^0 e^x {\rm d}x + \int_0^1 ( e^x - ex ) {\rm d}x = \int_0^e ( \dfrac{y}{e} - \ln y ) {\rm d}y $ 
+       - $ S = \left. \dfrac{y^2}{2e} \right|_0^e - \left. y \ln y \right|_0^e + \left. y \right|_0^e = \dfrac{e}{2} + \lim\limits_{y \to 0^+} y \ln y $ 
+       - $ S = \dfrac{e}{2} $ 
+     - 2⃣️
+       - $ \begin{array}{l} V & = \int_0^e \pi (1 - \ln y)^2 {\rm d}y - \dfrac{\pi e}{3} \\[1em] & = \int_0^e \pi ( 1 - 2 \ln y + \ln^2 y ) {\rm d} y - \dfrac{\pi e}{3} \\[1em] & = \pi [ \left. y \right|_0^e - \left. 2( y \ln y - y ) \right|_0^e + \left. ( y \ln^2 y - 2y \ln y + 2y ) \right|_0^e ] - \dfrac{\pi e}{3} \\[1em] & = \dfrac{5 \pi}{3}e \end{array} $ 
+
+
+<br>
+#### ㊀、用积分表达和计算函数的平均值
+1. 概念
+  - $ y(x) $ 在 $ [a, b] $ 上的平均值 $ ave = \dfrac{ \int_a^b y(x) {\rm d}x }{b - a} $ 
+2. 例题
+  1. 函数 $ y = \ln x $ 在区间 $ [1, e] $ 上的平均值为 \_\_\_\_\_\_\_\_ 。
+     - $ ave = \dfrac{ \int_1^e \ln x {\rm d}x }{e - 1} = \dfrac{1}{e - 1} $ 
+
+
 
 
 

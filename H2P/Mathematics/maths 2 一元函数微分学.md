@@ -1,7 +1,7 @@
 ---
 title: 一元函数微分学
 date: 2018-9-26
-updated: 2018-10-2
+updated: 2018-10-7
 tags: [maths,cs,kaoyan]
 mathjax: true
 
@@ -11,10 +11,10 @@ description: 做笔记，喝凉茶，看高数
 
 ## 一、定义
 
-- $\lim\limits_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}​$ 记为 $f'(x_0)​$ ：（瞬时）变化率。
+- $\lim\limits_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$ 记为 $f'(x_0)$ ：（瞬时）变化率。
 
   - $f$ 对 $x$ 的变化率：$\dfrac{ {\rm d} f}{ {\rm d} x} = f'_x$ 。
-  - $\begin{cases} \lim\limits_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\ \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases}$ 
+  - $\begin{cases} \lim\limits_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\[1em] \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases}$ 
 - 【注】
   1. 【左右有别】
     - $\lim\limits_{\Delta x \to 0^+} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'_+(x_0)$ 右导数
@@ -38,26 +38,26 @@ description: 做笔记，喝凉茶，看高数
 
 - 例题
   1. 下列函数中，在 $x = 0$ 处不可导的是 $()$ 。【具体型】
-    - $\begin{array}{l} A. f(x) = |x| \sin |x| & B. f(x) = |x| \sin \sqrt{|x|} \\ C. f(x) = \cos |x| & D. f(x) = \cos \sqrt{|x|} \end{array}$ 
+    - $\begin{array}{l} A. f(x) = |x| \sin |x| & B. f(x) = |x| \sin \sqrt{|x|} \\[1em] C. f(x) = \cos |x| & D. f(x) = \cos \sqrt{|x|} \end{array}$ 
     - 分析
       - 只要见到 $f'(x_0)$ $\implies$ 先写导数定义。
         - 当题目给出 $f(x)$ ，写【差值式】。
         - 有界值 $\times$ 无穷小 $=$ 无穷小
   2. **设 $f(0) = 0$ ，以下极限存在能确定 $f(x)$ 在点 $x = 0$ 可导的是 $()$ 。**【抽象型】
-    - $\begin{array}{l} A. \lim\limits_{h \to 0}\dfrac{f(1 - \cos h)}{h^2} & B. \lim\limits_{h \to 0}\dfrac{f(1 - e^h)}{h} \\ C. \lim\limits_{h \to 0}\dfrac{f(h - \sin h)}{h^2} &  D. \lim\limits_{h \to 0}\dfrac{f(2h) - f(h)}{h}\end{array}$ 
+    - $\begin{array}{l} A. \lim\limits_{h \to 0}\dfrac{f(1 - \cos h)}{h^2} & B. \lim\limits_{h \to 0}\dfrac{f(1 - e^h)}{h} \\[1em] C. \lim\limits_{h \to 0}\dfrac{f(h - \sin h)}{h^2} &  D. \lim\limits_{h \to 0}\dfrac{f(2h) - f(h)}{h}\end{array}$ 
     - 分析
       - 抽象型使用【增量式】
       - $f'(0) = \lim\limits_{🐶 \to 0}\dfrac{f(0 + 🐶) - f(0)}{🐶}$ 
-      - $h \to 0$ 时，$1 - \cos h \to 1^-$ 。
+      - $h \to 0$ 时，$1 - \cos h \to 0^+$ 。
         - $\because \cos h \leq 1$ 
         - 天生【单侧极限】
       - $D$ 反例
-        - $f(x) = \begin{cases} 1, & x\not= 0 \\ 0, & x = 0 \end{cases}$ 
-      - $\begin{cases} f'(0) \cdot n = \exists & \implies f'(0) \exists \\ f'(0) \cdot \infty = \exists & \implies f'(0) \exists = 0 \\ f'(0) \cdot 0 = \exists & \not\implies f'(0) \exists \end{cases}$ 
+        - $f(x) = \begin{cases} 1, & x\not= 0 \\[1em] 0, & x = 0 \end{cases}$ 
+      - $\begin{cases} f'(0) \cdot n = \exists & \implies f'(0) \exists \\[1em] f'(0) \cdot \infty = \exists & \implies f'(0) \exists = 0 \\[1em] f'(0) \cdot 0 = \exists & \not\implies f'(0) \exists \end{cases}$ 
     - 【注】
       - $🐶 \to 0$ 时，$\dfrac{|🐶|}{🐶}$ 有界，但 $\lim\limits_{🐶 \to 0}\dfrac{|🐶|}{🐶}$ 不存在。
   3. 若 $f(x)$ 是可导的偶函数，证明 $f'(x)$ 的奇函数。【记】
-    - $\begin{array}{l}f'(x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(x + \Delta x) - f(x)}{\Delta x} \\ f'(-x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(-x + \Delta x) - f(-x)}{\Delta x} \\ & = \lim\limits_{\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{\Delta x} \\ & = -\lim\limits_{-\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{-\Delta x} \\ & = -f'(x) \end{array}​$ 
+    - $\begin{array}{l}f'(x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(x + \Delta x) - f(x)}{\Delta x} \\[1em] f'(-x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(-x + \Delta x) - f(-x)}{\Delta x} \\[1em] & = \lim\limits_{\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{\Delta x} \\[1em] & = -\lim\limits_{-\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{-\Delta x} \\[1em] & = -f'(x) \end{array}$ 
     - 若 $f(x)$ 是可导的奇函数，证明 $f'(x)$ 的偶函数。
 
 
@@ -68,11 +68,11 @@ description: 做笔记，喝凉茶，看高数
 <br>
 #### ㊀、基本求导公式
 
-$\begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\ (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\ (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array}$ 
+$\begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\[1em] (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\[1em] (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array}$ 
 
-$\begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\ (\arctan x)' = \dfrac{1}{1 + x^2} & (\arccot x)' = - \dfrac{1}{1 + x^2} \end{array}$
+$\begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\[1em] (\arctan x)' = \dfrac{1}{1 + x^2} & (\arccot x)' = - \dfrac{1}{1 + x^2} \end{array}$
 
-$\begin{array}{l} (\ln(x + \sqrt{x^2 + 1}))' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array}​$ 
+$\begin{array}{l} (\ln(x + \sqrt{x^2 + 1}))' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array}$ 
 
 $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{array}$ 
 
@@ -116,20 +116,20 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
        - 将 $u = \sqrt[4]{1 + x^4}$ 代入得： $y'_x = - \dfrac{ \frac{1}{4} (1 + x^4)^{ -\frac{3}{4} } \cdot 4x^3 }{1 + x^4 - 1} = -\dfrac{1}{ x(1 + x^4)^{ \frac{3}{4} } }$ 。
        - 所以 $x'_y = \dfrac{1}{y'_x} = -x(1 + x^4)^{ \frac{3}{4} }$ 。
 5. 参数方程求导
-   - $\begin{cases} x = x(t) \\ y = y(t) \end{cases}$ ，$t$ 为参数
+   - $\begin{cases} x = x(t) \\[1em] y = y(t) \end{cases}$ ，$t$ 为参数
    - $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ {\rm d}y / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{y'_t}{x'_t}$ ，类似于反函数求导，是谁的函数就对谁求导，缺什么补什么。
    - 例题
-     1. 设函数 $y = f(x)$ 由参数方程 $\begin{cases} x = 2t + t^2 \\ y = \varphi(t) \end{cases} , (t > -1)$ 所确定，其中 $\varphi(t)$ 具有二阶导数，且已知 $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{3}{4(1 + t)}$ ，证明：函数 $\varphi(t)$ 满足方程 $\varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
+     1. 设函数 $y = f(x)$ 由参数方程 $\begin{cases} x = 2t + t^2 \\[1em] y = \varphi(t) \end{cases} , (t > -1)$ 所确定，其中 $\varphi(t)$ 具有二阶导数，且已知 $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{3}{4(1 + t)}$ ，证明：函数 $\varphi(t)$ 满足方程 $\varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
        - $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ {\rm d}y / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{\varphi'(t)}{2 + 2t}$ 
        - $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{ {\rm d}(\dfrac{ {\rm d}y }{ {\rm d}x }) }{ {\rm d}x } = \dfrac{ {\rm d}(\dfrac{ {\rm d}y }{ {\rm d}x }) / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{ \dfrac{ \varphi''(t)(2 + 2t) - 2\varphi'(t) }{(2 + 2t)^2} }{2 + 2t}$ 
        - $\therefore \dfrac{ \varphi''(t)(2 + 2t) - 2\varphi'(t) }{(2 + 2t)^3 } = \dfrac{ \varphi''(t)(1 + 1t) - \varphi'(t) }{4(1 + t)^3 } = \dfrac{3}{4(1 + t)}$ 
        - $\implies \varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
-     2. 设 $\begin{cases} x = t + e^t \\ y = \sin t \end{cases}$ ，则 $\left. \dfrac{ {\rm d}^2 y}{ {\rm d}x^2 } \right|_{t = 0} = $ \_\_\_\_\_\_。
+     2. 设 $\begin{cases} x = t + e^t \\[1em] y = \sin t \end{cases}$ ，则 $\left. \dfrac{ {\rm d}^2 y}{ {\rm d}x^2 } \right|_{t = 0} = $ \_\_\_\_\_\_。
        - $-\dfrac{1}{8}$ 
 6. 高阶导数
-  - $\text{高阶导数} \begin{cases} \text{莱布尼兹公式} \\ \text{找规律用数学归纳法} \\ \text{展开式法} \end{cases}$ 
+  - $\text{高阶导数} \begin{cases} \text{莱布尼兹公式} \\[1em] \text{找规律用数学归纳法} \\[1em] \text{展开式法} \end{cases}$ 
   - 莱布尼兹公式
-    - $\begin{cases} (u \pm v)^{(n)} & = u^{(n)} \pm v^{(n)} \\[1em] (uv)^{(n)} & = \sum_{k=0}^{k=n} C_n^k u^{(n - k)} v^{(k)} \\ & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \end{cases}$ 
+    - $\begin{cases} (u \pm v)^{(n)} & = u^{(n)} \pm v^{(n)} \\[1em] (uv)^{(n)} & = \sum_{k=0}^{k=n} C_n^k u^{(n - k)} v^{(k)} \\[1em] & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \end{cases}$ 
     - $(a^x)^{(n)} = a^x(\ln a)^n, \quad (e^x)^{(n)} = e^x$ 
     - $(\sin kx)^{(n)} = k^n \sin( kx + \frac{\pi}{2} \cdot n  )$ 
     - $(\cos kx)^{(n)} = k^n \cos( kx + \frac{\pi}{2} \cdot n  )$ 
