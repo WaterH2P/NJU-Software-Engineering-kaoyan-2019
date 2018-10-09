@@ -1,7 +1,7 @@
 ---
 title: 一元函数微分学
 date: 2018-9-26
-updated: 2018-10-7
+updated: 2018-10-2
 tags: [maths,cs,kaoyan]
 mathjax: true
 
@@ -225,16 +225,16 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
        1. 设 $f(x)$ 在 $[0, 1]$ 上连续，$(0, 1)$ 内可导，$f(1) = 0$ ，证明 $\exists \xi \in (0, 1)$ ，使 $f(\xi) + \xi f'(\xi) = 0$ 。
        2. 设 $f(x)$ 在 $[0, 1]$ 上二阶可导，且 $f(1) > 0$ ，$\lim\limits_{x \to 0^+}\dfrac{f(x)}{x} < 0$ ，证明：1⃣️方程 $f(x) = 0$ 在 $(0, 1)$ 内至少有一个实根。2⃣️方程 $f(x)f''(x) + [f'(x)]^2 = 0$ 在 $(0, 1)$ 内至少有两个不同的实根。
          - 1⃣️
-         - 由 $\lim\limits_{x \to 0^+}\dfrac{f(x)}{x} < 0$ ，所以 $\exists \xi > 0$ ，当 $0 < x <\xi$ 时，$\dfrac{f(x)}{x} < 0$ ，所以当 $0 < x < \xi$ 时，$f(x) < 0$ 。
-           - 【极限保号性】
-         - 取 $a \in (0, \xi)$ ，$f(a) < 0$ ，又因为 $f(1) > 0$ ，所以 $\exists c \in (\xi, 1)$ ，使得 $f(c) = 0$ 。 
+           - 由 $\lim\limits_{x \to 0^+}\dfrac{f(x)}{x} < 0$ ，所以 $\exists \xi > 0$ ，当 $0 < x <\xi$ 时，$\dfrac{f(x)}{x} < 0$ ，所以当 $0 < x < \xi$ 时，$f(x) < 0$ 。
+             - 【极限保号性】
+           - 取 $a \in (0, \xi)$ ，$f(a) < 0$ ，又因为 $f(1) > 0$ ，所以 $\exists c \in (\xi, 1)$ ，使得 $f(c) = 0$ 。 
          - 2⃣️
-         - 设 $F(x) = f(x) \cdot f'(x)$ ，$f(0) = \lim\limits_{x \to 0^+}f(x) = \lim\limits_{x \to 0^+}\dfrac{f(x)}{x} \cdot x = 0$ 。
-           - 函数极限存在，函数有界，所以 $\lim\limits_{x \to 0^+}\dfrac{f(x)}{x}$ 有界。 
-         - 由于 $f(0) = f(c) = 0$ ，所以 $\exists b \in (0, c)$ ，使得 $f'(b) = 0$ 。
-         - 所以 $F(0) = F(b) = F(c) = 0$ 。
-           - 所以 $\exists \xi_1 \in (0, b)$ ，使得 $F'(\xi_1) = 0$ 。
-           - 所以 $\exists \xi_2 \in (b, c)$ ，使得 $F'(\xi_2) = 0$ 。
+           - 设 $F(x) = f(x) \cdot f'(x)$ ，$f(0) = \lim\limits_{x \to 0^+}f(x) = \lim\limits_{x \to 0^+}\dfrac{f(x)}{x} \cdot x = 0$ 。
+             - 函数极限存在，函数有界，所以 $\lim\limits_{x \to 0^+}\dfrac{f(x)}{x}$ 有界。 
+           - 由于 $f(0) = f(c) = 0$ ，所以 $\exists b \in (0, c)$ ，使得 $f'(b) = 0$ 。
+           - 所以 $F(0) = F(b) = F(c) = 0$ 。
+             - 所以 $\exists \xi_1 \in (0, b)$ ，使得 $F'(\xi_1) = 0$ 。
+             - 所以 $\exists \xi_2 \in (b, c)$ ，使得 $F'(\xi_2) = 0$ 。
        3. $f(x)$ 在 $[0, 1]$ 上连续，$(0, 1)$ 内可导，且 $f(1) = k \int_0^{ \frac{1}{k} } x e^{1 - x} f(x) {\rm d} x, (k>1)$ ，证明 $\exists \xi \in (0, 1)$ ，使 $f'(\xi) = (1 - \dfrac{1}{\xi}) f(\xi)$ 。
          - $f'(\xi) = (1 - \dfrac{1}{\xi}) f(\xi) \implies f'(\xi) + f(\xi)(\dfrac{1}{\xi - 1}) = 0$ 
            - 令 $F(x) = f(x) \cdot e^{\ln x - x} = f(x) \cdot x \cdot e^{-x}$ 
@@ -261,14 +261,14 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
            - $F(a) = ? = F(b)$ 
        3. 设 $f(x)，g(x)$ 在 $[a, b]$ 上二阶可导，$g''(x) \not= 0$ ，$f(a) = f(b) = g(a) = g(b) = 0$ 。证明：1⃣️ $g(x) \not= 0 \quad \forall x \in (a, b)$ 。2⃣️  $\exists \xi \in (a, b)$，使 $\dfrac{f(\xi)}{g(\xi)} = \dfrac{f''(\xi)}{g''(\xi)}$ 。
          - 1⃣️
-         - 反证法
-           - 设 $\exists x_0 \in (a, b)，g(x_0) = 0$ 
+           - 反证法
+             - 设 $\exists x_0 \in (a, b)，g(x_0) = 0$ 
          - 2⃣️
-         - $\xi \to x \implies f(x)g''(x) = g(x)f''(x)$ 
-         - 积分： $\begin{array}{l} \dfrac{f(\xi)}{g(\xi)} = \dfrac{f''(\xi)}{g''(\xi)} & \implies \int f(x)g''(x) {\rm d}x = \int g(x)f''(x) {\rm d}x \\[1em] & \implies f(x)g'(x) - \int g'(x)f'(x){\rm d}x = g(x)f'(x) - \int f'(x)g'(x){\rm d}x \\[1em] & \implies f(x)g'(x) = g(x)f'(x) \end{array}$  
-         - 令 $F(x) = f(x)g'(x) - g(x)f'(x)$ 
-           - $F(a) = f(a)g'(a) - g(a)f'(a) = 0$
-           - $F(b) = f(b)g'(b) - g(b)f'(b) = 0$  
+           - $\xi \to x \implies f(x)g''(x) = g(x)f''(x)$ 
+           - 积分： $\begin{array}{l} \dfrac{f(\xi)}{g(\xi)} = \dfrac{f''(\xi)}{g''(\xi)} & \implies \int f(x)g''(x) {\rm d}x = \int g(x)f''(x) {\rm d}x \\[1em] & \implies f(x)g'(x) - \int g'(x)f'(x){\rm d}x = g(x)f'(x) - \int f'(x)g'(x){\rm d}x \\[1em] & \implies f(x)g'(x) = g(x)f'(x) \end{array}$  
+           - 令 $F(x) = f(x)g'(x) - g(x)f'(x)$ 
+             - $F(a) = f(a)g'(a) - g(a)f'(a) = 0$
+             - $F(b) = f(b)g'(b) - g(b)f'(b) = 0$  
 
 3. 拉格朗日中值定理的应用（7）
    1. 将 $f$ 复杂化

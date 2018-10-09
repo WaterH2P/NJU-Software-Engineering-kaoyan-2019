@@ -47,15 +47,15 @@ description: 做笔记，喝凉茶，看高数
            - $ \int f(x) {\rm d}x = \dfrac{1}{A} \int h(x) \cdot A \cdot g(x) {\rm d}x = \dfrac{1}{A} \int h(x) {\rm d} h(x) $ 
       - 解答
         1. $ (\cos x e^{\sin x})' = - \sin x e^{\sin x} + \cos^2 x e^{\sin x} = e^{\sin x}( \cos^2 x - \sin x ) $ 
-           - $ \begin{array}{l} I & = \int \dfrac{ e^{\sin x}( \cos^2 x - \sin x ) {\rm d}x }{ e^{\sin x} \cos x( 1 + \cos x e^{\sin x} ) } \\[1em] & = \int \dfrac{ {\rm d}( \cos x e^{\sin x} ) }{ \cos x e^{\sin x}( 1 + \cos x e^{\sin x} ) } \quad \quad ( \dfrac{ {\rm d}u }{ u(1 + u) } ) \\[1em] & = \ln | \dfrac{ \cos x e^{\sin x} }{ 1 + \cos x e^{\sin x} } | + C \end{array} $ 
+           - $ \begin{array}{l} I & = \int \dfrac{ e^{\sin x}( \cos^2 x - \sin x ) {\rm d}x }{ e^{\sin x} \cos x( 1 + \cos x e^{\sin x} ) } \\[1em] & = \int \dfrac{ {\rm d}( \cos x e^{\sin x} ) }{ \cos x e^{\sin x}( 1 + \cos x e^{\sin x} ) } \quad \quad \left( \dfrac{ {\rm d}u }{ u(1 + u) } \right) \\[1em] & = \ln \left| \dfrac{ \cos x e^{\sin x} }{ 1 + \cos x e^{\sin x} } \right| + C \end{array} $ 
    4. 求 $ \int \dfrac{1 - \ln x}{ (x - \ln x)^2 } {\rm d}x $ 
      - 分析
-       - $ ( \dfrac{x - \ln x}{x} )' = - \dfrac{1 - \ln x}{x^2} $ 
+       - $ \left( \dfrac{x - \ln x}{x} \right)' = - \dfrac{1 - \ln x}{x^2} $ 
      - 解答
-       - $ \begin{array}{l} I = \int \dfrac{ \dfrac{1 - \ln x}{x^2} }{ ( \dfrac{x - \ln x}{x} )^2 } {\rm d}x = - \int \dfrac{ {\rm d} \dfrac{x - \ln x}{x} }{ ( \dfrac{x - \ln x}{x} )^2 } = \dfrac{x}{x - \ln x} + C \end{array} $ 
-
+       - $ \begin{array}{l} I = \int \dfrac{ \dfrac{1 - \ln x}{x^2} }{ \left( \dfrac{x - \ln x}{x} \right)^2 } {\rm d}x = - \int \dfrac{ {\rm d} \dfrac{x - \ln x}{x} }{ \left( \dfrac{x - \ln x}{x} \right)^2 } = \dfrac{x}{x - \ln x} + C \end{array} $ 
 
 <br>
+
 #### ㊁、换元法
 当凑微分法不成功时，考虑换元。
 1. 三角换元
@@ -68,9 +68,9 @@ description: 做笔记，喝凉茶，看高数
      - 若见到 $ \sqrt{ax^2 + bx + c} $ ，要先化为 $ \sqrt{ \varphi^2(x) - k^2 } $ ，$ \sqrt{ k^2 - \varphi^2(x) } $ ，$ \sqrt{ \varphi^2(x) + k^2 } $ ，再做三角换元。
    - 例题
      1. 求 $ \int \dfrac{ {\rm d}x }{x + \sqrt{1 - x^2}} $ 
-        - 令 $ x = \sin t, t \in ( \dfrac{\pi}{2}, \dfrac{\pi}{2} ) $ 
+        - 令 $ x = \sin t, t \in \left( \dfrac{\pi}{2}, \dfrac{\pi}{2} \right) $ 
         - $ I = \dfrac{ \cos t }{ \sin t + \cos t } {\rm d}t = \dfrac{1}{2} \int \dfrac{ \sin t + \cos t + \cos t - \sin t }{ \sin t + \cos t } {\rm d}t $ 
-        - $ I = \dfrac{1}{2} ( \int 1 {\rm d}t + \int \dfrac{ {\rm d} ( \sin t + \cos t ) }{ \sin t + \cos t } ) = \dfrac{1}{2} ( t + \ln | \sin t + \cos t | ) $ 
+        - $ I = \dfrac{1}{2} \left( \int 1 {\rm d}t + \int \dfrac{ {\rm d} ( \sin t + \cos t ) }{ \sin t + \cos t } \right) = \dfrac{1}{2} ( t + \ln | \sin t + \cos t | ) $ 
         - $ I = \dfrac{1}{2} \arcsin x + \dfrac{1}{2} \ln | x + \sqrt{1 - x^2} | + C $ 
         - ⭐️【注】⭐️
           - $ \begin{array}{l} \int \dfrac{ a_2 \sin t + b_2 \cos t }{ a_1 \sin t + b_1 \cos t } {\rm d}t & = \int \dfrac{ A ( a_1 \sin t + b_1 \cos t ) + B ( a_1 \cos t - b_1 \sin t ) }{ a_1 \sin t + b_1 \cos t } {\rm d}t \\[1em] & = At + B \ln| a_1 \sin t + b_1 \cos t | + C  \end{array} $ 
@@ -88,15 +88,15 @@ description: 做笔记，喝凉茶，看高数
      - $ \arcsin x, \arctan x = t $ （反三角函数代换）$ \cdots $ 
    - 例题
      1. 求 $ I = \int \sqrt{ \dfrac{1 - x}{1 + x} } \cdot \dfrac{ {\rm d}x }{x} $ 。
-       - 解1⃣️
+       - 解 ㊀
          - 令 $ \sqrt{ \dfrac{1 - x}{1 + x} } = t, \quad x = \dfrac{1 - t^2}{1 + t^2} $ 
-         - 所以： $ \begin{array}{l} I & = \int t \cdot \dfrac{1 + t^2}{1 - t^2} \cdot \dfrac{-4t}{ (1 + t^2)^2 } {\rm d}t \\[1em] & = -4 \int \dfrac{t^2}{ (1 - t^2)(1 + t^2) } {\rm d}t \\[1em] & = 2 \int ( \dfrac{1}{1 + t^2} - \dfrac{1}{1 - t^2} ) {\rm d}t \\[1em] & = 2 \arctan t - \ln| \dfrac{1 + t}{1 - t} | + C \end{array} $
-         - **回代**：$ I = 2 \arctan \sqrt{ \dfrac{1 - x}{1 + x} } - \ln | \dfrac{ \sqrt{1 + x} - \sqrt{1 - x} }{ \sqrt{1 + x} - \sqrt{1 - x} } | + C $ 
-       - 解2⃣️
+         - 所以： $ \begin{array}{l} I & = \int t \cdot \dfrac{1 + t^2}{1 - t^2} \cdot \dfrac{-4t}{ (1 + t^2)^2 } {\rm d}t \\[1em] & = -4 \int \dfrac{t^2}{ (1 - t^2)(1 + t^2) } {\rm d}t \\[1em] & = 2 \int \left( \dfrac{1}{1 + t^2} - \dfrac{1}{1 - t^2} \right) {\rm d}t \\[1em] & = 2 \arctan t - \ln \left| \dfrac{1 + t}{1 - t} \right| + C \end{array} $
+         - **回代**：$ I = 2 \arctan \sqrt{ \dfrac{1 - x}{1 + x} } - \ln \left| \dfrac{ \sqrt{1 + x} - \sqrt{1 - x} }{ \sqrt{1 + x} - \sqrt{1 - x} } \right| + C $ 
+       - 解 ㊁
          - $ I = \int \sqrt{ \dfrac{1 - x}{1 + x} } \cdot \dfrac{ {\rm d}x }{x} = \int \dfrac{ \sqrt{1 - x^2} }{(1 + x)x} {\rm d}x $ 
-         - 令 $ s = \sin t, t \in ( -\dfrac{\pi}{2}, \dfrac{\pi}{2} ) $ 
+         - 令 $ s = \sin t, t \in \left( -\dfrac{\pi}{2}, \dfrac{\pi}{2} \right) $ 
          - $ \begin{array}{l} I & = \int \dfrac{ \cos^2 t }{ (1 + \sin t) \sin t } {\rm d}t \\[1em] & = \int \dfrac{ (1 + \sin t)(1 - \sin t) }{ (1 + \sin t) \sin t } {\rm d}t \\[1em] & = \int \csc t {\rm d}t - \int 1 {\rm d}t \\[1em] & = \ln| \csc t - \cot t | - t + C \end{array} $ 
-         - 回代：$ I = \ln| \dfrac{1}{x} - \dfrac{ \sqrt{1 - x^2} }{x} | - \arcsin x + C $ 
+         - 回代：$ I = \ln \left| \dfrac{1}{x} - \dfrac{ \sqrt{1 - x^2} }{x} \right| - \arcsin x + C $ 
 
 
 <br>
@@ -154,11 +154,11 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
     - $ I = \int \dfrac{1}{x + 1} {\rm d}x - 2 \int \dfrac{1}{ (2x - 1)^2 } {\rm d}x = \ln |x + 1| + \dfrac{1}{2x - 1} + C $ 
   2. 计算 $ I = \int \dfrac{x}{x^3 - x^2 + x - 1} {\rm d}x $ 
     - $ I = I = \int \dfrac{x}{ (x^2 + 1)(x - 1) } {\rm d}x $ 
-    - $ \dfrac{x}{ (x^2 + 1)(x - 1) } = \dfrac{1}{2} ( \dfrac{-x + 1}{x^2 + 1} + \dfrac{1}{x - 1} ) $ 
-    - $ \begin{array}{l} I & = -\dfrac{1}{2} \int ( \dfrac{ \dfrac{1}{2} \cdot 2x - 1 }{ x^2 + 1 } ) {\rm d}x -\dfrac{1}{2} \int \dfrac{1}{x - 1} {\rm d}x \\[1em] & = -\dfrac{1}{4} \ln(x^2 + 1) + \dfrac{1}{2} \arctan x + \dfrac{1}{2} \ln |x - 1| + C \end{array} $ 
+    - $ \dfrac{x}{ (x^2 + 1)(x - 1) } = \dfrac{1}{2} \left( \dfrac{-x + 1}{x^2 + 1} + \dfrac{1}{x - 1} \right) $ 
+    - $ \begin{array}{l} I & = -\dfrac{1}{2} \int \left( \dfrac{ \dfrac{1}{2} \cdot 2x - 1 }{ x^2 + 1 } \right) {\rm d}x -\dfrac{1}{2} \int \dfrac{1}{x - 1} {\rm d}x \\[1em] & = -\dfrac{1}{4} \ln(x^2 + 1) + \dfrac{1}{2} \arctan x + \dfrac{1}{2} \ln |x - 1| + C \end{array} $ 
   3. 计算 $ I = \int \dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } {\rm d}t $
      - $ \dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } = \dfrac{ \dfrac{1}{2} }{t - 1} + \dfrac{ -\dfrac{1}{2} }{ (t - 1)^2 } + \dfrac{ \dfrac{1}{2} }{t + 1} + \dfrac{ \dfrac{1}{2} }{ (t + 1)^2 } $ 
-     - $ \begin{array}{l} I & = \dfrac{1}{2} ( \ln |t - 1| + \dfrac{1}{t - 1} + \ln |t + 1| - \dfrac{1}{t + 1} ) + C \\[1em] & = \dfrac{1}{2} \ln |t^2 - 1| + \dfrac{1}{t^2 - 1} + C \end{array} $ 
+     - $ \begin{array}{l} I & = \dfrac{1}{2} \left( \ln |t - 1| + \dfrac{1}{t - 1} + \ln |t + 1| - \dfrac{1}{t + 1} \right) + C \\[1em] & = \dfrac{1}{2} \ln |t^2 - 1| + \dfrac{1}{t^2 - 1} + C \end{array} $ 
 
 <br>
 
@@ -220,8 +220,8 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 2. 例题
   1. 设函数 $ f(x) $ 在 $ [0, 1] $ 上连续，在 $ (0, 1) $ 内大于零，并且满足 $ xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数}) $ ，又曲线 $ y = f(x) $ 与 $ x = 1, y = 0 $ 所围的图形 $ S $ 的面积为 $ 2 $ 。1⃣️求函数 $ y = f(x) $ 。2⃣️ $ a $ 为何值时，图形 $ S $ 绕 $ x $ 轴旋转一周所得的旋转体的体积最小。
     - 1⃣️
-    - $ x \not= 0 $ 时，$ ( \dfrac{ f(x) }{x} )' = \dfrac{ xf'(x) - f(x) }{x^2} = \dfrac{3a}{2} \\[1em] \implies \dfrac{ f(x) }{x} = \dfrac{3a}{2} x + C \\[1em] \implies f(x) = \dfrac{3a}{2} x^2 + Cx, \quad x \in [0, 1]  $ 
-    - 又 $ S = 2 = \int_0^1 [ ( \dfrac{3a}{2} x^2 + Cx ) - 0 ] {\rm d}x = \dfrac{a}{2} + \dfrac{C}{2} \\[1em] \implies C = 4 - a \\[1em] \implies f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
+      - $ x \not= 0 $ 时，$ \left( \dfrac{ f(x) }{x} \right)' = \dfrac{ xf'(x) - f(x) }{x^2} = \dfrac{3a}{2} \\[1em] \implies \dfrac{ f(x) }{x} = \dfrac{3a}{2} x + C \\[1em] \implies f(x) = \dfrac{3a}{2} x^2 + Cx, \quad x \in [0, 1]  $ 
+      - 又 $ S = 2 = \int_0^1 [ ( \dfrac{3a}{2} x^2 + Cx ) - 0 ] {\rm d}x = \dfrac{a}{2} + \dfrac{C}{2} \\[1em] \implies C = 4 - a \\[1em] \implies f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
 
 
 <br>
@@ -237,29 +237,27 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 2. 例题
   1. 设函数 $ f(x) $ 在 $ [0, 1] $ 上连续，在 $ (0, 1) $ 内大于零，并且满足 $ xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数}) $ ，又曲线 $ y = f(x) $ 与 $ x = 1, y = 0 $ 所围的图形 $ S $ 的面积为 $ 2 $ 。1⃣️求函数 $ y = f(x) $ 。2⃣️ $ a $ 为何值时，图形 $ S $ 绕 $ x $ 轴旋转一周所得的旋转体的体积最小。
     - 1⃣️
-    - $ f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
+      - $ f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
     - 2⃣️
-    - $ \begin{array}{l} V & = \int_0^1 \pi f^2(x) {\rm d}x \\[1em] & = \pi ( \dfrac{9}{4}a^2 \cdot \dfrac{1}{5} + 3a(4 - a) \cdot \dfrac{1}{4} + (4 - a)^2 \cdot \dfrac{1}{3} ) \\[1em] & = ( \dfrac{1}{30} a^2 + \dfrac{1}{3} a + \dfrac{16}{3} ) \pi  \end{array} $ 
-    - $ V_a' = ( \dfrac{1}{15} a + \dfrac{1}{3} ) \pi = 0 \implies a = -5 $ 
-    - 且 $ V_a'' = \dfrac{1}{15} \pi > 0 $ ，所以 $ a = -5 $ 时 $ V_{min} = \dfrac{9}{2} \pi $ 
+      - $ \begin{array}{l} V & = \int_0^1 \pi f^2(x) {\rm d}x \\[1em] & = \pi \left( \dfrac{9}{4}a^2 \cdot \dfrac{1}{5} + 3a(4 - a) \cdot \dfrac{1}{4} + (4 - a)^2 \cdot \dfrac{1}{3} \right) \\[1em] & = \left( \dfrac{1}{30} a^2 + \dfrac{1}{3} a + \dfrac{16}{3} \right) \pi  \end{array} $ 
+      - $ V_a' = \left( \dfrac{1}{15} a + \dfrac{1}{3} \right) \pi = 0 \implies a = -5 $ 
+      - 且 $ V_a'' = \dfrac{1}{15} \pi > 0 $ ，所以 $ a = -5 $ 时 $ V_{min} = \dfrac{9}{2} \pi $ 
 
   2. 设平面图形 $ \sigma $ 由 $ y = x^2 - 2x, y = 0, x = 1, x = 3 $ 围成，求 $ \sigma $ 绕 $ y $ 轴旋转一周所得的旋转体体积。
     - ![](./images/3-4.2.2.2.png) 
-    - $ \begin{array}{l} V & = \int_1^3 2 \pi x | f(x) | {\rm d}x \\[1em] & = 2 \pi [ -\int_1^2 x(x^2 - 2x) {\rm d}x - \int_2^3 x(x^2 - 2x) {\rm d}x ] \\[1em] & = 9 \pi \end{array} $ 
+    - $ \begin{array}{l} V & = \int_1^3 2 \pi x | f(x) | {\rm d}x \\[1em] & = 2 \pi \left[ -\int_1^2 x(x^2 - 2x) {\rm d}x - \int_2^3 x(x^2 - 2x) {\rm d}x \right] \\[1em] & = 9 \pi \end{array} $ 
 
   3. 过原点作 $ y = e^x $ 的切线，该切线与 $ y = e^x $、$ x $ 轴所围成的向 $ x $ 轴负向无限伸展的平面图形记为 $ D $ ，1⃣️求 $ D $ 的面积 $ S $ ，2⃣️ $ D $ 绕 $ x = 1 $ 旋转一周的旋转体的体积 $ V $ 。
 
      - ![](./images/3-4.2.2.3.png)
 
      - 1⃣️
-     - 设切点 $ ( x_0, e^{x_0} ) $，所以 $ k = y'(x_0) = e^{x_0} $ 
-       - 切线方程为 $ y - e^{x_0} = e^{x_0} (x - x_0) $ ，过原点，$ \implies x_0 = 1 $ 
-       - $ \implies $ 切线方程 $ y = ex $ 
-     - $ S = \int_{-\infty}^0 e^x {\rm d}x + \int_0^1 ( e^x - ex ) {\rm d}x = \int_0^e ( \dfrac{y}{e} - \ln y ) {\rm d}y $ 
-       - $ S = \left. \dfrac{y^2}{2e} \right|_0^e - \left. y \ln y \right|_0^e + \left. y \right|_0^e = \dfrac{e}{2} + \lim\limits_{y \to 0^+} y \ln y $ 
-       - $ S = \dfrac{e}{2} $ 
+       - 设切点 $ ( x_0, e^{x_0} ) $，所以 $ k = y'(x_0) = e^{x_0} $ 
+         - 切线方程为 $ y - e^{x_0} = e^{x_0} (x - x_0) $ ，过原点，$ \implies x_0 = 1 $ 
+         - $ \implies $ 切线方程 $ y = ex $ 
+       - $ \begin{array}{l} S & = \int_{-\infty}^0 e^x {\rm d}x + \int_0^1 ( e^x - ex ) {\rm d}x = \int_0^e ( \dfrac{y}{e} - \ln y ) {\rm d}y \\[1em] & = \left. \dfrac{y^2}{2e} \right|_0^e - \left. y \ln y \right|_0^e + \left. y \right|_0^e = \dfrac{e}{2} + \lim\limits_{y \to 0^+} y \ln y \\[1em] & = \dfrac{e}{2} \end{array} $ 
      - 2⃣️
-       - $ \begin{array}{l} V & = \int_0^e \pi (1 - \ln y)^2 {\rm d}y - \dfrac{\pi e}{3} \\[1em] & = \int_0^e \pi ( 1 - 2 \ln y + \ln^2 y ) {\rm d} y - \dfrac{\pi e}{3} \\[1em] & = \pi [ \left. y \right|_0^e - \left. 2( y \ln y - y ) \right|_0^e + \left. ( y \ln^2 y - 2y \ln y + 2y ) \right|_0^e ] - \dfrac{\pi e}{3} \\[1em] & = \dfrac{5 \pi}{3}e \end{array} $ 
+       - $ \begin{array}{l} V & = \int_0^e \pi (1 - \ln y)^2 {\rm d}y - \dfrac{\pi e}{3} \\[1em] & = \int_0^e \pi ( 1 - 2 \ln y + \ln^2 y ) {\rm d} y - \dfrac{\pi e}{3} \\[1em] & = \pi \left[ \left. y \right|_0^e - \left. 2( y \ln y - y ) \right|_0^e + \left. ( y \ln^2 y - 2y \ln y + 2y ) \right|_0^e \right] - \dfrac{\pi e}{3} \\[1em] & = \dfrac{5 \pi}{3}e \end{array} $ 
 
 
 <br>

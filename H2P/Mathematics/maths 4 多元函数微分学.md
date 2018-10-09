@@ -1,7 +1,7 @@
 ---
 title: 多元函数微分学
 date: 2018-10-7
-updated: 2018-10-7
+updated: 2018-10-9
 tags: [maths,cs,kaoyan]
 mathjax: true
 
@@ -122,46 +122,53 @@ description: 做笔记，喝凉茶，看高数
         2. 令 $ \begin{cases} F'_x = 0 \\[1em] F'_y = 0 \\[1em] F'_z = 0 \\[1em] F'_{\lambda} = 0 \\[1em] F'_{\mu} = 0  \end{cases} \implies P_i(x_i, y_i, z_i) \implies u(P_i) $ 
         3. 比较 $ u(P_i) $ ，取最大值、最小值。 
 
+    2. 例题
+      1. 求函数 $ u = xy + 2yz $ 在约束条件 $ x^2 + y^2 + z^2 = 10 $ 下的最值。
+        - 令 $ F(x, y, z, \lambda) = xy + 2yz + \lambda (x^2 + y^2 + z^2 -10 ) $ 
+        - $ \begin{cases} F'_x = y + 2 \lambda x = 0 \\[1em] F'_y = x + 2z + 2 \lambda y = 0 \\[1em] F'_z = 2y + 2 \lambda z = 0 \\[1em] F'_{ \lambda } = x^2 + y^2 + z^2 - 10 = 0 \end{cases} $
+        - 解 ㊀
+          - 1⃣️
+            - 若 $ \lambda = 0 \implies y = 0 \implies x = -2z $ 
+            - $ \implies z^2 = 2 \implies z = \pm \sqrt{2} $ 
+            - $ \implies \begin{cases} ( 2\sqrt{2}, 0, -\sqrt{2} ) \\[1em] ( -2\sqrt{2}, 0, \sqrt{2} ) \end{cases} $ 
+          - 2⃣️
+            - 若 $ \lambda \not= 0 \implies \begin{cases} x = -\dfrac{1}{2 \lambda}y \\[1em] z = -\dfrac{1}{\lambda}y \end{cases} \implies \begin{cases} z = 2x \\[1em] y = -2 \lambda x \end{cases} $ 
+            - 代入 $ F'_y = 0 $ 得 $ \lambda^2 = \dfrac{5}{4} $ 
+            - 代入 $ F'_{\lambda} = 0 $ 得 $ x^2 = 1 \implies x = \pm 1 $ 
+            - $ \implies \begin{cases} (1, \sqrt{5}, 2) \\[1em] (1, -\sqrt{5}, 2) \\[1em] (-1, \sqrt{5}, -2) \\[1em] (-1, -\sqrt{5}, -2) \end{cases} $ 
+          - 将 6 个点代入 $ u = xy + 2yz $ 
+            - 得 $ \begin{cases} ( 2\sqrt{2}, 0, -\sqrt{2} ) & \implies u = 0 \\[1em] ( -2\sqrt{2}, 0, \sqrt{2} ) & \implies u = 0 \\[1em] (1, \sqrt{5}, 2) & \implies u = 5 \sqrt{5} \\[1em] (1, -\sqrt{5}, 2) & \implies u = -5 \sqrt{5} \\[1em] (-1, \sqrt{5}, -2) & \implies u = -5\sqrt{5} \\[1em] (-1, -\sqrt{5}, -2) & \implies u = 5 \sqrt{5} \end{cases} $ 
+        - 解 ㊁
+          - $ xF'_x + yF'_y + zF'_z = xy + 2yz + 10 \lambda = 0 \implies u = -10 \lambda $ 
+          - 根据解 ㊀，$ \lambda = 0, \dfrac{ \sqrt{5} }{2}, -\dfrac{ \sqrt{5} }{2} $ 
+        - 所以最大值是 $ 5 \sqrt{5} $ ，最小值是 $ -5 \sqrt{5} $ 。
+
+4. 例题
+
+   1. 某公司可通过电台和报纸两种方式做销售某种商品的广告，根据统计资料，销售收入 $ R $ （万元）与电台广告费用 $ x_1 $ （万元）及报纸广告费用 $ x_2 $ （万元）之间的关系有如下经验公式：$ R = 15 + 14x_1 + 32x_2 - 8 x_1 x_2 - 2x_1^2 - 10x_2^2 $ 。1⃣️ 在广告费用不限的情况下，求最优广告策略；2⃣️ 若提供的广告费用为 $ 1.5 $ 万元，求相应的最优广告策略。
+      - 令利润函数为：$ \begin{array}{l} z = f(x_1, x_2) & = R - x_1 - x_2 \\[1em] & = 15 + 13x_1 + 31x_2 - 8 x_1 x_2 - 2x_1^2 - 10x_2^2 \end{array} $ 
+      - 1⃣️
+        - 【非条件极值】
+        - $ \begin{cases} f'_{x_1} = 13 - 8x_2 - 4x_1 = 0 \\[1em] f'_{x_2} = 31 - 8x_1 - 20x_2 = 0 \end{cases} $ 
+          - 克拉默法则
+            - $ \begin{cases} a_{11} x_1 + a_{12} x_2 = b_1 \\[1em] a_{21} x_1 + a_{22} x_2 = b_2 \end{cases} \implies \begin{cases} x_1 = \dfrac{ \begin{vmatrix} b_1 & a_{12} \\ b_2 & a_{22} \end{vmatrix} }{ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} } \\[1em] x_2 = \dfrac{ \begin{vmatrix} a_{11} & b_1 \\ a_{21} & b_2 \end{vmatrix} }{ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} } \end{cases} $ 
+          - $ \implies \begin{cases} x_1 = \dfrac{3}{4} = 0.75 \\[1em] x_2 = \dfrac{5}{4} = 1.25 \end{cases} $ 
+        - $ \begin{cases} f''_{x_1 x_1} = -4 = A \\[1em] f''_{x_1 x_2} = -8 = B \\[1em] f''_{x_2 x_2} = -20 = C \end{cases} \implies B^2 - AC = -16 < 0 \text{ 且 } A < 0 $ 
+        - 所以 $ (0.75, 1.25) $ 为极大值点，根据实际问题，此点为最大值点。
+      - 2⃣️
+        - 【条件最值】
+        - 令 $ F(x_1, x_2, \lambda) = 15 + 13x_1 + 31x_2 - 8 x_1 x_2 - 2x_1^2 - 10x_2^2 + \lambda (x_1 + x_2 - 15) $ 
+        - $ \begin{cases} F'_{x_1} = 13 - 8x_2 - 4x_1 + \lambda = 0 \\[1em] F'_{x_2} = 31 - 8x_1 - 20x_2 + \lambda = 0 \\[1em] F'_{\lambda} = x_1 + x_2 - 1.5 = 0  \end{cases} $
+        - $ \implies \begin{cases} 4x_1 + 8x_2 + (-1) \lambda = 13 \\[1em] 8x_1 + 20x_2 + (-1) \lambda = 31 \\[1em] x_1 + x_2 + 0 \cdot \lambda = 1.5 \end{cases} $ 
+          - $ \begin{vmatrix} 4 & 8 & -1 \\ 8 & 20 & -1 \\ 1 & 1 & 0 \end{vmatrix} = 8 \not= 0 \implies $ 克拉默法则可以使用
+        - 所以 $ \begin{cases} x_1 = \dfrac{ \begin{vmatrix} 13 & 8 & -1 \\ 31 & 20 & -1 \\ 1.5 & 1 & 0 \end{vmatrix} }{8} = 0 \\[1em] x_2 = \dfrac{ \begin{vmatrix} 4 & 13 & -1 \\ 8 & 31 & -1 \\ 1 & 1.5 & 0 \end{vmatrix} }{8} = \dfrac{12}{8} = 1.5 \end{cases} $ 
 
 
+<br>
+## 三、考点
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. 偏导数定义
+2. 多元函数微分法
+   1. 链式法则
+3. 多元函数的极最值问题
 

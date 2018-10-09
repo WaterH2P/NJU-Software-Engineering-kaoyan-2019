@@ -11,25 +11,25 @@ description: 做笔记，喝凉茶，看高数
 
 ## 一、x函数极限
 
-$\lim\limits_{x \to x_0}f(x) = A$ 
+$ \lim\limits_{x \to x_0}f(x) = A $ 
 
-- $\forall \varepsilon > 0$，$\exists \delta > 0$，当 $0 < |x - x_0| < \delta$ 时，$|f(x) - A| < \varepsilon$ 。 
+- $ \forall \varepsilon > 0 $，$ \exists \delta > 0 $，当 $ 0 < |x - x_0| < \delta $ 时，$ |f(x) - A| < \varepsilon $ 。 
 
-$\lim\limits_{x \to \infty}f(x) = A$ 
+$ \lim\limits_{x \to \infty}f(x) = A $ 
 
-- $\forall \varepsilon > 0$，$\exists X > 0$，当 $|x| > X$ 时，$|f(x) - A| < \varepsilon$ 。 
+- $ \forall \varepsilon > 0 $，$ \exists X > 0 $，当 $ |x| > X $ 时，$ |f(x) - A| < \varepsilon $ 。 
 
-$\lim\limits_{x \to \infty}f(x) = \infty$
+$ \lim\limits_{x \to \infty}f(x) = \infty $
 
-- $\forall M > 0$，$\exists X > 0$，当 $|x| > X$ 时，$|f(x)| > M$ 。 
+- $ \forall M > 0 $，$ \exists X > 0 $，当 $ |x| > X $ 时，$ |f(x)| > M $ 。 
 
 
 <br>
 ## 二、数列极限
 
-$\lim\limits_{n \to \infty}x_n = A$ 
+$ \lim\limits_{n \to \infty}x_n = A $ 
 
-- $\forall \varepsilon > 0$，$\exists N > 0$，当 $n > N$ 时，$|x_n - A| < \varepsilon$ 。 
+- $ \forall \varepsilon > 0 $，$ \exists N > 0 $，当 $ n > N $ 时，$ |x_n - A| < \varepsilon $ 。 
 
 
 <br>
@@ -40,11 +40,11 @@ $\lim\limits_{n \to \infty}x_n = A$
 #### 3.1 唯一性
 
 - $x \to x_0$ 左右有别
-  - $x \to x_o^+$ 
+  - $x \to x_0^+$ 
   - $x \to x_0^-$ 
 
-
 <br>
+
 #### 3.2 局部有界性
 
 - 若 $\lim\limits_{x \to x_0}f(x) = A$ ，则 $\exists M > 0$ ，$\delta >0$ ，当 $0 < |x - x_0| < \delta$ 时，恒有 $|f(x)| < M$ 。
@@ -74,7 +74,7 @@ $\lim\limits_{n \to \infty}x_n = A$
 - 七种未定式： $\dfrac{0}{0}$ , $\dfrac{\infty}{\infty}$ , $\infty \times 0$ ; $\infty - \infty$ ; $\infty^0$ , $0^0$ , $1^\infty$ 。
 - 洛必达法则
   1. 若 $\lim\limits_{x \to x_0}f(x) = 0(\infty)$ ，$\lim\limits_{x \to x_0}g(x) = 0(\infty)$ ；
-  2. 且 $lim_{x \to x_0} \dfrac{f'(x)}{g'(x)} 存在$ ，则 $lim_{x \to x_0} \dfrac{f(x)}{g(x)} = lim_{x \to x_0} \dfrac{f'(x)}{g'(x)}$ 。
+  2. 且 $\lim\limits_{x \to x_0} \dfrac{f'(x)}{g'(x)} 存在$ ，则 $\lim\limits_{x \to x_0} \dfrac{f(x)}{g(x)} = \lim_\limits{x \to x_0} \dfrac{f'(x)}{g'(x)}$ 。
 - 常用等价无穷小 $(x \to 0)$
   - $\sin x$ ~ $\arcsin x$ ~ $\tan x$ ~ $\arctan x$ ~ $e^x - 1$ ~ $\ln(1 + x)$  ~ $x$
   - $(1 + x)^\alpha - 1$ ~ $\alpha x$ $\implies$ $(1 + 🐶)^\alpha - 1$ ~ $\alpha 🐶$ $(🐶 \to 0)$  
@@ -90,11 +90,11 @@ $\lim\limits_{n \to \infty}x_n = A$
         - $x \to 🐶$ 
       - 及时提出 极限不为0 的因式
     - 例题
-      - $lim_{x \to 1^-}\ln x \times ln(1 - x)$ 
+      - $\lim\limits_{x \to 1^-}\ln x \times \ln(1 - x)$ 
         - $\lim\limits_{x \to 1}\ln x$ = $\lim\limits_{x \to 1}\ln(1 + x - 1)$ ~ $\lim\limits_{x \to 1}x-1$ 
   - $\infty - \infty$ 
     - 有分母，则通分
-      - $\lim\limits_{x \to 0}(\dfrac{e^x + xe^x}{e^x - 1} - \dfrac{1}{x})$ 
+      - $\lim\limits_{x \to 0} \left(\dfrac{e^x + xe^x}{e^x - 1} - \dfrac{1}{x} \right)$ 
     - 没有分母，创造分母
       - 倒代换
         - 令 $x = \dfrac{1}{t}$ 
@@ -110,7 +110,7 @@ $\lim\limits_{n \to \infty}x_n = A$
   - 任何可导函数 $f(x) = \sum a_nx^n$ 
   - $x \to 0$
     - $\sin x = x - \dfrac{1}{3!}x^3 + o(x^3)$ 
-      - $x - \sin x$ ~ $\dfrac{1}{6}x^3$  $\quad and \quad$  $x + \sin x$ ~ $2x$ 
+      - $x - \sin x$ ~ $\dfrac{1}{6}x^3$  $\quad \text{and} \quad$  $x + \sin x$ ~ $2x$ 
         - $x^2 - {\sin^2 x}$ ~ $\dfrac{1}{3}x^4$ 
     - $\arcsin x = x + \dfrac{1}{6}x^3 + o(x^3)$ 
     - $\tan x = x + \dfrac{1}{3}x^3 + o(x^3)$ 
@@ -139,24 +139,24 @@ $\lim\limits_{n \to \infty}x_n = A$
 
 1. 若 $\lbrace x_n \rbrace$ 易于连续化，转化为函数极限计算。
    - 依据：若 $\lim\limits_{x \to +\infty}f(x) = A$ ，则 $\lim\limits_{n \to \infty}f(n) = A$ 。【归结定理】
-   - $\lim\limits_{n \to \infty}(n \times \tan \dfrac{1}{n})^{n^2}$ 
+   - $\lim\limits_{n \to \infty} \left(n \times \tan \dfrac{1}{n} \right)^{n^2}$ 
      - $1^\infty$ 
 2. 若 $\lbrace x_n \rbrace$ 不易于连续化，用【夹逼准则】或【定积分定义】。
    - 当分子分母都在变化的时候
      - 只改分母，不动分子
-     - $\lim\limits_{n \to \infty}(\dfrac{1}{n^2 + n + 1} + \dfrac{2}{n^2 + n + 2} + ... + \dfrac{n}{n^2 + n + n})$ 
+     - $\lim\limits_{n \to \infty} \left(\dfrac{1}{n^2 + n + 1} + \dfrac{2}{n^2 + n + 2} + ... + \dfrac{n}{n^2 + n + n} \right)$ 
        - $\sum\limits_{i=1}^n \dfrac{i}{n^2 + n + n} \leq 原式 \leq \sum\limits_{i=1}^n \dfrac{i}{n^2 + n + 1}$  
    - 抓【隐蔽】条件：函数天生的有界性
      - $\lim\limits_{n \to \infty}\sqrt[n]{n \arctan n}$ 
        - $\dfrac{\pi}{4} < \lim\limits_{n \to \infty}\arctan n < \dfrac{\pi}{2}$ 
-       - $\lim\limits_{n \to \infty}(n \times \dfrac{\pi}{4})^\dfrac{1}{n} < \lim\limits_{n \to \infty}\sqrt[n]{n \arctan n} < \lim\limits_{n \to \infty}(n \times \dfrac{\pi}{2})^\dfrac{1}{n}$ 
+       - $\lim\limits_{n \to \infty} \left(n \times \dfrac{\pi}{4} \right)^\dfrac{1}{n} < \lim\limits_{n \to \infty}\sqrt[n]{n \arctan n} < \lim\limits_{n \to \infty} \left(n \times \dfrac{\pi}{2} \right)^\dfrac{1}{n}$ 
 3. 若 $\{x_n\}$ 由递推式 $x_n = f(x_{n-1})$ 给出，用【单调有界准则】。
    - 若 $\{x_n\}$ 单调增且有上界或者单调减且有下界 $\implies \lim\limits_{n \to \infty}x_n 存在 \iff {x_n} 收敛$ 。 
    - 设 $x_1 = 1, x_{n+1} = 1+ \dfrac{x_n}{1 + x_n} (n = 1, 2, ...)$ ，证明 $\{x_n\}$ 收敛并求 $\lim\limits_{n \to \infty} x_n$ 。
      - 先证存在，再求极限。
      1. 【数学归纳法】$\implies$ $\{x_n\}$ 单调增
      2. 根据递推式证明有界：$x_n < 2$ ，从而数列收敛，极限存在设为 $A$ 。
-     3. **对递推式两边取极限**，$\lim\limits_{n \to \infty}x_n = \lim\limits_{n \to \infty}(1 + \dfrac{ x_{n - 1} }{1 + x_{n - 1} }) \quad \implies \quad A = 1 + \dfrac{A}{1 + A}$ 。 
+     3. **对递推式两边取极限**，$\lim\limits_{n \to \infty}x_n = \lim\limits_{n \to \infty} \left(1 + \dfrac{ x_{n - 1} }{1 + x_{n - 1} } \right) \quad \implies \quad A = 1 + \dfrac{A}{1 + A}$ 。 
 
 
 <br>
