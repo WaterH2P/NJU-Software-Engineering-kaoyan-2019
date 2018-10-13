@@ -58,7 +58,7 @@ description: 做笔记，喝凉茶，看高数
 #### ㊀、链式求导规则
 1. 概念
   - 设 $ z = f(u, v, w), u = u(y), v = v(x, y), w = w(x) $ 。
-  - ![](./images/4-2 链式求导关系图.png)
+  - <img src="./images/4-2 链式求导关系图.png" width="50%">
   - 称 $ x, y $ 叫自变量，$ u, v, w $ 叫中间变量，$ z $ 叫因变量。
   - $ \dfrac{ \partial z }{ \partial x } = \dfrac{ \partial z }{ \partial v } \dfrac{ \partial v }{ \partial x } + \dfrac{ \partial z }{ \partial w } \dfrac{ {\rm d}w }{ {\rm d}x } \quad ( \text{ 分叉写 } \partial，\text{ 不分叉写 } {\rm d} ) $ 
 
@@ -70,7 +70,7 @@ description: 做笔记，喝凉茶，看高数
 
 2. 例题
   1. 设 $ F(u, v) $ 对其变元 $ u, v $ 具有二阶连续偏导数，并设 $ z = F( \dfrac{y}{x}, x^2 + y^2) $ ，则 $ \dfrac{ \partial^2 z }{ \partial x \partial y } = $ \_\_\_\_\_\_\_\_ 。
-    - ![](./images/4-2.2 高阶偏导数例题1.png)
+    - <img src="./images/4-2.2 高阶偏导数例题1.png" width="50%">
     - $ \dfrac{ \partial z }{ \partial x } = F'_1 \cdot ( - \dfrac{y}{x^2} ) + F'_2 \cdot 2x $ 
     - $ \dfrac{ \partial^2 z }{ \partial x \partial y } = \dfrac{ \partial ( \dfrac{ \partial z }{ \partial x } ) }{\partial y} = - \dfrac{1}{x^2} F'_1 - \dfrac{y}{x^3} F''_{11} + (2 - \dfrac{2y^2}{x^2} ) F''_{12} + 4xy F''_{22} $
   2. 设 $ f(u, v) $ 二阶偏导数连续，$ z = f(x^2y, \cos x \sin y) $ ，求 $ \dfrac{ \partial^2 z }{ \partial x \partial y } $ 。

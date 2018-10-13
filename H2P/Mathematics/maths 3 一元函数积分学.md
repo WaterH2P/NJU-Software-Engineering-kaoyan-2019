@@ -228,10 +228,10 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 #### ㊁、用积分表达和计算旋转体的体积
 1. 概念
   - $ y = y(x) $ 与 $ x = a, x = b, (a < b) $ 及 $ x $ 轴所围图形绕 $ x $ 轴旋转一周所得的旋转体体积。
-    - ![](./images/3-4.2 绕x轴旋转体的体积.png) 
+    - <img src="./images/3-4.2 绕x轴旋转体的体积.png" width="50%">
     - $ V_x = \int_a^b \pi f^2(x) {\rm d}x $ 
   - $ y = y(x) $ 与 $ x = a, x = b, (a < b) $ 及 $ x $ 轴所围图形绕 $ y $ 轴旋转一周所得的旋转体体积。
-    - ![](./images/3-4.2 绕y轴旋转体的体积.png) 
+    - <img src="./images/3-4.2 绕y轴旋转体的体积.png" width="50%"> 
     - $ V_y = \int_a^b 2 \pi x | f(x) | {\rm d}x $
       - 柱壳法 
 2. 例题
@@ -244,20 +244,19 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
       - 且 $ V_a'' = \dfrac{1}{15} \pi > 0 $ ，所以 $ a = -5 $ 时 $ V_{min} = \dfrac{9}{2} \pi $ 
 
   2. 设平面图形 $ \sigma $ 由 $ y = x^2 - 2x, y = 0, x = 1, x = 3 $ 围成，求 $ \sigma $ 绕 $ y $ 轴旋转一周所得的旋转体体积。
-    - ![](./images/3-4.2.2.2.png) 
+    - <img src="./images/3-4.2.2.2.png" width="50%"> 
     - $ \begin{array}{l} V & = \int_1^3 2 \pi x | f(x) | {\rm d}x \\[1em] & = 2 \pi \left[ -\int_1^2 x(x^2 - 2x) {\rm d}x - \int_2^3 x(x^2 - 2x) {\rm d}x \right] \\[1em] & = 9 \pi \end{array} $ 
 
   3. 过原点作 $ y = e^x $ 的切线，该切线与 $ y = e^x $、$ x $ 轴所围成的向 $ x $ 轴负向无限伸展的平面图形记为 $ D $ ，1⃣️求 $ D $ 的面积 $ S $ ，2⃣️ $ D $ 绕 $ x = 1 $ 旋转一周的旋转体的体积 $ V $ 。
+    - <img src="./images/3-4.2.2.3.png" width="50%">
 
-     - ![](./images/3-4.2.2.3.png)
-
-     - 1⃣️
-       - 设切点 $ ( x_0, e^{x_0} ) $，所以 $ k = y'(x_0) = e^{x_0} $ 
-         - 切线方程为 $ y - e^{x_0} = e^{x_0} (x - x_0) $ ，过原点，$ \implies x_0 = 1 $ 
-         - $ \implies $ 切线方程 $ y = ex $ 
-       - $ \begin{array}{l} S & = \int_{-\infty}^0 e^x {\rm d}x + \int_0^1 ( e^x - ex ) {\rm d}x = \int_0^e ( \dfrac{y}{e} - \ln y ) {\rm d}y \\[1em] & = \left. \dfrac{y^2}{2e} \right|_0^e - \left. y \ln y \right|_0^e + \left. y \right|_0^e = \dfrac{e}{2} + \lim\limits_{y \to 0^+} y \ln y \\[1em] & = \dfrac{e}{2} \end{array} $ 
-     - 2⃣️
-       - $ \begin{array}{l} V & = \int_0^e \pi (1 - \ln y)^2 {\rm d}y - \dfrac{\pi e}{3} \\[1em] & = \int_0^e \pi ( 1 - 2 \ln y + \ln^2 y ) {\rm d} y - \dfrac{\pi e}{3} \\[1em] & = \pi \left[ \left. y \right|_0^e - \left. 2( y \ln y - y ) \right|_0^e + \left. ( y \ln^2 y - 2y \ln y + 2y ) \right|_0^e \right] - \dfrac{\pi e}{3} \\[1em] & = \dfrac{5 \pi}{3}e \end{array} $ 
+    - 1⃣️
+      - 设切点 $ ( x_0, e^{x_0} ) $，所以 $ k = y'(x_0) = e^{x_0} $ 
+        - 切线方程为 $ y - e^{x_0} = e^{x_0} (x - x_0) $ ，过原点，$ \implies x_0 = 1 $ 
+        - $ \implies $ 切线方程 $ y = ex $ 
+      - $ \begin{array}{l} S & = \int_{-\infty}^0 e^x {\rm d}x + \int_0^1 ( e^x - ex ) {\rm d}x = \int_0^e ( \dfrac{y}{e} - \ln y ) {\rm d}y \\[1em] & = \left. \dfrac{y^2}{2e} \right|_0^e - \left. y \ln y \right|_0^e + \left. y \right|_0^e = \dfrac{e}{2} + \lim\limits_{y \to 0^+} y \ln y \\[1em] & = \dfrac{e}{2} \end{array} $ 
+    - 2⃣️
+      - $ \begin{array}{l} V & = \int_0^e \pi (1 - \ln y)^2 {\rm d}y - \dfrac{\pi e}{3} \\[1em] & = \int_0^e \pi ( 1 - 2 \ln y + \ln^2 y ) {\rm d} y - \dfrac{\pi e}{3} \\[1em] & = \pi \left[ \left. y \right|_0^e - \left. 2( y \ln y - y ) \right|_0^e + \left. ( y \ln^2 y - 2y \ln y + 2y ) \right|_0^e \right] - \dfrac{\pi e}{3} \\[1em] & = \dfrac{5 \pi}{3}e \end{array} $ 
 
 
 <br>
