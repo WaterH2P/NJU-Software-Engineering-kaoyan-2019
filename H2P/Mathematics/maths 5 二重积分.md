@@ -1,12 +1,13 @@
 ---
 title: 二重积分
 date: 2018-10-10
-updated: 2018-10-10
+updated: 2018-10-14
 tags: [maths,cs,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看高数
 ---
+
 
 ## 一、对称性
 
@@ -130,7 +131,7 @@ description: 做笔记，喝凉茶，看高数
 3. 计算 $ I = \iint\limits_D \sqrt{ 1 - r^2 \cos 2 \theta } \text{ } r^2 \sin \theta \text{ } {\rm d}r {\rm d}\theta $ ，其中 $ D = \left\lbrace \left. (r, \theta) \right| 0 \leq r \leq \sec \theta, 0 \leq \theta \leq \dfrac{\pi}{4} \right\rbrace $ 。
    - 分析
      - $ r \leq \sec \theta \implies r \cos \theta \leq 1 \implies x \leq 1 $ 
-   - $ \begin{array}{l} I & = \iint\limits_D y \sqrt{1 - x^2 + y^2} \text{ } {\rm d}x {\rm d}y \\[1em] & = \dfrac{1}{2} \int_0^1 {\rm d}x \int_0^x \sqrt{1 - x^2 + y^2} \text{ } {\rm d}( 1 - x^2 + y^2 ) \\[1em] & = \dfrac{1}{ \enclose{downdiagonalstrike}2 } \cdot \dfrac{ \enclose{downdiagonalstrike}2 }{3} \cdot \int_0^1 \left[ \left. (1 - x^2 + y^2)^{ \frac{3}{2} } \right|_{y = 0}^{y = x} \right] {\rm d}x \\[1em] & = \dfrac{1}{3} - \dfrac{1}{3} \int_0^1 (1 - x^2)^{ \frac{3}{2} } {\rm d}x = \dfrac{1}{3} - \dfrac{1}{3} \int_0^{ \frac{\pi}{2} } \cos^4 t {\rm d} t \\[1em] & = \dfrac{1}{3} - \dfrac{\pi}{16} \end{array} ​$ 
+   - $ \begin{array}{l} I & = \iint\limits_D y \sqrt{1 - x^2 + y^2} \text{ } {\rm d}x {\rm d}y \\[1em] & = \dfrac{1}{2} \int_0^1 {\rm d}x \int_0^x \sqrt{1 - x^2 + y^2} \text{ } {\rm d}( 1 - x^2 + y^2 ) \\[1em] & = \dfrac{1}{2} \cdot \dfrac{2}{3} \cdot \int_0^1 \left[ \left. (1 - x^2 + y^2)^{ \frac{3}{2} } \right|_{y = 0}^{y = x} \right] {\rm d}x \\[1em] & = \dfrac{1}{3} - \dfrac{1}{3} \int_0^1 (1 - x^2)^{ \frac{3}{2} } {\rm d}x = \dfrac{1}{3} - \dfrac{1}{3} \int_0^{ \frac{\pi}{2} } \cos^4 t {\rm d} t \\[1em] & = \dfrac{1}{3} - \dfrac{\pi}{16} \end{array} $ 
 
 
 

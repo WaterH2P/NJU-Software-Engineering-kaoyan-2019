@@ -8,6 +8,7 @@ mathjax: true
 description: 做笔记，喝凉茶，看高数
 ---
 
+
 ## 一、定义
 1. 不定积分**【 +C 】** 
   - $ \forall x \in I $ ，使 $ F'(x) = f(x) $ ，则称 $ F(x) $ 是 $ f(x) $ 在 $ I $ 上的一个原函数。
@@ -123,7 +124,9 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
     - 对 $ u $ 求导，对 $ v^{(n + 1)} $ 积分
     - 交错相乘、正负相间、首项为正
     - 最后一项（列）相乘再积分
-    - ![](./images/3-2.3 分部积分公式的推广.png)
+    <!-- - ![](./images/3-2.3 分部积分公式的推广.png) -->
+    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-2.3%20%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8E%A8%E5%B9%BF.png" width="50%">
+
 2. 例题  
    1. 求 $ \int x^2 \arctan x {\rm d}x $ 
      - $ = \dfrac{1}{2} x^2 - \dfrac{1}{2} \ln (1 + x^2) + C $ 

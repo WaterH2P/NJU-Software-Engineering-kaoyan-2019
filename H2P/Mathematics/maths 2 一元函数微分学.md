@@ -11,10 +11,10 @@ description: 做笔记，喝凉茶，看高数
 
 ## 一、定义
 
-- $\lim\limits_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$ 记为 $f'(x_0)$ ：（瞬时）变化率。
+- $ \lim\limits_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} $ 记为 $ f'(x_0) $ ：（瞬时）变化率。
 
-  - $f$ 对 $x$ 的变化率：$\dfrac{ {\rm d} f}{ {\rm d} x} = f'_x$ 。
-  - $\begin{cases} \lim\limits_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\[1em] \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases}$ 
+  - $ f $ 对 $ x $ 的变化率：$ \dfrac{ {\rm d} f}{ {\rm d} x} = f'_x $ 。
+  - $ \begin{cases} \lim\limits_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\[1em] \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases} $ 
 - 【注】
   1. 【左右有别】
     - $\lim\limits_{\Delta x \to 0^+} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'_+(x_0)$ 右导数
@@ -57,7 +57,7 @@ description: 做笔记，喝凉茶，看高数
     - 【注】
       - $🐶 \to 0$ 时，$\dfrac{|🐶|}{🐶}$ 有界，但 $\lim\limits_{🐶 \to 0}\dfrac{|🐶|}{🐶}$ 不存在。
   3. 若 $f(x)$ 是可导的偶函数，证明 $f'(x)$ 的奇函数。【记】
-    - $\begin{array}{l}f'(x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(x + \Delta x) - f(x)}{\Delta x} \\[1em] f'(-x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(-x + \Delta x) - f(-x)}{\Delta x} \\[1em] & = \lim\limits_{\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{\Delta x} \\[1em] & = -\lim\limits_{-\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{-\Delta x} \\[1em] & = -f'(x) \end{array}$ 
+    - $ \begin{array}{l}f'(x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(x + \Delta x) - f(x)}{\Delta x} \\[1em] f'(-x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(-x + \Delta x) - f(-x)}{\Delta x} \\[1em] & = \lim\limits_{\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{\Delta x} \\[1em] & = -\lim\limits_{-\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{-\Delta x} \\[1em] & = -f'(x) \end{array} $ 
     - 若 $f(x)$ 是可导的奇函数，证明 $f'(x)$ 的偶函数。
 
 
@@ -68,13 +68,13 @@ description: 做笔记，喝凉茶，看高数
 <br>
 #### ㊀、基本求导公式
 
-$\begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\[1em] (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\[1em] (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array}$ 
+$ \begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\[1em] (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\[1em] (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array} $ 
 
-$\begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\[1em] (\arctan x)' = \dfrac{1}{1 + x^2} & (\arccot x)' = - \dfrac{1}{1 + x^2} \end{array}$
+$ \begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\[1em] (\arctan x)' = \dfrac{1}{1 + x^2} & ( {\rm arccot} x)' = - \dfrac{1}{1 + x^2} \end{array} $
 
-$\begin{array}{l} (\ln(x + \sqrt{x^2 + 1}))' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array}$ 
+$ \begin{array}{l} (\ln(x + \sqrt{x^2 + 1}))' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array} $ 
 
-$\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{array}$ 
+$ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{array} $ 
 
 
 <br>
@@ -350,7 +350,7 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
       - 所以 $ \ln (1 + x) - \ln x - \dfrac{1}{ 1 + x } > 0 $ 
     - 又因为 $ ( 1 + \dfrac{1}{x} )^x > 0 $，所以 $ f'(x) > 0 \quad ( x \in (0, \infty) ) $ 
   2. ⭐️设 $ f(x) $ 连续，其 $ f'(x) $ 的图像如下，则 $ f(x) $ 有几个极小值点，几个极大值点。
-    - ![](./images/2-4.1.2.3.png)
+    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/2-4.1.2.3.png" width="50%">
     - 看图说话
     - 4 个极值点
       - 3 个零点和 $ (0, 0) $ 
@@ -419,7 +419,7 @@ $\begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{
   - 若 $ (a, b) $ 内，考虑端点和可能存在的极值点即可。
 3. 例题
   1. 防空洞的截面拟建成矩形加半圆（如图所示），截面的面积为 $5 m^2$ ，问底宽 $ x $ 为多少时才能使建造时所用的材料最省？
-    - ![](./images/2-4.4.3.1.png)
+    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/2-4.4.3.1.png" width="40%">
     - 设矩形的高为 $ y $，则 $ \begin{cases} \text{周长为} L \\[1em] \text{面积为} S \end{cases} $ 
     - $ S = xy + \dfrac{\pi}{8}x^2 = 5 \implies y = \dfrac{5}{x} - \dfrac{\pi}{8}x > 0 \implies x < \sqrt{ \dfrac{40}{\pi} } $ 
     - $ L = x + 2y + \dfrac{\pi}{2}x = \dfrac{10}{x} + ( \dfrac{\pi}{4} + 1 ) x, \quad x \in ( 0, \sqrt{ \dfrac{40}{\pi} } ) $ 
