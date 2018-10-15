@@ -2,7 +2,7 @@
 title: 常微分方程
 date: 2018-10-14
 updated: 2018-10-15
-tags: [maths,cs,kaoyan]
+tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看高数

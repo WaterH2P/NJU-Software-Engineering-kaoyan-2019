@@ -2,7 +2,7 @@
 title: 一元函数积分学
 date: 2018-10-2
 updated: 2018-10-4
-tags: [maths,cs,kaoyan]
+tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看高数
