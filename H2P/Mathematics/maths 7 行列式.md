@@ -37,9 +37,9 @@ $ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} $
   - $ |A| = \begin{vmatrix} 1 & 2 \\ -1 & 5 \end{vmatrix} \implies |A^T| = \begin{vmatrix} 1 & -1 \\ 2 & 5 \end{vmatrix} $ 
 2. 行列式中某行（列）元素全为零，则行列式为零。
 3. ⭐️倍乘性质
-  - 行列式中某行（列）元素有公因子 $ k(k \not= 0) $ ，则 $ k $ 可提到行列式外面，即 $ \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ ka_{i1} & ka_{i2} & \cdots & ka_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} = k \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+  - 行列式中某行（列）元素有公因子 $ k(k \not= 0) $ ，则 $ k $ 可提到行列式外面，即 $ \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ ka_{i1} & ka_{i2} & \cdots & ka_{in} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} = k \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
 4. 单行（列）可拆（加）
-  - 行列式中某行（列）元素均是两个元素之和，则可拆成两个行列式之和，即 $ \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} + b_{i1} & a_{i2} + b_{i2} & \cdots & a_{in} + b_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} + \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ b_{i1} & b_{i2} & \cdots & b_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+  - 行列式中某行（列）元素均是两个元素之和，则可拆成两个行列式之和，即 $ \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{i1} + b_{i1} & a_{i2} + b_{i2} & \cdots & a_{in} + b_{in} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} + \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ b_{i1} & b_{i2} & \cdots & b_{in} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
   - 两个行列式可相加
     - 只有对应的某一行（列）不同
 5. ⭐️互换性质
@@ -47,11 +47,11 @@ $ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} $
 6. 行列式中两行（列）元素相等或对应成比例，则行列式为零。
 7. ⭐️⭐️⭐️倍加性质
   - 行列式中某行（列）的 $ k $ 倍加到另一行（列），行列式的值不变。
-  - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} + ka_{h1} & a_{i2} + ka_{h2} & \cdots & a_{in} + ka_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+  - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{i1} + ka_{h1} & a_{i2} + ka_{h2} & \cdots & a_{in} + ka_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix}  ​$ 
   - 根据【性质 4】
-    - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} + \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ ka_{h1} & ka_{h2} & \cdots & ka_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+    - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} + \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots &  & \vdots \\ ka_{h1} & ka_{h2} & \cdots & ka_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
   - 根据【性质 6】
-    - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+    - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
 
 
 <br>
@@ -66,8 +66,8 @@ M_{ij} =
 \begin{vmatrix} 
   a_{11} & \cdots & a_{1, j-1} & a_{1, j+1} & \cdots & a_{1n} \\ 
   \vdots & & \vdots & \vdots & & \vdots \\ 
-  a_{i-1, 1} & \cdots & a_{i-1, j-1} & a_{i-1, j+1} & \cdots a_{i-1, n} \\ 
-  a_{i+1, 1} & \cdots & a_{i+1, j-1} & a_{i+1, j+1} & \cdots a_{i+1, n} \\ 
+  a_{i-1, 1} & \cdots & a_{i-1, j-1} & a_{i-1, j+1} & \cdots & a_{i-1, n} \\ 
+  a_{i+1, 1} & \cdots & a_{i+1, j-1} & a_{i+1, j+1} & \cdots & a_{i+1, n} \\ 
   \vdots & & \vdots & \vdots & & \vdots \\ 
   a_{n1} & \cdots & a_{n, j-1} & a_{n, j+1} & \cdots & a_{nn} 
 \end{vmatrix}
@@ -121,7 +121,7 @@ $$
   \vdots & \vdots & & \vdots \\
   0 & 0 & \cdots & a_{nn}
 \end{vmatrix} = 
-\prod\limits_{i = 1}^{n} aii
+\prod\limits_{i = 1}^{n} a_{ii}
 $$
 
 2. 副对角线行列式
