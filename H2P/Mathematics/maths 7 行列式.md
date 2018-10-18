@@ -1,3 +1,57 @@
+---
+title: 行列式
+date: 2018-10-17
+updated: 2018-10-17
+tags: [maths,线代,kaoyan]
+mathjax: true
+
+description: 做笔记，喝凉茶，看线代
+---
+
+## 一、概念
+
+
+<br>
+#### ㊀、引言
+$ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} $  
+
+- 看成是两个二维向量 $ \alpha_1 = ( a_{11}, a_{12} ) $  $ \alpha_2 = ( a_{21}, a_{22} ) $ ，与 $ x $ 轴夹脚分别是 $ \alpha $  $ \beta $ 。
+<!-- - <img src="./images/7-1 二阶行列式.png" width="50%"> -->
+- <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/7-1%20%E4%BA%8C%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F.png" width="50%"> 
+- $ \begin{array}{l} S_{ABCD} & = |\alpha_1| \cdot |\alpha_2| \cdot \sin (\beta - \alpha) \\[1em] & = lm \cdot ( \sin \beta \cos \alpha - \cos \beta \sin \alpha ) \\[1em] & = l \cos \alpha \cdot m \sin \beta - l \sin \alpha \cdot m \cos \beta \\[1em] & = a_{11}a_{22} - a_{12}a_{21} \end{array} $
+- $ \therefore \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} = a_{11}a_{22} - a_{12}a_{21} = S_{ABCD} $ 
+
+
+<br>
+#### ㊁、定义
+- $ n $ 阶行列式由 $ n $ 个 $ n $ 维向量 $ \alpha_1 = \left[ a_{11}, a_{12}, \cdots, a_{1n} \right] $，$ \alpha_2 = \left[ a_{21}, a_{22}, \cdots, a_{2n} \right] $，$ \cdots $，$ \alpha_n = \left[ a_{n1}, a_{n2}, \cdots, a_{nn} \right] $ 组成，其结果为以这 $ n $ 个向量为邻边的 $ n $ 维图形的体积（ $ n $ 维体积 ）。
+
+
+<br>
+## 二、行列式的性质
+
+【7 大性质】
+
+1. 行列互换，其值不变，即 $ |A| = |A^T| $ 。
+  - $ |A^T| $ （转置）是将 $ |A| $ 中每一行竖着写。
+  - $ |A| = \begin{vmatrix} 1 & 2 \\ -1 & 5 \end{vmatrix} \implies |A^T| = \begin{vmatrix} 1 & -1 \\ 2 & 5 \end{vmatrix} $ 
+2. 行列式中某行（列）元素全为零，则行列式为零。
+3. ⭐️倍乘性质
+  - 行列式中某行（列）元素有公因子 $ k(k \not= 0) $ ，则 $ k $ 可提到行列式外面，即 $ \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ ka_{i1} & ka_{i2} & \cdots & ka_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} = k \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+4. 单行（列）可拆（加）
+  - 行列式中某行（列）元素均是两个元素之和，则可拆成两个行列式之和，即 $ \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} + b_{i1} & a_{i2} + b_{i2} & \cdots & a_{in} + b_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} + \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ b_{i1} & b_{i2} & \cdots & b_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+  - 两个行列式可相加
+    - 只有对应的某一行（列）不同
+5. ⭐️互换性质
+  - 行列式中两行（列）互换，行列式的值反号。
+6. 行列式中两行（列）元素相等或对应成比例，则行列式为零。
+7. ⭐️⭐️⭐️倍加性质
+  - 行列式中某行（列）的 $ k $ 倍加到另一行（列），行列式的值不变。
+  - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} + ka_{h1} & a_{i2} + ka_{h2} & \cdots & a_{in} + ka_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+  - 根据【性质 4】
+    - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} + \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ ka_{h1} & ka_{h2} & \cdots & ka_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
+  - 根据【性质 6】
+    - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots & \ddots & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots & \ddots & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
 
 
 <br>
@@ -207,22 +261,14 @@ $$
     - $ D_{n+1} = \prod\limits_{i=1}^{n+1} a_i^n \cdot \begin{vmatrix}  1 & \dfrac{b_1}{a_1} & \left( \dfrac{b_1}{a_1} \right)^2 & \cdots & \left( \dfrac{b_1}{a_1} \right)^n \\ 1 & \dfrac{b_2}{a_2} & \left( \dfrac{b_2}{a_2} \right)^2 & \cdots & \left( \dfrac{b_2}{a_2} \right)^n \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & \dfrac{ b_{n+1} }{ a_{n+1} } & \left( \dfrac{ b_{n+1} }{ a_{n+1} } \right)^2 & \cdots & \left( \dfrac{ b_{n+1} }{ a_{n+1} } \right)^n \end{vmatrix} $ 
     - $ D_{n+1} = \prod\limits_{i=1}^{n+1} a_i^n \cdot \prod\limits_{ 1 \leq i < j \leq (n+1) } \left( \dfrac{b_j}{a_j} - \dfrac{b_i}{a_i} \right) $ 
 
-
 <br>
+
 ## 四、总结
 1. 理解行列式概念
 2. 七大性质
 3. 展开公式
 4. 重要行列展开式
 5. 四种计算方法
-
-
-
-
-
-
-
-
 
 
 
