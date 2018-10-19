@@ -1,7 +1,7 @@
 ---
 title: 行列式
 date: 2018-10-17
-updated: 2018-10-17
+updated: 2018-10-18
 tags: [maths,线代,kaoyan]
 mathjax: true
 
