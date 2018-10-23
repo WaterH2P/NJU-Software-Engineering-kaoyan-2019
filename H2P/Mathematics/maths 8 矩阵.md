@@ -85,9 +85,59 @@ $$
   - $ \implies \begin{array}{l} A^n &= E + nB + \dfrac{ n(n-1) }{2}B^2 \\[1em] &= \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & n & 0 \\ 0 & 0 & n \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 0 & 0 & \frac{ n(n-1) }{2} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \\[1em] &= \begin{bmatrix} 1 & n & \frac{ n(n-1) }{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \end{bmatrix} \end{array} ​$ 
 
 
+<br>
+## 二、初等变化法与求 $ A^{-1} $
+
+$$
+A^{-1} 
+\begin{cases} 
+  \text{1. } A \text{ 必须是方阵} \\[1em]
+  \text{2. } \text{定义：}AB = E \implies A^{-1} = B, B^{-1} = A \\[1em]
+  \text{1. } A \text{ 可逆 }\iff |A| \not= 0 
+\end{cases}
+$$
 
 
+<br>
+#### ㊀、初等变换
+1. 倍乘
+   - 一个非零常数乘矩阵的某一行（列）；
+2. 互换
+   - 互换矩阵中某两行（列）的位置；
+3. 倍加
+   - 将某行（列）的 $ k $ 倍加到另一行（列）。
+- 【注】
+  - 行列式中操作目标是对应的面积体积是否变化。
+  - 矩阵中操作目标是方程组的解是否保持同解。
 
+$$
+\text{行阶梯型矩阵}
+\begin{cases}
+  \text{1. 若有 0 行，全在下方} \\[1em]
+  \text{2. 从行上看，自左边起，出现连续 0 的个数自上而下严格单增}
+\end{cases}
+$$
+
+【or】
+
+$$
+\text{行最简阶梯型矩阵}
+\begin{cases}
+  \text{1. 若有 0 行，全在下方} \\[1em]
+  \text{2. 从行上看，自左边起，出现连续 0 的个数自上而下严格单增} \\[1em]
+  \text{3. 台角位置元素为 1} \\[1em]
+  \text{4. 台角正上方元素全为 0}
+\end{cases}
+$$
+
+- ⭐️⭐️⭐️
+  - 矩阵初等变换中间只能写 $ \to $ 
+
+4. 例题
+   1. 化 $ A = \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 1 & -1 & 2 & -1 & 0 \\ 4 & -2 & 6 & 3 & -4 \\ 2 & 4 & -2 & 4 & -7 \end{bmatrix} $ 为行阶梯型矩阵。
+      - $ \begin{array}{l} A & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & -6 & 6 & 15 & 0 \\ 0 & 2 & -2 & 10 & -5 \end{bmatrix} \\[1em] & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 9 & -3 \\ 0 & 0 & 0 & 12 & -4 \end{bmatrix} \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 12 & -4 \end{bmatrix} \\[1em] & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \end{array} $ 
+   2. 化 $ B = \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} $ 为行最简阶梯型矩阵。
+      - $ \begin{array}{l} B & \to \begin{bmatrix} 1 & 1 & 0 & 0 & -2 \\ 0 & -2 & 2 & 0 & \frac{5}{3} \\ 0 & 0 & 0 & 1 & -\frac{1}{3} \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \\[1em] & \to \begin{bmatrix} 1 & 0 & 1 & 0 & -\frac{7}{6} \\ 0 & 1 & -1 & 0 & -\frac{5}{6}  \\ 0 & 0 & 0 & 1 & -\frac{1}{3} \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \end{array} $ 
 
 
 
