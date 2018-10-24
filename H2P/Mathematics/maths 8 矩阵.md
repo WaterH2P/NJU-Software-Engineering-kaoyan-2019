@@ -74,7 +74,7 @@ $$
   - $ A^n = (-6)^{n-1} \cdot A $
   - 【注】
     - 称 $ \sum\limits_{i=1}^n a_{ii} = {\rm tr} (A) $ ，叫 $ A $ 的迹（trace）。
-    - 若 $ r( A_{n \times n} ) = 1 $ （秩为 $ 1 $ ），即 $ n $ 行元素均称比例。
+    - 若 $ {\rm r}( A_{n \times n} ) = 1 $ （秩为 $ 1 $ ），即 $ n $ 行元素均称比例。
       - 则 $ A^n = \left[ {\rm tr}(A) \right]^{n-1} \cdot A $ 
 3. 已知 $ A = \begin{bmatrix} 1 & 1 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{bmatrix} $ ，求 $ A^n $ 。【拆项法】
   - 令 $ A = B + C $ ，其中 $ C = E $ 最好，$ A^n = (B+E)^n $ 
@@ -82,7 +82,7 @@ $$
   - $ A = B + E = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} $ 
   - $ B^2 = \begin{bmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ 0& 0 & 0 \end{bmatrix}, \quad B^3 = O $ 
   - 所以 $ B^i = O \quad (i=3, 4, \cdots, n) $ 
-  - $ \implies \begin{array}{l} A^n &= E + nB + \dfrac{ n(n-1) }{2}B^2 \\[1em] &= \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & n & 0 \\ 0 & 0 & n \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 0 & 0 & \frac{ n(n-1) }{2} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \\[1em] &= \begin{bmatrix} 1 & n & \frac{ n(n-1) }{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \end{bmatrix} \end{array} ​$ 
+  - $ \implies \begin{array}{l} A^n &= E + nB + \dfrac{ n(n-1) }{2}B^2 \\[1em] &= \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & n & 0 \\ 0 & 0 & n \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 0 & 0 & \frac{ n(n-1) }{2} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \\[1em] &= \begin{bmatrix} 1 & n & \frac{ n(n-1) }{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \end{bmatrix} \end{array} $ 
 
 
 <br>
@@ -130,7 +130,7 @@ $$
 \end{cases}
 $$
 
-- ⭐️⭐️⭐️
+- :star: :star: :star: 
   - 矩阵初等变换中间只能写 $ \to $ 
 
 4. 例题
@@ -140,19 +140,38 @@ $$
       - $ \begin{array}{l} B & \to \begin{bmatrix} 1 & 1 & 0 & 0 & -2 \\ 0 & -2 & 2 & 0 & \frac{5}{3} \\ 0 & 0 & 0 & 1 & -\frac{1}{3} \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \\[1em] & \to \begin{bmatrix} 1 & 0 & 1 & 0 & -\frac{7}{6} \\ 0 & 1 & -1 & 0 & -\frac{5}{6}  \\ 0 & 0 & 0 & 1 & -\frac{1}{3} \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \end{array} $ 
 
 
+<br>
+#### 2、用初等变化求逆矩阵的方法
 
+1. 【Th】
+  - 任何可逆矩阵一定可通过若干次**初等行变换**化成同阶单位矩阵
+    - 行最简阶梯型矩阵
+      - 可逆矩阵 $ \to $ 不存在 $ 0 $ 行
 
+2. 概念
+$$
+\begin{bmatrix}
+  A \mid E
+\end{bmatrix}
+\underrightarrow{初等行变换}
+\begin{bmatrix}
+  E \mid A^{-1}
+\end{bmatrix}
+$$
 
+- - 推导
+    - 想对 $ A $ 做什么变换，可以先对 $ E $ 做同样的变化得到矩阵 $ P $ 
+    - 然后计算 $ PA $ 得到结果
+    - 例如
+      - $ A = \begin{bmatrix} 4 & 6 \\ 2 & 1 \end{bmatrix} $ ，想将第二行的 $ -2 $ 倍加到第一行
+      - 先对 $ E = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} $ 做该变换，得到 $ P = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix} $ 
+      - $ PA = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 4 & 6 \\ 2 & 1 \end{bmatrix} = \begin{bmatrix} 0 & 4 \\ 2 & 1 \end{bmatrix} $ 
+    - 根据【Th】
+      - $ \begin{array}{l} & P_s \cdots P_2P_1A = E \\[1em] \implies & P_s \cdots P_2P_1AA^{-1} = EA^{-1} \\[1em] \implies & P_s \cdots P_2P_1E = A^{-1} \end{array} $
 
-
-
-
-
-
-
-
-
-
+3. 例题
+   1. 设 $ A = \begin{bmatrix} 0 & 2 & -1 \\ 1 & 1 & 2 \\ -1 & -1 & -1 \end{bmatrix} $ ，求 $ A^{-1} $ 。
+      - $ \begin{array}{l} \begin{pmatrix} A \mid E \end{pmatrix} = & \begin{pmatrix} 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ -1 & -1 & -1 & \vdots & 0 & 0 & 1 \end{pmatrix} \\[1em] \underrightarrow{1 \leftrightarrow 2 \\ 3 + 1 } & \begin{pmatrix} 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\[1em] \underrightarrow{2 + 3 \\ \frac{1}{2} 2 } & \begin{pmatrix} 1 & 1 & 0 & \vdots & 0 & -1 & -2 \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\[1em] \underrightarrow{1-2} & \begin{pmatrix} 1 & 0 & 0 & \vdots & -\frac{1}{2} & -\frac{3}{2} & -\frac{5}{2} \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} = \begin{pmatrix} E \mid A^{-1} \end{pmatrix} \end{array} $ 
 
 
 
