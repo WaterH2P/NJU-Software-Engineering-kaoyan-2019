@@ -1,3 +1,13 @@
+---
+title: 史纲
+date: 2018-10-24
+updated: 2018-10-25
+tags: [政治,kaoyan]
+mathjax: true
+
+description: 做笔记，喝凉茶，看史纲
+---
+
 ## 一、土地政策
 
 
