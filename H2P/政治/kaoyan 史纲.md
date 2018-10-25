@@ -174,7 +174,9 @@ $$
     - 未能将马克思主义与中国具体实际相结合（根本原因）
 
 
-
+<br>
+#### 中国革命
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E5%8F%B2%E7%BA%B2%20%E4%B8%AD%E5%9B%BD%E9%9D%A9%E5%91%BD.jpg" width="80%">
 
 
 
