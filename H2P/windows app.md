@@ -2,3 +2,5 @@
 - [TrafficMonitor](https://github.com/zhongyang219/TrafficMonitor)
 - [火绒安全](https://www.huorong.cn/)
 - [Bandizip]()
+- [Free Download Manager]()
+- [PotPlayer]()
