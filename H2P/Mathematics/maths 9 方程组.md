@@ -80,7 +80,7 @@ $$
 #### 4、求解方法
 - 1️⃣ 将系数矩阵 A 作初等行变换化成行阶梯型矩阵 B （或行最简阶梯型矩阵），初等行变换将方程组化为同解方程组，故 $ Ax = 0 $ 和 $ Bx = 0 $ 同解，只需解 $ Bx = 0 $ 即可。设 ${\rm r}(A) = r $ ，$ A \underrightarrow{ \text{ 初等行变换 } } B = \begin{bmatrix} c_{11} & c_{12} & \cdots & c_{1r} & \cdots & c_{1n} \\ 0 & c_{22} & \cdots & c_{2r} & \cdots & c_{2n} \\ \vdots & \vdots & & \vdots & & \vdots \\ 0 & 0 & \cdots & c_{rr} & \cdots & c_{rn} \\ 0 & 0 & \cdots & 0 & \cdots & 0 \\ \vdots & \vdots & & \vdots & & \vdots \\ 0 & 0 & \cdots & 0 & \cdots & 0 \\ \end{bmatrix}_{m \times n} $ ，其中，m 是原方程组中方程个数，n 是未知量个数。
 - 2️⃣ 按列找出一个秩为 $ {\rm r}(A) $ 的子矩阵，则剩余位置的元素即为自由变量。
--  按照基础解系的定义写出通解。
+-  3️⃣ 按照基础解系的定义写出通解。
 
 
 <br>
@@ -89,7 +89,7 @@ $$
   - 1️⃣ $ A \to \begin{pmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 0 & 0 \end{pmatrix} \quad {\rm r}(A) = 3 $ 
   - 2️⃣ 每个台阶上任取一列 
     - 取系数 $ 1, 2, 5 $ 列，则 $ x_3, x_4 $ 可作为自由变量
-  -  基础解系【倒用】
+  -  3️⃣ 基础解系【倒用】
     1. $ S = n - {\rm r}(A) = 2 $ ，所以解 $ \begin{cases} \xi_1 = ( \_ & \_ & \_ & \_ & \_ )^{\rm T} \\[1em] \xi_2 = ( \_ & \_ & \_ & \_ & \_ )^{\rm T} \end{cases} $ 。
     2. 线性无关
        - $ \begin{cases} \xi_1 = ( \_ & \_ & 1 & 0 & \_ )^{\rm T} \\[1em] \xi_2 = ( \_ & \_ & 0 & 1 & \_ )^{\rm T} \end{cases} $ 
