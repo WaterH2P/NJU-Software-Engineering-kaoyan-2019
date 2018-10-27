@@ -65,7 +65,7 @@ $$
 
 
 <br>
-#### 3、:star: **基础解系**和解的结构
+#### 3、⭐️ **基础解系**和解的结构
 1. 基础解系
   - 设 $ \xi_1, \xi_2, \cdots, \xi_{n-r} $ ，
   - 1️⃣ 是方程组 $ Ax = 0 $ 的解；2️⃣ 线性无关； 3️⃣ 方程组 $ Ax = 0 $ 的任一解均可由 $ \xi_1, \xi_2, \cdots, \xi_{n-r} $ 线性表示。【基解中成员个数 $ S = n - {\rm r}(A) $】
@@ -90,14 +90,14 @@ $$
   - 2️⃣ 每个台阶上任取一列 
     - 取系数 $ 1, 2, 5 $ 列，则 $ x_3, x_4 $ 可作为自由变量
   -  3️⃣ 基础解系【倒用】
-    1. $ S = n - {\rm r}(A) = 2 $ ，所以解 $ \begin{cases} \xi_1 = ( \_ & \_ & \_ & \_ & \_ )^{\rm T} \\[1em] \xi_2 = ( \_ & \_ & \_ & \_ & \_ )^{\rm T} \end{cases} $ 。
+    1. $ S = n - {\rm r}(A) = 2 $ ，所以解 $ \begin{cases} \xi_1 = \begin{pmatrix} \ast & \ast & \ast & \ast & \ast \end{pmatrix}^{\rm T} \\[1em] \xi_2 = \begin{pmatrix} \ast & \ast & \ast & \ast & \ast \end{pmatrix}^{\rm T} \end{cases} $ 。
     2. 线性无关
-       - $ \begin{cases} \xi_1 = ( \_ & \_ & 1 & 0 & \_ )^{\rm T} \\[1em] \xi_2 = ( \_ & \_ & 0 & 1 & \_ )^{\rm T} \end{cases} $ 
+       - $ \begin{cases} \xi_1 = \begin{pmatrix} \ast & \ast & 1 & 0 & \ast \end{pmatrix}^{\rm T} \\[1em] \xi_2 = \begin{pmatrix} \ast & \ast & 0 & 1 & \ast \end{pmatrix}^{\rm T} \end{cases} $ 
        - 在自由变量区域赋值后拼接出的行列式 $ \not= 0 $ ，上式即 $ \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} \not= 0 $ 。
     3. 试解
        - 由于系数和解【内积为 0】
          - $ \xi_1, \xi_2 $ 与系数矩阵第三行内积为 0
-           - $ \implies  \begin{cases} \xi_1 = ( \_ & \_ & 1 & 0 & 0 )^{\rm T} \\[1em] \xi_2 = ( \_ & \_ & 0 & 1 & 3 )^{\rm T} \end{cases} $ 
+           - $ \implies  \begin{cases} \xi_1 = ( \ast & \ast & 1 & 0 & 0 )^{\rm T} \\[1em] \xi_2 = ( \ast & \ast & 0 & 1 & 3 )^{\rm T} \end{cases} $ 
          - $ \xi_1, \xi_2 $ 与系数矩阵第二、一行内积为 0
            - $ \implies  \begin{cases} \xi_1 = ( -1 & 1 & 1 & 0 & 0 )^{\rm T} \\[1em] \xi_2 = ( \frac{7}{2} & \frac{5}{2} & 0 & 1 & 3 )^{\rm T} \end{cases} $ 
     4. 通解为 $ k_1 \xi_1 + k_2 \xi_2 $ 
@@ -171,7 +171,7 @@ $$
 
 
 <br>
-#### 3、:star: 求解方法和通解结构
+#### 3、⭐️ 求解方法和通解结构
 
 将增广矩阵作初等行变换化成行阶梯形矩阵（或行最简阶梯型矩阵），求出对应齐次线性方程组的通解加上一个非齐次线性方程组的特解即是非齐次线性方程组的通解。
 

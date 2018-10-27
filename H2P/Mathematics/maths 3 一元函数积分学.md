@@ -125,7 +125,7 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
     - 交错相乘、正负相间、首项为正
     - 最后一项（列）相乘再积分
     <!-- - ![](./images/3-2.3 分部积分公式的推广.png) -->
-    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-2.3%20%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8E%A8%E5%B9%BF.png" width="50%">
+    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-2.3%20%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8E%A8%E5%B9%BF.png" width="80%">
 
 2. 例题  
    1. 求 $ \int x^2 \arctan x {\rm d}x $ 
