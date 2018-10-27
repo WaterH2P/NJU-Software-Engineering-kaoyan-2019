@@ -1,5 +1,5 @@
 ---
-title: 特征值与二次型
+title: 特征值
 date: 2018-10-26
 updated: 2018-10-26
 tags: [maths,线代,kaoyan]
