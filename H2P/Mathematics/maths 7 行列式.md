@@ -47,7 +47,7 @@ $ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} $
 6. 行列式中两行（列）元素相等或对应成比例，则行列式为零。
 7. ⭐️⭐️⭐️倍加性质
   - 行列式中某行（列）的 $ k $ 倍加到另一行（列），行列式的值不变。
-  - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{i1} + ka_{h1} & a_{i2} + ka_{h2} & \cdots & a_{in} + ka_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix}  ​$ 
+  - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{i1} + ka_{h1} & a_{i2} + ka_{h2} & \cdots & a_{in} + ka_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix}  $ 
   - 根据【性质 4】
     - $ I = \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{i1} & a_{i2} & \cdots & a_{in} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} + \begin{vmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ \vdots & \vdots &  & \vdots \\ a_{h1} & a_{h2} & \cdots & a_{hn} \\ \vdots & \vdots &  & \vdots \\ ka_{h1} & ka_{h2} & \cdots & ka_{hn} \\ \vdots & \vdots &  & \vdots \\ a_{n1} & a_{n2} & \cdots & a_{nn} \end{vmatrix} $ 
   - 根据【性质 6】
@@ -196,7 +196,7 @@ $$
 $$
 \begin{vmatrix}
   1 & 1 & 1 \\
-  a & b & c & \\
+  a & b & c \\
   a^2 & b^2 & c^2
 \end{vmatrix} = (c-b)(c-a)(b-a)
 $$
@@ -309,6 +309,20 @@ $$
 的系数行列式 $ |A| \not= 0 $ ，则方程组有唯一零解。
 ​    反之，若齐次线性方程组有非零解，则其系数行列式 $ |A| = 0 $ 。        
 
+
+<br>
+#### 2、证明 $ |A| = 0 $ 
+1. 直接计算行列式
+2. 构造相应的齐次线性方程组，证明其有非零解
+   -  例题
+     1. 设 $ \xi = \begin{bmatrix} a_1, a_2, \cdots, a_n \end{bmatrix}^{\rm T}, \; \xi^{\rm T}\xi = \sum\limits_{i=1}^na_i^2 = 1 $ ，证明 $ | E - \xi \xi^{\rm T} | = 0 $ 。
+        - 构造齐次线性方程组 $ ( E - \xi\xi^{\rm T} ) = 0 \qquad (\ast) $ 。
+        - 因为 $ ( E - \xi\xi^{\rm T} )\xi = \xi - \xi\xi^{\rm T}\xi = \xi - \xi(\xi^{\rm T}\xi) = 0 $ ，其中 $ \xi \not= 0 $ 。
+        - 故方程 $ (\ast) $ 有非零解，得证。
+     2. 设 A 是 n 阶矩阵，满足 $ A^2 = A $ ，且 $ A \not= E $ ，证明 $ |A| = 0 $ 。
+        -  $ A^2 = A \implies A(A-E) = O $ 
+        -  因为 $ A \not= E $ ，所以 $ A-E \not= O $ 。
+        -  将 $ A-E $ 按列分块，设 $ A-E = \begin{bmatrix} \xi_1, \xi_2, \cdots, \xi_n \end{bmatrix} $ ，则 $ A-E $ 的每一列 $ \xi_i(i=1, 2, \cdots, n) $ 均是方程组 $ Ax = 0 $ 的解向量，由于 $ A-E \not= O $ ，所以 $ A-E $ 中至少有一列 $ \xi_i $ 不为零向量，故 $ Ax = 0 $ 存在非零解，从而得证 $ |A|=0 $ 。
 
 
 

@@ -4,3 +4,5 @@
 - [Bandizip]()
 - [Free Download Manager]()
 - [PotPlayer]()
+- [SmartTaskbar](https://github.com/ChanpleCai/SmartTaskbar)
+- 
