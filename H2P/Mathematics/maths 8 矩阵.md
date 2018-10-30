@@ -86,16 +86,7 @@ $$
 
 
 <br>
-## 二、初等变化法与求 $ A^{-1} $
-
-$$
-A^{-1} 
-\begin{cases} 
-  \text{1. } A \text{ 必须是方阵} \\[1em]
-  \text{2. } \text{定义：}AB = E \implies A^{-1} = B, B^{-1} = A \\[1em]
-  \text{1. } A \text{ 可逆 }\iff |A| \not= 0 
-\end{cases}
-$$
+## 二、初等变化法
 
 
 <br>
@@ -141,7 +132,33 @@ $$
 
 
 <br>
-#### 2、用初等变化求逆矩阵的方法
+## 三、$ A^{-1} $ 
+
+
+<br>
+#### 1、定义
+$$
+A^{-1} 
+\begin{cases} 
+  \text{1. } A \text{ 必须是方阵} \\[1em]
+  \text{2. } \text{定义：}AB = E \implies A^{-1} = B, B^{-1} = A \\[1em]
+  \text{1. } A \text{ 可逆 }\iff |A| \not= 0 
+\end{cases}
+$$
+
+
+<br>
+#### 2、性质
+
+- $ ( A^{-1} )^{-1} = A $ 
+- 若 $ k \not= 0 $ ，则 $ (kA)^{-1} = \dfrac{1}{k}A^{-1} $ 
+- AB 也可逆，且 $ (AB)^{-1} = B^{-1}A^{-1} $ 
+- $ A^{\rm T} $ 也可逆，且 $ ( A^{\rm T} )^{-1} = ( A^{-1} )^{\rm T} $ 
+- $ | A^{-1} | = |A|^{-1} $ 
+- $ (A + B)^{-1} \not= A^{-1} + B^{-1} $ 
+
+<br>
+#### 3、用初等变化求逆矩阵的方法
 
 1. 【Th】
   - 任何可逆矩阵一定可通过若干次**初等行变换**化成同阶单位矩阵
@@ -174,5 +191,47 @@ $$
       - $ \begin{array}{l} \begin{pmatrix} A \mid E \end{pmatrix} = & \begin{pmatrix} 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ -1 & -1 & -1 & \vdots & 0 & 0 & 1 \end{pmatrix} \\[1em] \underrightarrow{1 \leftrightarrow 2 \\ 3 + 1 } & \begin{pmatrix} 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\[1em] \underrightarrow{2 + 3 \\ \frac{1}{2} 2 } & \begin{pmatrix} 1 & 1 & 0 & \vdots & 0 & -1 & -2 \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\[1em] \underrightarrow{1-2} & \begin{pmatrix} 1 & 0 & 0 & \vdots & -\frac{1}{2} & -\frac{3}{2} & -\frac{5}{2} \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} = \begin{pmatrix} E \mid A^{-1} \end{pmatrix} \end{array} $ 
 
 
+<br>
+#### 4、分块矩阵的逆
+$$
+\begin{bmatrix}
+  A & O \\
+  O & B
+\end{bmatrix}^{-1} = 
+\begin{bmatrix}
+  A^{-1} & O \\
+  O & B^{-1}
+\end{bmatrix},\qquad
+\begin{bmatrix}
+  O & A \\
+  B & O
+\end{bmatrix}^{-1} = 
+\begin{bmatrix}
+  O & B^{-1} \\
+  A^{-1} & O
+\end{bmatrix}
+$$
 
+- 副对角线分块矩阵的逆
+
+$$
+\begin{array}{l}
+A = 
+\begin{bmatrix}
+  & & & A_1 \\
+  & & A_2 \\
+  & \dots \\
+  A_s
+\end{bmatrix} ,
+\text{ 其中 } A_i(i=1, 2, \cdots, s) \text{ 可逆 ，则 } A \text{ 可逆且 } \\[1em]
+
+A^{-1} = 
+\begin{bmatrix}
+  & & & A_s^{-1} \\
+  & & \cdots \\
+  & A_2^{-1} \\
+  A_1^{-1}
+\end{bmatrix}
+\end{array}
+$$
 
