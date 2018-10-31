@@ -1,7 +1,7 @@
 ---
 title: 史纲
 date: 2018-10-24
-updated: 2018-10-28
+updated: 2018-10-31
 tags: [政治,kaoyan]
 mathjax: true
 
@@ -531,13 +531,13 @@ description: 做笔记，喝凉茶，看史纲
 #### 各阶层的探索
 $$
 \begin{cases}
-  \text{农民} \\[1em]
-  \text{封建地主} \\[1em]
+  \text{农民} \\\\
+  \text{封建地主} \\\\
   \text{资产阶级} 
     \begin{cases} 
-      \text{维新派} \\[1em]
+      \text{维新派} \\\\
       \text{革命派} 
-    \end{cases} \\[1em]
+    \end{cases} \\\\
   \text{共产党} 
 \end{cases}
 $$
@@ -571,8 +571,8 @@ $$
 
 $$
 \begin{cases}
-  \text{洋务派 ：} & \text{君主专制} \\[1em]
-  \text{维新派 ：} & \text{君主立宪} \\[1em]
+  \text{洋务派 ：} & \text{君主专制} \\\\
+  \text{维新派 ：} & \text{君主立宪} \\\\
   \text{革命派 ：} & \text{共和制} 
 \end{cases}
 $$
