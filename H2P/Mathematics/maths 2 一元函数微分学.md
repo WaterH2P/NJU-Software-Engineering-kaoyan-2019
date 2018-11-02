@@ -37,13 +37,13 @@ description: 做笔记，喝凉茶，看高数
      - 令 $x_0 + \Delta x = x \implies \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} = f'(x_0)$ 。 
 
 - 例题
-  1. 下列函数中，在 $x = 0$ 处不可导的是 $()$ 。【具体型】
+  1. 下列函数中，在 $x = 0$ 处不可导的是 $( \text{ D } )$ 。【具体型】
     - $\begin{array}{l} A. f(x) = |x| \sin |x| & B. f(x) = |x| \sin \sqrt{|x|} \\[1em] C. f(x) = \cos |x| & D. f(x) = \cos \sqrt{|x|} \end{array}$ 
     - 分析
       - 只要见到 $f'(x_0)$ $\implies$ 先写导数定义。
         - 当题目给出 $f(x)$ ，写【差值式】。
-        - 有界值 $\times$ 无穷小 $=$ 无穷小
-  2. **设 $f(0) = 0$ ，以下极限存在能确定 $f(x)$ 在点 $x = 0$ 可导的是 $()$ 。**【抽象型】
+        - 有界值 $ \times $ 无穷小 = 无穷小
+  2. 设 $f(0) = 0$ ，以下极限存在能确定 $f(x)$ 在点 $x = 0$ 可导的是 $( \text{ B } )$ 。【抽象型】
     - $\begin{array}{l} A. \lim\limits_{h \to 0}\dfrac{f(1 - \cos h)}{h^2} & B. \lim\limits_{h \to 0}\dfrac{f(1 - e^h)}{h} \\[1em] C. \lim\limits_{h \to 0}\dfrac{f(h - \sin h)}{h^2} &  D. \lim\limits_{h \to 0}\dfrac{f(2h) - f(h)}{h}\end{array}$ 
     - 分析
       - 抽象型使用【增量式】
@@ -53,7 +53,7 @@ description: 做笔记，喝凉茶，看高数
         - 天生【单侧极限】
       - $D$ 反例
         - $f(x) = \begin{cases} 1, & x\not= 0 \\[1em] 0, & x = 0 \end{cases}$ 
-      - $\begin{cases} f'(0) \cdot n = \exists & \implies f'(0) \exists \\[1em] f'(0) \cdot \infty = \exists & \implies f'(0) \exists = 0 \\[1em] f'(0) \cdot 0 = \exists & \not\implies f'(0) \exists \end{cases}$ 
+      - $\begin{cases} f'(0) \cdot n = \exists & \implies f'(0) \, \exists \\[1em] f'(0) \cdot \infty = \exists & \implies f'(0) \, \exists = 0 \\[1em] f'(0) \cdot 0 = \exists & \not\implies f'(0) \, \exists \end{cases}$ 
     - 【注】
       - $🐶 \to 0$ 时，$\dfrac{|🐶|}{🐶}$ 有界，但 $\lim\limits_{🐶 \to 0}\dfrac{|🐶|}{🐶}$ 不存在。
   3. 若 $f(x)$ 是可导的偶函数，证明 $f'(x)$ 的奇函数。【记】
@@ -72,9 +72,9 @@ $ \begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\[1em] (\tan x)' = 
 
 $ \begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\[1em] (\arctan x)' = \dfrac{1}{1 + x^2} & ( {\rm arccot} x)' = - \dfrac{1}{1 + x^2} \end{array} $
 
-$ \begin{array}{l} (\ln(x + \sqrt{x^2 + 1}))' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array} $ 
+$ \begin{array}{l} \left( \ln(x + \sqrt{x^2 + 1}) \right)' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array} $ 
 
-$ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{array} $ 
+$ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{array} $ 
 
 
 <br>
@@ -129,7 +129,7 @@ $ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end
 6. 高阶导数
   - $\text{高阶导数} \begin{cases} \text{莱布尼兹公式} \\[1em] \text{找规律用数学归纳法} \\[1em] \text{展开式法} \end{cases}$ 
   - 莱布尼兹公式
-    - $\begin{cases} (u \pm v)^{(n)} & = u^{(n)} \pm v^{(n)} \\[1em] (uv)^{(n)} & = \sum_{k=0}^{k=n} C_n^k u^{(n - k)} v^{(k)} \\[1em] & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \end{cases}$ 
+    - $\begin{cases} (u \pm v)^{(n)} & = u^{(n)} \pm v^{(n)} \\[1em] (uv)^{(n)} & = \sum\limits_{k=0}^{n} C_n^k u^{(n - k)} v^{(k)} \\[1em] & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \end{cases}$ 
     - $(a^x)^{(n)} = a^x(\ln a)^n, \quad (e^x)^{(n)} = e^x$ 
     - $(\sin kx)^{(n)} = k^n \sin( kx + \frac{\pi}{2} \cdot n  )$ 
     - $(\cos kx)^{(n)} = k^n \cos( kx + \frac{\pi}{2} \cdot n  )$ 
@@ -160,7 +160,7 @@ $ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end
    3. **介值定理**
       - 当 $m \leq \mu \leq M$ 时，则 $\exists \xi \in [a, b]$ ，使 $f(\xi) = \mu$ 。
    4. **零点定理**
-      - 当在 $f(a) \cdot f(b) < 0$ 时，则 $\exists \xi \in (a, b)$ ，使 $f(\xi) = 0$ 。
+      - 当在 $f(a) \cdot f(b) < 0$ 时，则 $\exists \, \xi \in (a, b)$ ，使 $f(\xi) = 0$ 。
       - （方程的根）
 
 2. 涉及 $f'(x)$ 的定理
@@ -171,7 +171,7 @@ $ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end
       - 证明见《高数 18 讲》
    6. **罗尔定理**
 
-      -  设 $f(x)$ 满足以下三条 $\begin{cases} 1) [a, b] \text{ 连续} \\[1em] 2) (a, b) \text{ 内可导} \\[1em] 3) f(a) = f(b) \end{cases} \implies \exists \xi \in (a, b) \text{ 使 } f'(\xi) = 0$ 。
+      -  设 $f(x)$ 满足以下三条 $\begin{cases} 1) [a, b] \text{ 连续} \\[1em] 2) (a, b) \text{ 内可导} \\[1em] 3) f(a) = f(b) \end{cases} \implies \exists \, \xi \in (a, b) \text{ 使 } f'(\xi) = 0$ 。
    7. 拉格朗日中值定理
       - 设 $f(x)$ 满足 $\begin{cases}  1) [a, b] \text{上连续} \\[1em] 2) (a, b) \text{内可导}\end{cases}$ ，则 $\exists \xi \in (a, b)$ ，使 $f'(\xi) = \dfrac{f(b) - f(a)}{b - a}$ 。
       - 若 $f(b) = f(a)$ ，则 $f'(\xi) = 0$ ，即为罗尔定理。
@@ -205,7 +205,7 @@ $ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end
   - 设 $f(x)$ 在 $[a, b]$ 上连续，证明 $\exists \xi \in [a, b]$ ，使 $\int_a^b{f(x) {\rm d} x = f(\xi)(b - a)}$ 。
     - 由于 $f(x)$ 在 $[a, b]$ 上连续，所以存在 $m \leq f(x) \leq M (x \in [a, b])$ ，$m$ 为最小值，$M$ 为最大值。
     - 所以 $\begin{array}{l} & \int_a^b{m} {\rm d}x \leq \int_a^bf(x){\rm d}x \leq \int_a^b{M}{\rm d}x \\[1em] \implies & m(b - a) \leq \int_a^b{f(x)}{\rm d}x \leq M(b - a) \\[1em] \implies & m \leq \dfrac{ \int_a^b{f(x){\rm d}x} }{b - a} \leq M \end{array}$ 。 
-    - 所以 $\exists \xi \in [a, b]$ ，使 $f(\xi) = \dfrac{\int_a^b{f(x)}{\rm d}x}{b - a}$ 。
+    - 所以 $\exists \, \xi \in [a, b]$ ，使 $f(\xi) = \dfrac{\int_a^b{f(x)}{\rm d}x}{b - a}$ 。
 
 2. 罗尔定理的应用（6）
    - **求导公式逆用法**
@@ -227,16 +227,16 @@ $ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end
          - 1⃣️
            - 由 $\lim\limits_{x \to 0^+}\dfrac{f(x)}{x} < 0$ ，所以 $\exists \xi > 0$ ，当 $0 < x <\xi$ 时，$\dfrac{f(x)}{x} < 0$ ，所以当 $0 < x < \xi$ 时，$f(x) < 0$ 。
              - 【极限保号性】
-           - 取 $a \in (0, \xi)$ ，$f(a) < 0$ ，又因为 $f(1) > 0$ ，所以 $\exists c \in (\xi, 1)$ ，使得 $f(c) = 0$ 。 
+           - 取 $a \in (0, \xi)$ ，$f(a) < 0$ ，又因为 $f(1) > 0$ ，所以 $\exists c \in (a, 1)$ ，使得 $f(c) = 0$ 。 
          - 2⃣️
            - 设 $F(x) = f(x) \cdot f'(x)$ ，$f(0) = \lim\limits_{x \to 0^+}f(x) = \lim\limits_{x \to 0^+}\dfrac{f(x)}{x} \cdot x = 0$ 。
              - 函数极限存在，函数有界，所以 $\lim\limits_{x \to 0^+}\dfrac{f(x)}{x}$ 有界。 
            - 由于 $f(0) = f(c) = 0$ ，所以 $\exists b \in (0, c)$ ，使得 $f'(b) = 0$ 。
            - 所以 $F(0) = F(b) = F(c) = 0$ 。
-             - 所以 $\exists \xi_1 \in (0, b)$ ，使得 $F'(\xi_1) = 0$ 。
-             - 所以 $\exists \xi_2 \in (b, c)$ ，使得 $F'(\xi_2) = 0$ 。
+             - 所以 $\exists \, \xi_1 \in (0, b)$ ，使得 $F'(\xi_1) = 0$ 。
+             - 所以 $\exists \, \xi_2 \in (b, c)$ ，使得 $F'(\xi_2) = 0$ 。
        3. $f(x)$ 在 $[0, 1]$ 上连续，$(0, 1)$ 内可导，且 $f(1) = k \int_0^{ \frac{1}{k} } x e^{1 - x} f(x) {\rm d} x, (k>1)$ ，证明 $\exists \xi \in (0, 1)$ ，使 $f'(\xi) = (1 - \dfrac{1}{\xi}) f(\xi)$ 。
-         - $f'(\xi) = (1 - \dfrac{1}{\xi}) f(\xi) \implies f'(\xi) + f(\xi)(\dfrac{1}{\xi - 1}) = 0$ 
+         - $f'(\xi) = (1 - \dfrac{1}{\xi}) f(\xi) \implies f'(\xi) + f(\xi)(\dfrac{1}{\xi} - 1) = 0$ 
            - 令 $F(x) = f(x) \cdot e^{\ln x - x} = f(x) \cdot x \cdot e^{-x}$ 
          - **【证明题中，见到 $\int_a^bf(x){\rm d}x$ 先用积分中值定理试试再说】** 
            - $k \int_0^{ \frac{1}{k} } x e^{1 - x} f(x) {\rm d} x = \eta \cdot e^{1 - \eta} \cdot f(\eta) = f(1) \quad (0 < \eta < \dfrac{1}{k} < 1)$ 
@@ -262,17 +262,17 @@ $ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end
        3. 设 $f(x)，g(x)$ 在 $[a, b]$ 上二阶可导，$g''(x) \not= 0$ ，$f(a) = f(b) = g(a) = g(b) = 0$ 。证明：1⃣️ $g(x) \not= 0 \quad \forall x \in (a, b)$ 。2⃣️  $\exists \xi \in (a, b)$，使 $\dfrac{f(\xi)}{g(\xi)} = \dfrac{f''(\xi)}{g''(\xi)}$ 。
          - 1⃣️
            - 反证法
-             - 设 $\exists x_0 \in (a, b)，g(x_0) = 0$ 
+             - 设 $\exists \, x_0 \in (a, b)，g(x_0) = 0$ 
          - 2⃣️
            - $\xi \to x \implies f(x)g''(x) = g(x)f''(x)$ 
-           - 积分： $\begin{array}{l} \dfrac{f(\xi)}{g(\xi)} = \dfrac{f''(\xi)}{g''(\xi)} & \implies \int f(x)g''(x) {\rm d}x = \int g(x)f''(x) {\rm d}x \\[1em] & \implies f(x)g'(x) - \int g'(x)f'(x){\rm d}x = g(x)f'(x) - \int f'(x)g'(x){\rm d}x \\[1em] & \implies f(x)g'(x) = g(x)f'(x) \end{array}$  
+           - 积分： $ \begin{array}{l} & \dfrac{f(\xi)}{g(\xi)} = \dfrac{f''(\xi)}{g''(\xi)} \\[1em] \implies & \int f(x)g''(x) {\rm d}x = \int g(x)f''(x) {\rm d}x \\[1em] \implies & f(x)g'(x) - \int g'(x)f'(x){\rm d}x = g(x)f'(x) - \int f'(x)g'(x){\rm d}x \\[1em] \implies & f(x)g'(x) = g(x)f'(x) \end{array} $  
            - 令 $F(x) = f(x)g'(x) - g(x)f'(x)$ 
              - $F(a) = f(a)g'(a) - g(a)f'(a) = 0$
              - $F(b) = f(b)g'(b) - g(b)f'(b) = 0$  
 
 3. 拉格朗日中值定理的应用（7）
    1. 将 $f$ 复杂化
-     - 设 $f(x)$ 在 $[a, b]$ 上连续， $(a, b)$ 内可导，证明：$\exists \xi \in (a, b)$ ，使 $bf(b) - af(a) = [f(\xi) + \xi f'(\xi)(b - a)]$ 。
+     - 设 $f(x)$ 在 $[a, b]$ 上连续， $(a, b)$ 内可导，证明：$\exists \xi \in (a, b)$ ，使 $bf(b) - af(a) = \left[ f(\xi) + \xi f'(\xi) \right](b - a)$ 。
    2. 给出相对高阶的条件 $\implies$ 证明低阶不等式
       - 设 $f''(x) < 0，f(0) = 0$ ，证明：$\forall x_1 \not= x_2 > 0$ ，有 $f(x_1 + x_2) < f(x_1) + f(x_2)$ 。
         - 【多点最好画图】 
@@ -282,7 +282,7 @@ $ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end
           -  因为 $\xi_1 < \xi_2，f''(x) < 0$ ，所以 $f(\xi_1) > f(\xi_2)$ 。
           -  所以 $f(x_1) > f(x_1 + x_2) - f(x_2)$ 。
    3. 给出相对低阶的条件 $\implies$ 证明高阶不等式
-      - 设 $f(x)$ 二阶可导，且 $f(2) > f(1)，f(2) > \int_2^3 f(x) {\rm d}x$ ，证明 $\exists \xi \in (1, 3)$ ，使 $f''(\xi) < 0$ 。 
+      - 设 $f(x)$ 二阶可导，且 $f(2) > f(1)，f(2) > \int_2^3 f(x) {\rm d}x$ ，证明 $\exists \, \xi \in (1, 3)$ ，使 $f''(\xi) < 0$ 。 
         - $f(2) - f(1) = f'(\xi_1) > 0 \quad \xi_1 \in (1, 2)$ 
         - 【积分中值定理】
           -  $f(2) > \int_x^3 f(x){\rm d}x = f(\eta)(3 - 2) = f(\eta) \quad \eta \in (2, 3)$ 
@@ -303,7 +303,7 @@ $ \begin{array}{l} (\ln(x + \sqrt{x^2 - 1}))' = \dfrac{1}{ \sqrt{x^2 - 1} } \end
 
 4. 柯西中值定理的应用（8）
    - 例题
-     1. $f(x)$ 在 $[a, b]$ 上连续，在 $(a, b)$ 内可导，且 $f'(x) \not= 0$ 。证明：$\exists \xi, \eta \in (a, b)$ ，使得 $\dfrac{ f'(\xi) }{ f'(\eta) } = \dfrac{ e^b - e^a }{ b - a }e^{-\eta} $ 。
+     1. $f(x)$ 在 $[a, b]$ 上连续，在 $(a, b)$ 内可导，且 $f'(x) \not= 0$ 。证明：$\exists \, \xi, \eta \in (a, b)$ ，使得 $\dfrac{ f'(\xi) }{ f'(\eta) } = \dfrac{ e^b - e^a }{ b - a }e^{-\eta} $ 。
        - 物以类聚，人以群分
        - $ f'(\xi) = \dfrac{ e^b - e^a }{ b - a } \cdot \dfrac{ f'(\eta) }{ e^\eta } $ 
          - $ \dfrac{ f'(\eta) }{ e^\eta } $ 像柯西中值定理
