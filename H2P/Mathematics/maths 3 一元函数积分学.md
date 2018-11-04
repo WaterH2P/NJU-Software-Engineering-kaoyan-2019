@@ -36,7 +36,7 @@ description: 做笔记，喝凉茶，看高数
 - $ \int \dfrac{1}{x} {\rm d}x = \ln |x| + C $ 
 - $ \begin{cases} \int a^x {\rm d}x = \dfrac{1}{ \ln a } a^x + C, \quad ( a > 0, a \not= 1 ) \\\\ \int e^x {\rm d}x = e^x + C \end{cases} $ 
 - $ \begin{cases} \int \sin x {\rm d}x = - \cos x + C \quad & \int \tan x{\rm d}x = - \ln | \cos x | + C \\ \\ \int \cos x {\rm d}x = \sin x + C \quad & \int \cot x {\rm d}x = \ln | \sin x | + C \\ \\ \int \sec x {\rm d}x = \ln | \sec x + \tan x | + C \\\\ \int \csc x {\rm d}x = \ln | \csc x - \cot x | + C \\\\ \int \sec^2 x {\rm d}x = \tan x + C \quad & \int \sec x \tan x {\rm d}x = \sec x + C \\\\ \int \csc^2 x {\rm d}x = - \cot x + C \quad & \int \csc x \cot x {\rm d}x = - \csc x + C \end{cases} $ 
-- $ \begin{cases} \int \dfrac{1}{ \sqrt{1 - x^2} }{\rm d}x = \arcsin x + C \quad & \int \dfrac{1}{ \sqrt{x^2 + a^2} } = \ln ( x + \sqrt{x^2 + a^2} ) + C \\\\ \int \dfrac{1}{ \sqrt{a^2 - x^2} }{\rm d}x = \arcsin \dfrac{x}{a} + C \quad & \int \dfrac{1}{ \sqrt{x^2 - a^2} } = \ln ( x + \sqrt{x^2 - a^2} ) + C \\\\ \int \dfrac{1}{1 + x^2}{\rm d}x = \arctan x + C \quad & \int \dfrac{1}{a^2 - x^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{a + x}{a - x}| + C \\\\   \int \dfrac{1}{a^2 + x^2}{\rm d}x = \dfrac{1}{a} \arctan \dfrac{x}{a} + C \quad & \int \dfrac{1}{x^2 - a^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{x - a}{x + a}| + C \\\\ \int \sqrt{a^2 - x^2} {\rm d}x = \dfrac{a^2}{2} \arcsin \dfrac{x}{a} + \dfrac{x}{2} \sqrt{a^2 - x^2} + C \end{cases} ​$ 
+- $ \begin{cases} \int \dfrac{1}{ \sqrt{1 - x^2} }{\rm d}x = \arcsin x + C \quad & \int \dfrac{1}{ \sqrt{x^2 + a^2} } = \ln ( x + \sqrt{x^2 + a^2} ) + C \\\\ \int \dfrac{1}{ \sqrt{a^2 - x^2} }{\rm d}x = \arcsin \dfrac{x}{a} + C \quad & \int \dfrac{1}{ \sqrt{x^2 - a^2} } = \ln ( x + \sqrt{x^2 - a^2} ) + C \\\\ \int \dfrac{1}{1 + x^2}{\rm d}x = \arctan x + C \quad & \int \dfrac{1}{a^2 - x^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{a + x}{a - x}| + C \\\\   \int \dfrac{1}{a^2 + x^2}{\rm d}x = \dfrac{1}{a} \arctan \dfrac{x}{a} + C \quad & \int \dfrac{1}{x^2 - a^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{x - a}{x + a}| + C \\\\ \int \sqrt{a^2 - x^2} {\rm d}x = \dfrac{a^2}{2} \arcsin \dfrac{x}{a} + \dfrac{x}{2} \sqrt{a^2 - x^2} + C \end{cases} $ 
 
 
 <br>
@@ -274,10 +274,10 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 <br>
 ######  1、概念
 - $ y = y(x) $ 与 $ x = a, x = b, (a < b) $ 及 $ x $ 轴所围图形绕 $ x $ 轴旋转一周所得的旋转体体积。
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2%20%E7%BB%95x%E8%BD%B4%E6%97%8B%E8%BD%AC%E4%BD%93%E7%9A%84%E4%BD%93%E7%A7%AF.jpg" width="50%">
+   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2%20%E7%BB%95x%E8%BD%B4%E6%97%8B%E8%BD%AC%E4%BD%93%E7%9A%84%E4%BD%93%E7%A7%AF.jpg" width="40%">
    - $ V_x = \int_a^b \pi f^2(x) {\rm d}x $ 
 - $ y = y(x) $ 与 $ x = a, x = b, (a < b) $ 及 $ x $ 轴所围图形绕 $ y $ 轴旋转一周所得的旋转体体积。
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2%20%E7%BB%95y%E8%BD%B4%E6%97%8B%E8%BD%AC%E4%BD%93%E7%9A%84%E4%BD%93%E7%A7%AF.jpg" width="50%"> 
+   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2%20%E7%BB%95y%E8%BD%B4%E6%97%8B%E8%BD%AC%E4%BD%93%E7%9A%84%E4%BD%93%E7%A7%AF.jpg" width="40%"> 
    - $ V_y = \int_a^b 2 \pi x | f(x) | {\rm d}x $
      - 柱壳法 
 
@@ -292,10 +292,10 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
      - $ V_a' = \left( \dfrac{1}{15} a + \dfrac{1}{3} \right) \pi = 0 \implies a = -5 $ 
      - 且 $ V_a'' = \dfrac{1}{15} \pi > 0 $ ，所以 $ a = -5 $ 时 $ V_{min} = \dfrac{9}{2} \pi $ 
 2. 设平面图形 $ \sigma $ 由 $ y = x^2 - 2x, y = 0, x = 1, x = 3 $ 围成，求 $ \sigma $ 绕 $ y $ 轴旋转一周所得的旋转体体积。
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2.2.2.jpg" width="50%"> 
+   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2.2.2.jpg" width="40%"> 
    - $ \begin{array}{l} V & = \int_1^3 2 \pi x | f(x) | {\rm d}x \\\\ & = 2 \pi \left[ -\int_1^2 x(x^2 - 2x) {\rm d}x - \int_2^3 x(x^2 - 2x) {\rm d}x \right] \\\\ & = 9 \pi \end{array} $ 
 3. 过原点作 $ y = e^x $ 的切线，该切线与 $ y = e^x $、$ x $ 轴所围成的向 $ x $ 轴负向无限伸展的平面图形记为 $ D $ ，1⃣️求 $ D $ 的面积 $ S $ ，2⃣️ $ D $ 绕 $ x = 1 $ 旋转一周的旋转体的体积 $ V $ 。
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2.2.3.jpg" width="50%">
+   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2.2.3.jpg" width="40%">
    - 1⃣️
      - 设切点 $ ( x_0, e^{x_0} ) $，所以 $ k = y'(x_0) = e^{x_0} $ 
        - 切线方程为 $ y - e^{x_0} = e^{x_0} (x - x_0) $ ，过原点，$ \implies x_0 = 1 $ 
