@@ -1,7 +1,7 @@
 ---
 title: 一元函数微分学
 date: 2018-9-26
-updated: 2018-10-2
+updated: 2018-11-2
 tags: [maths,高数,kaoyan]
 mathjax: true
 
@@ -318,9 +318,9 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
       - 分析
         - $ f(x) = f(\frac{1}{2}) + f'(\frac{1}{2})(x - \frac{1}{2}) + \dfrac{f''(\xi)}{2}(x - \frac{1}{2})^2 $ 
         - 两边积分
-          - $ \int_0^1 f(x) {\rm d}x = \int_0^1 f(\frac{1}{2}) {\rm d}x + \int_0^1 f'(\frac{1}{2})(x - \frac{1}{2}) {\rm d}x + \int_0^1 \dfrac{f''(\xi)}{2}(x - \frac{1}{2})^2  $ 
-          - $ \int_0^1 f(x) {\rm d}x = f(\frac{1}{2}) + 0 + \int_0^1 \dfrac{f''(\xi)}{2}(x - \frac{1}{2})^2 $ 
-          - $ f(\frac{1}{2}) = - \int_0^1 \dfrac{f''(\xi)}{2}(x - \frac{1}{2})^2 $ 
+          - $ \int_0^1 f(x) {\rm d}x = \int_0^1 f(\frac{1}{2}) {\rm d}x + \int_0^1 f'(\frac{1}{2})(x - \frac{1}{2}) {\rm d}x + \int_0^1 \dfrac{f''(\xi)}{2}(x - \frac{1}{2})^2{\rm d}x $ 
+          - $ 0 = f(\frac{1}{2}) + 0 + \int_0^1 \dfrac{f''(\xi)}{2}(x - \frac{1}{2})^2{\rm d}x $ 
+          - $ f(\frac{1}{2}) = - \int_0^1 \dfrac{f''(\xi)}{2}(x - \frac{1}{2})^2{\rm d}x $ 
       - $ D $ 
 
 
@@ -337,18 +337,18 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
   - 若 $ f(x) $ 在 $ x = x_0 $ 处连续，在 $ \bigcup\limits^o (x_0, \delta) $ 内可导，则
     - $ \begin{cases} \text{当} x_0 \in (x_0 - \delta, x_0) \text{时} f'(x) < 0, \text{当} x_0 \in (x_0, x_0 + \delta) \text{时} f'(x) > 0 \implies \text{极小} \\[1em] \text{当} x_0 \in (x_0 - \delta, x_0) \text{时} f'(x) > 0, \text{当} x_0 \in (x_0, x_0 + \delta) \text{时} f'(x) < 0 \implies \text{极大} \\[1em] \text{若} f'(x) \text{在} (x_0 - \delta, x_0) \text{与} (x_0, x_0 + \delta) \text{内不变号} \implies \text{不是极值} \end{cases} $ 
     - ⭐️只需要满足在【去心邻域】内可导
-  - $ f(x) $ 在 $ x = x_0 $ 处二阶可导， $ f'(x_0) = 0 $ ，$ f(x_0) $ 是极值。
+  - $ f(x) $ 在 $ x = x_0 $ 处二阶可导， $ f'(x_0) = 0 $ ，$ \begin{cases} f''(x_0) > 0 \implies \text{ 极小值 } \\ \\ f''(x_0) < 0 \implies \text{ 极大值 } \end{cases} $ 。
 
 2. 例题
-  1. 证明 $ f(x) = ( 1 + \dfrac{1}{x} )^x $ 在 $(0, + \infty) $ 内单调增。 
-    - $ f(x) = e^{ x \ln ( 1 + \dfrac{1}{x} ) } = e^{ x [ \ln ( 1 + x ) - \ln x ] } $ 
-    - $ \begin{array}{l} f'(x) & = ( 1 + \dfrac{1}{x} )^x \cdot [ \ln (1 + x) - \ln x + x ( \dfrac{1}{1 + x} - \dfrac{1}{x} ) ] \\[1em] & = ( 1 + \dfrac{1}{x} )^x \cdot [ \ln (1 + x) - \ln x - \dfrac{1}{ 1 + x } ] \end{array} $ 
+  1. 证明 $ f(x) = \left( 1 + \dfrac{1}{x} \right)^x $ 在 $(0, + \infty) $ 内单调增。 
+    - $ f(x) = e^{ x \ln \left( 1 + \frac{1}{x} \right) } = e^{ x \left[ \, \ln ( 1 + x ) - \ln x \, \right] } $ 
+    - $ \begin{array}{l} f'(x) & = \left( 1 + \dfrac{1}{x} \right)^x \cdot \left[ \ln (1 + x) - \ln x + x \left( \dfrac{1}{1 + x} - \dfrac{1}{x} \right) \right] \\[1em] & = \left( 1 + \dfrac{1}{x} \right)^x \cdot \left[ \ln (1 + x) - \ln x - \dfrac{1}{ 1 + x } \right] \end{array} $ 
       - 对于 $ \ln (1 + x) - \ln x $ ，令 $ f(t) = \ln t $ 。
       - 在 $ [x, 1+x] $ 上用拉氏定理
         - $ \ln (1 + x) - \ln x = \dfrac{1}{\xi} \quad (x < \xi < 1 + x) $ 
         - 所以 $ \dfrac{1}{\xi} > \dfrac{1}{x} $ 
       - 所以 $ \ln (1 + x) - \ln x - \dfrac{1}{ 1 + x } > 0 $ 
-    - 又因为 $ ( 1 + \dfrac{1}{x} )^x > 0 $，所以 $ f'(x) > 0 \quad ( x \in (0, \infty) ) $ 
+    - 又因为 $ \left( 1 + \dfrac{1}{x} \right)^x > 0 $，所以 $ f'(x) > 0 \quad ( x \in (0, \infty) ) $ 
   2. ⭐️设 $ f(x) $ 连续，其 $ f'(x) $ 的图像如下，则 $ f(x) $ 有几个极小值点，几个极大值点。
     - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/2-4.1.2.3.png" width="50%">
     - 看图说话
@@ -360,8 +360,8 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
 #### ㊁、凹凸性 与 拐点
 1. 凹凸性
   - $ \forall x_1, x_2 \in I $ ，有：
-    - $ \dfrac{ f(x_1) + f(x_2) }{2} > f(\dfrac{ x_1 + x_2 }{2}) \implies f(x) $ 是凹曲线
-    - $ \dfrac{ f(x_1) + f(x_2) }{2} < f(\dfrac{ x_1 + x_2 }{2}) \implies f(x) $ 是凸曲线
+    - $ \dfrac{ f(x_1) + f(x_2) }{2} > f \left( \dfrac{ x_1 + x_2 }{2} \right) \implies f(x) $ 是凹曲线
+    - $ \dfrac{ f(x_1) + f(x_2) }{2} < f \left( \dfrac{ x_1 + x_2 }{2} \right) \implies f(x) $ 是凸曲线
 2. 拐点
    - 连续曲线凹凸弧的分界点
      - 不一定需要可导
@@ -383,37 +383,37 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
     - 根据上一例题，只考虑 $(x - 3)^3$ 。
     - 令 $ ( x - 1 )( x - 2 )^2( x - 4 )^4 = g(x) \implies y = ( x - 3 )^3 g(x) $
     - $ y' = 3( x - 3 )^2 \cdot g + ( x - 3 )^3 \cdot g' $ 
-    - $ y'' = 6( x - 3 ) \cdot g + (...)^2 + (...)^2 + (...)^3 \implies y''(3) = 0 $ 
-    - $ y''' = 6 \cdot g + (...) + (...) + (...)^2 + (...)^2 + (...)^3 \implies y'''(3) \not= 0 $ 
+    - $ y'' = 6( x - 3 ) \cdot g + 6(x-3)^2 \cdot g' + (x-3)^3 \cdot g'' $ 
+      - $ \implies y''(3) = 0 $ 
+    - $ y''' = 6g + 18(x-3) \cdot g' + 9(x-3)^2 \cdot g'' + (x-3)^3 \cdot g''' $ 
+      - $ \implies y'''(3) \not= 0 $ 
     - $ C $ 
 
 
 <br>
 #### ㊂、渐近线
 1. 铅直渐近线
-  - 若 $ \lim\limits_{x \to x_0^+ / x_0^-} f(x) = \infty $ ，则称 $ x = x_0 $ 为 $ f(x) $ 的一条铅直渐近线。
+  - 若 $ \lim\limits_{x \to x_0^{\pm}} f(x) = \infty $ ，则称 $ x = x_0 $ 为 $ f(x) $ 的一条铅直渐近线。
   - 出现在：无定义点 或者 开区间端点 
 2. 水平渐近线
 
-  - 若 $ \lim\limits_{x \to +\infty / -\infty} f(x) = A $ ，则称 $ y = A $ 为 $ f(x) $ 的一条水平渐近线。
+  - 若 $ \lim\limits_{x \to \pm \infty} f(x) = A $ ，则称 $ y = A $ 为 $ f(x) $ 的一条水平渐近线。
 3. 斜渐近线
 
-  - 若 $ \lim\limits_{x \to +\infty / -\infty} \dfrac{ f(x) }{x} = a \not= 0 $ ，且 $ \lim\limits_{x \to +\infty / -\infty }[ f(x) - ax ] = b \exists $ ，则称 $ y = ax + b  $ 为一条斜渐近线。
+  - 若 $ \lim\limits_{x \to \pm \infty} \dfrac{ f(x) }{x} = a \not= 0 $ ，且 $ \lim\limits_{x \to \pm \infty} \left[ f(x) - ax \right] = b \, \exists $ ，则称 $ y = ax + b  $ 为一条斜渐近线。
 4. 例题
-  1. 下列函数中存在斜渐近线的是 $ ( \quad ) $ 。
+  1. 下列函数中存在斜渐近线的是 $ ( \text{ A } ) $ 。
 
-    - $ A. y = x + \sin \dfrac{1}{x} \quad B. y = x + \sin x \quad y = x^2 + \sin \dfrac{1}{x} \quad y = x^2 + \sin x  $ 
-    - $ A $
-  2. 曲线 $ y = e^{ \frac{1}{x^2} } \cdot \arctan \dfrac{ x^2 + x + 1 }{ ( x - 1 )( x + 2 ) } $ 有 $ ( \quad ) $ 条渐近线。
+    - $ A. y = x + \sin \dfrac{1}{x} \quad B. y = x + \sin x \quad C.y = x^2 + \sin \dfrac{1}{x} \quad D.y = x^2 + \sin x  $ 
+  2. 曲线 $ y = e^{ \frac{1}{x^2} } \cdot \arctan \dfrac{ x^2 + x + 1 }{ ( x - 1 )( x + 2 ) } $ 有 $ ( \text{ 2 } ) $ 条渐近线。
     - 铅直渐近线： $ x = 0 $ 
     - 水平渐近线： $ y = \dfrac{\pi}{4} $ 
-    - $ 2 $ 
 
 
 <br>
 #### ㊃、最值
 1. 对于函数 $ f(x) $ ，在 $ [a, b] $ 上找出三类点
-  - $ \begin{cases} f'(x) = 0 \implies x_0 \text{驻点} \\[1em] f'(x) \text{不} \exists \implies x_1 \text{不可导点} \\[1em] \text{端点} a, b  \end{cases} $ 
+  - $ \begin{cases} f'(x) = 0 \implies x_0 \text{ 驻点 } \\[1em] f'(x) \text{ 不 } \exists \implies x_1 \text{ 不可导点 } \\[1em] \text{ 端点 } a, b  \end{cases} ​$ 
   - 比较 $ f(x_0) $ ，$ f(x_1) $ ，$ f(a) $ ，$ f(b) $ 大小，取其最大（小）者为最大（小）值。
 2. 若在 $ I $ 上求出唯一极大（小）值点，则由实际背景 $ \implies $ 此点即为最大（小）值。
   - 若 $ (a, b) $ 内，考虑端点和可能存在的极值点即可。
