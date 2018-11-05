@@ -10,15 +10,24 @@ description: 做笔记，喝凉茶，看高数
 
 
 ## 一、定义
-1. 不定积分**【 +C 】** 
-  - $ \forall x \in I $ ，使 $ F'(x) = f(x) $ ，则称 $ F(x) $ 是 $ f(x) $ 在 $ I $ 上的一个原函数。
-  - 全体原函数就叫不定积分，记成：$ \int f(x) {\rm d}x  = F(x) + C $ 。
-2. 定积分
-  - 黎曼积分 
-  - $ \int_a^b f(x) {\rm d}x $ 
-3. 小结
-  - 牛顿—莱布尼茨公式
-    - $ \int_a^b f(x) {\rm d}x = \left. F(x) \right|_{x = a}^{x = b} = F(b) - F(a) $ 
+
+
+<br>
+#### ㊀、不定积分【 +C 】 
+- $ \forall x \in I $ ，使 $ F'(x) = f(x) $ ，则称 $ F(x) $ 是 $ f(x) $ 在 $ I $ 上的一个原函数。
+- 全体原函数就叫不定积分，记成：$ \int f(x) {\rm d}x  = F(x) + C $ 。
+
+
+<br>
+#### ㊁、定积分
+- 黎曼积分 
+- $ \int_a^b f(x) {\rm d}x $ 
+
+
+<br>
+#### ㊂、小结
+- 牛顿—莱布尼茨公式
+   - $ \int_a^b f(x) {\rm d}x = \left. F(x) \right|_{x = a}^{x = b} = F(b) - F(a) $ 
 
 <br>
 
