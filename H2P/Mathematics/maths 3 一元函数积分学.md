@@ -1,7 +1,7 @@
 ---
 title: 一元函数积分学
 date: 2018-10-2
-updated: 2018-10-4
+updated: 2018-11-5
 tags: [maths,高数,kaoyan]
 mathjax: true
 
@@ -155,8 +155,8 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
    - 令 $ \ln x = t, \quad t = e^t \implies f(t) = \dfrac{ \ln(1 + e^t) }{e^t} $ 
    - $ \begin{array}{l} \int f(x) {\rm d}x & = \int \ln (1 + e^x) \cdot e^{-x} {\rm d}x \\\\ & = - e^{-x} \ln(1 + e^x) + \int \dfrac{1 + e^x - e^x}{1 + e^x} {\rm d}x \\\\ & = - e^{-x} \ln(1 + e^x) + x - \ln(1 + e^x) + C \\\\ & = x - ( e^{-x} + 1 )\ln (1 + e^x) + C \end{array} $ 
 
-
 <br>
+
 #### ㊃、有理函数积分
 
 
@@ -308,7 +308,7 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 
 
 <br>
-#### ㊀、用积分表达和计算函数的平均值
+#### ㊂、用积分表达和计算函数的平均值
 
 
 <br>
@@ -320,6 +320,101 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 ######  2、例题
 1. 函数 $ y = \ln x $ 在区间 $ [1, e] $ 上的平均值为 \_\_\_\_\_\_\_\_ 。
    - $ ave = \dfrac{ \int_1^e \ln x {\rm d}x }{e - 1} = \dfrac{1}{e - 1} $ 
+
+
+<br>
+#### ㊃、计算弧长
+
+【转】<a href="http://math001.com/integral_arc/" target="_blank">积分求平面曲线的弧长</a>
+
+
+<br>
+######  1、参数方程
+
+设曲线弧由参数方程
+
+$$
+\begin{cases}
+  x = \varphi(t) \\\\
+  y = \psi(t)
+\end{cases} \qquad (\alpha \leq t \leq \beta)
+$$
+
+给出，其中 $ \varphi(t), \, \psi(t) \text{ 在 } [\alpha, \beta] $ 上具有连续导数，t 为参变量，在 $ [\alpha, \, \beta] $ 上任一小区间 $ [t, \, t+{\rm d}t] $ 的小弧段长度 $ \Delta s $ 近似等于弧长。
+
+$$
+\begin{array}{l}
+  \Delta x = \varphi(t + {\rm d}t) - \varphi(t) \approx {\rm d}x = \varphi'(t) {\rm d}t \\\\
+  \Delta y = \psi(t + {\rm d}t) - \psi(t) \approx {\rm d}x = \psi'(t) {\rm d}t
+\end{array}
+$$
+
+$ \Delta s $ 的近似值（弧微分）及弧长元素为
+
+$$
+\begin{array}{l}
+  {\rm d}s &= \sqrt{ ({\rm d}x)^2 + ({\rm d}y)^2 } \\\\ 
+  &= \sqrt{ \left( \varphi'(t){\rm d}t \right)^2 + \left( \psi'(t) \right)^2 } \\\\ 
+  &= \sqrt{ \varphi'^2(t) + \psi'^2(t) } \, {\rm d}t
+\end{array}
+$$
+
+弧长为
+
+$$
+s = \int_{\alpha}^{\beta} \sqrt{ \varphi'^2(t) + \psi'^2(t) } \, {\rm d}t
+$$
+
+
+<br>
+######  2、直角坐标系
+
+$ y = f(x) \, (a \leq x \leq b) $ 使 x 为参变量，把函数写成参数方程
+
+$$
+\begin{cases}
+  x = x \\\\
+  y = f(x)
+\end{cases} \qquad (a \leq x \leq b)
+$$
+
+则弧长
+
+$$
+s = \int_{a}^{b} \sqrt{ 1 + y'^2 } \, {\rm d}x
+$$
+
+
+<br>
+######  3、极坐标
+
+曲线弧由极坐标
+
+$$
+{\rm r} = {\rm r}(\theta) \qquad (\alpha \leq \theta \leq \beta)
+$$
+
+给出，$ {\rm r} (\theta) \text{ 在 } [\alpha, \, \beta] $ 上有连续导数，由直角坐标与极坐标的关系可得
+
+$$
+\begin{cases}
+  x = {\rm r}(\theta) \cos \theta \\\\
+  y = {\rm r}(\theta) \sin \theta
+\end{cases} \qquad (\alpha \leq \theta \leq \beta)
+$$
+
+弧长为
+
+$$
+{\rm d}s = \sqrt{ x'^2(\theta) + y'^2(\theta) } \, {\rm d}\theta = \sqrt{ {\rm r}^2(\theta) + {\rm r}'^2(\theta) } \, {\rm d}\theta
+$$
+
+$$
+s = \int_{\alpha}^{\beta} \sqrt{ {\rm r}^2(\theta) + {\rm r}'^2(\theta) } \, {\rm d}\theta
+$$
+
+
+
 
 
 
