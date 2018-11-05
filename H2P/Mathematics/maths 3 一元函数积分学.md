@@ -75,7 +75,7 @@ description: 做笔记，喝凉茶，看高数
    - $ \sqrt{a^2 - x^2} \implies $ 令 $ x = a \sin t, \quad ( -\dfrac{\pi}{2} < t < \dfrac{\pi}{2} ) $ 
      - 单调函数 有 反函数（保单调，可回代）
    - $ \sqrt{a^2 + x^2} \implies $ 令 $ x = a \tan t, \quad ( -\dfrac{\pi}{2} < t < \dfrac{\pi}{2} ) $ 
-   - $ \sqrt{x^2 - a^2} \implies $ 令 $ x = a \sec t, \quad \begin{cases} x > 0,  0 \leq t < \dfrac{\pi}{2} \\\\ x < 0, \dfrac{\pi}{2} < t \leq \pi \end{cases} $ 
+   - $ \sqrt{x^2 - a^2} \implies $ 令 $ x = a \sec t, \quad \begin{cases} x > a,  0 \leq t < \dfrac{\pi}{2} \\\\ x < -a, \dfrac{\pi}{2} < t \leq \pi \end{cases} $ 
    - 若见到 $ \sqrt{ax^2 + bx + c} $ ，要先化为 $ \sqrt{ \varphi^2(x) - k^2 } $ ，$ \sqrt{ k^2 - \varphi^2(x) } $ ，$ \sqrt{ \varphi^2(x) + k^2 } $ ，再做三角换元。
  - 例题
    1. 求 $ \int \dfrac{ {\rm d}x }{x + \sqrt{1 - x^2}} $ 
@@ -108,7 +108,7 @@ description: 做笔记，喝凉茶，看高数
      - 解 ㊀
        - 令 $ \sqrt{ \dfrac{1 - x}{1 + x} } = t, \quad x = \dfrac{1 - t^2}{1 + t^2} $ 
        - 所以： $ \begin{array}{l} I & = \int t \cdot \dfrac{1 + t^2}{1 - t^2} \cdot \dfrac{-4t}{ (1 + t^2)^2 } {\rm d}t \\\\ & = -4 \int \dfrac{t^2}{ (1 - t^2)(1 + t^2) } {\rm d}t \\\\ & = 2 \int \left( \dfrac{1}{1 + t^2} - \dfrac{1}{1 - t^2} \right) {\rm d}t \\\\ & = 2 \arctan t - \ln \left| \dfrac{1 + t}{1 - t} \right| + C \end{array} $
-       - **回代**：$ I = 2 \arctan \sqrt{ \dfrac{1 - x}{1 + x} } - \ln \left| \dfrac{ \sqrt{1 + x} - \sqrt{1 - x} }{ \sqrt{1 + x} - \sqrt{1 - x} } \right| + C $ 
+       - **回代**：$ I = 2 \arctan \sqrt{ \dfrac{1 - x}{1 + x} } - \ln \left| \dfrac{ \sqrt{1 + x} + \sqrt{1 - x} }{ \sqrt{1 + x} - \sqrt{1 - x} } \right| + C $ 
      - 解 ㊁
        - $ I = \int \sqrt{ \dfrac{1 - x}{1 + x} } \cdot \dfrac{ {\rm d}x }{x} = \int \dfrac{ \sqrt{1 - x^2} }{(1 + x)x} {\rm d}x $ 
        - 令 $ s = \sin t, t \in \left( -\dfrac{\pi}{2}, \dfrac{\pi}{2} \right) $ 
@@ -130,7 +130,7 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
    - $ u $ 求导至 $ 0 $ 。
 2. 被积函数为 $ e^{ax} \sin bx $ ，$ e^{ax} \cos bx $ ，选谁当 $ u $ 都行。
    - $ u $ 求导两次。 
-3. 被积函数为 $ P_n(x) \ln x $ ，$ P_n(x) \arcsin x $ ，$ P_n(x) \arctan x $ ，选 $ \ln x， \text{arc-} = t $ 。
+3. 被积函数为 $ P_n(x) \ln x $ ，$ P_n(x) \arcsin x $ ，$ P_n(x) \arctan x $ ，选 $ \ln x， \text{arc-} = u $ 。
    - $ u $ 求导一次。 
 - 【注】分部积分公式的推广为：
    - $ \int uv^{(n + 1)} {\rm d}x = uv^{(n)} - u'v^{(n - 1)} + u''v^{(n - 2)} - \cdots + (-1)^n u^{(n)}v + (-1)^{n + 1} \int u^{(n + 1)}v {\rm d}x $ 
@@ -142,13 +142,13 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
    - 对 $ u $ 求导，对 $ v^{(n + 1)} $ 积分
    - 交错相乘、正负相间、首项为正
    - 最后一项（列）相乘再积分
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-2.3%20%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8E%A8%E5%B9%BF.png" width="80%">
+   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-2.3%20%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8E%A8%E5%B9%BF.jpg" width="80%">
 
 
 <br>
 ######  2、例题  
 1. 求 $ \int x^2 \arctan x {\rm d}x $ 
-   - $ = \dfrac{1}{2} x^2 - \dfrac{1}{2} \ln (1 + x^2) + C $ 
+   - $ = \dfrac{1}{3}x^3 \arctan x - \dfrac{1}{6} x^2 - \dfrac{1}{6} \ln (1 + x^2) + C $ 
 2. 求 $ \int e^{2x} \sin 3x {\rm d}x $ 
    - $ = -\dfrac{3}{13} e^{2x} \cos 3x + \dfrac{2}{13} e^{2x} \sin 3x + C $ 
 3. 设 $ f( \ln x ) = \dfrac{ \ln (1 + x) }{x} $ ，计算 $ \int f(x) {\rm d}x $ 。
@@ -184,15 +184,15 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 1. 计算 $ I = \int \dfrac{ 4x^2 - 6x -1 }{ (x + 1)(2x - 1)^2 } {\rm d}x $ 。
    - $ \dfrac{ 4x^2 - 6x -1 }{ (x + 1)(2x - 1)^2 } = \dfrac{1}{x + 1} - \dfrac{2}{ (2x - 1)^2 } $ 
      - $ 4x^2 - 6x -1 = A(2x - 1)^2 + B(x - 1)(2x - 1) + C(x + 1) $ 
-       - $ \begin{cases} \text{取} x = \dfrac{1}{2}, \quad -3 = C( \dfrac{1}{2} + 1 ) & \implies C = -2 \\\\ \text{取} x = -1, \quad 9 = 9A & \implies A = 1 \\\\ \text{比较} x^2 \text{的系数}, \quad 4 = 4A + 2B & \implies B = 0 \end{cases} $
-   - $ I = \int \dfrac{1}{x + 1} {\rm d}x - 2 \int \dfrac{1}{ (2x - 1)^2 } {\rm d}x = \ln |x + 1| + \dfrac{1}{2x - 1} + C $ 
+       - $ \begin{cases} \text{ 取 } x = \dfrac{1}{2}, \quad -3 = C( \dfrac{1}{2} + 1 ) & \implies C = -2 \\\\ \text{ 取 } x = -1, \quad 9 = 9A & \implies A = 1 \\\\ \text{ 比较 } x^2 \text{ 的系数}, \quad 4 = 4A + 2B & \implies B = 0 \end{cases} $ 
+   - $ \begin{array}{l} I &= \int \dfrac{1}{x + 1} {\rm d}x - 2 \int \dfrac{1}{ (2x - 1)^2 } {\rm d}x \\ &= \ln |x + 1| + \dfrac{1}{2x - 1} + C \\ \end{array} $ 
 2. 计算 $ I = \int \dfrac{x}{x^3 - x^2 + x - 1} {\rm d}x $ 
-   - $ I = I = \int \dfrac{x}{ (x^2 + 1)(x - 1) } {\rm d}x $ 
+   - $ I = \int \dfrac{x}{ (x^2 + 1)(x - 1) } {\rm d}x $ 
    - $ \dfrac{x}{ (x^2 + 1)(x - 1) } = \dfrac{1}{2} \left( \dfrac{-x + 1}{x^2 + 1} + \dfrac{1}{x - 1} \right) $ 
-   - $ \begin{array}{l} I & = -\dfrac{1}{2} \int \left( \dfrac{ \frac{1}{2} \cdot 2x - 1 }{ x^2 + 1 } \right) {\rm d}x -\dfrac{1}{2} \int \dfrac{1}{x - 1} {\rm d}x \\\\ & = -\dfrac{1}{4} \ln(x^2 + 1) + \dfrac{1}{2} \arctan x + \dfrac{1}{2} \ln |x - 1| + C \end{array} $ 
+   - $ \begin{array}{l} I & = -\dfrac{1}{2} \int \left( \dfrac{ \frac{1}{2} \cdot 2x - 1 }{ x^2 + 1 } \right) {\rm d}x + \dfrac{1}{2} \int \dfrac{1}{x - 1} {\rm d}x \\ & = -\dfrac{1}{4} \ln(x^2 + 1) + \dfrac{1}{2} \arctan x + \dfrac{1}{2} \ln |x - 1| + C \end{array} $ 
 3. 计算 $ I = \int \dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } {\rm d}t $
-    - $ \dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } = \dfrac{ \dfrac{1}{2} }{t - 1} + \dfrac{ -\dfrac{1}{2} }{ (t - 1)^2 } + \dfrac{ \dfrac{1}{2} }{t + 1} + \dfrac{ \dfrac{1}{2} }{ (t + 1)^2 } $ 
-    - $ \begin{array}{l} I & = \dfrac{1}{2} \left( \ln |t - 1| + \dfrac{1}{t - 1} + \ln |t + 1| - \dfrac{1}{t + 1} \right) + C \\\\ & = \dfrac{1}{2} \ln |t^2 - 1| + \dfrac{1}{t^2 - 1} + C \end{array} $ 
+    - $ \dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } = \dfrac{1}{2} \left[ \dfrac{ 1 }{t - 1} + \dfrac{ -1 }{ (t - 1)^2 } + \dfrac{ 1 }{t + 1} + \dfrac{ 1 }{ (t + 1)^2 } \right] $ 
+    - $ \begin{array}{l} I & = \dfrac{1}{2} \left( \ln |t - 1| + \dfrac{1}{t - 1} + \ln |t + 1| - \dfrac{1}{t + 1} \right) + C \\ & = \dfrac{1}{2} \ln |t^2 - 1| + \dfrac{1}{t^2 - 1} + C \end{array} $ 
 
 
 <br>
@@ -231,18 +231,20 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
        - $ \forall a $ ， $ \int_0^T f(x) {\rm d}x = \int_a^{a + T} f(x) {\rm d}x $ 
      - 证明
        - $ \int_a^{a + T} f(x) {\rm d}x = \int_a^0 f(x) {\rm d}x + \int_0^T f(x) {\rm d}x + \int_T^{a + T} f(x) {\rm d}x $ 
-       - 令 $ x - T = u $ ，$ \int_a^{a + T} f(x) {\rm d}x = \int_0^a f(u + T) {\rm d}u = \int_0^a f(u) {\rm d}u = - \int_a^0 f(x) {\rm d}x $ 
+       - 令 $ x - T = u $ 
+         - $ \int_T^{a + T} f(x) {\rm d}x = \int_0^a f(u + T) {\rm d}u = \int_0^a f(u) {\rm d}u = - \int_a^0 f(x) {\rm d}x $ 
        - 所以 $ \int_0^T f(x) {\rm d}x = \int_a^{a + T} f(x) {\rm d}x $ 。
      - 延伸
        - $ f(x) $ 是奇函数，$ T $ 为周期，连续，则：
        - $ \int_0^T f(x) {\rm d}x = \int_{ -\frac{\pi}{2} }^{ \frac{\pi}{2} } f(x) {\rm d}x = 0 $ 
    - 计算
-     - $ I = \int_{-\pi}^{\pi} \sin^n x {\rm d}x = \begin{cases} 0, & n \text{ 为奇数} \\\\ 2 \int_0^{\pi} \sin^n x {\rm d}x, & n 为偶数 \end{cases} $ 
+     - $ I = \int_{-\pi}^{\pi} \sin^n x {\rm d}x = \begin{cases} 0, & n \text{ 为奇数} \\ 2 \int_0^{\pi} \sin^n x {\rm d}x, & n \text{ 为偶数} \end{cases} $ 
      - 其中 $ \int_0^{\pi} \sin^n x {\rm d}x = \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x + \int_{ \frac{\pi}{2} }^{\pi} \sin^n x {\rm d}x $ 
        - 令 $ t = {\pi} - x $ ，$ \int_{ \frac{\pi}{2} }^{\pi} \sin^n x {\rm d}x = \int_{ \frac{\pi}{2} }^0 \sin^n ( {\pi} - t )( - {\rm d}t ) = \int_0^{ \frac{\pi}{2} } \sin^n t {\rm d}t $ 
-     - ⭐️ $ \int_{0}^{2 \pi} \cos^n x {\rm d}x = \int_{0}^{2 \pi} \sin^n x {\rm d}x = \begin{cases} 0, & n \text{ 为奇数} \\\\ 4 \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x, & n 为偶数 \end{cases} $ 
-5. 计算 $ \int_0^6 x^2 \sqrt{6x - x^2} {\rm d}x $ 。
+     - ⭐️ $ \int_{0}^{2 \pi} \cos^n x {\rm d}x = \int_{0}^{2 \pi} \sin^n x {\rm d}x = \begin{cases} 0, & n \text{ 为奇数} \\ 4 \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x, & n \text{ 为偶数} \end{cases} $ 
+5. 计算 $ I = \int_0^6 x^2 \sqrt{6x - x^2} {\rm d}x $ 。
    - 令 $ x = 3 + 3 \sin t $ 
+   - $ I = \dfrac{405}{8} \pi $ 
 
 
 <br>
@@ -255,16 +257,16 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 
 <br>
 ######  1、概念
-- $ y = y_1(x), y = y_2(x), x = a, x = b, (a < b) $ 所围成的平面图形的面积。
-- $ S = \int_a^b | y_2(x) - y_1(x) | {\rm d}x $ 
+- $ y = y_1(x), \, y = y_2(x), \, x = a, \, x = b, \, (a < b) $ 所围成的平面图形的面积。
+- $ S = \int_a^b \left| y_2(x) - y_1(x) \right| {\rm d}x $ 
 
 
 <br>
 ######  2、例题
-1. 设函数 $ f(x) $ 在 $ [0, 1] $ 上连续，在 $ (0, 1) $ 内大于零，并且满足 $ xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数}) $ ，又曲线 $ y = f(x) $ 与 $ x = 1, y = 0 $ 所围的图形 $ S $ 的面积为 $ 2 $ 。1⃣️求函数 $ y = f(x) $ 。2⃣️ $ a $ 为何值时，图形 $ S $ 绕 $ x $ 轴旋转一周所得的旋转体的体积最小。
-   - 1⃣️
+1. 设函数 $ f(x) $ 在 $ [0, 1] $ 上连续，在 $ (0, 1) $ 内大于零，并且满足 $ xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数}) $ ，又曲线 $ y = f(x) $ 与 $ x = 1, y = 0 $ 所围的图形 $ S $ 的面积为 $ 2 $ 。1️⃣求函数 $ y = f(x) $ 。2️⃣ $ a $ 为何值时，图形 $ S $ 绕 $ x $ 轴旋转一周所得的旋转体的体积最小。
+   - 1️⃣
      - $ x \not= 0 $ 时，$ \left( \dfrac{ f(x) }{x} \right)' = \dfrac{ xf'(x) - f(x) }{x^2} = \dfrac{3a}{2} \\\\ \implies \dfrac{ f(x) }{x} = \dfrac{3a}{2} x + C \\\\ \implies f(x) = \dfrac{3a}{2} x^2 + Cx, \quad x \in [0, 1]  $ 
-     - 又 $ S = 2 = \int_0^1 [ ( \dfrac{3a}{2} x^2 + Cx ) - 0 ] {\rm d}x = \dfrac{a}{2} + \dfrac{C}{2} \\\\ \implies C = 4 - a \\\\ \implies f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
+     - 又 $ S = 2 = \int_0^1 \left[ \left( \dfrac{3a}{2} x^2 + Cx \right) - 0 \right] {\rm d}x = \dfrac{a}{2} + \dfrac{C}{2} \\\\ \implies C = 4 - a \\\\ \implies f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
 
 
 <br>
@@ -284,24 +286,24 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
 
 <br>
 ######  2、例题
-1. 设函数 $ f(x) $ 在 $ [0, 1] $ 上连续，在 $ (0, 1) $ 内大于零，并且满足 $ xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数}) $ ，又曲线 $ y = f(x) $ 与 $ x = 1, y = 0 $ 所围的图形 $ S $ 的面积为 $ 2 $ 。1⃣️求函数 $ y = f(x) $ 。2⃣️ $ a $ 为何值时，图形 $ S $ 绕 $ x $ 轴旋转一周所得的旋转体的体积最小。
-   - 1⃣️
+1. 设函数 $ f(x) $ 在 $ [0, 1] $ 上连续，在 $ (0, 1) $ 内大于零，并且满足 $ xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数}) $ ，又曲线 $ y = f(x) $ 与 $ x = 1, y = 0 $ 所围的图形 $ S $ 的面积为 $ 2 $ 。1️⃣ 求函数 $ y = f(x) $ 。2️⃣ $ a $ 为何值时，图形 $ S $ 绕 $ x $ 轴旋转一周所得的旋转体的体积最小。
+   - 1️⃣ 
      - $ f(x) = \dfrac{3a}{2} x^2 + (4 - a)x $ 
-   - 2⃣️
+   - 2️⃣ 
      - $ \begin{array}{l} V & = \int_0^1 \pi f^2(x) {\rm d}x \\\\ & = \pi \left( \dfrac{9}{4}a^2 \cdot \dfrac{1}{5} + 3a(4 - a) \cdot \dfrac{1}{4} + (4 - a)^2 \cdot \dfrac{1}{3} \right) \\\\ & = \left( \dfrac{1}{30} a^2 + \dfrac{1}{3} a + \dfrac{16}{3} \right) \pi  \end{array} $ 
      - $ V_a' = \left( \dfrac{1}{15} a + \dfrac{1}{3} \right) \pi = 0 \implies a = -5 $ 
      - 且 $ V_a'' = \dfrac{1}{15} \pi > 0 $ ，所以 $ a = -5 $ 时 $ V_{min} = \dfrac{9}{2} \pi $ 
 2. 设平面图形 $ \sigma $ 由 $ y = x^2 - 2x, y = 0, x = 1, x = 3 $ 围成，求 $ \sigma $ 绕 $ y $ 轴旋转一周所得的旋转体体积。
    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2.2.2.jpg" width="40%"> 
    - $ \begin{array}{l} V & = \int_1^3 2 \pi x | f(x) | {\rm d}x \\\\ & = 2 \pi \left[ -\int_1^2 x(x^2 - 2x) {\rm d}x - \int_2^3 x(x^2 - 2x) {\rm d}x \right] \\\\ & = 9 \pi \end{array} $ 
-3. 过原点作 $ y = e^x $ 的切线，该切线与 $ y = e^x $、$ x $ 轴所围成的向 $ x $ 轴负向无限伸展的平面图形记为 $ D $ ，1⃣️求 $ D $ 的面积 $ S $ ，2⃣️ $ D $ 绕 $ x = 1 $ 旋转一周的旋转体的体积 $ V $ 。
+3. 过原点作 $ y = e^x $ 的切线，该切线与 $ y = e^x $、$ x $ 轴所围成的向 $ x $ 轴负向无限伸展的平面图形记为 $ D $ ，1️⃣ 求 $ D $ 的面积 $ S $ ，2️⃣ $ D $ 绕 $ x = 1 $ 旋转一周的旋转体的体积 $ V $ 。
    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2.2.3.jpg" width="40%">
-   - 1⃣️
+   - 1️⃣ 
      - 设切点 $ ( x_0, e^{x_0} ) $，所以 $ k = y'(x_0) = e^{x_0} $ 
        - 切线方程为 $ y - e^{x_0} = e^{x_0} (x - x_0) $ ，过原点，$ \implies x_0 = 1 $ 
        - $ \implies $ 切线方程 $ y = ex $ 
      - $ \begin{array}{l} S & = \int_{-\infty}^0 e^x {\rm d}x + \int_0^1 ( e^x - ex ) {\rm d}x = \int_0^e ( \dfrac{y}{e} - \ln y ) {\rm d}y \\\\ & = \left. \dfrac{y^2}{2e} \right|_0^e - \left. y \ln y \right|_0^e + \left. y \right|_0^e = \dfrac{e}{2} + \lim\limits_{y \to 0^+} y \ln y \\\\ & = \dfrac{e}{2} \end{array} $ 
-   - 2⃣️
+   - 2️⃣ 
      - $ \begin{array}{l} V & = \int_0^e \pi (1 - \ln y)^2 {\rm d}y - \dfrac{\pi e}{3} \\\\ & = \int_0^e \pi ( 1 - 2 \ln y + \ln^2 y ) {\rm d} y - \dfrac{\pi e}{3} \\\\ & = \pi \left[ \left. y \right|_0^e - \left. 2( y \ln y - y ) \right|_0^e + \left. ( y \ln^2 y - 2y \ln y + 2y ) \right|_0^e \right] - \dfrac{\pi e}{3} \\\\ & = \dfrac{5 \pi}{3}e \end{array} $ 
 
 
