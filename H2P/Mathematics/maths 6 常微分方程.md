@@ -58,7 +58,7 @@ description: 做笔记，喝凉茶，看高数
       - $ (1 + e^{ -\frac{x}{y} }) y {\rm d}x = (x - y){\rm d}y $ 
       - $ \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{x - y}{1 + e^{ -\frac{x}{y} }y } = \dfrac{ \dfrac{x}{y} - 1 }{ 1 + e^{ -\frac{x}{y} } } $ 
       - 令 $ \dfrac{x}{y} = u \implies x = uy \implies \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{ {\rm d}u }{ {\rm d}y } \cdot y + u $ 
-        - $ \begin{array}{l} & \dfrac{ e^u + 1 }{ e^u + u } {\rm d}u = - \dfrac{ {\rm d}y }{y} \\[1em] \implies & \int \dfrac{ e^u + 1 }{ e^u + u } {\rm d}u = - \int \dfrac{ {\rm d}y }{y} \\[1em] \implies & \ln \left| e^u + u \right| = - \ln |y| + \ln C_1 \\[1em] \implies & e^u + u = \dfrac{ \pm C_1 }{y} = \dfrac{C}{y} \end{array} $ 
+        - $ \begin{array}{l} & \dfrac{ e^u + 1 }{ e^u + u } {\rm d}u = - \dfrac{ {\rm d}y }{y} \\\\ \implies & \int \dfrac{ e^u + 1 }{ e^u + u } {\rm d}u = - \int \dfrac{ {\rm d}y }{y} \\\\ \implies & \ln \left| e^u + u \right| = - \ln |y| + \ln C_1 \\\\ \implies & e^u + u = \dfrac{ \pm C_1 }{y} = \dfrac{C}{y} \end{array} $ 
       - $ \implies \left( e^{ \frac{x}{y} } + \dfrac{x}{y} \right) \cdot y = C, \quad (C \not= 0) $ 
 
 
@@ -68,10 +68,10 @@ description: 做笔记，喝凉茶，看高数
   - 形如 $ y' + p(x)y = q(x) $ ，$ p(x), q(x) $ 为已知的连续函数。
     - $ (uv)' = u'v + uv' $ ， 且 $ ( e^🐶 )' = e^🐶 \cdot (🐶)' $ 
       - 现在 $ (🐶)' = p(x) \implies 🐶 = \int p(x) {\rm d}x $ 
-    - $ \begin{array}{l} \implies e^{ \int p(x) {\rm d}x } \cdot y' + e^{ \int p(x) } \cdot p(x)y = e^{ \int p(x) {\rm d}x } \cdot q(x) \\[1em] \implies \left( y \cdot e^{ \int px(x) {\rm d}x } \right)' = e^{ \int p(x) {\rm d}x } \cdot q(x) \\[1em] \implies y = e^{ -\int p(x) {\rm d}x } \left[ \int \left( e^{ \int p(x) {\rm d}x } \cdot q(x) \right) {\rm d}x + C \right] \end{array} $
+    - $ \begin{array}{l} \implies e^{ \int p(x) {\rm d}x } \cdot y' + e^{ \int p(x) } \cdot p(x)y = e^{ \int p(x) {\rm d}x } \cdot q(x) \\\\ \implies \left( y \cdot e^{ \int px(x) {\rm d}x } \right)' = e^{ \int p(x) {\rm d}x } \cdot q(x) \\\\ \implies y = e^{ -\int p(x) {\rm d}x } \left[ \int \left( e^{ \int p(x) {\rm d}x } \cdot q(x) \right) {\rm d}x + C \right] \end{array} $
 2. 例题
   1. 微分方程 $ (y^2 + 1) {\rm d}x = y(y - 2x) {\rm d}y $ 的通解是 \_\_\_\_\_\_\_\_ 。
-    - $ \begin{array}{l} & \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{-2y}{y^2 + 1} x + \dfrac{y^2}{y^2 + 1} \\[1em] \implies & x' + \dfrac{2y}{y^2 + 1}x = \dfrac{y^2}{y^2 + 1} \\[1em] \implies & x = e^{ -\int \frac{2y}{y^2 + 1} {\rm d}y } \left[ \int \left( e^{ \int \frac{2y}{y^2 + 1} {\rm d}y } \cdot \dfrac{y^2}{y^2 + 1} \right) {\rm d}y + C \right] \\[1em] \implies & x = e^{ -\ln( y^2 + 1 ) } \left[ \int \left( e^{ \ln( y^2 + 1 ) } \cdot \dfrac{y^2}{y^2 + 1} \right) {\rm d}y + C \right] \\[1em] \implies & x = \dfrac{1}{y^2 + 1} \left( \dfrac{y^3}{3} + C \right), \quad \forall C \end{array} $ 
+    - $ \begin{array}{l} & \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{-2y}{y^2 + 1} x + \dfrac{y^2}{y^2 + 1} \\\\ \implies & x' + \dfrac{2y}{y^2 + 1}x = \dfrac{y^2}{y^2 + 1} \\\\ \implies & x = e^{ -\int \frac{2y}{y^2 + 1} {\rm d}y } \left[ \int \left( e^{ \int \frac{2y}{y^2 + 1} {\rm d}y } \cdot \dfrac{y^2}{y^2 + 1} \right) {\rm d}y + C \right] \\\\ \implies & x = e^{ -\ln( y^2 + 1 ) } \left[ \int \left( e^{ \ln( y^2 + 1 ) } \cdot \dfrac{y^2}{y^2 + 1} \right) {\rm d}y + C \right] \\\\ \implies & x = \dfrac{1}{y^2 + 1} \left( \dfrac{y^3}{3} + C \right), \quad \forall C \end{array} $ 
 
 
 <br>
@@ -84,7 +84,7 @@ description: 做笔记，喝凉茶，看高数
   - 形如 $ y'' + py' + qy = 0 $ 
     - 考虑 $ y = e^{ \lambda x } \implies e^{ \lambda x } ( \lambda^2 + p \lambda + q ) = 0 $ 
     1. 写 $ \lambda^2 + p \lambda + q = 0 \implies \lambda_1, \lambda_2 $ 
-    2. $ \begin{cases} \Delta > 0 & \implies \lambda_1 \not= \lambda_2 & \implies y = C_1 e^{ \lambda_1 x } + C_2 e^{ \lambda_2 x } \\[1em] \Delta = 0 & \implies \lambda_1 = \lambda_2 = \lambda & \implies y = ( C_1 + C_2 x ) e^{ \lambda x } \\[1em] \Delta < 0 & \implies \lambda_{1,2} = \alpha \pm \beta {\rm i} & \implies y = e^{\alpha x} \left( C_1 \cos \beta x + C_2 \sin \beta x \right) \end{cases} $ 
+    2. $ \begin{cases} \Delta > 0 & \implies \lambda_1 \not= \lambda_2 & \implies y = C_1 e^{ \lambda_1 x } + C_2 e^{ \lambda_2 x } \\\\ \Delta = 0 & \implies \lambda_1 = \lambda_2 = \lambda & \implies y = ( C_1 + C_2 x ) e^{ \lambda x } \\\\ \Delta < 0 & \implies \lambda_{1,2} = \alpha \pm \beta {\rm i} & \implies y = e^{\alpha x} \left( C_1 \cos \beta x + C_2 \sin \beta x \right) \end{cases} $ 
 
 
 <br>
@@ -127,7 +127,7 @@ description: 做笔记，喝凉茶，看高数
 1. 已知曲线 $ y = y(x) $ 经过点 $ (1, e^{-1}) $ ，且在点 $ (x, y) $ 处的切线在 $ y $ 轴上的截距为 $ xy $ ，求该曲线方程的表达式。
    - 切线方程为：$ Y - y = y'( X - x ) $ 
    - 令 $ X = 0 \implies Y = y - xy' = xy $ 
-   - $ \begin{array}{l} \implies \dfrac{ {\rm d}y }{y} = \left( \dfrac{1}{x} - 1 \right) {\rm d}x \\[1em] \implies \int \dfrac{ {\rm d}y }{y} = \int \left( \dfrac{1}{x} - 1 \right) {\rm d}x \\[1em] \implies \ln |y| = \ln |x| - \ln e^x + \ln C_1 \\[1em] \implies |y| = \dfrac{ C_1 |x| }{e^x} \\[1em] \implies y = C \cdot \dfrac{x}{e^x} \end{array} $ 
+   - $ \begin{array}{l} \implies \dfrac{ {\rm d}y }{y} = \left( \dfrac{1}{x} - 1 \right) {\rm d}x \\\\ \implies \int \dfrac{ {\rm d}y }{y} = \int \left( \dfrac{1}{x} - 1 \right) {\rm d}x \\\\ \implies \ln |y| = \ln |x| - \ln e^x + \ln C_1 \\\\ \implies |y| = \dfrac{ C_1 |x| }{e^x} \\\\ \implies y = C \cdot \dfrac{x}{e^x} \end{array} $ 
    - 过点 $ ( 1, e^{-1} ) \implies C = 1 $ 。
    - 所以曲线方程为 $ y = \dfrac{x}{e^x} $ 。
 

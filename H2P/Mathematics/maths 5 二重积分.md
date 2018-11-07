@@ -17,7 +17,7 @@ description: 做笔记，喝凉茶，看高数
 
 1. 概念
   - 若区域 $ D $ 关于 $ y $ 轴对称
-    - $ \begin{cases} \iint\limits_D f(x, y) {\rm d} \sigma = 2 \iint\limits_{D_1} f(x, y) {\rm d} \sigma, & f(x, y) = f(-x, y) \\[1em] \iint\limits_D f(x, y) {\rm d} \sigma = 0, & f(x, y) = -f(-x, y) \end{cases} $ 
+    - $ \begin{cases} \iint\limits_D f(x, y) {\rm d} \sigma = 2 \iint\limits_{D_1} f(x, y) {\rm d} \sigma, & f(x, y) = f(-x, y) \\\\ \iint\limits_D f(x, y) {\rm d} \sigma = 0, & f(x, y) = -f(-x, y) \end{cases} $ 
 2. 例题
   1. 设平面区域 $ D $ 由曲线 $ y = \sin x ( -\dfrac{\pi}{2} \leq x \leq \dfrac{\pi}{2} ) $ ，$ x = -\dfrac{\pi}{2} $ ，$ y = 1 $ 围成，则 $ \iint\limits_D (xy^3 - 1) {\rm d} \sigma = $ \_\_\_\_\_\_\_\_ 。
      - <img src="./images/5-1.1.2.1.png" width="50%">
@@ -45,7 +45,7 @@ description: 做笔记，喝凉茶，看高数
         - $ \implies I_1 = a + b $ 
       - 2⃣️
         - $ \iint\limits_D ( e^{\lambda x} - e^{- \lambda y} ) {\rm d} \sigma = \iint\limits_D ( e^{\lambda y} - e^{- \lambda x} ) {\rm d} \sigma $ 
-        - $ \implies \begin{array}{l} 2I_2 & = \iint\limits_D \left[ ( e^{\lambda x} - e^{- \lambda x} ) + ( e^{\lambda y} - e^{- \lambda y} ) \right] {\rm d}\sigma \\[1em] & = \iint\limits_D ( e^{\lambda x} - e^{- \lambda x} ) {\rm d}\sigma + \iint\limits_D ( e^{\lambda y} - e^{- \lambda y} ) {\rm d}\sigma\end{array} $ 
+        - $ \implies \begin{array}{l} 2I_2 & = \iint\limits_D \left[ ( e^{\lambda x} - e^{- \lambda x} ) + ( e^{\lambda y} - e^{- \lambda y} ) \right] {\rm d}\sigma \\\\ & = \iint\limits_D ( e^{\lambda x} - e^{- \lambda x} ) {\rm d}\sigma + \iint\limits_D ( e^{\lambda y} - e^{- \lambda y} ) {\rm d}\sigma\end{array} $ 
           - 考察 $ g(x, y) = e^{\lambda x} - e^{-\lambda x} $ 
             - 由于积分区域 $ D $ 关于 $ y $ 轴对称
             - 且 $ g(x, y) = -g(-x, y) $ 
@@ -59,24 +59,24 @@ description: 做笔记，喝凉茶，看高数
 1. 设 $ f(x) $ 为恒正的连续函数，证明 $ \int_a^b f(x) {\rm d}x \cdot \int_a^b \dfrac{1}{ f(x) } {\rm d}x \geq (b - a)^2, \quad (a < b) $ 
   - 解法 1⃣️ 
     - 设 $ F(x) = \int_a^x f(t) {\rm d}t \cdot \int_a^x \dfrac{1}{ f(x) } {\rm d}t - (x - a)^2 $ 
-    - 则 $ \begin{array}{l} F'(x) & = f(x) \cdot \int_a^x \dfrac{1}{ f(t) } {\rm d}t + \int_a^x f(t) {\rm d}t \cdot \dfrac{1}{ f(x) } - 2(x - a) \\[1em] & = \int_a^x \left( \dfrac{ f(x) }{ f(t) } + \dfrac{ f(t) }{ f(x) } \right) {\rm d}t - 2(x - a) \\[1em] & \geq \int_a^x 2 {\rm d}t - 2(x - a) \\[1em] & \geq 2(x - a) - 2(x - a) \\[1em] & \geq 0 \end{array} $ 
+    - 则 $ \begin{array}{l} F'(x) & = f(x) \cdot \int_a^x \dfrac{1}{ f(t) } {\rm d}t + \int_a^x f(t) {\rm d}t \cdot \dfrac{1}{ f(x) } - 2(x - a) \\\\ & = \int_a^x \left( \dfrac{ f(x) }{ f(t) } + \dfrac{ f(t) }{ f(x) } \right) {\rm d}t - 2(x - a) \\\\ & \geq \int_a^x 2 {\rm d}t - 2(x - a) \\\\ & \geq 2(x - a) - 2(x - a) \\\\ & \geq 0 \end{array} $ 
       - 基本不等式 $ a + b \geq 2 \sqrt{ab}, \quad (a, b > 0) $ 
     - $ \implies F'(x) \geq 0 \implies F(b) \geq F(a) = 0 $ 
     - $ \implies  \int_a^b f(x) {\rm d}x \cdot \int_a^b \dfrac{1}{ f(x) } {\rm d}x \geq (b - a)^2 $ 
   - 解法 2⃣️ 
     - ㊀：显然，$ \int_a^b \dfrac{1}{ f(x) } {\rm d}x = \int_a^b \dfrac{1}{ f(y) } {\rm d}y $ 
-      - $ \begin{array}{l} \text{左 } & = \int_a^b f(x) {\rm d}x \int_a^b \dfrac{1}{ f(y) } {\rm d}y \\[1em] & = \iint\limits_D \dfrac{ f(x) }{ f(y) } {\rm d} \sigma \end{array} $ 
+      - $ \begin{array}{l} \text{左 } & = \int_a^b f(x) {\rm d}x \int_a^b \dfrac{1}{ f(y) } {\rm d}y \\\\ & = \iint\limits_D \dfrac{ f(x) }{ f(y) } {\rm d} \sigma \end{array} $ 
     - ㊁： $ \int_a^b  f(x) {\rm d}x = \int_a^b f(y) {\rm d}y $ 
-      - $ \begin{array}{l} \text{左 } & = \int_a^b f(y) {\rm d}y \int_a^b \dfrac{1}{ f(x) } {\rm d}x \\[1em] & = \iint\limits_D \dfrac{ f(y) }{ f(x) } {\rm d} \sigma \end{array} $ 
+      - $ \begin{array}{l} \text{左 } & = \int_a^b f(y) {\rm d}y \int_a^b \dfrac{1}{ f(x) } {\rm d}x \\\\ & = \iint\limits_D \dfrac{ f(y) }{ f(x) } {\rm d} \sigma \end{array} $ 
     - $ \implies \text{左 } = \dfrac{1}{2} \iint\limits_D \left[ \dfrac{ f(x) }{ f(y) } + \dfrac{ f(y) }{ f(x) } \right] {\rm d}\sigma \geq \dfrac{1}{2} \iint\limits_D 2 {\rm d}\sigma = (b - a)^2 = \text{ 右} $ 
   - 解法 3⃣️ 
     - 由柯西积分不等式
       - $ \left( \int_a^b f(x) g(x) {\rm d}x \right)^2 \leq \int_a^b f^2(x) \cdot \int_a^b g^2(x) {\rm d}x $ 
-    - $ \implies \begin{array}{l} \int_a^b f(x) {\rm d}x \cdot \int_a^b \dfrac{1}{ f(x) } {\rm d}x & = \int_a^b \left( \sqrt{ f(x) } \right)^2 {\rm d}x \cdot \int_a^b \left( \dfrac{1}{ \sqrt{ f(x) } } \right)^2 {\rm d}x \\[1em] & = \left( \int_a^b \sqrt{ f(x) } \cdot \dfrac{1}{ \sqrt{ f(x) } } {\rm d}x \right)^2 = (b - a)^2 \end{array} $ 
+    - $ \implies \begin{array}{l} \int_a^b f(x) {\rm d}x \cdot \int_a^b \dfrac{1}{ f(x) } {\rm d}x & = \int_a^b \left( \sqrt{ f(x) } \right)^2 {\rm d}x \cdot \int_a^b \left( \dfrac{1}{ \sqrt{ f(x) } } \right)^2 {\rm d}x \\\\ & = \left( \int_a^b \sqrt{ f(x) } \cdot \dfrac{1}{ \sqrt{ f(x) } } {\rm d}x \right)^2 = (b - a)^2 \end{array} $ 
 2. 【记住】⭐️计算 $ \int_{-\infty}^{+\infty} e^{-x^2} {\rm d}x ​$ 
    - <img src="./images/5-1.3.2 高斯曲线.png" width="50%">
    - 显然，$ \int_{-\infty}^{+\infty} e^{-x^2} {\rm d}x = \int_{-\infty}^{+\infty} e^{-y^2} {\rm d}y $ 
-   - $ \begin{array}{l} I^2 & = \int_{-\infty}^{+\infty} e^{-x^2} {\rm d}x \cdot \int_{-\infty}^{+\infty} e^{-y^2} {\rm d}y \\[1em] & = \iint\limits_D e^{ -(x^2 + y^2) } {\rm d} \sigma \\[1em] & = \int_0^{2\pi} {\rm d}\theta \int_0^{+\infty} e^{-r^2} r {\rm d}r \\[1em] & = 2\pi \cdot ( -\dfrac{1}{2} ) \cdot \left. e^{-r^2} \right|_0^{+\infty} \\[1em] & = \pi \end{array} $ 
+   - $ \begin{array}{l} I^2 & = \int_{-\infty}^{+\infty} e^{-x^2} {\rm d}x \cdot \int_{-\infty}^{+\infty} e^{-y^2} {\rm d}y \\\\ & = \iint\limits_D e^{ -(x^2 + y^2) } {\rm d} \sigma \\\\ & = \int_0^{2\pi} {\rm d}\theta \int_0^{+\infty} e^{-r^2} r {\rm d}r \\\\ & = 2\pi \cdot ( -\dfrac{1}{2} ) \cdot \left. e^{-r^2} \right|_0^{+\infty} \\\\ & = \pi \end{array} $ 
    - $ \implies I = \sqrt{\pi} $ 
 
 
@@ -106,7 +106,7 @@ description: 做笔记，喝凉茶，看高数
           - $ I = -\int_{-1}^0 {\rm d}y \int_{1 - y}^2 f(x, y) {\rm d}x $ 
       - $ I = -\int_1^2 {\rm d}x \int_{1 - x}^0 f(x, y) {\rm d}y $
     2. 已知 $ I = \int_0^2 {\rm d}x \int_0^{ \frac{x^2}{2} } f(x, y) {\rm d}x + \int_2^{ 2 \sqrt{2} } {\rm d}x \int_0^{ \sqrt{8 - x^2} } f(x, y) {\rm d}y $ ，则 $ I = ( \text{  A  } ) $ 。
-      - $ \begin{array}{l} A. \int_0^2 {\rm d}y \int_{ \sqrt{2y} }^{ \sqrt{8 - y^2} } f(x, y) {\rm d}x & B.\int_0^2{\rm d}y \int_1^{ \sqrt{ 8 - y^2 } } f(x, y) {\rm d}x \\[1em] C. \int_0^1 {\rm d}y \int_{ \sqrt{2y} }^{ \sqrt{8 - y^2} } f(x, y) {\rm d}x & D.\int_0^2 {\rm d}y \int_{ \sqrt{2y} }^1 f(x, y) {\rm d}x \end{array} $ 
+      - $ \begin{array}{l} A. \int_0^2 {\rm d}y \int_{ \sqrt{2y} }^{ \sqrt{8 - y^2} } f(x, y) {\rm d}x & B.\int_0^2{\rm d}y \int_1^{ \sqrt{ 8 - y^2 } } f(x, y) {\rm d}x \\\\ C. \int_0^1 {\rm d}y \int_{ \sqrt{2y} }^{ \sqrt{8 - y^2} } f(x, y) {\rm d}x & D.\int_0^2 {\rm d}y \int_{ \sqrt{2y} }^1 f(x, y) {\rm d}x \end{array} $ 
     3. 计算 $ \int_{ \frac{1}{4} }^{ \frac{1}{2} } {\rm d}y \int_{ \frac{1}{2} }^{ \sqrt{y} } e^{ \frac{y}{x} } {\rm d}x + \int_{ \frac{1}{2} }^1 {\rm d}y \int_y^{ \sqrt{y} } e^{ \frac{y}{x} } {\rm d}x $
       -  换序
         - $ I = \int_{ \frac{1}{2} }^1 {\rm d}x \int_{x^2}^x e^{ \frac{y}{x} } {\rm d}y = \dfrac{3}{8} e - \dfrac{ \sqrt{e} }{2} $ 
@@ -125,13 +125,13 @@ description: 做笔记，喝凉茶，看高数
        - 首要的是 $ f(x^2, y^2) $ 
      - 否则，一般选直角坐标系。
    - <img src="./images/5-2.2.2.png" width="40%">
-   - $ \begin{array}{l} I & = \int_0^{ \frac{\pi}{2} } {\rm d} \theta \int_{2 \cos \theta}^2 r^2 \cdot r {\rm d}r + \int_{ \frac{\pi}{2} }^{ \frac{3 \pi}{4} } {\rm d} \theta \int_0^2 r^2 \cdot r {\rm d}r \\[1em] & = \int_0^{ \frac{\pi}{2} } \left( \left. \dfrac{r^4}{4} \right|_{2 \cos \theta}^2 \right) {\rm d} \theta + \dfrac{\pi}{4} \cdot \left. \dfrac{r^4}{4} \right|_0^2 \\[1em] & = \int_0^{ \frac{\pi}{2} } \left( 4 - 4 \cos^4 \theta \right) {\rm d} \theta + \pi \\[1em] & = 3 \pi - 4 \int_0^{ \frac{\pi}{2} } \cos^4 \theta {\rm d} \theta \\[1em] & = \dfrac{9}{4} \pi \end{array} $
+   - $ \begin{array}{l} I & = \int_0^{ \frac{\pi}{2} } {\rm d} \theta \int_{2 \cos \theta}^2 r^2 \cdot r {\rm d}r + \int_{ \frac{\pi}{2} }^{ \frac{3 \pi}{4} } {\rm d} \theta \int_0^2 r^2 \cdot r {\rm d}r \\\\ & = \int_0^{ \frac{\pi}{2} } \left( \left. \dfrac{r^4}{4} \right|_{2 \cos \theta}^2 \right) {\rm d} \theta + \dfrac{\pi}{4} \cdot \left. \dfrac{r^4}{4} \right|_0^2 \\\\ & = \int_0^{ \frac{\pi}{2} } \left( 4 - 4 \cos^4 \theta \right) {\rm d} \theta + \pi \\\\ & = 3 \pi - 4 \int_0^{ \frac{\pi}{2} } \cos^4 \theta {\rm d} \theta \\\\ & = \dfrac{9}{4} \pi \end{array} $
    - or
-   - $ \begin{array}{l} I & = \int_0^{ \frac{3 \pi}{4} } {\rm d} \theta \int_0^2 r^3 {\rm d}r - \int_0^{ \frac{\pi}{2} } {\rm d}\theta \int_0^{2 \cos \theta} r^3 {\rm d}r \\[1em] & = \dfrac{3\pi}{4} \cdot 4 - 4 \int_0^{ \frac{\pi}{2} } \cos^4 \theta {\rm d}\theta \\[1em] & = \dfrac{9}{4} \pi \end{array} $ 
+   - $ \begin{array}{l} I & = \int_0^{ \frac{3 \pi}{4} } {\rm d} \theta \int_0^2 r^3 {\rm d}r - \int_0^{ \frac{\pi}{2} } {\rm d}\theta \int_0^{2 \cos \theta} r^3 {\rm d}r \\\\ & = \dfrac{3\pi}{4} \cdot 4 - 4 \int_0^{ \frac{\pi}{2} } \cos^4 \theta {\rm d}\theta \\\\ & = \dfrac{9}{4} \pi \end{array} $ 
 3. 计算 $ I = \iint\limits_D \sqrt{ 1 - r^2 \cos 2 \theta } \text{ } r^2 \sin \theta \text{ } {\rm d}r {\rm d}\theta $ ，其中 $ D = \left\lbrace \left. (r, \theta) \right| 0 \leq r \leq \sec \theta, 0 \leq \theta \leq \dfrac{\pi}{4} \right\rbrace $ 。
    - 分析
      - $ r \leq \sec \theta \implies r \cos \theta \leq 1 \implies x \leq 1 $ 
-   - $ \begin{array}{l} I & = \iint\limits_D y \sqrt{1 - x^2 + y^2} \text{ } {\rm d}x {\rm d}y \\[1em] & = \dfrac{1}{2} \int_0^1 {\rm d}x \int_0^x \sqrt{1 - x^2 + y^2} \text{ } {\rm d}( 1 - x^2 + y^2 ) \\[1em] & = \dfrac{1}{2} \cdot \dfrac{2}{3} \cdot \int_0^1 \left[ \left. (1 - x^2 + y^2)^{ \frac{3}{2} } \right|_{y = 0}^{y = x} \right] {\rm d}x \\[1em] & = \dfrac{1}{3} - \dfrac{1}{3} \int_0^1 (1 - x^2)^{ \frac{3}{2} } {\rm d}x = \dfrac{1}{3} - \dfrac{1}{3} \int_0^{ \frac{\pi}{2} } \cos^4 t {\rm d} t \\[1em] & = \dfrac{1}{3} - \dfrac{\pi}{16} \end{array} $ 
+   - $ \begin{array}{l} I & = \iint\limits_D y \sqrt{1 - x^2 + y^2} \text{ } {\rm d}x {\rm d}y \\\\ & = \dfrac{1}{2} \int_0^1 {\rm d}x \int_0^x \sqrt{1 - x^2 + y^2} \text{ } {\rm d}( 1 - x^2 + y^2 ) \\\\ & = \dfrac{1}{2} \cdot \dfrac{2}{3} \cdot \int_0^1 \left[ \left. (1 - x^2 + y^2)^{ \frac{3}{2} } \right|_{y = 0}^{y = x} \right] {\rm d}x \\\\ & = \dfrac{1}{3} - \dfrac{1}{3} \int_0^1 (1 - x^2)^{ \frac{3}{2} } {\rm d}x = \dfrac{1}{3} - \dfrac{1}{3} \int_0^{ \frac{\pi}{2} } \cos^4 t {\rm d} t \\\\ & = \dfrac{1}{3} - \dfrac{\pi}{16} \end{array} $ 
 
 
 
