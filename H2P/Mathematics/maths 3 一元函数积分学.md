@@ -45,7 +45,8 @@ description: 做笔记，喝凉茶，看高数
 - $ \int \dfrac{1}{x} {\rm d}x = \ln |x| + C $ 
 - $ \begin{cases} \int a^x {\rm d}x = \dfrac{1}{ \ln a } a^x + C, \quad ( a > 0, a \not= 1 ) \\\\ \int e^x {\rm d}x = e^x + C \end{cases} $ 
 - $ \begin{cases} \int \sin x {\rm d}x = - \cos x + C \quad & \int \tan x{\rm d}x = - \ln | \cos x | + C \\ \\ \int \cos x {\rm d}x = \sin x + C \quad & \int \cot x {\rm d}x = \ln | \sin x | + C \\ \\ \int \sec x {\rm d}x = \ln | \sec x + \tan x | + C \\\\ \int \csc x {\rm d}x = \ln | \csc x - \cot x | + C \\\\ \int \sec^2 x {\rm d}x = \tan x + C \quad & \int \sec x \tan x {\rm d}x = \sec x + C \\\\ \int \csc^2 x {\rm d}x = - \cot x + C \quad & \int \csc x \cot x {\rm d}x = - \csc x + C \end{cases} $ 
-- $ \begin{cases} \int \dfrac{1}{ \sqrt{1 - x^2} }{\rm d}x = \arcsin x + C \quad & \int \dfrac{1}{ \sqrt{x^2 + a^2} } = \ln ( x + \sqrt{x^2 + a^2} ) + C \\\\ \int \dfrac{1}{ \sqrt{a^2 - x^2} }{\rm d}x = \arcsin \dfrac{x}{a} + C \quad & \int \dfrac{1}{ \sqrt{x^2 - a^2} } = \ln ( x + \sqrt{x^2 - a^2} ) + C \\\\ \int \dfrac{1}{1 + x^2}{\rm d}x = \arctan x + C \quad & \int \dfrac{1}{a^2 - x^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{a + x}{a - x}| + C \\\\   \int \dfrac{1}{a^2 + x^2}{\rm d}x = \dfrac{1}{a} \arctan \dfrac{x}{a} + C \quad & \int \dfrac{1}{x^2 - a^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{x - a}{x + a}| + C \\\\ \int \sqrt{a^2 - x^2} {\rm d}x = \dfrac{a^2}{2} \arcsin \dfrac{x}{a} + \dfrac{x}{2} \sqrt{a^2 - x^2} + C \end{cases} $ 
+- $ \begin{cases} \int \dfrac{1}{ \sqrt{1 - x^2} }{\rm d}x = \arcsin x + C \quad & \int \dfrac{1}{ \sqrt{x^2 + a^2} } = \ln ( x + \sqrt{x^2 + a^2} ) + C \\\\ \int \dfrac{1}{ \sqrt{a^2 - x^2} }{\rm d}x = \arcsin \dfrac{x}{a} + C \quad & \int \dfrac{1}{ \sqrt{x^2 - a^2} } = \ln ( x + \sqrt{x^2 - a^2} ) + C \\\\ \int \dfrac{1}{1 + x^2}{\rm d}x = \arctan x + C \quad & \int \dfrac{1}{a^2 - x^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{a + x}{a - x}| + C \\\\   \int \dfrac{1}{a^2 + x^2}{\rm d}x = \dfrac{1}{a} \arctan \dfrac{x}{a} + C \quad & \int \dfrac{1}{x^2 - a^2} {\rm d}x = \dfrac{1}{2a} \ln |\dfrac{x - a}{x + a}| + C \end{cases} $
+- $ \int \sqrt{a^2 - x^2} {\rm d}x = \dfrac{a^2}{2} \arcsin \dfrac{x}{a} + \dfrac{x}{2} \sqrt{a^2 - x^2} + C $  
 
 
 <br>
@@ -92,9 +93,9 @@ description: 做笔记，喝凉茶，看高数
       - $ I = \dfrac{ \cos t }{ \sin t + \cos t } {\rm d}t = \dfrac{1}{2} \int \dfrac{ \sin t + \cos t + \cos t - \sin t }{ \sin t + \cos t } {\rm d}t $ 
       - $ I = \dfrac{1}{2} \left( \int 1 {\rm d}t + \int \dfrac{ {\rm d} ( \sin t + \cos t ) }{ \sin t + \cos t } \right) = \dfrac{1}{2} \left( t + \ln | \sin t + \cos t | \right) $ 
       - $ I = \dfrac{1}{2} \arcsin x + \dfrac{1}{2} \ln | x + \sqrt{1 - x^2} | + C $ 
-      - ⭐️【注】⭐️
-        - $ \begin{array}{l} \int \dfrac{ a_2 \sin t + b_2 \cos t }{ a_1 \sin t + b_1 \cos t } {\rm d}t & = \int \dfrac{ A ( a_1 \sin t + b_1 \cos t ) + B ( a_1 \cos t - b_1 \sin t ) }{ a_1 \sin t + b_1 \cos t } {\rm d}t \\\\ & = At + B \ln| a_1 \sin t + b_1 \cos t | + C  \end{array} $ 
-        - 其中 $ \begin{cases} Aa_1 - Bb_1 = a_2 \\\\ Ab_1 + Ba_1 = b_2 \end{cases} $ 
+   - ⭐️【注】⭐️
+     - $ \begin{array}{l} \int \dfrac{ a_2 \sin t + b_2 \cos t }{ a_1 \sin t + b_1 \cos t } {\rm d}t & = \int \dfrac{ A ( a_1 \sin t + b_1 \cos t ) + B ( a_1 \cos t - b_1 \sin t ) }{ a_1 \sin t + b_1 \cos t } {\rm d}t \\\\ & = At + B \ln| a_1 \sin t + b_1 \cos t | + C  \end{array} $ 
+     - 其中 $ \begin{cases} Aa_1 - Bb_1 = a_2 \\\\ Ab_1 + Ba_1 = b_2 \end{cases} $ 
 
 
 <br>
@@ -146,7 +147,7 @@ $ \underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarr
    - 对 $ u $ 求导，对 $ v^{(n + 1)} $ 积分
    - 交错相乘、正负相间、首项为正
    - 最后一项（列）相乘再积分
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-2.3%20%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8E%A8%E5%B9%BF.jpg" width="80%">
+   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-2.3%20%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8E%A8%E5%B9%BF.jpg" width="70%">
 | $ u $ | $ u' $ | $ u'' $ | $ \cdots $ | $ u^{(n)} $ | $ u^{(n + 1)} $ |
 | :----: | :----: | :-----: | :-----: | :---------: | :-------------: |
 | $ v^{(n + 1)} $ | $ v^{(n)} $ | $ v^{(n - 1)} $ | $ \cdots $ | $ \cdots $ | $ v $ |
