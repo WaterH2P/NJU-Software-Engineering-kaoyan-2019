@@ -19,20 +19,20 @@ description: 做笔记，喝凉茶，看高数
 <br>
 ######  1、概念
 - 设 $ f(x, y) $ 的定义域为 $ D $ ，$ P_0(x_0, y_0) $ 是 $ D $ 的聚点。
-- $ \forall \varepsilon > 0 $ ， $ \exists \, \delta > 0 $ , 当 $ P(x, y) \in D \bigcap \bigcup\limits^o ( P_0, \delta ) $ 时，恒有 $ | f(x, y) - A | < \varepsilon \implies \lim\limits_{x \to x_0, \, y \to y_0} f(x, y) = A $ 。
+- $ \forall \varepsilon > 0 $ ， $ \exists \, \delta > 0 $ , 当 $ P(x, y) \in D \bigcap \bigcup\limits^o ( P_0, \delta ) $ 时，恒有 $ | f(x, y) - A | < \varepsilon \implies \lim\limits_{x \to x_0 \atop y \to y_0} f(x, y) = A $ 。
 
 
 <br>
 ######  2、例题
-1. 求 $ I = \lim\limits_{x \to 0 , \, y \to 0} \dfrac{ \sqrt{xy + 1} - 1 }{xy} $ 。
+1. 求 $ I = \lim\limits_{x \to 0 \atop y \to 0} \dfrac{ \sqrt{xy + 1} - 1 }{xy} $ 。
    - 其他教材（ $ P(x, y) \in \bigcup\limits^o ( P_0, \delta ) $ ）
      - $ x = 0 / y = 0 $ 时，极限不存在
      - 所以极限不存在
    - 同济七版教材（考研参考教材）
-     - $ I = \lim\limits_{x \to 0 , \, y \to 0} \dfrac{xy}{ xy ( \sqrt{xy + 1} + 1 ) } = \dfrac{1}{2} $ 。
-
+     - $ I = \lim\limits_{x \to 0 \atop y \to 0} \dfrac{xy}{ xy ( \sqrt{xy + 1} + 1 ) } = \dfrac{1}{2} $ 。
 
 <br>
+
 #### ㊁、连续性
 
 
@@ -60,10 +60,10 @@ description: 做笔记，喝凉茶，看高数
    - $ \begin{array}{l} f'_x(0, 0) &= \lim\limits_{\Delta x \to 0} \dfrac{ f(0 + \Delta x, 0) - f(0, 0) }{\Delta x} \\\\ &= \lim\limits_{\Delta x \to 0} \dfrac{ e^{ |\Delta x| } - 1 }{\Delta x} \\\\ &= \lim\limits_{\Delta x \to 0} \dfrac{ |\Delta x| }{\Delta x} \implies f'_x(0, 0) \text{ 不存在 } \end{array} $ 
    - $ \begin{array}{l} f'_y(0, 0) &= \lim\limits_{\Delta y \to 0} \dfrac{ f(0, 0 + \Delta y) - f(0, 0) }{\Delta y} \\\\ &= \lim\limits_{\Delta y \to 0} \dfrac{ e^{ |\Delta y|^3 } - 1 }{\Delta y} \\\\ &= \lim\limits_{\Delta y \to 0} \dfrac{ |\Delta y|^3 }{\Delta y} = 0 \end{array} $ 
 2. 设 $ f(x, y) = \begin{cases} \dfrac{1}{xy} \sin (x^2 y), & xy \not= 0 \\\\ 0, & xy = 0 \end{cases} $ ，则 $ f'_x(0, 1) =  $ \_\_\_\_\_\_\_\_ 。
-   - $ \begin{array}{l} f'_x(0, 1) &= \lim\limits_{\Delta x \to 0} \dfrac{ f(0 + \Delta x, 1) - f(0, 1) }{\Delta x} \\\\ &= \lim\limits_{\Delta x \to 0} \dfrac{ \dfrac{1}{\Delta x} \sin( (\Delta x)^2 ) - 0 }{\Delta x} \\\\ &= 1 \end{array} $ 
-
+   - $ \begin{array}{l} f'_x(0, 1) &= \lim\limits_{\Delta x \to 0} \dfrac{ f(0 + \Delta x, 1) - f(0, 1) }{\Delta x} \\\\ &= \lim\limits_{\Delta x \to 0} \dfrac{ \dfrac{1}{\Delta x} \sin \left( (\Delta x)^2 \right) - 0 }{\Delta x} \\\\ &= 1 \end{array} $ 
 
 <br>
+
 ## 二、计算（必考）
 
 
@@ -93,12 +93,12 @@ description: 做笔记，喝凉茶，看高数
 1. 设 $ F(u, v) $ 对其变元 $ u, v $ 具有二阶连续偏导数，并设 $ z = F( \dfrac{y}{x}, x^2 + y^2) $ ，则 $ \dfrac{ \partial^2 z }{ \partial x \partial y } = $ \_\_\_\_\_\_\_\_ 。
    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/4-2.2%20%E9%AB%98%E9%98%B6%E5%81%8F%E5%AF%BC%E6%95%B0%E4%BE%8B%E9%A2%981.jpg" width="50%">
    - $ \dfrac{ \partial z }{ \partial x } = F'_1 \cdot ( - \dfrac{y}{x^2} ) + F'_2 \cdot 2x $ 
-   - $ \dfrac{ \partial^2 z }{ \partial x \partial y } = \dfrac{ \partial ( \dfrac{ \partial z }{ \partial x } ) }{\partial y} = - \dfrac{1}{x^2} F'_1 - \dfrac{y}{x^3} F''_{11} + (2 - \dfrac{2y^2}{x^2} ) F''_{12} + 4xy F''_{22} $
+   - $ \dfrac{ \partial^2 z }{ \partial x \partial y } = \dfrac{ \partial ( \dfrac{ \partial z }{ \partial x } ) }{\partial y} = - \dfrac{1}{x^2} F'_1 - \dfrac{y}{x^3} F''_{11} + (2 - \dfrac{2y^2}{x^2} ) F''_{12} + 4xy F''_{22} $ 
 2. 设 $ f(u, v) $ 二阶偏导数连续，$ z = f(x^2y, \cos x \sin y) $ ，求 $ \dfrac{ \partial^2 z }{ \partial x \partial y } $ 。
-   - $ \begin{array}{l} & 2xf'_1 - \sin x \cos y f'_2 \\ + & 2 x^3 y f''_{11} + (2xy \cos x \cos y - x^2 \sin x \sin y)f''_{12} - \sin x \cos x \sin y \ cos y f''_{22} \end{array} $ 
-
+   - $ \begin{array}{l} & 2xf'_1 - \sin x \cos y f'_2 + 2 x^3 y f''_{11} \\ +& (2xy \cos x \cos y - x^2 \sin x \sin y)f''_{12} - \sin x \cos x \sin y \ cos y f''_{22} \end{array} $ 
 
 <br>
+
 #### ㊂、多元函数的极最值
 
 
@@ -127,7 +127,7 @@ description: 做笔记，喝凉茶，看高数
      - 方程两边对 $ x $ 求偏导 $ 2x - 6y - 2y \cdot z'_x - 2z \cdot z'_x = 0 \implies z'_x = \dfrac{x - 3y}{y + z} $ 
      - 方程两边对 $ y $ 求偏导 $ -6x + 20y -2z - 2y \cdot z'_y - 2z \cdot z'_y = 0 \implies z'_y = \dfrac{-3x + 10y - z}{y + z} $ 
      - $ \begin{cases} z'_x = 0 \\\\ z'_y = 0 \end{cases} \implies \begin{cases} x = 3y \\\\ z = y \end{cases} $ 带入方程解得：$ \begin{cases} x = 12 \\\\ y = 4 \\\\ z = 4 \end{cases} $ 和 $ \begin{cases} x = -12 \\\\ y = -4 \\\\ z = -4 \end{cases} $ 。
-     - 解得 $ \begin{cases} z''_{xx} = \dfrac{1}{y + z} - (z'_x)^2 \\\\ z''_{xy} = - \dfrac{3}{y + z} - \dfrac{ ( 1 + z'_y ) \cdot z'_x }{y + z} \\\\ z''_{yy} = \dfrac{10}{y + z} - \dfrac{z'_y}{y + z} - \dfrac{ (1 + z'_y) \cdot z'_y }{y + z} \end{cases} \implies B^2 - AC = -\dfrac{1}{4y^2} < 0 $ 
+     - 解得 $ \begin{cases} z''_{xx} = \dfrac{1}{y + z} - \dfrac{ (z'_x)^2 }{y+z} \\\\ z''_{xy} = - \dfrac{3}{y + z} - \dfrac{ ( 1 + z'_y ) \cdot z'_x }{y + z} \\\\ z''_{yy} = \dfrac{10}{y + z} - \dfrac{z'_y}{y + z} - \dfrac{ (1 + z'_y) \cdot z'_y }{y + z} \end{cases} \implies B^2 - AC = -\dfrac{1}{4y^2} < 0 ​$ 
 
    2. 求二元函数 $ f(x, y) = x^2(2 + y^2) + y \ln y $ 的极值。
      - $ \begin{cases} f'_x = 2x(2 + y^2) = 0 \\\\ f'_y = 2x^2y + \ln y + 1 = 0 \end{cases} \implies \begin{cases} x = 0 \\\\ y = \dfrac{1}{e} \end{cases} $ （唯一解）
@@ -179,10 +179,10 @@ description: 做笔记，喝凉茶，看高数
          - $ \begin{cases} a_{11} x_1 + a_{12} x_2 = b_1 \\\\ a_{21} x_1 + a_{22} x_2 = b_2 \end{cases} \implies \begin{cases} x_1 = \dfrac{ \begin{vmatrix} b_1 & a_{12} \\ b_2 & a_{22} \end{vmatrix} }{ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} } \\\\ x_2 = \dfrac{ \begin{vmatrix} a_{11} & b_1 \\ a_{21} & b_2 \end{vmatrix} }{ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} } \end{cases} $ 
        - $ \implies \begin{cases} x_1 = \dfrac{3}{4} = 0.75 \\\\ x_2 = \dfrac{5}{4} = 1.25 \end{cases} $ 
      - $ \begin{cases} f''_{x_1 x_1} = -4 = A \\\\ f''_{x_1 x_2} = -8 = B \\\\ f''_{x_2 x_2} = -20 = C \end{cases} \implies B^2 - AC = -16 < 0 \text{ 且 } A < 0 $ 
-     - 所以 $ (0.75, 1.25) $ 为极大值点，根据实际问题，此点为最大值点。
+     - 所以 $ (0.75, \, 1.25) $ 为极大值点，根据实际问题，此点为最大值点。
    - 2️⃣ 
      - 【条件最值】
-     - 令 $ F(x_1, x_2, \lambda) = 15 + 13x_1 + 31x_2 - 8 x_1 x_2 - 2x_1^2 - 10x_2^2 + \lambda (x_1 + x_2 - 15) $ 
+     - 令 $ F(x_1, x_2, \lambda) = 15 + 13x_1 + 31x_2 - 8 x_1 x_2 - 2x_1^2 - 10x_2^2 + \lambda (x_1 + x_2 - 1.5) $ 
      - $ \begin{cases} F'_{x_1} = 13 - 8x_2 - 4x_1 + \lambda = 0 \\\\ F'_{x_2} = 31 - 8x_1 - 20x_2 + \lambda = 0 \\\\ F'_{\lambda} = x_1 + x_2 - 1.5 = 0  \end{cases} $
      - $ \implies \begin{cases} 4x_1 + 8x_2 + (-1) \lambda = 13 \\\\ 8x_1 + 20x_2 + (-1) \lambda = 31 \\\\ x_1 + x_2 + 0 \cdot \lambda = 1.5 \end{cases} $ 
        - $ \begin{vmatrix} 4 & 8 & -1 \\ 8 & 20 & -1 \\ 1 & 1 & 0 \end{vmatrix} = 8 \not= 0 \implies $ 克拉默法则可以使用
