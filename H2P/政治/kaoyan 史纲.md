@@ -1,7 +1,7 @@
 ---
 title: 史纲
 date: 2018-10-24
-updated: 2018-10-31
+updated: 2018-11-7
 tags: [政治,kaoyan]
 mathjax: true
 
