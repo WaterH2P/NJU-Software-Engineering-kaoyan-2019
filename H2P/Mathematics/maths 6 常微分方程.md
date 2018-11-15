@@ -19,34 +19,34 @@ description: 做笔记，喝凉茶，看高数
    - 解中所含独立常数的个数 = 方程的阶数
    - $ \begin{cases} 独立常数 \not= 任意常数 \\ 通解 \not= 全部解 \end{cases} $ 
 
-
 <br>
+
 ## 二、一阶方程的求解
 
 
 <br>
 #### ㊀、变量可分离型
 1. 概念
-  - 形如 $ \dfrac{ {\rm  d}y }{ {\rm d}x } = f(x, y) $ 
-    - 若 $ f(x, y) = g(x) h(y) $ 
-    - $ \implies \dfrac{ {\rm d}y }{ h(y) } = g(x) {\rm d}x \implies \int \dfrac{ {\rm d}y }{ h(y) } = \int g(x) {\rm d}x $ 
+   - 形如 $ \dfrac{ {\rm  d}y }{ {\rm d}x } = f(x, y) $ 
+      - 若 $ f(x, y) = g(x) h(y) $ 
+      - $ \dfrac{ {\rm d}y }{ h(y) } = g(x) {\rm d}x \implies \int \dfrac{ {\rm d}y }{ h(y) } = \int g(x) {\rm d}x ​$ 
 2. 例题
-  1. 微分方程 $ y' + \dfrac{1}{y} e^{y^2 + 3x} = 0 $ 的通解（其中 $ C $ 为任意常数）是 $ ( \text{  C  } ) $ 。
-    - $ \begin{array}{l} A. 2e^{3x} + 3e^{y^2} = C & B.2e^{3x} + 3e^{-y^2} = C \\ C. 2e^{3x} - 3e^{-y^2} = C & D.e^{3x} - e^{-y^2} = C \end{array} $ 
-  2. 微分方程的通解 \_\_\_\_\_\_\_\_ （一定 / 不一定）包含了所有的解，请举例说明。
-    - 不一定
-    - 如求 $ ( y^2 - 1 ) {\rm d}x = (x - 1)y {\rm d}y $ 的通解
-      - $ \implies \dfrac{1}{2} \ln \left| y^2 - 1 \right|= \ln \left| x - 1 \right| + \ln C_1 \quad ( C_1 > 0 ) $ 
-      - $ \implies \sqrt{ \left| y^2 - 1 \right| } = C_1 \left| x - 1 \right| $ 
-      - $ \implies \left| y^2 - 1 \right| = C_1^2 (x - 1)^2 $ 
-      - $ \implies y^2 - 1 = \pm C_1^2 (x - 1)^2 = C(x - 1)^2 $ 
-      - 通解为 $ y^2 = C (x - 1)^2 + 1 \quad ( C \not= 0 ) $ 
-        - 考研**只考通解**，不考虑奇解
-      - 但是 $ y = \pm 1 $ 也是上述方程的解，成为**奇解**
-    - $ \begin{cases} \text{线性} & \text{通解} = \text{全部解} \\ \text{非线性} & \text{通解} \not= \text{全部解} \end{cases} $ 
-
+   1. 微分方程 $ y' + \dfrac{1}{y} e^{y^2 + 3x} = 0 $ 的通解（其中 $ C $ 为任意常数）是 $ ( \text{  C  } ) $ 。
+      - $ \begin{array}{l} A. 2e^{3x} + 3e^{y^2} = C & B.2e^{3x} + 3e^{-y^2} = C \\ C. 2e^{3x} - 3e^{-y^2} = C & D.e^{3x} - e^{-y^2} = C \end{array} $ 
+   2. 微分方程的通解 \_\_\_\_\_\_\_\_ （一定 / 不一定）包含了所有的解，请举例说明。
+      - 不一定
+      - 如求 $ ( y^2 - 1 ) {\rm d}x = (x - 1)y {\rm d}y $ 的通解
+         - $ \implies \dfrac{1}{2} \ln \left| y^2 - 1 \right|= \ln \left| x - 1 \right| + \ln C_1 \quad ( C_1 > 0 ) $ 
+         - $ \implies \sqrt{ \left| y^2 - 1 \right| } = C_1 \left| x - 1 \right| $ 
+         - $ \implies \left| y^2 - 1 \right| = C_1^2 (x - 1)^2 $ 
+         - $ \implies y^2 - 1 = \pm C_1^2 (x - 1)^2 = C(x - 1)^2 $ 
+         - 通解为 $ y^2 = C (x - 1)^2 + 1 \quad ( C \not= 0 ) $ 
+            - 考研**只考通解**，不考虑奇解
+         - 但是 $ y = \pm 1 $ 也是上述方程的解，成为**奇解**
+      - $ \begin{cases} \text{线性} & \text{通解} = \text{全部解} \\ \text{非线性} & \text{通解} \not= \text{全部解} \end{cases} $ 
 
 <br>
+
 #### ㊁、齐次型方程
 1. 概念
   - 形如 $ \dfrac{ {\rm d}y }{ {\rm d}x } = f \left( \dfrac{y}{x} \right) $ 
@@ -56,13 +56,13 @@ description: 做笔记，喝凉茶，看高数
 2. 例题
    1. 求解 $ (1 + e^{ -\frac{x}{y} }) y {\rm d}x + (y - x){\rm d}y = 0 $ 。
       - $ (1 + e^{ -\frac{x}{y} }) y {\rm d}x = (x - y){\rm d}y $ 
-      - $ \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{x - y}{1 + e^{ -\frac{x}{y} }y } = \dfrac{ \dfrac{x}{y} - 1 }{ 1 + e^{ -\frac{x}{y} } } $ 
+      - $ \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{x - y}{ \left( 1 + e^{ -\frac{x}{y} } \right) y } = \dfrac{ \dfrac{x}{y} - 1 }{ 1 + e^{ -\frac{x}{y} } } $ 
       - 令 $ \dfrac{x}{y} = u \implies x = uy \implies \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{ {\rm d}u }{ {\rm d}y } \cdot y + u $ 
         - $ \begin{array}{l} & \dfrac{ e^u + 1 }{ e^u + u } {\rm d}u = - \dfrac{ {\rm d}y }{y} \\\\ \implies & \int \dfrac{ e^u + 1 }{ e^u + u } {\rm d}u = - \int \dfrac{ {\rm d}y }{y} \\\\ \implies & \ln \left| e^u + u \right| = - \ln |y| + \ln C_1 \\\\ \implies & e^u + u = \dfrac{ \pm C_1 }{y} = \dfrac{C}{y} \end{array} $ 
-      - $ \implies \left( e^{ \frac{x}{y} } + \dfrac{x}{y} \right) \cdot y = C, \quad (C \not= 0) $ 
-
+      - 通解为： $ \left( e^{ \frac{x}{y} } + \dfrac{x}{y} \right) \cdot y = C, \quad (C \not= 0) $ 
 
 <br>
+
 #### ㊂、一阶线性型
 1. 概念
   - 形如 $ y' + p(x)y = q(x) $ ，$ p(x), q(x) $ 为已知的连续函数。
