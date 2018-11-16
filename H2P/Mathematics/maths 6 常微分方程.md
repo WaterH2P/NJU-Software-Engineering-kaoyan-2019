@@ -29,13 +29,13 @@ description: 做笔记，喝凉茶，看高数
 1. 概念
    - 形如 $ \dfrac{ {\rm  d}y }{ {\rm d}x } = f(x, y) $ 
       - 若 $ f(x, y) = g(x) h(y) $ 
-      - $ \dfrac{ {\rm d}y }{ h(y) } = g(x) {\rm d}x \implies \int \dfrac{ {\rm d}y }{ h(y) } = \int g(x) {\rm d}x ​$ 
+      - $ \dfrac{ {\rm d}y }{ h(y) } = g(x) \, {\rm d}x \implies \int \dfrac{ {\rm d}y }{ h(y) } = \int g(x) \, {\rm d}x $ 
 2. 例题
    1. 微分方程 $ y' + \dfrac{1}{y} e^{y^2 + 3x} = 0 $ 的通解（其中 $ C $ 为任意常数）是 $ ( \text{  C  } ) $ 。
       - $ \begin{array}{l} A. 2e^{3x} + 3e^{y^2} = C & B.2e^{3x} + 3e^{-y^2} = C \\ C. 2e^{3x} - 3e^{-y^2} = C & D.e^{3x} - e^{-y^2} = C \end{array} $ 
    2. 微分方程的通解 \_\_\_\_\_\_\_\_ （一定 / 不一定）包含了所有的解，请举例说明。
       - 不一定
-      - 如求 $ ( y^2 - 1 ) {\rm d}x = (x - 1)y {\rm d}y $ 的通解
+      - 如求 $ ( y^2 - 1 ) \, {\rm d}x = (x - 1)y \, {\rm d}y $ 的通解
          - $ \implies \dfrac{1}{2} \ln \left| y^2 - 1 \right|= \ln \left| x - 1 \right| + \ln C_1 \quad ( C_1 > 0 ) $ 
          - $ \implies \sqrt{ \left| y^2 - 1 \right| } = C_1 \left| x - 1 \right| $ 
          - $ \implies \left| y^2 - 1 \right| = C_1^2 (x - 1)^2 $ 
@@ -54,8 +54,8 @@ description: 做笔记，喝凉茶，看高数
     - $ \implies \dfrac{ {\rm d}u }{ {\rm d}x } x = f(u) - u $ 
     - $ \implies \dfrac{ {\rm d}u }{ f(u) - u } = \dfrac{ {\rm d}x }{x} $ 
 2. 例题
-   1. 求解 $ (1 + e^{ -\frac{x}{y} }) y {\rm d}x + (y - x){\rm d}y = 0 $ 。
-      - $ (1 + e^{ -\frac{x}{y} }) y {\rm d}x = (x - y){\rm d}y $ 
+   1. 求解 $ \left(1 + e^{ -\frac{x}{y} } \right) y \, {\rm d}x + (y - x) \, {\rm d}y = 0 $ 。
+      - $ \left(1 + e^{ -\frac{x}{y} } \right) y \, {\rm d}x = (x - y) \, {\rm d}y $ 
       - $ \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{x - y}{ \left( 1 + e^{ -\frac{x}{y} } \right) y } = \dfrac{ \dfrac{x}{y} - 1 }{ 1 + e^{ -\frac{x}{y} } } $ 
       - 令 $ \dfrac{x}{y} = u \implies x = uy \implies \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{ {\rm d}u }{ {\rm d}y } \cdot y + u $ 
         - $ \begin{array}{l} & \dfrac{ e^u + 1 }{ e^u + u } {\rm d}u = - \dfrac{ {\rm d}y }{y} \\\\ \implies & \int \dfrac{ e^u + 1 }{ e^u + u } {\rm d}u = - \int \dfrac{ {\rm d}y }{y} \\\\ \implies & \ln \left| e^u + u \right| = - \ln |y| + \ln C_1 \\\\ \implies & e^u + u = \dfrac{ \pm C_1 }{y} = \dfrac{C}{y} \end{array} $ 
@@ -65,12 +65,13 @@ description: 做笔记，喝凉茶，看高数
 
 #### ㊂、一阶线性型
 1. 概念
-  - 形如 $ y' + p(x)y = q(x) $ ，$ p(x), q(x) $ 为已知的连续函数。
+  - 形如 $ y' + p(x)y = q(x) $ ，$ p(x), \, q(x) $ 为已知的连续函数。
     - $ (uv)' = u'v + uv' $ ， 且 $ ( e^🐶 )' = e^🐶 \cdot (🐶)' $ 
-      - 现在 $ (🐶)' = p(x) \implies 🐶 = \int p(x) {\rm d}x $ 
-    - $ \begin{array}{l} \implies e^{ \int p(x) {\rm d}x } \cdot y' + e^{ \int p(x) } \cdot p(x)y = e^{ \int p(x) {\rm d}x } \cdot q(x) \\\\ \implies \left( y \cdot e^{ \int px(x) {\rm d}x } \right)' = e^{ \int p(x) {\rm d}x } \cdot q(x) \\\\ \implies y = e^{ -\int p(x) {\rm d}x } \left[ \int \left( e^{ \int p(x) {\rm d}x } \cdot q(x) \right) {\rm d}x + C \right] \end{array} $
+      - $ ( e^{ 🐶 } y )' = e^🐶 ( 🐶' + 🐶 y' ) $ 
+      -  $ (🐶)' = p(x) \implies 🐶 = \int p(x) \, {\rm d}x $ 
+    - $ \begin{array}{l} \implies e^{ \int p(x) \, {\rm d}x } \cdot y' + e^{ \int p(x) \, {\rm d}x } \cdot p(x)y = e^{ \int p(x) \, {\rm d}x } \cdot q(x) \\\\ \implies \left( y \cdot e^{ \int px(x) \, {\rm d}x } \right)' = e^{ \int p(x) \, {\rm d}x } \cdot q(x) \\\\ \implies y = e^{ -\int p(x) \, {\rm d}x } \left[ \int \left( e^{ \int p(x) \, {\rm d}x } \cdot q(x) \right) {\rm d}x + C \right] \end{array} $ 
 2. 例题
-  1. 微分方程 $ (y^2 + 1) {\rm d}x = y(y - 2x) {\rm d}y $ 的通解是 \_\_\_\_\_\_\_\_ 。
+  1. 微分方程 $ (y^2 + 1) \, {\rm d}x = y(y - 2x) \, {\rm d}y ​$ 的通解是 \_\_\_\_\_\_\_\_ 。
     - $ \begin{array}{l} & \dfrac{ {\rm d}x }{ {\rm d}y } = \dfrac{-2y}{y^2 + 1} x + \dfrac{y^2}{y^2 + 1} \\\\ \implies & x' + \dfrac{2y}{y^2 + 1}x = \dfrac{y^2}{y^2 + 1} \\\\ \implies & x = e^{ -\int \frac{2y}{y^2 + 1} {\rm d}y } \left[ \int \left( e^{ \int \frac{2y}{y^2 + 1} {\rm d}y } \cdot \dfrac{y^2}{y^2 + 1} \right) {\rm d}y + C \right] \\\\ \implies & x = e^{ -\ln( y^2 + 1 ) } \left[ \int \left( e^{ \ln( y^2 + 1 ) } \cdot \dfrac{y^2}{y^2 + 1} \right) {\rm d}y + C \right] \\\\ \implies & x = \dfrac{1}{y^2 + 1} \left( \dfrac{y^3}{3} + C \right), \quad \forall C \end{array} $ 
 
 
