@@ -12,10 +12,10 @@ description: 做笔记，喝凉茶，看线代
 方程组
 $$
 \begin{cases}
-  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = 0 \\[1em]
-  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = 0 \\[1em]
-  \cdots \cdots \\[1em] 
-  a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = 0 \\[1em]
+  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = 0 \\\\
+  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = 0 \\\\
+  \cdots \cdots \\\\ 
+  a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = 0 \\\\
 \end{cases} \quad (Ⅰ)
 $$
 
@@ -85,21 +85,21 @@ $$
 
 <br>
 #### 5、 例题
-1. 求齐次线性方程组 $ \begin{cases} x_1 + x_2 - 3x_4 - x_5 = 0 \\[1em] x_1 - x_2 + 2x_3 - x_4 = 0 \\[1em] 4x_1 - 2x_2 + 6x_3 + 3x_4 - 4x_5 = 0 \\[1em] 2x_1 + 4x_2 - 2x_3 + 4x_4 - 7x_5 = 0 \end{cases} $ 的通解。
+1. 求齐次线性方程组 $ \begin{cases} x_1 + x_2 - 3x_4 - x_5 = 0 \\\\ x_1 - x_2 + 2x_3 - x_4 = 0 \\\\ 4x_1 - 2x_2 + 6x_3 + 3x_4 - 4x_5 = 0 \\\\ 2x_1 + 4x_2 - 2x_3 + 4x_4 - 7x_5 = 0 \end{cases} $ 的通解。
   - 1️⃣ $ A \to \begin{pmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 0 & 0 \end{pmatrix} \quad {\rm r}(A) = 3 $ 
   - 2️⃣ 每个台阶上任取一列 
     - 取系数 $ 1, 2, 5 $ 列，则 $ x_3, x_4 $ 可作为自由变量
   -  3️⃣ 基础解系【倒用】
-    1. $ S = n - {\rm r}(A) = 2 $ ，所以解 $ \begin{cases} \xi_1 = \begin{pmatrix} \ast & \ast & \ast & \ast & \ast \end{pmatrix}^{\rm T} \\[1em] \xi_2 = \begin{pmatrix} \ast & \ast & \ast & \ast & \ast \end{pmatrix}^{\rm T} \end{cases} $ 。
+    1. $ S = n - {\rm r}(A) = 2 $ ，所以解 $ \begin{cases} \xi_1 = \begin{pmatrix} \ast & \ast & \ast & \ast & \ast \end{pmatrix}^{\rm T} \\\\ \xi_2 = \begin{pmatrix} \ast & \ast & \ast & \ast & \ast \end{pmatrix}^{\rm T} \end{cases} $ 。
     2. 线性无关
-       - $ \begin{cases} \xi_1 = \begin{pmatrix} \ast & \ast & 1 & 0 & \ast \end{pmatrix}^{\rm T} \\[1em] \xi_2 = \begin{pmatrix} \ast & \ast & 0 & 1 & \ast \end{pmatrix}^{\rm T} \end{cases} $ 
+       - $ \begin{cases} \xi_1 = \begin{pmatrix} \ast & \ast & 1 & 0 & \ast \end{pmatrix}^{\rm T} \\\\ \xi_2 = \begin{pmatrix} \ast & \ast & 0 & 1 & \ast \end{pmatrix}^{\rm T} \end{cases} $ 
        - 在自由变量区域赋值后拼接出的行列式 $ \not= 0 $ ，上式即 $ \begin{vmatrix} 1 & 0 \\ 0 & 1 \end{vmatrix} \not= 0 $ 。
     3. 试解
        - 由于系数和解【内积为 0】
          - $ \xi_1, \xi_2 $ 与系数矩阵第三行内积为 0
-           - $ \implies  \begin{cases} \xi_1 = ( \ast & \ast & 1 & 0 & 0 )^{\rm T} \\[1em] \xi_2 = ( \ast & \ast & 0 & 1 & 3 )^{\rm T} \end{cases} $ 
+           - $ \implies  \begin{cases} \xi_1 = ( \ast & \ast & 1 & 0 & 0 )^{\rm T} \\\\ \xi_2 = ( \ast & \ast & 0 & 1 & 3 )^{\rm T} \end{cases} $ 
          - $ \xi_1, \xi_2 $ 与系数矩阵第二、一行内积为 0
-           - $ \implies  \begin{cases} \xi_1 = ( -1 & 1 & 1 & 0 & 0 )^{\rm T} \\[1em] \xi_2 = ( \frac{7}{2} & \frac{5}{2} & 0 & 1 & 3 )^{\rm T} \end{cases} $ 
+           - $ \implies  \begin{cases} \xi_1 = ( -1 & 1 & 1 & 0 & 0 )^{\rm T} \\\\ \xi_2 = ( \frac{7}{2} & \frac{5}{2} & 0 & 1 & 3 )^{\rm T} \end{cases} $ 
     4. 通解为 $ k_1 \xi_1 + k_2 \xi_2 $ 
        - $ \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \\ x_5 \end{pmatrix} = k \begin{pmatrix} -1 \\ 1 \\ 1\\ 0 \\ 0 \end{pmatrix} + k_2 \begin{pmatrix} \frac{7}{2} \\ \frac{5}{2} \\ 0 \\ 1 \\ 3 \end{pmatrix}, \quad \forall \text{ } k_1, k_2 $ 。
 
@@ -109,10 +109,10 @@ $$
 方程组
 $$
 \begin{cases}
-  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\[1em]
-  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\[1em]
-  \cdots \cdots \\[1em] 
-  a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m \\[1em]
+  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\\\
+  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\\\
+  \cdots \cdots \\\\ 
+  a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m \\\\
 \end{cases} \quad (Ⅱ)
 $$
 
@@ -179,15 +179,15 @@ $$
 <br>
 #### 4、例题
 
-1. 求解非齐次线性方程组 $ \begin{cases} x_1 + 5x_2 - x_3 - x_4 = -1 \\[1em] x_1 - 2x_2 + x_3 + 3x_4 = 3 \\[1em] 3x_1 + 8 x_2 - x_3 + x_4 = 1 \\[1em] x_1 - 9x_2 + 3x_3 + 7x_4 = 7 \end{cases} $ ，并用对应的齐次方程组的基础解系表示通解。
+1. 求解非齐次线性方程组 $ \begin{cases} x_1 + 5x_2 - x_3 - x_4 = -1 \\\\ x_1 - 2x_2 + x_3 + 3x_4 = 3 \\\\ 3x_1 + 8 x_2 - x_3 + x_4 = 1 \\\\ x_1 - 9x_2 + 3x_3 + 7x_4 = 7 \end{cases} $ ，并用对应的齐次方程组的基础解系表示通解。
   - $ \begin{pmatrix} A \mid b \end{pmatrix} = \begin{pmatrix} 1 & 5 & -1 & -1 & \mid & -1 \\ 1 & -2 & 1 & 3 & \mid & 3 \\ 3 & 8 & -1 & 1 & \mid & 1 \\ 1 & -9 & 3 & 7 & \mid & 7 \end{pmatrix} \to \begin{pmatrix} 1 & 5 & -1 & -1 & \mid & -1 \\ 0 & -7 & 2 & 4 & \mid & 4 \\ 0 & 0 & 0 & 0 & \mid & 0 \\ 0 & 0 & 0 & 0 & \mid & 0 \end{pmatrix} $ 
     - $ {\rm r}(A \mid b) = {\rm r}(A) = 2 < 4 $ 
-    - $ {\rm r}(A) = 2 \implies S = 4-2 = 2 \implies \begin{cases} \xi_1 = ( -\frac{3}{7} & \frac{2}{7} & 1 & 0 )^{\rm T} \\[1em] \xi_2 = ( -\frac{13}{7} & \frac{4}{7} & 0 & 1 )^{\rm T} \end{cases} $ 
+    - $ {\rm r}(A) = 2 \implies S = 4-2 = 2 \implies \begin{cases} \xi_1 = ( -\frac{3}{7} & \frac{2}{7} & 1 & 0 )^{\rm T} \\\\ \xi_2 = ( -\frac{13}{7} & \frac{4}{7} & 0 & 1 )^{\rm T} \end{cases} $ 
       - 取 1、2 列，则 $ x_3, x_4 $ 为自由变量
     - $ \begin{array}{l} \xi^{\ast} = ( \frac{13}{7} & -\frac{4}{7} & 0 & 0 ) \end{array} $ 
       - $ A\xi^{\ast} = b $ 
   - 通解为 $ k_1 \xi_1 + k_2 \xi_2 + \xi^{\ast} \quad \forall \text{ } k_1, k_2 $
-2. 求线性方程组 $ \begin{cases} x_1 - 5x_2 + 2x_3 + 3x_4 = 11 \\[1em] -3x_1 + x_2 - 4x_3 - 2x_4 = -6 \\[1em] -x_1 - 9x_2 + 3x_4 = 15 \end{cases} $ 满足条件 $ x_1 = x_2 $ 的全部解。
+2. 求线性方程组 $ \begin{cases} x_1 - 5x_2 + 2x_3 + 3x_4 = 11 \\\\ -3x_1 + x_2 - 4x_3 - 2x_4 = -6 \\\\ -x_1 - 9x_2 + 3x_4 = 15 \end{cases} $ 满足条件 $ x_1 = x_2 $ 的全部解。
    - 解 1️⃣
      - $ (A \mid b) = \begin{pmatrix} 1 & -5 & 2 & 3 & \mid & 11 \\ -3 & 1 & -4 & -2 & \mid & -6 \\ -1 & -9 & 0 & 3 & \mid & 15 \end{pmatrix} \to \begin{pmatrix} 1 & -5 & 2 & 3 & \mid & 11 \\ 0 & -14 & 2 & 7 & \mid & 27 \\ 0 & 0 & 0 & 1 & \mid & 1 \end{pmatrix} $ 
      - $ {\rm r}(A) = 3 \implies S = 4-3 = 1 \implies \begin{array}{l} \xi = ( -9 & 1 & 7 & 0 )^{\rm T} \end{array} $ 
@@ -196,7 +196,7 @@ $$
      - 通解为 $ k\xi + \xi^{\ast} = \begin{pmatrix} -9k + \frac{6}{7} \\ k - \frac{10}{7} \\ 7k \\ 1 \end{pmatrix} = \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} $ 
      - 当 $ x_1 = x_2 $ 时，$ k = \dfrac{8}{35} \implies \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} = \begin{pmatrix} -\frac{6}{5} \\ -\frac{6}{5} \\ \frac{8}{5} \\ 1 \end{pmatrix} $ 
    - 解 2️⃣
-     - 讨论方程组 $ \begin{cases} x_1 - 5x_2 + 2x_3 + 3x_4 = 11 \\[1em] -3x_1 + x_2 - 4x_3 - 2x_4 = -6 \\[1em] -x_1 - 9x_2 + 3x_4 = 15 \\[1em] x_1 = x_2 \end{cases} \implies \begin{cases} -4x_2 + 2x_3 + 3x_4 = 11 \\[1em] -2x_2 - 4x_3 - 2x_4 = -6 \\[1em] -10x_2 + 3x_4 = 15 \end{cases} $ 
+     - 讨论方程组 $ \begin{cases} x_1 - 5x_2 + 2x_3 + 3x_4 = 11 \\\\ -3x_1 + x_2 - 4x_3 - 2x_4 = -6 \\\\ -x_1 - 9x_2 + 3x_4 = 15 \\\\ x_1 = x_2 \end{cases} \implies \begin{cases} -4x_2 + 2x_3 + 3x_4 = 11 \\\\ -2x_2 - 4x_3 - 2x_4 = -6 \\\\ -10x_2 + 3x_4 = 15 \end{cases} $ 
      - $  (A \mid b) = \begin{pmatrix} -4 & 2 & 3 & \mid & 11 \\ -2 & -4 & -2 & \mid & -6 \\ -10 & 0 & 3 & \mid & 15 \end{pmatrix} \to \begin{pmatrix} 1 & 2 & 1 & \mid & 3 \\ 0 & 10 & 7 & \mid & 23 \\ 0 & 0 & 1 & \mid & 1 \end{pmatrix} $ 
      - 由于 $ {\rm r}(A) = {\rm r}(A \mid b) = 3 = n $ ，所以方程组有唯一解。
      - 解得 $ \begin{pmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{pmatrix} = \begin{pmatrix} -\frac{6}{5} \\ -\frac{6}{5} \\ \frac{8}{5} \\ 1 \end{pmatrix} $ 。
@@ -226,8 +226,8 @@ $$
       - $ \begin{array}{l} \eta_1 = ( 3 & -1 & 0 )^{\rm T}, \quad \eta_2 = \eta_3 = ( 4 & -1 & 0 )^{\rm T} \end{array} $ 
         - 特解：自由变量赋值为 0
       - 故 $ AX = B $ ，$ \begin{array}{l} A(X_1, X_2, X_3) = (\beta_1, \beta_2, \beta_3) \end{array} $ 
-      - $ \begin{array}{l} X &=  (X_1, X_2, X_3) \\[1em] &= (k_1 \xi + \eta_1, k_2 \xi + \eta_2, k_3 \xi + \eta_3) \\[1em] &= \begin{pmatrix}3 - 6k_1 & 4 - 6k_2 & 4 - 6k_3 \\ -1 + 2k_1 & -1 + 2k_2 & -1 + 2k_3 \\ k_1 & k_2 & k_3 \end{pmatrix} \end{array} $ 
-      - $ \begin{array}{l} |X| &= \begin{vmatrix} 3 - 6k_1 & 4 - 6k_2 & 4 - 6k_3 \\ -1 + 2k_1 & -1 + 2k_2 & -1 + 2k_3 \\ k_1 & k_2 & k_3 \end{vmatrix} \\[1em] &= \begin{vmatrix} 1 & 0 & 0 \\ 0 & 1 & 1 \\ k_1 & k_2 & k_3 \end{vmatrix} \\[1em] &= k_3 - k_2 \not= 0 \end{array} $ 
+      - $ \begin{array}{l} X &=  (X_1, X_2, X_3) \\\\ &= (k_1 \xi + \eta_1, k_2 \xi + \eta_2, k_3 \xi + \eta_3) \\\\ &= \begin{pmatrix}3 - 6k_1 & 4 - 6k_2 & 4 - 6k_3 \\ -1 + 2k_1 & -1 + 2k_2 & -1 + 2k_3 \\ k_1 & k_2 & k_3 \end{pmatrix} \end{array} $ 
+      - $ \begin{array}{l} |X| &= \begin{vmatrix} 3 - 6k_1 & 4 - 6k_2 & 4 - 6k_3 \\ -1 + 2k_1 & -1 + 2k_2 & -1 + 2k_3 \\ k_1 & k_2 & k_3 \end{vmatrix} \\\\ &= \begin{vmatrix} 1 & 0 & 0 \\ 0 & 1 & 1 \\ k_1 & k_2 & k_3 \end{vmatrix} \\\\ &= k_3 - k_2 \not= 0 \end{array} $ 
       - 故 $ P = \begin{pmatrix}3 - 6k_1 & 4 - 6k_2 & 4 - 6k_3 \\ -1 + 2k_1 & -1 + 2k_2 & -1 + 2k_3 \\ k_1 & k_2 & k_3 \end{pmatrix}, \forall \text{ } k_1, k_2, k_3, \text{ 且 } k_2 \not= k_3 $ 
 
 

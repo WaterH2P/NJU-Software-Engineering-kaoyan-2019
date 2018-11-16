@@ -17,9 +17,9 @@ description: 做笔记，喝凉茶，看线代
 n 元变量 $ x_1, x_2, \cdots, x_n $ 的二次齐次多项式
 $$
 \begin{array}{l}
-  f(x_1, x_2, \cdots, x_n) = & a_{11}x_1^2 &+& 2a_{12}x_1x_2 &+& \cdots &+& 2a_{1n}x_1x_n \\[1em]
-  & &+& a_{22}x_2^2 &+& \cdots &+& 2a_{2n}x_2x_n \\[1em]
-  & && && \cdots \\[1em]
+  f(x_1, x_2, \cdots, x_n) = & a_{11}x_1^2 &+& 2a_{12}x_1x_2 &+& \cdots &+& 2a_{1n}x_1x_n \\\\
+  & &+& a_{22}x_2^2 &+& \cdots &+& 2a_{2n}x_2x_n \\\\
+  & && && \cdots \\\\
   & && && &+& a_{nn}x_n^2
 \end{array}
 $$
@@ -30,10 +30,10 @@ $$
 \begin{array}{l}
   f(x_1, x_2, \cdots, x_n) 
   & = 
-    & a_{11}x_1^2 + a_{12}x_1x_2 + \cdots + a_{1n}x_1x_n + \\[1em] 
-    && a_{21}x_2x_1 + a_{22}x_2^2 + \cdots + a_{2n}x_2x_n + \\[1em] 
-    && \cdots \cdots + \\[1em] 
-    && a_{n1}x_nx_1 + a_{n2}x_nx_2 + \cdots + a_{nn}x_n^2 \quad & \quad (\ast) \\[1em]
+    & a_{11}x_1^2 + a_{12}x_1x_2 + \cdots + a_{1n}x_1x_n + \\\\ 
+    && a_{21}x_2x_1 + a_{22}x_2^2 + \cdots + a_{2n}x_2x_n + \\\\ 
+    && \cdots \cdots + \\\\ 
+    && a_{n1}x_nx_1 + a_{n2}x_nx_2 + \cdots + a_{nn}x_n^2 \quad & \quad (\ast) \\\\
   & = 
     & \sum\limits_{i=1}^{\infty}\sum\limits_{j=1}^{\infty}a_{ij}x_ix_j \quad & \quad (\ast\ast)
 \end{array}
@@ -80,10 +80,10 @@ $ (\ast\ast\ast) $ 式称为二次型 $ f(x_1, x_2, \cdots, x_n) $ 的矩阵表�
 对于 n 元二次型 $ f(x_1, x_2, \cdots, x_n) $，若令
 $$
 \begin{cases}
-  x_1 = c_{11}y_1 + c_{12}y_2 + \cdots + c_{1n}yn \\[1em]
-  x_2 = c_{21}y_1 + c_{22}y_2 + \cdots + c_{2n}yn \\[1em]
-  \quad \cdots\cdots \\[1em]
-  x_n = c_{n1}y_1 + c_{n2}y_2 + \cdots + c_{nn}yn \\[1em]
+  x_1 = c_{11}y_1 + c_{12}y_2 + \cdots + c_{1n}yn \\\\
+  x_2 = c_{21}y_1 + c_{22}y_2 + \cdots + c_{2n}yn \\\\
+  \quad \cdots\cdots \\\\
+  x_n = c_{n1}y_1 + c_{n2}y_2 + \cdots + c_{nn}yn \\\\
 \end{cases}
 $$
 
@@ -113,23 +113,23 @@ $$
      - $ A = \begin{pmatrix} 0 & 2 & -2 \\ 2 & 4 & 4 \\ -2 & 4 & -3 \end{pmatrix} $ 
      - $ f(x_1, x_2, x_3) = \begin{pmatrix} x_1 & x_2 & x_3 \end{pmatrix} \begin{pmatrix} 0 & 2 & -2 \\ 2 & 4 & 4 \\ -2 & 4 & -3 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix} $ 
    - 2️⃣ 
-     - $ \begin{vmatrix} \lambda E - A \end{vmatrix} = 0 \implies \begin{cases} \lambda_1 = -6, & \xi_1 = \begin{pmatrix} 1 & -1 & 2 \end{pmatrix}^{\rm T} \\[1em] \lambda_2 = 1, & \xi_2 = \begin{pmatrix} -2 & 0 & 1 \end{pmatrix}^{\rm T} \\[1em] \lambda_3 = 6, & \xi_3 = \begin{pmatrix} 1 & 5 & 2 \end{pmatrix}^{\rm T} \end{cases} $ 
+     - $ \begin{vmatrix} \lambda E - A \end{vmatrix} = 0 \implies \begin{cases} \lambda_1 = -6, & \xi_1 = \begin{pmatrix} 1 & -1 & 2 \end{pmatrix}^{\rm T} \\\\ \lambda_2 = 1, & \xi_2 = \begin{pmatrix} -2 & 0 & 1 \end{pmatrix}^{\rm T} \\\\ \lambda_3 = 6, & \xi_3 = \begin{pmatrix} 1 & 5 & 2 \end{pmatrix}^{\rm T} \end{cases} $ 
      - :star: 写出正交阵 P
        - $ \xi_1, \xi_2, \xi_3 $ 正交化 $ and $ 单位化
-       - $ P = \begin{pmatrix} \dfrac{1}{ \sqrt{6} } & -\dfrac{2}{ \sqrt{5} } & \dfrac{1}{ \sqrt{30} } \\[1em] -\dfrac{1}{ \sqrt{6} } & 0 & \dfrac{5}{ \sqrt{30} } \\[1em] \dfrac{2}{ \sqrt{6} } & \dfrac{1}{ \sqrt{5} } & \dfrac{2}{ \sqrt{30} } \end{pmatrix} $ ，则 $ P^{-1} = P^{\rm T} $ 。
-     - 令 $ X = PY \implies \begin{array}{l} f &= X^{\rm T}AX \\[1em] &= (PY)^{\rm T} A PY \\[1em] &= Y^{\rm T}P^{\rm T}APY \\[1em] &= Y^{\rm T}P^{-1}APY \\[1em] &= Y^{\rm T} \Lambda Y \end{array} $
+       - $ P = \begin{pmatrix} \dfrac{1}{ \sqrt{6} } & -\dfrac{2}{ \sqrt{5} } & \dfrac{1}{ \sqrt{30} } \\\\ -\dfrac{1}{ \sqrt{6} } & 0 & \dfrac{5}{ \sqrt{30} } \\\\ \dfrac{2}{ \sqrt{6} } & \dfrac{1}{ \sqrt{5} } & \dfrac{2}{ \sqrt{30} } \end{pmatrix} $ ，则 $ P^{-1} = P^{\rm T} $ 。
+     - 令 $ X = PY \implies \begin{array}{l} f &= X^{\rm T}AX \\\\ &= (PY)^{\rm T} A PY \\\\ &= Y^{\rm T}P^{\rm T}APY \\\\ &= Y^{\rm T}P^{-1}APY \\\\ &= Y^{\rm T} \Lambda Y \end{array} $
        - 所以 $ f = \begin{pmatrix} y_1 & y_2 & y_3 \end{pmatrix} \begin{pmatrix} -6 & & \\ & 1 & \\ & & 6 \end{pmatrix} \begin{pmatrix} y_1 \\ y_2 \\ y_3 \end{pmatrix} = -6y_1^2 + y_2^2 + 6y_3^3 $
    - 【施式正交法】
      - $ \xi_1 \not\bot \xi_2, \, \xi_1 \bot \xi_3, \, \xi_2 \bot \xi_3 \implies \eta_1 \bot \eta_2, \, \eta_1 \bot \eta_3, \, \eta_2 \bot \eta_3 $ ，其中 $ \eta_3 $ 就是 $ \xi_3 $ ，对 $ \xi_1, \, \xi_2 $ 正交化。
      - 例题
-       - $ A \implies \begin{cases} \xi_1 = \begin{pmatrix} -2 & 1 & 0 \end{pmatrix}^{\rm T} \\[1em] \xi_2 = \begin{pmatrix} 2 & 0 & 1 \end{pmatrix}^{\rm T} \\[1em] \xi_3 = \begin{pmatrix} 1 & 2 & -1 \end{pmatrix}^{\rm T} \end{cases} $ ，$ \xi_1 \not\bot \xi_2, \, \xi_1 \bot \xi_3, \, \xi_2 \bot \xi_3 $ 
+       - $ A \implies \begin{cases} \xi_1 = \begin{pmatrix} -2 & 1 & 0 \end{pmatrix}^{\rm T} \\\\ \xi_2 = \begin{pmatrix} 2 & 0 & 1 \end{pmatrix}^{\rm T} \\\\ \xi_3 = \begin{pmatrix} 1 & 2 & -1 \end{pmatrix}^{\rm T} \end{cases} $ ，$ \xi_1 \not\bot \xi_2, \, \xi_1 \bot \xi_3, \, \xi_2 \bot \xi_3 $ 
          - 令 $ \eta_1 = \xi_1, \, \eta_3 = \xi_3 $ 
          - $ \xi_2 $ 减去 $ \xi_2 \text{ 在 } \xi_1 $ 上的投影，得到的向量与 $ \xi_1 $ 垂直
            - <img src="./images/11-2.2 向量正交化.png" width="50%">
            - $ \xi_2 \text{ 在 } \xi_1 $ 上的投影 $ = \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta \, \xi_1^o = \dfrac{ \begin{Vmatrix} \xi_1 \end{Vmatrix} \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta }{ \begin{Vmatrix} \xi_1 \end{Vmatrix} \begin{Vmatrix} \xi_1 \end{Vmatrix} } \xi_1 = \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi $ 
              - $ \theta \text{ 是 } \xi_1, \, \xi_2 $ 的夹角，$ \xi_1^o \text{ 是 } \xi_1 $ 方向上的单位向量 
            - 所以 $ \eta_2 = \xi_2 - \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi $ 
-         - $ \begin{array}{l}  \eta_2 &= \xi_2 - \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi_1 \\[1em] &= \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} - \dfrac{-4}{5} \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix} \\[1em] &= \begin{pmatrix} \frac{2}{5} \\ \frac{4}{5} \\ 1 \end{pmatrix} \end{array} $
+         - $ \begin{array}{l}  \eta_2 &= \xi_2 - \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi_1 \\\\ &= \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} - \dfrac{-4}{5} \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix} \\\\ &= \begin{pmatrix} \frac{2}{5} \\ \frac{4}{5} \\ 1 \end{pmatrix} \end{array} $
          - $ \eta_1, \, \eta_2, \, \eta_3 $ 正交 
 
 

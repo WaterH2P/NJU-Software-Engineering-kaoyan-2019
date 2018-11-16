@@ -18,7 +18,7 @@ $ \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} $
 - 看成是两个二维向量 $ \alpha_1 = ( a_{11}, a_{12} ) $  $ \alpha_2 = ( a_{21}, a_{22} ) $ ，与 $ x $ 轴夹脚分别是 $ \alpha $  $ \beta $ 。
 <!-- - <img src="./images/7-1 二阶行列式.png" width="50%"> -->
 - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/7-1%20%E4%BA%8C%E9%98%B6%E8%A1%8C%E5%88%97%E5%BC%8F.png" width="50%"> 
-- $ \begin{array}{l} S_{ABCD} & = |\alpha_1| \cdot |\alpha_2| \cdot \sin (\beta - \alpha) \\[1em] & = lm \cdot ( \sin \beta \cos \alpha - \cos \beta \sin \alpha ) \\[1em] & = l \cos \alpha \cdot m \sin \beta - l \sin \alpha \cdot m \cos \beta \\[1em] & = a_{11}a_{22} - a_{12}a_{21} \end{array} $
+- $ \begin{array}{l} S_{ABCD} & = |\alpha_1| \cdot |\alpha_2| \cdot \sin (\beta - \alpha) \\\\ & = lm \cdot ( \sin \beta \cos \alpha - \cos \beta \sin \alpha ) \\\\ & = l \cos \alpha \cdot m \sin \beta - l \sin \alpha \cdot m \cos \beta \\\\ & = a_{11}a_{22} - a_{12}a_{21} \end{array} $
 - $ \therefore \begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix} = a_{11}a_{22} - a_{12}a_{21} = S_{ABCD} $ 
 
 
@@ -85,14 +85,14 @@ $$
 $$
 \left| A \right| = 
 \begin{cases}
-  a_{i1}A_{i1} + a_{i2}A_{i2} + \cdots + a_{in}A_{in} & = \sum\limits_{j = 1}^n a_{ij}A_{ij}, \quad (i = 1, 2, \cdots, n) \\[1em]
+  a_{i1}A_{i1} + a_{i2}A_{i2} + \cdots + a_{in}A_{in} & = \sum\limits_{j = 1}^n a_{ij}A_{ij}, \quad (i = 1, 2, \cdots, n) \\\\
   a_{1j}A_{1j} + a_{2j}A_{2j} + \cdots + a_{nj}A_{nj} & = \sum\limits_{i = 1}^n a_{ij}A_{ij}, \quad (i = 1, 2, \cdots, n)
 \end{cases}
 $$
 但行列式的某行（列）元素分别乘另一行（列）元素的代数余子式后再求和，结果为 $ 0 $ ，即
 $$
 \begin{array}{l}
-  a_{i1}A_{k1} + a_{i2}A_{k2} + \cdots + a_{in}A_{kn} = 0, \quad (i \not= k) \\[1em]
+  a_{i1}A_{k1} + a_{i2}A_{k2} + \cdots + a_{in}A_{kn} = 0, \quad (i \not= k) \\\\
   a_{1j}A_{1k} + a_{2j}A_{2k} + \cdots + a_{nj}A_{nk} = 0, \quad (j \not= k)
 \end{array}
 $$
@@ -202,7 +202,7 @@ $$
 $$
   - 例题
     1. $ I = \begin{vmatrix} a & b & c \\ b+c & a+c & a+b \\ a^2 & b^2 & c^2 \end{vmatrix} = $ \_\_\_\_\_\_\_\_ 。
-       - $ \begin{array}{l} I & = \begin{vmatrix} a & b & c \\ a+b+c & a+b+c & a+b+c \\ a^2 & b^2 & c^2 \end{vmatrix} \\[1em] & = (a+b+c) \cdot (-1) \cdot \begin{vmatrix} 1 & 1 & 1 \\ a & b & c \\ a^2 & b^2 & c^2 \end{vmatrix} \\[1em] & = -(a+b+c)(c-b)(c-a)(b-a) \end{array} $
+       - $ \begin{array}{l} I & = \begin{vmatrix} a & b & c \\ a+b+c & a+b+c & a+b+c \\ a^2 & b^2 & c^2 \end{vmatrix} \\\\ & = (a+b+c) \cdot (-1) \cdot \begin{vmatrix} 1 & 1 & 1 \\ a & b & c \\ a^2 & b^2 & c^2 \end{vmatrix} \\\\ & = -(a+b+c)(c-b)(c-a)(b-a) \end{array} $
 
 5. 行和或列和相等的行列式
 （行和是指每一行元素相加的和，列和同理）
@@ -220,7 +220,7 @@ $$
     - 将第 $ j(j=2, 3, \cdots, n) $ 列乘 $ 1 $ 加到第 $ 1 $ 列上
       - $ I = [a + (n-1)b] \begin{vmatrix} 1 & b & \cdots & b \\ 1 & a & \cdots & b \\ \vdots & \vdots & & \vdots \\ 1 & b & \cdots & a \end{vmatrix}_{n \times n} $ 
     - 将第 $ 1 $ 行乘 $ -1 $ 加到第 $ i(i=2, 3, \cdots, n) $ 行上
-      - $ \begin{array}{l} I & = [a + (n-1)b] \begin{vmatrix} 1 & b & b & \cdots & b \\ 0 & a-b & 0 & \cdots & 0 \\ 0 & 0 & a-b & \cdots & 0 \\ \vdots & \vdots & \vdots & & \vdots \\ 0 & 0 & 0 & \cdots & a-b \end{vmatrix}_{n \times n} \\[1em] & = [a + (n-1)b] \begin{vmatrix} a-b & 0 & \cdots & 0 \\ 0 & a-b & \cdots & 0 \\ \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & a-b \end{vmatrix}_{ (n-1) \times (n-1)} \end{array} $ 
+      - $ \begin{array}{l} I & = [a + (n-1)b] \begin{vmatrix} 1 & b & b & \cdots & b \\ 0 & a-b & 0 & \cdots & 0 \\ 0 & 0 & a-b & \cdots & 0 \\ \vdots & \vdots & \vdots & & \vdots \\ 0 & 0 & 0 & \cdots & a-b \end{vmatrix}_{n \times n} \\\\ & = [a + (n-1)b] \begin{vmatrix} a-b & 0 & \cdots & 0 \\ 0 & a-b & \cdots & 0 \\ \vdots & \vdots & & \vdots \\ 0 & 0 & \cdots & a-b \end{vmatrix}_{ (n-1) \times (n-1)} \end{array} $ 
     - $ I = [ a + (n-1)b](a-b)^{n-1} $ 
 
 
@@ -251,7 +251,7 @@ $$
 3. 递推法
   - 宽边行列式
   1. 计算 $ D_5 = \begin{vmatrix} 1-x & x & 0 & 0 & 0 \\ -1 & 1-x & x & 0 & 0 \\ 0 & -1 & 1-x & x & 0 \\ 0 & 0 & -1 & 1-x & x \\ 0 & 0 & 0 & -1 & 1-x \end{vmatrix} $ 。
-      - $ \begin{array}{l} D_5 & = (1 - x) \cdot (-1)^{1+1} \cdot D_4 + x \cdot (-1)^{1+2} \cdot \begin{vmatrix} -1 & x & 0 & 0 \\ 0 & 1-x & x & 0 \\ 0 & -1 & 1-x & x \\ 0 & 0 & -1 & 1-x \end{vmatrix} \\[1em] & = (1-x)D_4 + (-x) \cdot (-1) \cdot (-1)^{1+1} \cdot D_3 \\[1em] & = (1-x)D_4 + xD_3 \\[1em] & = D_4 - xD_4 + xD_3 \end{array} $ 
+      - $ \begin{array}{l} D_5 & = (1 - x) \cdot (-1)^{1+1} \cdot D_4 + x \cdot (-1)^{1+2} \cdot \begin{vmatrix} -1 & x & 0 & 0 \\ 0 & 1-x & x & 0 \\ 0 & -1 & 1-x & x \\ 0 & 0 & -1 & 1-x \end{vmatrix} \\\\ & = (1-x)D_4 + (-x) \cdot (-1) \cdot (-1)^{1+1} \cdot D_3 \\\\ & = (1-x)D_4 + xD_3 \\\\ & = D_4 - xD_4 + xD_3 \end{array} $ 
       - $ \begin{array}{l} \implies D_5 - D_4 = -x (D_4 - D_3) = (-x)^2 (D_3 - D_2) = (-x)^3 (D_2 - D_1) \end{array} $
         - $ D_1 = 1-x $，$ D_2 = \begin{vmatrix} 1-x & x \\ -1 & 1-x \end{vmatrix} = 1 - x + x^2 $ 
         - $ \begin{cases} D_5 - D_4 = -x^5 \\D_4 - D_3 = x^4 \\ D_3 - D_2 = -x^3 \end{cases} \implies D_5 = 1 - x + x^2 - x^3 + x^4 - x^5 $ 
@@ -283,9 +283,9 @@ $$
     若 $ n $ 个方程 $ n $ 个未知量构成的非齐次线性方程组 
 $$
 \begin{cases} 
-  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\[1em] 
-  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\[1em] 
-  \quad \cdots \cdots \\[1em] 
+  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1 \\\\ 
+  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2 \\\\ 
+  \quad \cdots \cdots \\\\ 
   a_{n1}x_1 + a_{n2}x_2 + \cdots + a_{nn}x_n = b_n 
 \end{cases} 
 $$
@@ -300,9 +300,9 @@ $$
     若包含 $ n $ 个方程 $ n $ 个未知量的齐次线性方程组
 $$
 \begin{cases} 
-  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = 0 \\[1em] 
-  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = 0 \\[1em] 
-  \quad \cdots \cdots \\[1em] 
+  a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = 0 \\\\ 
+  a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = 0 \\\\ 
+  \quad \cdots \cdots \\\\ 
   a_{n1}x_1 + a_{n2}x_2 + \cdots + a_{nn}x_n = 0 
 \end{cases} 
 $$

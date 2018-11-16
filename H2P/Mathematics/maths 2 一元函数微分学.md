@@ -14,7 +14,7 @@ description: 做笔记，喝凉茶，看高数
 - $ \lim\limits_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} $ 记为 $ f'(x_0) $ ：（瞬时）变化率。
 
   - $ f $ 对 $ x $ 的变化率：$ \dfrac{ {\rm d} f}{ {\rm d} x} = f'_x $ 。
-  - $ \begin{cases} \lim\limits_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\[1em] \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases} $ 
+  - $ \begin{cases} \lim\limits_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\\\ \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases} $ 
 - 【注】
   1. 【左右有别】
     - $\lim\limits_{\Delta x \to 0^+} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'_+(x_0)$ 右导数
@@ -38,13 +38,13 @@ description: 做笔记，喝凉茶，看高数
 
 - 例题
   1. 下列函数中，在 $x = 0$ 处不可导的是 $( \text{ D } )$ 。【具体型】
-    - $\begin{array}{l} A. f(x) = |x| \sin |x| & B. f(x) = |x| \sin \sqrt{|x|} \\[1em] C. f(x) = \cos |x| & D. f(x) = \cos \sqrt{|x|} \end{array}$ 
+    - $\begin{array}{l} A. f(x) = |x| \sin |x| & B. f(x) = |x| \sin \sqrt{|x|} \\\\ C. f(x) = \cos |x| & D. f(x) = \cos \sqrt{|x|} \end{array}$ 
     - 分析
       - 只要见到 $f'(x_0)$ $\implies$ 先写导数定义。
         - 当题目给出 $f(x)$ ，写【差值式】。
         - 有界值 $ \times $ 无穷小 = 无穷小
   2. 设 $f(0) = 0$ ，以下极限存在能确定 $f(x)$ 在点 $x = 0$ 可导的是 $( \text{ B } )$ 。【抽象型】
-    - $\begin{array}{l} A. \lim\limits_{h \to 0}\dfrac{f(1 - \cos h)}{h^2} & B. \lim\limits_{h \to 0}\dfrac{f(1 - e^h)}{h} \\[1em] C. \lim\limits_{h \to 0}\dfrac{f(h - \sin h)}{h^2} &  D. \lim\limits_{h \to 0}\dfrac{f(2h) - f(h)}{h}\end{array}$ 
+    - $\begin{array}{l} A. \lim\limits_{h \to 0}\dfrac{f(1 - \cos h)}{h^2} & B. \lim\limits_{h \to 0}\dfrac{f(1 - e^h)}{h} \\\\ C. \lim\limits_{h \to 0}\dfrac{f(h - \sin h)}{h^2} &  D. \lim\limits_{h \to 0}\dfrac{f(2h) - f(h)}{h}\end{array}$ 
     - 分析
       - 抽象型使用【增量式】
       - $f'(0) = \lim\limits_{🐶 \to 0}\dfrac{f(0 + 🐶) - f(0)}{🐶}$ 
@@ -52,12 +52,12 @@ description: 做笔记，喝凉茶，看高数
         - $\because \cos h \leq 1$ 
         - 天生【单侧极限】
       - $D$ 反例
-        - $f(x) = \begin{cases} 1, & x\not= 0 \\[1em] 0, & x = 0 \end{cases}$ 
-      - $\begin{cases} f'(0) \cdot n = \exists & \implies f'(0) \, \exists \\[1em] f'(0) \cdot \infty = \exists & \implies f'(0) \, \exists = 0 \\[1em] f'(0) \cdot 0 = \exists & \not\implies f'(0) \, \exists \end{cases}$ 
+        - $f(x) = \begin{cases} 1, & x\not= 0 \\\\ 0, & x = 0 \end{cases}$ 
+      - $\begin{cases} f'(0) \cdot n = \exists & \implies f'(0) \, \exists \\\\ f'(0) \cdot \infty = \exists & \implies f'(0) \, \exists = 0 \\\\ f'(0) \cdot 0 = \exists & \not\implies f'(0) \, \exists \end{cases}$ 
     - 【注】
       - $🐶 \to 0$ 时，$\dfrac{|🐶|}{🐶}$ 有界，但 $\lim\limits_{🐶 \to 0}\dfrac{|🐶|}{🐶}$ 不存在。
   3. 若 $f(x)$ 是可导的偶函数，证明 $f'(x)$ 的奇函数。【记】
-    - $ \begin{array}{l}f'(x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(x + \Delta x) - f(x)}{\Delta x} \\[1em] f'(-x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(-x + \Delta x) - f(-x)}{\Delta x} \\[1em] & = \lim\limits_{\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{\Delta x} \\[1em] & = -\lim\limits_{-\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{-\Delta x} \\[1em] & = -f'(x) \end{array} $ 
+    - $ \begin{array}{l}f'(x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(x + \Delta x) - f(x)}{\Delta x} \\\\ f'(-x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(-x + \Delta x) - f(-x)}{\Delta x} \\\\ & = \lim\limits_{\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{\Delta x} \\\\ & = -\lim\limits_{-\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{-\Delta x} \\\\ & = -f'(x) \end{array} $ 
     - 若 $f(x)$ 是可导的奇函数，证明 $f'(x)$ 的偶函数。
 
 
@@ -68,9 +68,9 @@ description: 做笔记，喝凉茶，看高数
 <br>
 #### ㊀、基本求导公式
 
-$ \begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\[1em] (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\[1em] (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array} $ 
+$ \begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\\\ (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\\\ (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array} $ 
 
-$ \begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\[1em] (\arctan x)' = \dfrac{1}{1 + x^2} & ( {\rm arccot} x)' = - \dfrac{1}{1 + x^2} \end{array} $
+$ \begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\\\ (\arctan x)' = \dfrac{1}{1 + x^2} & ( {\rm arccot} x)' = - \dfrac{1}{1 + x^2} \end{array} $
 
 $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 + 1}) \right)' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array} $ 
 
@@ -114,7 +114,7 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
       - $x = f(y)$ 两边对 $x$ 求导，$1 = f'(y) \cdot \dfrac{ {\rm d} y }{ {\rm d} x } \implies \dfrac{ {\rm d} y }{ {\rm d} x } = \dfrac{1}{f'(y)}$ 。
       - $\dfrac{ {\rm d}^2 y }{ {\rm d} x^2 } = \dfrac{ {\rm d} ( \dfrac{ {\rm d} y }{ {\rm d} x } ) }{ {\rm d} x }$ 
       - 由于 $\dfrac{ {\rm d} y}{ {\rm d} x } = \dfrac{1}{f'(y)}$ 是关于 $y$ 的函数，所以 $\dfrac{ {\rm d} y}{ {\rm d} x }$ 只能对 $y$ 求导。
-      - $\begin{array}{l}\dfrac{ {\rm d}^2 y }{ {\rm d} x^2 } & = \dfrac{ {\rm d} ( \dfrac{ {\rm d} y }{ {\rm d} x } ) / {\rm d} y }{ {\rm d} x / {\rm d} y } = \dfrac{ {\rm d} ( \dfrac{1}{f'(y)} ) }{ {\rm d} y } \cdot \dfrac{ {\rm d} y }{ {\rm d} x } \\[1em] & = -\dfrac{ f''(y) }{ [f'(y)]^2 } \cdot \dfrac{1}{f'(y)} \\[1em] & = -\dfrac{ f''(y) }{ [f'(y)]^3 } =-\dfrac{ f''(f^{-1}(x)) }{ \{f'[f^{-1}(x)]\}^3 } \end{array}$ 
+      - $\begin{array}{l}\dfrac{ {\rm d}^2 y }{ {\rm d} x^2 } & = \dfrac{ {\rm d} ( \dfrac{ {\rm d} y }{ {\rm d} x } ) / {\rm d} y }{ {\rm d} x / {\rm d} y } = \dfrac{ {\rm d} ( \dfrac{1}{f'(y)} ) }{ {\rm d} y } \cdot \dfrac{ {\rm d} y }{ {\rm d} x } \\\\ & = -\dfrac{ f''(y) }{ [f'(y)]^2 } \cdot \dfrac{1}{f'(y)} \\\\ & = -\dfrac{ f''(y) }{ [f'(y)]^3 } =-\dfrac{ f''(f^{-1}(x)) }{ \{f'[f^{-1}(x)]\}^3 } \end{array}$ 
    2. 求 $y = \dfrac{1}{2}\arctan \sqrt[4]{1 + x^4} + \ln\sqrt[4]{ \dfrac{ \sqrt[4]{1 + x^4} + 1 }{ \sqrt[4]{1 + x^4} - 1} }$ 的反函数的导数。
       - $\dfrac{ {\rm d} y }{ {\rm d} x } = \dfrac{1}{ \dfrac{ {\rm d} x }{ {\rm d} y } } \implies y'_x = \dfrac{1}{x'_y}$ 
       - 令 $u =  \sqrt[4]{1 + x^4}$ ，$y = \dfrac{1}{2} \arctan u + \ln \sqrt[4]{ \dfrac{u + 1}{u - 1} }$ 。
@@ -127,24 +127,24 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
 
 ###### 5、参数方程求导
 
-- $\begin{cases} x = x(t) \\[1em] y = y(t) \end{cases}$ ，$t$ 为参数
+- $\begin{cases} x = x(t) \\\\ y = y(t) \end{cases}$ ，$t$ 为参数
 - $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ {\rm d}y / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{y'_t}{x'_t}$ ，类似于反函数求导，是谁的函数就对谁求导，缺什么补什么。
 - 例题
-   1. 设函数 $y = f(x)$ 由参数方程 $\begin{cases} x = 2t + t^2 \\[1em] y = \varphi(t) \end{cases} , (t > -1)$ 所确定，其中 $\varphi(t)$ 具有二阶导数，且已知 $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{3}{4(1 + t)}$ ，证明：函数 $\varphi(t)$ 满足方程 $\varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
+   1. 设函数 $y = f(x)$ 由参数方程 $\begin{cases} x = 2t + t^2 \\\\ y = \varphi(t) \end{cases} , (t > -1)$ 所确定，其中 $\varphi(t)$ 具有二阶导数，且已知 $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{3}{4(1 + t)}$ ，证明：函数 $\varphi(t)$ 满足方程 $\varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
       - $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ {\rm d}y / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{\varphi'(t)}{2 + 2t}$ 
       - $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{ {\rm d}(\dfrac{ {\rm d}y }{ {\rm d}x }) }{ {\rm d}x } = \dfrac{ {\rm d}(\dfrac{ {\rm d}y }{ {\rm d}x }) / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{ \dfrac{ \varphi''(t)(2 + 2t) - 2\varphi'(t) }{(2 + 2t)^2} }{2 + 2t}$ 
       - $\therefore \dfrac{ \varphi''(t)(2 + 2t) - 2\varphi'(t) }{(2 + 2t)^3 } = \dfrac{ \varphi''(t)(1 + 1t) - \varphi'(t) }{4(1 + t)^3 } = \dfrac{3}{4(1 + t)}$ 
       - $\implies \varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
-   2. 设 $\begin{cases} x = t + e^t \\[1em] y = \sin t \end{cases}$ ，则 $\left. \dfrac{ {\rm d}^2 y}{ {\rm d}x^2 } \right|_{t = 0} = $ \_\_\_\_\_\_。
+   2. 设 $\begin{cases} x = t + e^t \\\\ y = \sin t \end{cases}$ ，则 $\left. \dfrac{ {\rm d}^2 y}{ {\rm d}x^2 } \right|_{t = 0} = $ \_\_\_\_\_\_。
       - $-\dfrac{1}{8}$ 
 
 <br>
 
 ###### 6、高阶导数
 
-- $ \text{高阶导数} \begin{cases} \text{莱布尼兹公式} \\[1em] \text{找规律用数学归纳法} \\[1em] \text{展开式法} \end{cases} $ 
+- $ \text{高阶导数} \begin{cases} \text{莱布尼兹公式} \\\\ \text{找规律用数学归纳法} \\\\ \text{展开式法} \end{cases} $ 
 - 莱布尼兹公式
-   - $\begin{cases} (u \pm v)^{(n)} & = u^{(n)} \pm v^{(n)} \\[1em] (uv)^{(n)} & = \sum\limits_{k=0}^{n} C_n^k u^{(n - k)} v^{(k)} \\[1em] & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \end{cases}$ 
+   - $\begin{cases} (u \pm v)^{(n)} & = u^{(n)} \pm v^{(n)} \\\\ (uv)^{(n)} & = \sum\limits_{k=0}^{n} C_n^k u^{(n - k)} v^{(k)} \\\\ & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \end{cases}$ 
    - $(a^x)^{(n)} = a^x(\ln a)^n, \quad (e^x)^{(n)} = e^x$ 
    - $(\sin kx)^{(n)} = k^n \sin( kx + \frac{\pi}{2} \cdot n  )$ 
    - $(\cos kx)^{(n)} = k^n \cos( kx + \frac{\pi}{2} \cdot n  )$ 
@@ -153,7 +153,7 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
    - $(\dfrac{1}{x + a})^{(n)} = (-1)^n \cdot \dfrac{n!}{ (x + a)^{(n + 1)} }$ 
 - 例题
    1. $y = x^2 \sin 2x$ ，求 $y^{(50)}$ 。
-      - $\begin{array}{l} y^{(50)} & = x^2 \cdot (\sin 2x)^{(50)} + 50(x^2)' \cdot (\sin 2x)^{(49)} + \dfrac{50 \cdot 49}{2}(x^2)'' \cdot (\sin 2x)^{(48)} \\[1em] & = -2^{50}x^2 \sin 2x + 50 \cdot 2^{50}x \cos 2x + 50 \cdot 49 \cdot 2^{48} \sin 2x \end{array}$ 
+      - $\begin{array}{l} y^{(50)} & = x^2 \cdot (\sin 2x)^{(50)} + 50(x^2)' \cdot (\sin 2x)^{(49)} + \dfrac{50 \cdot 49}{2}(x^2)'' \cdot (\sin 2x)^{(48)} \\\\ & = -2^{50}x^2 \sin 2x + 50 \cdot 2^{50}x \cos 2x + 50 \cdot 49 \cdot 2^{48} \sin 2x \end{array}$ 
 
 
 <br>
@@ -184,16 +184,16 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
 ###### 2、涉及 $ f'(x) $ 的定理
 
 5. 费马定理
-   - 设 $f(x)$ 在 $x = x_0$ 处 $\begin{cases} 1) \text{可导} \\[1em] 2) \text{取极值} \end{cases} \implies f'(x_0) = 0$ 。
+   - 设 $f(x)$ 在 $x = x_0$ 处 $\begin{cases} 1) \text{可导} \\\\ 2) \text{取极值} \end{cases} \implies f'(x_0) = 0$ 。
    - 《费马大定理》
    - 证明见《高数 18 讲》
 6. **罗尔定理**
-   -  设 $f(x)$ 满足以下三条 $\begin{cases} 1) [a, b] \text{ 连续} \\[1em] 2) (a, b) \text{ 内可导} \\[1em] 3) f(a) = f(b) \end{cases} \implies \exists \, \xi \in (a, b) \text{ 使 } f'(\xi) = 0$ 。
+   -  设 $f(x)$ 满足以下三条 $\begin{cases} 1) [a, b] \text{ 连续} \\\\ 2) (a, b) \text{ 内可导} \\\\ 3) f(a) = f(b) \end{cases} \implies \exists \, \xi \in (a, b) \text{ 使 } f'(\xi) = 0$ 。
 7. 拉格朗日中值定理
-   - 设 $f(x)$ 满足 $\begin{cases}  1) [a, b] \text{上连续} \\[1em] 2) (a, b) \text{内可导}\end{cases}$ ，则 $\exists \xi \in (a, b)$ ，使 $f'(\xi) = \dfrac{f(b) - f(a)}{b - a}$ 。
+   - 设 $f(x)$ 满足 $\begin{cases}  1) [a, b] \text{上连续} \\\\ 2) (a, b) \text{内可导}\end{cases}$ ，则 $\exists \xi \in (a, b)$ ，使 $f'(\xi) = \dfrac{f(b) - f(a)}{b - a}$ 。
       - 若 $f(b) = f(a)$ ，则 $f'(\xi) = 0$ ，即为罗尔定理。
 8. 柯西中值定理
-   - 设 $f(x)$ ， $g(x)$ 满足 $\begin{cases} 1) [a, b] \text{连续} \\[1em] 2) (a, b) \text{内可导} \\[1em] g'(x) \not= 0 \end{cases}$ ，则 $\dfrac{f'(\xi)}{g'(\xi)} = \dfrac{f(b) - f(a)}{g(b) - g(a)}$ 。
+   - 设 $f(x)$ ， $g(x)$ 满足 $\begin{cases} 1) [a, b] \text{连续} \\\\ 2) (a, b) \text{内可导} \\\\ g'(x) \not= 0 \end{cases}$ ，则 $\dfrac{f'(\xi)}{g'(\xi)} = \dfrac{f(b) - f(a)}{g(b) - g(a)}$ 。
    - 若取 $g(x) = x \implies \dfrac{f(b) - f(a)}{b - a} = \dfrac{f'(\xi)}{1}$ ，即为拉格朗日中值定理。
       - 柯西中值定理 $\implies$ 拉格朗日中值定理 $\implies$ 罗尔定理
 9. 泰勒定理（泰勒公式）
@@ -223,7 +223,7 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
 
 - 设 $ f(x) $ 在 $[a, b]$ 上连续，证明 $\exists \xi \in [a, b]$ ，使 $\int_a^b{f(x) {\rm d} x = f(\xi)(b - a)}$ 。
    - 由于 $f(x)$ 在 $[a, b]$ 上连续，所以存在 $m \leq f(x) \leq M (x \in [a, b])$ ，$m$ 为最小值，$M$ 为最大值。
-   - 所以 $\begin{array}{l} & \int_a^b{m} {\rm d}x \leq \int_a^bf(x){\rm d}x \leq \int_a^b{M}{\rm d}x \\[1em] \implies & m(b - a) \leq \int_a^b{f(x)}{\rm d}x \leq M(b - a) \\[1em] \implies & m \leq \dfrac{ \int_a^b{f(x){\rm d}x} }{b - a} \leq M \end{array}$ 。 
+   - 所以 $\begin{array}{l} & \int_a^b{m} {\rm d}x \leq \int_a^bf(x){\rm d}x \leq \int_a^b{M}{\rm d}x \\\\ \implies & m(b - a) \leq \int_a^b{f(x)}{\rm d}x \leq M(b - a) \\\\ \implies & m \leq \dfrac{ \int_a^b{f(x){\rm d}x} }{b - a} \leq M \end{array}$ 。 
    - 所以 $\exists \, \xi \in [a, b]$ ，使 $f(\xi) = \dfrac{\int_a^b{f(x)}{\rm d}x}{b - a}$ 。
 
 <br>
@@ -286,7 +286,7 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
                - 设 $\exists \, x_0 \in (a, b)，g(x_0) = 0$ 
          - 2⃣️
             - $\xi \to x \implies f(x)g''(x) = g(x)f''(x)$ 
-            - 积分： $ \begin{array}{l} & \dfrac{f(\xi)}{g(\xi)} = \dfrac{f''(\xi)}{g''(\xi)} \\[1em] \implies & \int f(x)g''(x) {\rm d}x = \int g(x)f''(x) {\rm d}x \\[1em] \implies & f(x)g'(x) - \int g'(x)f'(x){\rm d}x = g(x)f'(x) - \int f'(x)g'(x){\rm d}x \\[1em] \implies & f(x)g'(x) = g(x)f'(x) \end{array} $  
+            - 积分： $ \begin{array}{l} & \dfrac{f(\xi)}{g(\xi)} = \dfrac{f''(\xi)}{g''(\xi)} \\\\ \implies & \int f(x)g''(x) {\rm d}x = \int g(x)f''(x) {\rm d}x \\\\ \implies & f(x)g'(x) - \int g'(x)f'(x){\rm d}x = g(x)f'(x) - \int f'(x)g'(x){\rm d}x \\\\ \implies & f(x)g'(x) = g(x)f'(x) \end{array} $  
             - 令 $F(x) = f(x)g'(x) - g(x)f'(x)$ 
                - $F(a) = f(a)g'(a) - g(a)f'(a) = 0$
                - $F(b) = f(b)g'(b) - g(b)f'(b) = 0$  
@@ -332,7 +332,7 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
       - 物以类聚，人以群分
       - $ f'(\xi) = \dfrac{ e^b - e^a }{ b - a } \cdot \dfrac{ f'(\eta) }{ e^\eta } $ 
          - $ \dfrac{ f'(\eta) }{ e^\eta } $ 像柯西中值定理
-      - 其中 $ \begin{cases} \dfrac{ f'(\eta) }{ e^\eta } & = \dfrac{ f(b) - f(a) }{ e^b - e^a } \quad ( g(x) = e^x ) \\[1em] f'(\xi) & = \dfrac{ f(b) - f(a) }{ b - a } \end{cases} $ 。
+      - 其中 $ \begin{cases} \dfrac{ f'(\eta) }{ e^\eta } & = \dfrac{ f(b) - f(a) }{ e^b - e^a } \quad ( g(x) = e^x ) \\\\ f'(\xi) & = \dfrac{ f(b) - f(a) }{ b - a } \end{cases} $ 。
 
 <br>
 
@@ -365,7 +365,7 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
 ###### 1、定义
 - 必须是双侧定义，否则不考虑极值
 - 若 $ f(x) $ 在 $ x = x_0 $ 处连续，在 $ \bigcup\limits^o (x_0, \delta) $ 内可导，则
-   - $ \begin{cases} \text{当} x_0 \in (x_0 - \delta, x_0) \text{时} f'(x) < 0, \text{当} x_0 \in (x_0, x_0 + \delta) \text{时} f'(x) > 0 \implies \text{极小} \\[1em] \text{当} x_0 \in (x_0 - \delta, x_0) \text{时} f'(x) > 0, \text{当} x_0 \in (x_0, x_0 + \delta) \text{时} f'(x) < 0 \implies \text{极大} \\[1em] \text{若} f'(x) \text{在} (x_0 - \delta, x_0) \text{与} (x_0, x_0 + \delta) \text{内不变号} \implies \text{不是极值} \end{cases} $ 
+   - $ \begin{cases} \text{当} x_0 \in (x_0 - \delta, x_0) \text{时} f'(x) < 0, \text{当} x_0 \in (x_0, x_0 + \delta) \text{时} f'(x) > 0 \implies \text{极小} \\\\ \text{当} x_0 \in (x_0 - \delta, x_0) \text{时} f'(x) > 0, \text{当} x_0 \in (x_0, x_0 + \delta) \text{时} f'(x) < 0 \implies \text{极大} \\\\ \text{若} f'(x) \text{在} (x_0 - \delta, x_0) \text{与} (x_0, x_0 + \delta) \text{内不变号} \implies \text{不是极值} \end{cases} $ 
    - ⭐️只需要满足在【去心邻域】内可导
 - $ f(x) $ 在 $ x = x_0 $ 处二阶可导， $ f'(x_0) = 0 $ ，$ \begin{cases} f''(x_0) > 0 \implies \text{ 极小值 } \\ \\ f''(x_0) < 0 \implies \text{ 极大值 } \end{cases} $ 。
 
@@ -374,7 +374,7 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
 ###### 2、例题
 1. 证明 $ f(x) = \left( 1 + \dfrac{1}{x} \right)^x $ 在 $(0, + \infty) $ 内单调增。 
    - $ f(x) = e^{ x \ln \left( 1 + \frac{1}{x} \right) } = e^{ x \left[ \, \ln ( 1 + x ) - \ln x \, \right] } $ 
-   - $ \begin{array}{l} f'(x) & = \left( 1 + \dfrac{1}{x} \right)^x \cdot \left[ \ln (1 + x) - \ln x + x \left( \dfrac{1}{1 + x} - \dfrac{1}{x} \right) \right] \\[1em] & = \left( 1 + \dfrac{1}{x} \right)^x \cdot \left[ \ln (1 + x) - \ln x - \dfrac{1}{ 1 + x } \right] \end{array} $ 
+   - $ \begin{array}{l} f'(x) & = \left( 1 + \dfrac{1}{x} \right)^x \cdot \left[ \ln (1 + x) - \ln x + x \left( \dfrac{1}{1 + x} - \dfrac{1}{x} \right) \right] \\\\ & = \left( 1 + \dfrac{1}{x} \right)^x \cdot \left[ \ln (1 + x) - \ln x - \dfrac{1}{ 1 + x } \right] \end{array} $ 
       - 对于 $ \ln (1 + x) - \ln x $ ，令 $ f(t) = \ln t $ 。
       - 在 $ [x, 1+x] $ 上用拉氏定理
          - $ \ln (1 + x) - \ln x = \dfrac{1}{\xi} \quad (x < \xi < 1 + x) $ 
@@ -407,13 +407,13 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
 <br>
 
 ###### 3、辨别法：设 $ f(x) $ 在 $ I $ 上二阶可导
-   - $ \begin{cases} \text{若} f''(x) > 0, \forall x \in I \implies f(x) \text{是凹的} \\[1em] \text{若} f''(x) < 0, \forall x \in I \implies f(x) \text{是凸的} \end{cases} $ 
+   - $ \begin{cases} \text{若} f''(x) > 0, \forall x \in I \implies f(x) \text{是凹的} \\\\ \text{若} f''(x) < 0, \forall x \in I \implies f(x) \text{是凸的} \end{cases} $ 
    - 若 $ f(x) $ 在 $ x_0 $ 点的左右邻域 $ f''(x) $ 变号 $ \implies ( x_0, f(x_0) ) $ 为拐点。
 
 <br>
 
 ###### 4、例题
-1. 已知曲线 $ L \begin{cases} x = t^2 + 1 \\[1em] y = 4t - t^2 \end{cases} ( t > 0 ) $ ，讨论曲线 $ L $ 的凹凸性。 
+1. 已知曲线 $ L \begin{cases} x = t^2 + 1 \\\\ y = 4t - t^2 \end{cases} ( t > 0 ) $ ，讨论曲线 $ L $ 的凹凸性。 
    - $ \dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ {\rm d}y / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{ 4 - 2t }{2t} = \dfrac{2}{t} - 1 $ 
    - $ \dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{ {\rm d} ( \dfrac{ {\rm d}y }{ {\rm d}x } ) / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{ -\dfrac{2}{t^2} }{2t} = -\dfrac{1}{t^3} < 0 $ 
    - 所以曲线 $ L $ 是凸曲线。
@@ -470,14 +470,14 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
 
 #### ㊃、最值
 1. 对于函数 $ f(x) $ ，在 $ [a, b] $ 上找出三类点
-   - $ \begin{cases} f'(x) = 0 \implies x_0 \text{ 驻点 } \\[1em] f'(x) \text{ 不 } \exists \implies x_1 \text{ 不可导点 } \\[1em] \text{ 端点 } a, b  \end{cases} ​$ 
+   - $ \begin{cases} f'(x) = 0 \implies x_0 \text{ 驻点 } \\\\ f'(x) \text{ 不 } \exists \implies x_1 \text{ 不可导点 } \\\\ \text{ 端点 } a, b  \end{cases} ​$ 
    - 比较 $ f(x_0) $ ，$ f(x_1) $ ，$ f(a) $ ，$ f(b) $ 大小，取其最大（小）者为最大（小）值。
 2. 若在 $ I $ 上求出唯一极大（小）值点，则由实际背景 $ \implies $ 此点即为最大（小）值。
    - 若 $ (a, b) $ 内，考虑端点和可能存在的极值点即可。
 3. 例题
    1. 防空洞的截面拟建成矩形加半圆（如图所示），截面的面积为 $5 m^2$ ，问底宽 $ x $ 为多少时才能使建造时所用的材料最省？
       - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/2-4.4.3.1.png" width="40%">
-      - 设矩形的高为 $ y $，则 $ \begin{cases} \text{周长为} L \\[1em] \text{面积为} S \end{cases} $ 
+      - 设矩形的高为 $ y $，则 $ \begin{cases} \text{周长为} L \\\\ \text{面积为} S \end{cases} $ 
       - $ S = xy + \dfrac{\pi}{8}x^2 = 5 \implies y = \dfrac{5}{x} - \dfrac{\pi}{8}x > 0 \implies x < \sqrt{ \dfrac{40}{\pi} } $ 
       - $ L = x + 2y + \dfrac{\pi}{2}x = \dfrac{10}{x} + ( \dfrac{\pi}{4} + 1 ) x, \quad x \in ( 0, \sqrt{ \dfrac{40}{\pi} } ) $ 
       - $ L' = -\dfrac{10}{x^2} + \dfrac{\pi}{4} + 1 = 0 \implies x = \sqrt{ \dfrac{40}{\pi + 4} } $ 

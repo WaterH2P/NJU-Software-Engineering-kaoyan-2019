@@ -62,8 +62,8 @@ $$
 <br>
 #### 3、例题
 1. 设 $ A = \begin{bmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{bmatrix} $ ，计算 $ A^n $ 。【归纳法】
-  - $ \begin{array}{l} A^2 &= AA \\[1em] &= \begin{pmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{pmatrix} \begin{pmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{pmatrix} \\[1em] &= \begin{pmatrix} 4 & 0 & 0 & 0 \\ 0 & 4 & 0 & 0 \\ 0 & 0 & 4 & 0 \\ 0 & 0 & 0 & 4 \end{pmatrix} = 4E \end{array} $ 
-   - $ A^n = \begin{cases} 4^k \cdot E \quad & n = 2k \\[1em] 4^k \cdot A \quad & n = 2k + 1 \end{cases} $
+  - $ \begin{array}{l} A^2 &= AA \\\\ &= \begin{pmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{pmatrix} \begin{pmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{pmatrix} \\\\ &= \begin{pmatrix} 4 & 0 & 0 & 0 \\ 0 & 4 & 0 & 0 \\ 0 & 0 & 4 & 0 \\ 0 & 0 & 0 & 4 \end{pmatrix} = 4E \end{array} $ 
+   - $ A^n = \begin{cases} 4^k \cdot E \quad & n = 2k \\\\ 4^k \cdot A \quad & n = 2k + 1 \end{cases} $
 2. 设 $ A = \begin{bmatrix} 1 & 2 & -1 \\ -2 & -4 & 2 \\ 3 & 6 & -3 \end{bmatrix} $ ，则 $ A^n $ \_\_\_\_\_\_\_\_ 。【秩为 1 】
   - 当矩阵每一行之间【成比例关系】时
     - $ A = \begin{pmatrix} 1 \\ -2 \\ 3 \end{pmatrix} \begin{pmatrix} 1 & 2 & -1 \end{pmatrix} $ 
@@ -82,7 +82,7 @@ $$
   - $ A = B + E = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} $ 
   - $ B^2 = \begin{bmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ 0& 0 & 0 \end{bmatrix}, \quad B^3 = O $ 
   - 所以 $ B^i = O \quad (i=3, 4, \cdots, n) $ 
-  - $ \implies \begin{array}{l} A^n &= E + nB + \dfrac{ n(n-1) }{2}B^2 \\[1em] &= \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & n & 0 \\ 0 & 0 & n \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 0 & 0 & \frac{ n(n-1) }{2} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \\[1em] &= \begin{bmatrix} 1 & n & \frac{ n(n-1) }{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \end{bmatrix} \end{array} $ 
+  - $ \implies \begin{array}{l} A^n &= E + nB + \dfrac{ n(n-1) }{2}B^2 \\\\ &= \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & n & 0 \\ 0 & 0 & n \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 0 & 0 & \frac{ n(n-1) }{2} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \\\\ &= \begin{bmatrix} 1 & n & \frac{ n(n-1) }{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \end{bmatrix} \end{array} $ 
 
 
 <br>
@@ -104,7 +104,7 @@ $$
 $$
 \text{行阶梯型矩阵}
 \begin{cases}
-  \text{1. 若有 0 行，全在下方} \\[1em]
+  \text{1. 若有 0 行，全在下方} \\\\
   \text{2. 从行上看，自左边起，出现连续 0 的个数自上而下严格单增}
 \end{cases}
 $$
@@ -114,9 +114,9 @@ $$
 $$
 \text{行最简阶梯型矩阵}
 \begin{cases}
-  \text{1. 若有 0 行，全在下方} \\[1em]
-  \text{2. 从行上看，自左边起，出现连续 0 的个数自上而下严格单增} \\[1em]
-  \text{3. 台角位置元素为 1} \\[1em]
+  \text{1. 若有 0 行，全在下方} \\\\
+  \text{2. 从行上看，自左边起，出现连续 0 的个数自上而下严格单增} \\\\
+  \text{3. 台角位置元素为 1} \\\\
   \text{4. 台角正上方元素全为 0}
 \end{cases}
 $$
@@ -126,9 +126,9 @@ $$
 
 4. 例题
    1. 化 $ A = \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 1 & -1 & 2 & -1 & 0 \\ 4 & -2 & 6 & 3 & -4 \\ 2 & 4 & -2 & 4 & -7 \end{bmatrix} $ 为行阶梯型矩阵。
-      - $ \begin{array}{l} A & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & -6 & 6 & 15 & 0 \\ 0 & 2 & -2 & 10 & -5 \end{bmatrix} \\[1em] & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 9 & -3 \\ 0 & 0 & 0 & 12 & -4 \end{bmatrix} \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 12 & -4 \end{bmatrix} \\[1em] & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \end{array} $ 
+      - $ \begin{array}{l} A & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & -6 & 6 & 15 & 0 \\ 0 & 2 & -2 & 10 & -5 \end{bmatrix} \\\\ & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 9 & -3 \\ 0 & 0 & 0 & 12 & -4 \end{bmatrix} \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 12 & -4 \end{bmatrix} \\\\ & \to \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \end{array} $ 
    2. 化 $ B = \begin{bmatrix} 1 & 1 & 0 & -3 & -1 \\ 0 & -2 & 2 & 2 & 1 \\ 0 & 0 & 0 & 3 & -1 \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} $ 为行最简阶梯型矩阵。
-      - $ \begin{array}{l} B & \to \begin{bmatrix} 1 & 1 & 0 & 0 & -2 \\ 0 & -2 & 2 & 0 & \frac{5}{3} \\ 0 & 0 & 0 & 1 & -\frac{1}{3} \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \\[1em] & \to \begin{bmatrix} 1 & 0 & 1 & 0 & -\frac{7}{6} \\ 0 & 1 & -1 & 0 & -\frac{5}{6}  \\ 0 & 0 & 0 & 1 & -\frac{1}{3} \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \end{array} $ 
+      - $ \begin{array}{l} B & \to \begin{bmatrix} 1 & 1 & 0 & 0 & -2 \\ 0 & -2 & 2 & 0 & \frac{5}{3} \\ 0 & 0 & 0 & 1 & -\frac{1}{3} \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \\\\ & \to \begin{bmatrix} 1 & 0 & 1 & 0 & -\frac{7}{6} \\ 0 & 1 & -1 & 0 & -\frac{5}{6}  \\ 0 & 0 & 0 & 1 & -\frac{1}{3} \\ 0 & 0 & 0 & 0 & 0 \end{bmatrix} \end{array} $ 
 
 
 <br>
@@ -140,8 +140,8 @@ $$
 $$
 A^{-1} 
 \begin{cases} 
-  \text{1. } A \text{ 必须是方阵} \\[1em]
-  \text{2. } \text{定义：}AB = E \implies A^{-1} = B, B^{-1} = A \\[1em]
+  \text{1. } A \text{ 必须是方阵} \\\\
+  \text{2. } \text{定义：}AB = E \implies A^{-1} = B, B^{-1} = A \\\\
   \text{1. } A \text{ 可逆 }\iff |A| \not= 0 
 \end{cases}
 $$
@@ -184,11 +184,11 @@ $$
       - 先对 $ E = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} $ 做该变换，得到 $ P = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix} $ 
       - $ PA = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 4 & 6 \\ 2 & 1 \end{bmatrix} = \begin{bmatrix} 0 & 4 \\ 2 & 1 \end{bmatrix} $ 
     - 根据【Th】
-      - $ \begin{array}{l} & P_s \cdots P_2P_1A = E \\[1em] \implies & P_s \cdots P_2P_1AA^{-1} = EA^{-1} \\[1em] \implies & P_s \cdots P_2P_1E = A^{-1} \end{array} $
+      - $ \begin{array}{l} & P_s \cdots P_2P_1A = E \\\\ \implies & P_s \cdots P_2P_1AA^{-1} = EA^{-1} \\\\ \implies & P_s \cdots P_2P_1E = A^{-1} \end{array} $
 
 3. 例题
    1. 设 $ A = \begin{bmatrix} 0 & 2 & -1 \\ 1 & 1 & 2 \\ -1 & -1 & -1 \end{bmatrix} $ ，求 $ A^{-1} $ 。
-      - $ \begin{array}{l} \begin{pmatrix} A \mid E \end{pmatrix} = & \begin{pmatrix} 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ -1 & -1 & -1 & \vdots & 0 & 0 & 1 \end{pmatrix} \\[1em] \underrightarrow{1 \leftrightarrow 2 \\ 3 + 1 } & \begin{pmatrix} 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\[1em] \underrightarrow{2 + 3 \\ \frac{1}{2} 2 } & \begin{pmatrix} 1 & 1 & 0 & \vdots & 0 & -1 & -2 \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\[1em] \underrightarrow{1-2} & \begin{pmatrix} 1 & 0 & 0 & \vdots & -\frac{1}{2} & -\frac{3}{2} & -\frac{5}{2} \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} = \begin{pmatrix} E \mid A^{-1} \end{pmatrix} \end{array} $ 
+      - $ \begin{array}{l} \begin{pmatrix} A \mid E \end{pmatrix} = & \begin{pmatrix} 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ -1 & -1 & -1 & \vdots & 0 & 0 & 1 \end{pmatrix} \\\\ \underrightarrow{1 \leftrightarrow 2 \\ 3 + 1 } & \begin{pmatrix} 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\\\ \underrightarrow{2 + 3 \\ \frac{1}{2} 2 } & \begin{pmatrix} 1 & 1 & 0 & \vdots & 0 & -1 & -2 \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\\\ \underrightarrow{1-2} & \begin{pmatrix} 1 & 0 & 0 & \vdots & -\frac{1}{2} & -\frac{3}{2} & -\frac{5}{2} \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} = \begin{pmatrix} E \mid A^{-1} \end{pmatrix} \end{array} $ 
 
 
 <br>
@@ -223,7 +223,7 @@ A =
   & \dots \\
   A_s
 \end{bmatrix} ,
-\text{ 其中 } A_i(i=1, 2, \cdots, s) \text{ 可逆 ，则 } A \text{ 可逆且 } \\[1em]
+\text{ 其中 } A_i(i=1, 2, \cdots, s) \text{ 可逆 ，则 } A \text{ 可逆且 } \\\\
 
 A^{-1} = 
 \begin{bmatrix}
