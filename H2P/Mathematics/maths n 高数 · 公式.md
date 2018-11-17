@@ -1,11 +1,12 @@
 ---
 title: 高数 · 公式
-date: 2018-11-16
+date: 2018-8-30
 updated: 2018-11-16
 tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，背公式
+real-date: 2018-11-16
 ---
 
 ## 导数计算

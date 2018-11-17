@@ -1,11 +1,12 @@
 ---
 title: 方程组【大题】
-date: 2018-10-24
+date: 2018-8-9
 updated: 2018-10-25
 tags: [maths,线代,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看线代
+real-date: 2018-10-24
 ---
 
 ## 一、齐次线性方程组

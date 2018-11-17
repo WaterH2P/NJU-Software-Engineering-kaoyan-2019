@@ -1,11 +1,12 @@
 ---
 title: 行列式
-date: 2018-10-17
+date: 2018-8-7
 updated: 2018-10-21
 tags: [maths,线代,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看线代
+real-date: 2018-10-17
 ---
 
 ## 一、概念

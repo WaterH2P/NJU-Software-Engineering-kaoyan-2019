@@ -1,11 +1,12 @@
 ---
 title: 多元函数微分学
-date: 2018-10-7
+date: 2018-8-4
 updated: 2018-11-15
 tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看高数
+real-date: 2018-10-7
 ---
 
 

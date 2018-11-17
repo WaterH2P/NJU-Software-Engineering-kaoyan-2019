@@ -1,11 +1,12 @@
 ---
 title: 特征值
-date: 2018-10-26
+date: 2018-8-10
 updated: 2018-10-26
 tags: [maths,线代,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看线代
+real-date: 2018-10-26
 ---
 
 【只讲方阵 $ A_{n \times n} $ 】

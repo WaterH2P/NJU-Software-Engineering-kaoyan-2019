@@ -1,11 +1,12 @@
 ---
 title: 二次型
-date: 2018-10-27
+date: 2018-8-11
 updated: 2018-10-27
 tags: [maths,线代,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看线代
+real-date: 2018-10-27
 ---
 
 ## 一、二次型

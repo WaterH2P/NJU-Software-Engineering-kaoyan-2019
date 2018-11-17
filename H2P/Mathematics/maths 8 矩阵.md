@@ -1,11 +1,12 @@
 ---
 title: 矩阵
-date: 2018-10-22
+date: 2018-8-8
 updated: 2018-10-22
 tags: [maths,线代,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看线代
+real-date: 2018-10-22
 ---
 
 ## 一、概念

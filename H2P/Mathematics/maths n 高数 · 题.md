@@ -1,11 +1,12 @@
 ---
 title: 高数 · 题
-date: 2018-11-15
+date: 2018-8-30
 updated: 2018-11-15
 tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，做习题
+real-date: 2018-11-15
 ---
 
 ## 习题
@@ -107,7 +108,7 @@ $$
 $$
 y'' + p(x)y' + q(x)y = f(x)
 $$
- 
+
 的 3 个解，A、B、C 为常数，并设
 
 $$

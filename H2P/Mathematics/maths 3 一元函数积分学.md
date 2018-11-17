@@ -1,12 +1,11 @@
 ---
 title: 一元函数积分学
-date: 2018-8-2
+date: 2018-8-3
 updated: 2018-11-5
 tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看高数
-
 real-date: 2018-10-2
 ---
 

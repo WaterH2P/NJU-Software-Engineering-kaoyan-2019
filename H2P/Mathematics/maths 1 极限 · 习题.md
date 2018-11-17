@@ -6,7 +6,6 @@ tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，做习题
-
 real-date: 2018-11-17
 ---
 
