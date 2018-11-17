@@ -1,5 +1,5 @@
 ---
-title: 常微分方程
+title: 微分方程
 date: 2018-10-14
 updated: 2018-10-15
 tags: [maths,高数,kaoyan]
