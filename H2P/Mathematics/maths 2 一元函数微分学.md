@@ -1,11 +1,13 @@
 ---
 title: 一元函数微分学
-date: 2018-9-26
+date: 2018-8-2
 updated: 2018-11-2
 tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看高数
+
+real-date: 2018-9-26
 ---
 
 
@@ -188,6 +190,7 @@ $ \begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^
    - 《费马大定理》
    - 证明见《高数 18 讲》
 6. **罗尔定理**
+
    -  设 $f(x)$ 满足以下三条 $\begin{cases} 1) [a, b] \text{ 连续} \\\\ 2) (a, b) \text{ 内可导} \\\\ 3) f(a) = f(b) \end{cases} \implies \exists \, \xi \in (a, b) \text{ 使 } f'(\xi) = 0$ 。
 7. 拉格朗日中值定理
    - 设 $f(x)$ 满足 $\begin{cases}  1) [a, b] \text{上连续} \\\\ 2) (a, b) \text{内可导}\end{cases}$ ，则 $\exists \xi \in (a, b)$ ，使 $f'(\xi) = \dfrac{f(b) - f(a)}{b - a}$ 。

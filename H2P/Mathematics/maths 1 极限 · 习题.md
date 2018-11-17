@@ -1,11 +1,13 @@
 ---
 title: 极限 · 习题
-date: 2018-11-17
+date: 2018-8-1
 updated: 2018-11-17
 tags: [maths,高数,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，做习题
+
+real-date: 2018-11-17
 ---
 
 
