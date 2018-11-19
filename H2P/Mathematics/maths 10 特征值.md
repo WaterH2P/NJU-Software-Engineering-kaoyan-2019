@@ -24,8 +24,7 @@ A\xi = \lambda \xi \quad (Ⅰ)
 $$
 
 则称 $\lambda$ 是 A 的特征值，$\xi$ 是 A 的对应于特征值 $\lambda$ 的特征向量。
-由 (Ⅰ) 式，得
-
+由 $(Ⅰ)$ 式，得
 $$
 \begin{array}{l}
   \lambda \xi - A \xi = 0 &\implies (\lambda E - A)\xi = 0 \\\\
@@ -46,13 +45,12 @@ $$
 \end{vmatrix} = 0 \qquad (Ⅱ) 
 $$
 
-式称为 A 的特征方程，是未知量 $\lambda$ 的 n 次方程，有 n 个根（重根按照重数计），$\lambda E - a$ 称为特征矩阵，$\mid \lambda E - A \mid$ 称为特征多项式。
-
-(Ⅱ) 式称为 A 的特征方程，是未知量 $\lambda$ 的 n 次方程，有 n 个根（重根按照重数计），$\lambda E - a$ 称为特征矩阵，$\mid \lambda E - A \mid$ 称为特征多项式。
+$(Ⅱ)$ 式称为 A 的特征方程，是未知量 $\lambda$ 的 $n$ 次方程，有 $n$ 个根（重根按照重数计），$\lambda E - A$ 称为特征矩阵，$\mid \lambda E - A \mid$ 称为特征多项式。
 
 <br>
 
 #### 2、例题
+
 求 $A = \begin{pmatrix} 0 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 0 \end{pmatrix}$ 的特征值与特征向量。
 - 1️⃣ 求 $\lambda$ 
    - $\begin{array}{l} |\lambda E - A| &= \begin{vmatrix} \lambda & 0 & -1 \\ 0 & \lambda - 1 & 0 \\ -1 & 0 & \lambda \end{vmatrix} \\\\ &= (\lambda -1) \cdot (-1)^{2+2} \cdot \begin{vmatrix} \lambda & -1 \\ -1 & \lambda \end{vmatrix} \\\\ &= (\lambda - 1)^2(\lambda + 1) = 0 \\\\ &\implies \lambda_1 = \lambda_2 = 1, \quad \lambda_3 = -1 \end{array}$ 
@@ -93,10 +91,10 @@ $$
 
 ## 四、求可逆矩阵 P
 
-- $\begin{array}{l} & P^{-1}AP = \Lambda \\\\ \iff & AP = P \Lambda \\\\ \iff & A\begin{pmatrix} \xi_1& \xi_2 & \cdots & \xi_n \end{pmatrix} = \begin{pmatrix} \xi_1& \xi_2 & \cdots & \xi_n \end{pmatrix}\begin{pmatrix} \lambda_1 &  &  &  \\  & \lambda_2 & & \\ & & \ddots & \\ & & & \lambda_n \end{pmatrix} \\\\ \iff & \begin{pmatrix} A\xi_1 & A\xi_2 & \cdots & A\xi_n \end{pmatrix} = \begin{pmatrix} \lambda_1 \xi_1 & \lambda_2 \xi_2 & \cdots & \lambda_n \xi_n \end{pmatrix} \\\\ \iff & A\xi_i = \lambda_i \xi_i, \quad (i=1, 2, \cdots, n) \end{array}$ 
-- 所以 $\Lambda = \begin{bmatrix} \lambda_1 &  &  &  \\  & \lambda_2 & & \\ & & \ddots & \\ & & & \lambda_n \end{bmatrix}$ ，其中 $\lambda_i (i=1, 2, \cdots, n) $ 为 A 的 n 个特征值。
-- $P = \begin{bmatrix} \xi_1& \xi_2 & \cdots & \xi_n \end{bmatrix}, \xi_i(i=1, 2, \cdots, n) $ 是 A 的 n 个线性无关的特征向量，且 $\xi_i$ 对应的特征值为 $\lambda_i$ 。
-- A 可以相似对角化 $\iff $ 存在可逆 P，使得 $P^{-1} AP = \Lambda$ $\iff $A 有 n 个线性无关的特征向量
+- $\begin{array}{l} & P^{-1}AP = \Lambda \\\\ \iff & AP = P \Lambda \\\\ \iff & A\begin{pmatrix} \xi_1& \xi_2 & \cdots & \xi_n \end{pmatrix} = \begin{pmatrix} \xi_1& \xi_2 & \cdots & \xi_n \end{pmatrix}\begin{pmatrix} \lambda_1 &  &  &  \\  & \lambda_2 & & \\ & & \ddots & \\ & & & \lambda_n \end{pmatrix} \\\\ \iff & \begin{pmatrix} A\xi_1 & A\xi_2 & \cdots & A\xi_n \end{pmatrix} = \begin{pmatrix} \lambda_1 \xi_1 & \lambda_2 \xi_2 & \cdots & \lambda_n \xi_n \end{pmatrix} \\\\ \iff & A\xi_i = \lambda_i \xi_i, \quad (i=1, 2, \cdots, n) \\ & \end{array}$ 
+- 所以 $\Lambda = \begin{bmatrix} \lambda_1 &  &  &  \\  & \lambda_2 & & \\ & & \ddots & \\ & & & \lambda_n \end{bmatrix}$ ，其中 $\lambda_i (i=1, 2, \cdots, n)$ 为 $A$ 的 $n$ 个特征值。
+- $P = \begin{bmatrix} \xi_1& \xi_2 & \cdots & \xi_n \end{bmatrix}, \xi_i(i=1, 2, \cdots, n)$ 是 $A$ 的 $n$ 个线性无关的特征向量，且 $\xi_i$ 对应的特征值为 $\lambda_i$ 。
+- $A$ 可以相似对角化 $\iff$ 存在可逆 $P$，使得 $P^{-1} AP = \Lambda \iff A$ 有 $n$ 个线性无关的特征向量
    - 即 $\begin{vmatrix} \xi_1 & \xi_2 & \cdots & \xi_n \end{vmatrix} \not= 0$ 
 
 <br>
