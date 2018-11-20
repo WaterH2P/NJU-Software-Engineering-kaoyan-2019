@@ -6,12 +6,9 @@ tags: [maths,线代,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，做习题
+addition: 《1000 题（数学二） 线性代数》
 real-date: 2018-11-20
 ---
-
-<br>
-
-> 数学二 1000 题 线性代数
 
 <br>
 
