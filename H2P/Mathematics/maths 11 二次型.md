@@ -131,9 +131,9 @@ $$
    - $\begin{vmatrix} \lambda E - A \end{vmatrix} = 0 \implies \begin{cases} \lambda_1 = -6, & \xi_1 = \begin{pmatrix} 1 & -1 & 2 \end{pmatrix}^{\rm T} \\\\ \lambda_2 = 1, & \xi_2 = \begin{pmatrix} -2 & 0 & 1 \end{pmatrix}^{\rm T} \\\\ \lambda_3 = 6, & \xi_3 = \begin{pmatrix} 1 & 5 & 2 \end{pmatrix}^{\rm T} \end{cases}$ 
    - ⭐️ 写出正交阵 P
       - $\xi_1, \xi_2, \xi_3$ 正交化 $and$ 单位化
-   - $P = \begin{pmatrix} \dfrac{1}{ \sqrt{6} } & -\dfrac{2}{ \sqrt{5} } & \dfrac{1}{ \sqrt{30} } \\\\ -\dfrac{1}{ \sqrt{6} } & 0 & \dfrac{5}{ \sqrt{30} } \\\\ \dfrac{2}{ \sqrt{6} } & \dfrac{1}{ \sqrt{5} } & \dfrac{2}{ \sqrt{30} } \end{pmatrix}$ ，则 $P^{-1} = P^{\rm T}$ 。
-   - 令 $x = PY \implies \begin{array}{l} \\ f &= X^{\rm T}AX \\\\ &= (PY)^{\rm T} A PY \\\\ &= Y^{\rm T}P^{\rm T}APY \\\\ &= Y^{\rm T}P^{-1}APY \\\\ &= Y^{\rm T} \Lambda Y \\ & \end{array}$
-      - 所以 $f = \begin{pmatrix} y_1 & y_2 & y_3 \end{pmatrix} \begin{pmatrix} -6 & & \\ & 1 & \\ & & 6 \end{pmatrix} \begin{pmatrix} y_1 \\ y_2 \\ y_3 \end{pmatrix} = -6y_1^2 + y_2^2 + 6y_3^3$
+      - $P = \begin{pmatrix} \dfrac{1}{ \sqrt{6} } & -\dfrac{2}{ \sqrt{5} } & \dfrac{1}{ \sqrt{30} } \\\\ -\dfrac{1}{ \sqrt{6} } & 0 & \dfrac{5}{ \sqrt{30} } \\\\ \dfrac{2}{ \sqrt{6} } & \dfrac{1}{ \sqrt{5} } & \dfrac{2}{ \sqrt{30} } \end{pmatrix}$ ，则 $P^{-1} = P^{\rm T}$ 。
+   - 令 $x = PY \implies \begin{array}{l} \\ f &= X^{\rm T}AX &= (PY)^{\rm T} A PY \\\\ &= Y^{\rm T}P^{\rm T}APY &= Y^{\rm T}P^{-1}APY \\\\ &= Y^{\rm T} \Lambda Y \\ & \end{array}$
+   - $f = \begin{pmatrix} y_1 & y_2 & y_3 \end{pmatrix} \begin{pmatrix} -6 & & \\ & 1 & \\ & & 6 \end{pmatrix} \begin{pmatrix} y_1 \\ y_2 \\ y_3 \end{pmatrix} = -6y_1^2 + y_2^2 + 6y_3^3$
 
 <br>
 
@@ -141,14 +141,13 @@ $$
 
 - $\xi_1 \not\bot \xi_2, \, \xi_1 \bot \xi_3, \, \xi_2 \bot \xi_3 \implies \eta_1 \bot \eta_2, \, \eta_1 \bot \eta_3, \, \eta_2 \bot \eta_3$ ，其中 $\eta_3$ 就是 $\xi_3$ ，对 $\xi_1, \, \xi_2$ 正交化。
 - 例题
-   1. $a \implies \begin{cases} \xi_1 = \begin{pmatrix} -2 & 1 & 0 \end{pmatrix}^{\rm T} \\\\ \xi_2 = \begin{pmatrix} 2 & 0 & 1 \end{pmatrix}^{\rm T} \\\\ \xi_3 = \begin{pmatrix} 1 & 2 & -1 \end{pmatrix}^{\rm T} \end{cases}$ ，$\xi_1 \not\bot \xi_2, \, \xi_1 \bot \xi_3, \, \xi_2 \bot \xi_3$ 
+   1. $a \implies \begin{cases} \xi_1 = \begin{pmatrix} -2 & 1 & 0 \end{pmatrix}^{\rm T} \\\\ \xi_2 = \begin{pmatrix} 2 & 0 & 1 \end{pmatrix}^{\rm T} \\\\ \xi_3 = \begin{pmatrix} 1 & 2 & -2 \end{pmatrix}^{\rm T} \end{cases}$ ，$\xi_1 \not\bot \xi_2, \, \xi_1 \bot \xi_3, \, \xi_2 \bot \xi_3$ 
       - 令 $\eta_1 = \xi_1, \, \eta_3 = \xi_3$ 
       - $\xi_2$ 减去 $\xi_2 \text{ 在 } \xi_1$ 上的投影，得到的向量与 $\xi_1$ 垂直
-         -  <img src="./images/11-2.2 向量正交化.png" width="50%">
-         - $\xi_2 \text{ 在 } \xi_1$ 上的投影 $= \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta \, \xi_1^o = \dfrac{ \begin{Vmatrix} \xi_1 \end{Vmatrix} \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta }{ \begin{Vmatrix} \xi_1 \end{Vmatrix} \begin{Vmatrix} \xi_1 \end{Vmatrix} } \xi_1 = \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi$ 
-            - $\theta \text{ 是 } \xi_1, \, \xi_2$ 的夹角，$\xi_1^o \text{ 是 } \xi_1$ 方向上的单位向量 
-         - 所以 $\eta_2 = \xi_2 - \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi$ 
-         - $\begin{array}{l} \\ \eta_2 &= \xi_2 - \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi_1 \\\\ &= \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} - \dfrac{-4}{5} \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix} \\\\ &= \begin{pmatrix} \frac{2}{5} \\ \frac{4}{5} \\ 1 \end{pmatrix} \\ & \end{array}$
+         - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/11-2.2%20%E5%90%91%E9%87%8F%E6%AD%A3%E4%BA%A4%E5%8C%96.png" width="50%">
+      - $\begin{array}{l} \xi_2 \text{ 在 } \xi_1 \text{ 上的投影 } &= \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta \, \xi_1^o \\\\ &= \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta \dfrac{ \xi_1 }{ \begin{Vmatrix} \xi_1 \end{Vmatrix} } &= \dfrac{ \begin{Vmatrix} \xi_1 \end{Vmatrix} \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta }{ \begin{Vmatrix} \xi_1 \end{Vmatrix} \begin{Vmatrix} \xi_1 \end{Vmatrix} } \xi_1 \\\\ &= \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi_1 \end{array}$ 
+         - $\theta \text{ 是 } \xi_1, \, \xi_2$ 的夹角，$\xi_1^o \text{ 是 } \xi_1$ 方向上的单位向量 
+      - 所以：$\begin{array}{l} \\ \eta_2 &= \xi_2 - \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi_1 \\\\ &= \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} - \dfrac{-4}{5} \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix} \\\\ &= \begin{pmatrix} \dfrac{2}{5} & \dfrac{4}{5} & 1 \end{pmatrix}^{\rm T} \\ & \end{array}$ 
       - $\eta_1, \, \eta_2, \, \eta_3$ 正交 
 
 
