@@ -52,6 +52,14 @@ $\begin{array}{l} ( {\rm A} ) \text{ 若方程组无解，则必有系数行列�
 
 <br>
 
+#### 3 【A.11】
+
+设 $A$ 是 $n$ 阶矩阵，$X$ 是任意的 $n$ 维列向量，$B$ 是任意的 $n$ 阶方阵，则下列说法错误的是 $(\quad)$ 。
+
+$\begin{array}{l} ( {\rm A} ) \, AB = O \implies A = O & ( {\rm B} ) \, B^{\rm T}AB = O \implies A = O \\\\ ( {\rm C} ) \, AX = \overrightarrow{0} \implies A = O & ( {\rm D} ) \, X^{\rm T} AX = 0 \implies A = O \end{array}$
+
+<br>
+
 ## 参考答案
 
 <br>
