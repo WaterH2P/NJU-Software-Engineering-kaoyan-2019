@@ -100,8 +100,8 @@ $$
 
 #### 3、常用等价无穷小 $(x \to 0)$
 
-- $\sin x$ ~ $\arcsin x$ ~ $\tan x$ ~ $\arctan x$~ $e^x - 1$~ $\ln(1 + x)$ ~ $x$
-- $(1 + x)^\alpha - 1$ ~ $\alpha x \implies (1 + 🐶)^\alpha - 1$ ~ $\alpha 🐶\, (🐶 \to 0)$ 
+- $\sin x \sim \arcsin x \sim \tan x \sim \arctan x$~ $e^x - 1$~ $\ln(1 + x) \sim x$
+- $(1 + x)^\alpha - 1 \sim \alpha x \implies (1 + 🐶)^\alpha - 1 \sim \alpha 🐶\, (🐶 \to 0)$ 
 
 <br>
 
@@ -119,7 +119,7 @@ $$
       - 及时提出**极限不为0**的因式
    - 例题
       1. $\lim\limits_{x \to 1^-}\ln x \times \ln(1 - x)$
-         - $\lim\limits_{x \to 1}\ln x = \lim\limits_{x \to 1}\ln(1 + x - 1)$ ~ $\lim\limits_{x \to 1} (x-1)$
+         - $\lim\limits_{x \to 1}\ln x = \lim\limits_{x \to 1}\ln(1 + x - 1) \sim \lim\limits_{x \to 1} (x-1)$
 - $\infty - \infty$
    - 有分母，则通分
       - $I = \lim\limits_{x \to 0} \left(\dfrac{e^x + xe^x}{e^x - 1} - \dfrac{1}{x} \right)$
@@ -149,11 +149,11 @@ $$
    - $f(x) = \dfrac{ f(a) }{ 0! } + \dfrac{ f'(a) }{1!} (x - a) + \dfrac{ f''(a) }{2!} (x - a)^2 + \cdots + \dfrac{ f^{ (n) }(a) }{n!} (x - a)^n + R(n)$
 - $x \to 0$
    - $\sin x = x - \dfrac{1}{3!}x^3 + o(x^3)$
-      - $x - \sin x$ ~ $\dfrac{1}{6}x^3 \quad \text{and} \quad x + \sin x$ ~ $2x$
-         - $x^2 - {\sin^2 x}$ ~ $\dfrac{1}{3}x^4$
+      - $x - \sin x \sim \dfrac{1}{6}x^3 \quad \text{and} \quad x + \sin x \sim 2x$
+         - $x^2 - {\sin^2 x} \sim \dfrac{1}{3}x^4$
    - $\arcsin x = x + \dfrac{1}{6}x^3 + o(x^3)$
    - $\tan x = x + \dfrac{1}{3}x^3 + o(x^3)$
-       - $x - \tan x$ ~ $-\dfrac{1}{3}x^3$
+       - $x - \tan x \sim -\dfrac{1}{3}x^3$
    - $\arctan x = x - \dfrac{1}{3}x^3 + o(x^3)$
    - $\cos x = 1 - \dfrac{1}{2!}x^2 + \dfrac{1}{4!}x^4 + o(x^4)$
    - $\ln(1 + x) = x - \dfrac{x^2}{2} + \dfrac{x^3}{3} - \dfrac{x^4}{4} + o(x^4)$

@@ -9,6 +9,26 @@ description: 做笔记，喝凉茶，背公式
 real-date: 2018-11-16
 ---
 
+## 极限计算
+
+<br>
+
+#### 泰勒展开式
+
+$\begin{array}{l} e^x &= \sum\limits_{n=0}^{\infty} \dfrac{x^n}{n!} \\\\ &= 1 + x + \dfrac{x^2}{2!} + \cdots + \dfrac{x^n}{n!} + \cdots \quad (-\infty < x <+\infty) \\ & \end{array}$ 
+
+$\begin{array}{l} \dfrac{1}{1 + x} &= \sum\limits_{n=0}^{\infty} (-1)^n x^n \\\\ &= 1 - x + x^2 + \cdots + (-1)^n x^n + \cdots \quad (-1 < x < 1) \\ & \end{array}$ 
+
+$\begin{array}{l} \dfrac{1}{1 - x} &= \sum\limits_{n=0}^{\infty} x^n \\\\ &= 1 + x + x^2 + \cdots + x^n + \cdots \quad (-1 < x < 1) \\ & \end{array}$ 
+
+$\begin{array}{l} \ln(1 + x) &= \sum\limits_{n=1}^{\infty} (-1)^{n-1} \dfrac{x^n}{n} \\\\ &= x - \dfrac{x^2}{2} + \dfrac{x^3}{3} - \dfrac{x^4}{4} + \cdots + (-1)^{n-1} \dfrac{x^n}{n} + \cdots \quad (-1 < x \leq 1) \\ & \end{array}$ 
+
+$\begin{array}{l} \sin x &= \sum\limits_{n=0}^{\infty} (-1)^n \dfrac{ x^{2n+1} }{ (2n+1)! } \\\\ &= 1 - \dfrac{ x^2 }{ 2! } + \dfrac{ x^4 }{ 4! } - \dfrac{ x^6 }{ 6! } + \cdots + (-1)^n \dfrac{ x^{2n+1} }{ (2n+1)! } + \cdots, \quad (-\infty < x < +\infty) \\ & \end{array}$ 
+
+$\begin{array}{l} \cos x &= \sum\limits_{n=0}^{\infty} (-1)^n \dfrac{ x^{2n} }{ (2n)! } \\\\ &= 1 - \dfrac{ x^2 }{ 2! } + \dfrac{ x^4 }{ 4! } - \dfrac{ x^6 }{ 6! } + \cdots + (-1)^n \dfrac{ x^{2n} }{ (2n)! } + \cdots, \quad (-\infty < x < +\infty) \\ & \end{array}$
+
+
+
 ## 导数计算
 
 <br>
@@ -30,7 +50,7 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
 - $(u \pm v)^{(n)} = u^{(n)} \pm v^{(n)}$ 
 
 $$
-\begin{array}{l} & \\ (uv)^{(n)} & = \sum\limits_{k=0}^{n} C_n^k u^{(n - k)} v^{(k)} \\\\ & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \\ & \end{array}
+\begin{array}{l} & \\ (uv)^{(n)} & &= \sum\limits_{k=0}^{n} C_n^k u^{(n - k)} v^{(k)} \\\\ & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \\ & \end{array}
 $$ 
    - $\begin{cases} & (a^x)^{(n)} = a^x(\ln a)^n, \quad (e^x)^{(n)} = e^x \\\\ & (\sin kx)^{(n)} = k^n \sin( kx + \frac{\pi}{2} \cdot n ) \\\\ & (\cos kx)^{(n)} = k^n \cos( kx + \frac{\pi}{2} \cdot n ) \\\\ & (\ln x)^{(n)} = (-1)^{(n - 1)} \cdot \dfrac{(n - 1)!}{x^n}, (x > 0) \\\\ & [\ln(x + 1)]^{(n)} = (-1)^{(n - 1)} \cdot \dfrac{(n - 1)!}{(1 + x)^n}, (x > -1) \\\\ & (\dfrac{1}{x + a})^{(n)} = (-1)^n \cdot \dfrac{n!}{ (x + a)^{(n + 1)} } \end{cases}$ 
 
