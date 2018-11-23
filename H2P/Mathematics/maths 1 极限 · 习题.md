@@ -63,6 +63,43 @@ $\begin{array}{l} x \to 0 : \quad & e^{\alpha x} \gg x^{\beta} \gg \ln^\gamma x 
 
 $\begin{array}{l} ( {\rm A} ) \, -36 \quad & ( {\rm B} ) \, 36 \quad & ( {\rm C} ) \, 6 \quad & ( {\rm D} ) \, -6 \end{array}$ 
 
+<br>
+
+#### 7
+
+1️⃣ 设 $f(x)$ 在 $(0, +\infty)$ 内可导，$f'(x) > 0，\, x \in (0, +\infty)$，证明 $f(x)$ 在 $(0, +\infty)$ 内单调增加。
+
+2️⃣ 证明 $f(x) = (n^x + 1)^{ -(1/x) }$ 在 $(0, +\infty)$ 内单调增加，$n > 0$。
+
+3️⃣ 给 $\{ x_n \}, \, x_n = \sum\limits_{k=1}^n (n^k + 1)^{ -(1/k) }$，求 $\lim\limits_{n \to +\infty} x_n$。
+
+<br>
+
+#### 8
+
+1️⃣ 证明方程 $x = 2 \ln (1+x)$ 在 $(0, +\infty)$ 内有唯一实根 $\xi$ 。
+
+2️⃣ 设 $x_1 > \xi$，定义 $x_{n+1} = 2\ln(1 + x_n), \, n=1, 2, \cdots$，证明 $\lim\limits_{n \to \infty} x_n = \xi$ 。
+
+<br>
+
+9
+
+$f(x) = \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid}$ 的可去间断点的个数为 ________ 。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -145,3 +182,102 @@ $\lim\limits_{x \to 0} \dfrac{ x - \sin x + f(x) }{ x^4 } = A \text{ (唯一) }$
 $\begin{array}{l} \\ & \lim\limits_{x \to 0} \dfrac{ x - \sin x + f(x) }{ x^3 } = \lim\limits_{x \to 0} \dfrac{ x - \sin x + f(x) }{ x^4 } \cdot x = 0 \\\\ \implies & \lim\limits_{x \to 0} \dfrac{ x - \sin x }{ x^3 } + \dfrac{ f(x) }{ x^3 } = 0 \\\\ \implies & \lim\limits_{x \to 0} \dfrac{ f(x) }{ x^3 } = -\dfrac{1}{6} \\ & \end{array}$ 
 
 $\therefore \quad \lim\limits_{x \to 0} \dfrac{ x^3 }{ f(x) } = -6$
+
+<br>
+
+#### 7
+
+1️⃣
+
+设任意 $0 < x_1 < x_2$ ，由拉氏定理（拉格朗日中值定理）得
+
+$$
+\dfrac{ f(x_2) - f(x_1) }{ x_2 - x_1 } = f'(\xi) \quad (x_1 < \xi < x_2)
+$$
+
+由题可知 $f'(x) > 0$，所以 $\dfrac{ f(x_2) - f(x_1) }{ x_2 - x_1 } > 0$，且 $x_2 > x_1$，所以 $f(x_2) > f(x_1)$ 。
+
+所以当 $x_2 > x_1 > 0$ 时，$f(x_2) > f(x_1)$ 。
+
+2️⃣
+
+设 $g(x) = \ln f(x) = -\dfrac{ \ln (n^x + 1) }{x}$， 
+
+$$
+g'(x) = \dfrac{ \ln(n^x + 1) }{ x^2 } - \dfrac{ n^x \ln n }{ x(n^x + 1) } > \dfrac{ \ln n^x }{ x^2 } - \dfrac{ n^x \ln n }{ x n^x } = 0
+$$
+
+所以 $g(x)$ 在 $(0, +\infty)$ 内单调增加，所以 $f(x)$ 在 $(0, +\infty)$ 内单调增加。
+
+3️⃣
+
+放缩
+
+$$
+n \cdot (n+1)^{-1} < \sum\limits_{k=1}^n (n^k + 1)^{ -(1/k) } < n \cdot (n^n + 1)^{ -(1/n) }
+$$
+
+$\begin{array}{l} \lim\limits_{n \to +\infty} n \cdot (n+1)^{-1} = \lim\limits_{n \to +\infty} \dfrac{n}{n+1} = 1 \\\\ \lim\limits_{n \to +\infty} n \cdot (n^n + 1)^{ -(1/n) } = \lim\limits_{n \to +\infty} \dfrac{ (n^n)^{1/n} }{ (n^n + 1)^{1/n} } = \lim\limits_{n \to +\infty} \left[ 1 + \left( -\dfrac{1}{ n^n + 1 } \right) \right]^{1/n} = 1 \end{array}$ 
+
+由【哪里跑】或【夹逼定理】，$\lim\limits_{n \to +\infty} x_n = 1$ 。
+
+<br>
+
+#### 8
+
+1️⃣
+
+设 $f(x) = x - 2\ln (1 + x)$ ，$f'(x) = 1 - \dfrac{2}{1+x} = 0 \implies x=1$ 。
+
+当 $0<x<1$ 时，$f'(x) < 0$ 且 $f(0) = 0$ ，所以 $f(x) < 0$ 。
+
+当 $x>1$ 时，$f'(x) > 0$ 且 $\lim\limits_{x \to +\infty} f(x) = +\infty$ ，所以存在唯一实根 $\xi$ 使得 $f(\xi) = 0$ 。
+
+2️⃣
+
+$x_1 > \xi \implies \begin{cases} x_1 > 2 \ln (1 + x_1) = x_2 \\\\ x_2 = 2 \ln (1 + x_1) > 2\ln (1 + \xi) = \xi \end{cases}$ ，
+
+设 $x_{n-1} > x_n > \xi$ ，所以 $\begin{cases} x_n > 2 \ln (1 + x_n) = x_{n+1} \\\\ x_{n+1} = 2 \ln (1 + x_n) > 2\ln (1 + \xi) = \xi \end{cases}$
+
+所以 $\{ x_n \}$ 单调减小且 $x_n > \xi$ ，设  $\lim\limits_{n \to \infty} x_n = A > 0$ 。
+
+所以 $A = 2 \ln (1 + A)$ ，由 $( {\rm I} )$ 可知 $A = \xi$ 。
+
+<br>
+
+9
+
+$2$ 。
+
+由题可知，只考虑无定义点 $x=0, \, -1, \, 1$ 。
+
+$\begin{array}{l} \lim\limits_{x \to 0} \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid} = \dfrac{ e^{x \ln \mid x \mid} - 1}{x \, (x+1) \ln \mid x \mid} = \lim\limits_{x \to 0} \dfrac{x \ln \mid x \mid}{x \, (x+1) \ln \mid x \mid} = 1 \\\\ \lim\limits_{x \to -1} \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid} = \dfrac{ e^{x \ln \mid x \mid} - 1}{x \, (x+1) \ln \mid x \mid} = \lim\limits_{x \to -1} \dfrac{x \ln \mid x \mid}{x \, (x+1) \ln \mid x \mid} = \infty \\\\ \lim\limits_{x \to 1} \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid} = \dfrac{ e^{x \ln \mid x \mid} - 1}{x \, (x+1) \ln \mid x \mid} = \lim\limits_{x \to 1} \dfrac{x \ln \mid x \mid}{x \, (x+1) \ln \mid x \mid} = \dfrac{1}{2} \end{array}$ 
+
+所以 $x=0, \, 1$ 是可去间断点。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

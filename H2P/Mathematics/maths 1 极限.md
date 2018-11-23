@@ -184,29 +184,45 @@ $$
 
 ## 五、数列极限的计算
 
-1. 若 $\lbrace x_n \rbrace$ 易于连续化，转化为函数极限计算。
-   - 依据：若 $\lim\limits_{x \to +\infty}f(x) = A$，则 $\lim\limits_{n \to \infty}f(n) = A$。【归结定理】
-   - $I = \lim\limits_{n \to \infty} \left(n \times \tan \dfrac{1}{n} \right)^{n^2}$
-     - $1^\infty$
-     - 令 $x = \dfrac{1}{t}$，$I = e^{ \lim\limits_{t \to 0} \dfrac{ \frac{ \tan t }{t} - 1 }{t^2} } = e^{ \frac{1}{3} }$
-2. 若 $\lbrace x_n \rbrace$ 不易于连续化，用【夹逼准则】或【定积分定义】。
-   - 当分子分母都在变化的时候
-     - 只改分母，不动分子
-     - $I = \lim\limits_{n \to \infty} \left(\dfrac{1}{n^2 + n + 1} + \dfrac{2}{n^2 + n + 2} + ... + \dfrac{n}{n^2 + n + n} \right)$
-       - $\sum\limits_{i=1}^n \dfrac{i}{n^2 + n + n} \leq 原式 \leq \sum\limits_{i=1}^n \dfrac{i}{n^2 + n + 1}$
-       - $I = \dfrac{1}{2}$
-   - 抓【隐蔽】条件：函数天生的有界性
-     - $I = \lim\limits_{n \to \infty}\sqrt[n]{n \arctan n}$
-       - $\dfrac{\pi}{4} < \lim\limits_{n \to \infty}\arctan n < \dfrac{\pi}{2}$
-       - $\lim\limits_{n \to \infty} \left(n \times \dfrac{\pi}{4} \right)^\dfrac{1}{n} < \lim\limits_{n \to \infty}\sqrt[n]{n \arctan n} < \lim\limits_{n \to \infty} \left(n \times \dfrac{\pi}{2} \right)^\dfrac{1}{n}$
-       - $I = 1$
-3. 若 $\{x_n\}$ 由递推式 $x_n = f(x_{n-1})$ 给出，用【单调有界准则】。
-   - 若 $\{x_n\}$ 单调增且有上界或者单调减且有下界 $\implies \lim\limits_{n \to \infty}x_n \text{ 存在 } \iff {x_n} \text{ 收敛 }$。 
-   - 设 $x_1 = 1, x_{n+1} = 1+ \dfrac{x_n}{1 + x_n} (n = 1, 2, ...)$，证明 $\{x_n\}$ 收敛并求 $\lim\limits_{n \to \infty} x_n$。
-     - 先证存在，再求极限。
-     1. 【数学归纳法】$\implies$$\{x_n\}$ 单调增
-     2. 根据递推式证明有界：$x_n < 2$，从而数列收敛，极限存在设为 $A$。
-     3. **对递推式两边取极限**，$\lim\limits_{n \to \infty}x_n = \lim\limits_{n \to \infty} \left(1 + \dfrac{ x_{n - 1} }{1 + x_{n - 1} } \right) \quad \implies \quad A = 1 + \dfrac{A}{1 + A}$。
+<br>
+
+#### ①、易于连续化
+
+若 $\lbrace x_n \rbrace$ 易于连续化，转化为【函数极限】计算，最后由【归结定理】。 
+- 依据：若 $\lim\limits_{x \to +\infty}f(x) = A$，则 $\lim\limits_{n \to \infty}f(n) = A$。
+- $I = \lim\limits_{n \to \infty} \left(n \times \tan \dfrac{1}{n} \right)^{n^2}$
+   - $1^\infty$
+   - 令 $x = \dfrac{1}{t}$，$I = e^{ \lim\limits_{t \to 0} \dfrac{ \frac{ \tan t }{t} - 1 }{t^2} } = e^{ \frac{1}{3} }$
+
+<br>
+
+#### ②、不易于连续化
+
+若 $\lbrace x_n \rbrace$ 不易于连续化，用【夹逼准则】或【定积分定义】。
+
+- 当分子分母都在变化的时候
+   - 只改分母，不动分子
+   - $I = \lim\limits_{n \to \infty} \left(\dfrac{1}{n^2 + n + 1} + \dfrac{2}{n^2 + n + 2} + ... + \dfrac{n}{n^2 + n + n} \right)$
+      - $\sum\limits_{i=1}^n \dfrac{i}{n^2 + n + n} \leq 原式 \leq \sum\limits_{i=1}^n \dfrac{i}{n^2 + n + 1}$
+      - $I = \dfrac{1}{2}$
+- 抓【隐蔽】条件：函数天生的有界性
+   - $I = \lim\limits_{n \to \infty}\sqrt[n]{n \arctan n}$
+      - $\dfrac{\pi}{4} < \lim\limits_{n \to \infty}\arctan n < \dfrac{\pi}{2}$
+      - $\lim\limits_{n \to \infty} \left(n \times \dfrac{\pi}{4} \right)^{1/n} < \lim\limits_{n \to \infty}\sqrt[n]{n \arctan n} < \lim\limits_{n \to \infty} \left(n \times \dfrac{\pi}{2} \right)^{1/n}$ 
+      - $I = 1$
+
+<br>
+
+#### ③、 由递推式给出
+
+若 $\{x_n\}$ 由递推式 $x_n = f(x_{n-1})$ 给出，用【单调有界准则】。
+
+- 若 $\{x_n\}$ 单调增且有上界或者单调减且有下界 $\implies \lim\limits_{n \to \infty}x_n \text{ 存在 } \iff {x_n} \text{ 收敛 }$ 。
+- 设 $x_1 = 1, x_{n+1} = 1+ \dfrac{x_n}{1 + x_n} (n = 1, 2, ...)$，证明 $\{x_n\}$ 收敛并求 $\lim\limits_{n \to \infty} x_n$。
+   - 先证存在，再求极限。
+   1. 【数学归纳法】$\implies$$\{x_n\}$ 单调增
+   2. 根据递推式证明有界：$x_n < 2$，从而数列收敛，极限存在设为 $A$。
+   3. **对递推式两边取极限**，$\lim\limits_{n \to \infty}x_n = \lim\limits_{n \to \infty} \left(1 + \dfrac{ x_{n - 1} }{1 + x_{n - 1} } \right) \quad \implies \quad A = 1 + \dfrac{A}{1 + A}$。
 
 <br>
 
@@ -224,7 +240,7 @@ $$
 
 #### 2、连续的定义
 
-- 若 $\lim\limits_{x \to x_0}f(x) = f(x_0)$，则 $f(x) $称在 $x = x_0$ 处连续。
+- 若 $\lim\limits_{x \to x_0}f(x) = f(x_0)$，则 $f(x) $ 称在 $x = x_0$ 处连续。
 - 【注】
    - $\lim\limits_{x \to x_0^+}f(x) = \lim\limits_{x \to x_0^-}f(x) = f(x_0)$ 三者相等才连续。
 
@@ -244,7 +260,7 @@ $$
    - 【注】
       - 单侧定义不讨论间断性
       - 若出现左右一边是振荡间断，一边是无穷间断，应分侧讨论（超纲）
-- 求函数 $F(x) = \begin{cases} \dfrac{x(\pi + 2x)}{2 \cos x}, & x \leq 0 \\ \sin\dfrac{1}{x^2 -1}, & x > 0 \end{cases}$ 的间断点，并判断它们的类型。
+- 求函数 $F(x) = \begin{cases} \dfrac{x(\pi + 2x)}{2 \cos x}, & x \leq 0 \\\\ \sin\dfrac{1}{x^2 -1}, & x > 0 \end{cases}$ 的间断点，并判断它们的类型。
    1. 分段点：$x = 0$
       - $\lim\limits_{x \to 0^-} \dfrac{x(\pi + 2x)}{2 \cos x} = 0 \not= \lim\limits_{x \to 0^+} \sin\dfrac{1}{x^2 -1} = -\sin 1$
       - 所以 $x = 0$ 为跳跃间断点
