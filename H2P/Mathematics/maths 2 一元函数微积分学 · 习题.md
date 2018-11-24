@@ -129,13 +129,13 @@ $$
 
 <br>
 
-###### 1
+###### 1、
 
 设 $F(x) = \begin{cases} x^2 \sin \dfrac{1}{x}, \quad & x\not= 0 \\\\ 0, \quad & x=0 \end{cases}$，求 $F'(x)$。
 
 <br>
 
-###### 2
+###### 2、
 
 设常数 $a>1$，函数 
 
@@ -149,7 +149,7 @@ $\begin{array}{l} ( {\rm A} ) \, \text{ 不连续 } \qquad & ( {\rm B} ) \, \tex
 
 <br>
 
-###### 3
+###### 3、
 
 设函数 $f(x)$ 在区间 $(-\delta, \delta)$ 内有定义，若当 $x \in (-\delta, \delta)$ 时，恒有 $\mid f(x) \mid \leq x^2$，则 $x=0$ 必然是 $f(x)$ 的 $(\quad)$。
 
@@ -215,7 +215,7 @@ $$
 
 <br>
 
-###### 1
+###### 1、
 
 计算
 
@@ -226,7 +226,7 @@ $$
 
 <br>
 
-###### 2
+###### 2、
 
 计算
 
@@ -325,7 +325,7 @@ $\begin{array}{l} ( {\rm A} ) \, f'(a)<0 \qquad & ( {\rm B} ) \, f'(a)>0 \\\\ ( 
 
 <br>
 
-###### 1
+###### 1、
 
 $\begin{array}{l} x=0, \quad F'(0) &= \lim\limits_{x \to 0} \dfrac{ F(x) - F(0) }{ x - 0 } = \lim\limits_{x \to 0} x \sin \dfrac{1}{x} = 0 \\\\ x \not= 0, \quad F'(x) &= 2x \sin \dfrac{1}{x} + x^2 \cos \dfrac{1}{x} \cdot (- \dfrac{1}{x^2} ) \\\\ &= 2x \sin \dfrac{1}{x} - \cos \dfrac{1}{x} \\ & \end{array}$ 
 
@@ -333,7 +333,7 @@ $\begin{array}{l} x=0, \quad F'(0) &= \lim\limits_{x \to 0} \dfrac{ F(x) - F(0) 
 
 <br>
 
-###### 2
+###### 2、
 
 ${\rm D}$。
 
@@ -353,7 +353,7 @@ $-\dfrac{1}{n} < x \leq -\dfrac{1}{n+1} \implies -(n+1) \leq \dfrac{1}{x} < -n$�
 
 <br>
 
-###### 3
+###### 3、
 
 ${\rm C}$。
 
@@ -472,13 +472,13 @@ ${\rm C}$ 反例
 
 <br>
 
-###### 1
+###### 1、
 
 $\begin{array}{l} \text{原式 } &= \lim\limits_{n \to \infty} \sum\limits_{i=1}^n \dfrac{n+i}{n^2 + i^2} \\\\ &= \lim\limits_{n \to \infty} \sum\limits_{i=1}^n \dfrac{n^2 + ni}{n^2 + i^2} \cdot \dfrac{1}{n} \\\\ &= \lim\limits_{n \to \infty} \sum\limits_{i=1}^n \dfrac{1 + i/n}{1 + (1/n)^2} \cdot \dfrac{1}{n} \\\\ & = \int_0^1 \dfrac{1+x}{1+x^2} {\rm d}x \\\\ &= \int_0^1 \dfrac{1}{1+x^2} {\rm d}x + \int_0^1 \dfrac{x}{1+x^2} {\rm d}x \\\\ &= \left. \arctan x \right|_0^1 + \left. \dfrac{1}{2} \ln (1+x^2) \right|_0^1 \\\\ &= \dfrac{\pi}{4} + \dfrac{1}{2} \ln 2 \end{array}$ 
 
 <br>
 
-###### 2
+###### 2、
 
 $\dfrac{\pi}{2}$。
 
@@ -520,15 +520,21 @@ $\alpha \geq 1$ 时，$\dfrac{1}{ x^\alpha }$ 发散
 
 <br>
 
-###### 1
+###### 1、复合函数
+
+${\rm B}$。
+
+$\begin{cases} g(x_0) = a \\\\ g'(x_0) = 0 \\\\ g''(x_0)<0 \\\\ f \left[ \, g(x) \, \right] \text{ 在 } x_0 \text{ 取极大值 } \end{cases}$ $\implies$ $\begin{cases} f' \left[ \, g(x_0) \, \right]g'(x_0) = 0 \\\\ f'' \left[ \, g(x_0) \, \right] \cdot \left[ \, g'(x_0) \, \right]^2 + f' \left[ \, g(x_0) \, \right]g''(x_0) > 0 \end{cases}$
+
+$f''(a) \cdot 0 + f'(a) \cdot g''(x_0) > 0 \implies f'(a) > 0$
 
 <br>
 
-###### 2
+###### 2、隐函数
 
 <br>
 
-###### 3
+###### 3、参数方程
 
 $\dfrac{ \sqrt{2} }{2}$。
 
