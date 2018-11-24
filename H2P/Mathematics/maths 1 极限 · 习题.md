@@ -21,7 +21,7 @@ $\begin{array}{l} ( {\rm A} ) \, 1 \qquad & ( {\rm B} ) \, 2 \\\\ ( {\rm C} ) \,
 
 ## 一、概念
 
-#### 1
+#### ㊀
 
 $$
 \forall \, \alpha > 0, \qquad \lim\limits_{x \to 0^+} x^\alpha \ln x = 0
@@ -33,7 +33,7 @@ $$
 
 <br>
 
-#### 1
+#### ㊀
 
 设正项数列 $\{ x_n \}$ 满足 $\lim\limits_{n \to \infty} \dfrac{ x_{n+1} }{x_n} = \dfrac{1}{2}$ ，则 $( \text{ A } )$ 。
 
@@ -41,7 +41,7 @@ $\begin{array}{l} (A) \, \lim\limits_{n \to \infty} x_n = 0 & (B) \, \lim\limits
 
 <br>
 
-#### 2
+#### ㊁
 
 $f(x) = e^{ 1/x } \dfrac{ \sin \pi x }{ (x^2 - 1) \mid x \mid }$ 无界的一个区间是 $( \text{  } )$ 。
 
@@ -49,31 +49,31 @@ $\begin{array}{l} (A) \, (-\infty, -1) & (B) \, (-1, 0) \\\\ (C) \, (0, 1) & (D)
 
 <br>
 
-#### 3
+#### ㊂
 
 若 $\lim\limits_{x \to 0} \dfrac{ f(x) - f(0) }{ x^2 } = \ln 2$，则 $f(x)$ 在 $x=0$ 处 ________ 。
 
 <br>
 
-#### 4
+#### ㊃
 
 求极限 $\lim\limits_{x \to 1} \dfrac{x - x^x}{1 - x + \ln x}$ 。
 
 <br>
 
-#### 5
+#### ㊄
 
 求极限 $\lim\limits_{x \to 0} \dfrac{ a \left( x^2 - \sin^2 x \right) + b \arcsin x }{ c \left( e^x - 1 \right) + d \ln( 1 + x^3) }$ 。
 
 <br>
 
-#### 5
+#### ㊄
 
 $\begin{array}{l} x \to 0 : \quad & e^{\alpha x} \gg x^{\beta} \gg \ln^\gamma x \quad (\alpha, \, \beta, \gamma > 0) \\\\ x \to 0^+ : \quad & \dfrac{1}{x^\alpha} \gg \mid \ln x \mid \end{array}$
 
 <br>
 
-#### 6
+#### ㊅
 
 如果 $\lim\limits_{x \to 0} \dfrac{ x - \sin x + f(x) }{ x^4 }$ 存在，则 $\lim\limits_{x \to 0} \dfrac{x^3}{ f(x) } = (\quad)$ 。
 
@@ -81,7 +81,7 @@ $\begin{array}{l} ( {\rm A} ) \, -36 \quad & ( {\rm B} ) \, 36 \quad & ( {\rm C}
 
 <br>
 
-#### 7
+#### ㊆
 
 1️⃣ 设 $f(x)$ 在 $(0, +\infty)$ 内可导，$f'(x) > 0，\, x \in (0, +\infty)$，证明 $f(x)$ 在 $(0, +\infty)$ 内单调增加。
 
@@ -91,7 +91,7 @@ $\begin{array}{l} ( {\rm A} ) \, -36 \quad & ( {\rm B} ) \, 36 \quad & ( {\rm C}
 
 <br>
 
-#### 8
+#### ㊇
 
 1️⃣ 证明方程 $x = 2 \ln (1+x)$ 在 $(0, +\infty)$ 内有唯一实根 $\xi$ 。
 
@@ -99,7 +99,7 @@ $\begin{array}{l} ( {\rm A} ) \, -36 \quad & ( {\rm B} ) \, 36 \quad & ( {\rm C}
 
 <br>
 
-9
+#### ㊈
 
 $f(x) = \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid}$ 的可去间断点的个数为 ________ 。
 
@@ -126,7 +126,7 @@ $f(x) = \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid}$ 的可去间断�
 
 <br>
 
-#### 1
+#### ㊀
 
 - 由题可知 $x_n > 0$ 且 $x_n$ 单调减，因此 $\lim\limits_{n \to \infty} x_n$ 存在
 - 记 $\lim\limits_{n \to \infty} x_n = A$，设 $A \not= 0$ 
@@ -139,7 +139,7 @@ $f(x) = \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid}$ 的可去间断�
 
 <br>
 
-#### 2
+#### ㊁
 
 - 【分析】讨论 $f(x)$ 在 $I$ 上的有界性，有三种方法
    1. 理论法
@@ -157,7 +157,7 @@ $f(x) = \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid}$ 的可去间断�
 
 <br>
 
-#### 3
+#### ㊂
 
 - 脱帽
    - $\dfrac{ f(x) - f(0) }{ x^2 } > 0$ 
@@ -167,7 +167,7 @@ $f(x) = \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid}$ 的可去间断�
 
 <br>
 
-#### 4
+#### ㊃
 
 $2$。
 
@@ -175,7 +175,7 @@ $\begin{array}{l} \lim\limits_{x \to 1} \dfrac{x - x^x}{1 - x + \ln x} &= \lim\l
 
 <br>
 
-#### 5
+#### ㊄
 
 $\dfrac{b}{c}$。
 
@@ -189,7 +189,7 @@ $\therefore \quad \lim\limits_{x \to 0} \dfrac{ a \left( x^2 - \sin^2 x \right) 
 
 <br>
 
-#### 6
+#### ㊅
 
 $( {\rm D} )$ 。
 
@@ -201,7 +201,7 @@ $\therefore \quad \lim\limits_{x \to 0} \dfrac{ x^3 }{ f(x) } = -6$
 
 <br>
 
-#### 7
+#### ㊆
 
 1️⃣
 
@@ -239,7 +239,7 @@ $\begin{array}{l} \lim\limits_{n \to +\infty} n \cdot (n+1)^{-1} = \lim\limits_{
 
 <br>
 
-#### 8
+#### ㊇
 
 1️⃣
 
@@ -261,7 +261,7 @@ $x_1 > \xi \implies \begin{cases} x_1 > 2 \ln (1 + x_1) = x_2 \\\\ x_2 = 2 \ln (
 
 <br>
 
-9
+#### ㊈
 
 $2$ 。
 
