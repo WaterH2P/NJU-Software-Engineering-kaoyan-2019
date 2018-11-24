@@ -37,6 +37,8 @@ $\begin{array}{l} \cos x &= \sum\limits_{n=0}^{\infty} (-1)^n \dfrac{ x^{2n} }{ 
 
 $\begin{array}{l} ( 1 + x )^\alpha = 1 + \alpha x + \dfrac{ a(a-1) }{2!} x^2 + \cdots + \dfrac{ a(a-1) \cdots (a-n+1) }{n!} x^n + \cdots \end{array},$ $\begin{cases} x \in (-1, \, 1) \text{ ，当 } \alpha \leq -1 \\\\ x \in (-1, \, 1] \text{ ，当 } -1 < \alpha < 0 \\\\ x \in [-1, \, 1] \text{ ，当 } \alpha > 0 \end{cases}$
 
+<br>
+
 ## 导数计算
 
 <br>

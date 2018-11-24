@@ -317,7 +317,7 @@ $\begin{array}{l} ( {\rm A} ) \, f'(a)<0 \qquad & ( {\rm B} ) \, f'(a)>0 \\\\ ( 
 
 <br>
 
-## 二、参考答案
+## 三、参考答案
 
 <br>
 
@@ -524,7 +524,7 @@ $\alpha \geq 1$ 时，$\dfrac{1}{ x^\alpha }$ 发散
 
 ${\rm B}$。
 
-$\begin{cases} g(x_0) = a \\\\ g'(x_0) = 0 \\\\ g''(x_0)<0 \\\\ f \left[ \, g(x) \, \right] \text{ 在 } x_0 \text{ 取极大值 } \end{cases}$ $\implies$ $\begin{cases} f' \left[ \, g(x_0) \, \right]g'(x_0) = 0 \\\\ f'' \left[ \, g(x_0) \, \right] \cdot \left[ \, g'(x_0) \, \right]^2 + f' \left[ \, g(x_0) \, \right]g''(x_0) > 0 \end{cases}$
+$\begin{cases} g(x_0) = a \\\\ g'(x_0) = 0 \\\\ g''(x_0)<0 \\\\ f [ \, g(x) \, ] \text{ 在 } x_0 \text{ 取极大值 } \end{cases}$ $\implies$ $\begin{cases} f'[ \, g(x_0) \, ]g'(x_0) = 0 \\\\ f'' \left[ \, g(x_0) \, \right] \cdot \left[ \, g'(x_0) \, \right]^2 + f' \left[ \, g(x_0) \, \right]g''(x_0) > 0 \end{cases}$
 
 $f''(a) \cdot 0 + f'(a) \cdot g''(x_0) > 0 \implies f'(a) > 0$
 
