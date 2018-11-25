@@ -27,7 +27,7 @@ $\begin{array}{l} \end{array}$
 
 #### Ⅰ、极值
 
-<img src="./images/极值判别法.png" width="80%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%9E%81%E5%80%BC%E5%88%A4%E5%88%AB%E6%B3%95.jpg" width="70%">
 
 <br>
 
@@ -49,7 +49,7 @@ $\begin{array}{l} \end{array}$
 
 凹曲线和凸曲线的分界点
 
-<img src="./images/拐点判别法.png" width="80%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%8B%90%E7%82%B9%E5%88%A4%E5%88%AB%E6%B3%95.png" width="70%">
 
 <br>
 
@@ -63,13 +63,13 @@ $\begin{array}{l} \end{array}$
 
 #### Ⅲ、渐近线
 
-<img src="./images/渐近线.png" width="80%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%B8%90%E8%BF%91%E7%BA%BF.png" width="80%">
 
 <br>
 
 #### Ⅳ、最值点
 
-<img src="./images/最值点.png" width="80%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%9C%80%E5%80%BC%E7%82%B9.png" width="80%">
 
 <br>
 
@@ -77,7 +77,7 @@ $\begin{array}{l} \end{array}$
 
 $(0, \pi)$
 
-<img src="./images/sinx 面积.png" width="60%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/sinx%20%E9%9D%A2%E7%A7%AF.png" width="60%">
 
 <br>
 
@@ -87,7 +87,7 @@ $(0, \pi)$
 
 #### Ⅵ、旋转体的体积
 
-<img src="./images/旋转体体积 1.png" width="60%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%97%8B%E8%BD%AC%E4%BD%93%E4%BD%93%E7%A7%AF%201.png" width="60%">
 
 <br>
 
