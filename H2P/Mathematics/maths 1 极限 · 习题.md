@@ -190,7 +190,7 @@ $\begin{array}{l} \lim\limits_{x \to 1} \dfrac{x - x^x}{1 - x + \ln x} &= \lim\l
 
 找“带头大哥”：
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%9E%81%E9%99%90%20-%20%E5%B8%A6%E5%A4%B4%E5%A4%A7%E5%93%A5.jpg" width="80%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%9E%81%E9%99%90%20%E5%B8%A6%E5%A4%B4%E5%A4%A7%E5%93%A5.jpg" width="80%">
 
 $\begin{array}{l} x^2 - \sin^2 x \sim \dfrac{1}{3}x^4 \quad & \arcsin x \sim x & \implies x^4 < x \\\\ e^x - 1 \sim x \quad & \ln(1 + x^3) \sim x^3 & \implies x > x^3 \end{array}$
 

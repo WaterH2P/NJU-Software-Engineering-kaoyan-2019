@@ -1,6 +1,6 @@
 ---
 title: 多元函数微积分学 · 应用
-date: 2018-8-2
+date: 2018-8-4
 updated: 2018-11-25
 tags: [maths,高数,kaoyan]
 mathjax: true
@@ -95,6 +95,26 @@ $\left. {\rm d}z \right|_{ (x_0, \, y_0) } = f'_x(x_0, \, y_0){\rm d}x + f'_y(x_
 一阶偏导数连续：函数可微
 
 二阶偏导数连续：$\dfrac{ \partial^2 z }{ \partial u \partial v } = \dfrac{ \partial^2 z }{ \partial v \partial u }$ 
+
+<br>
+
+#### ㊄、极最值
+
+<a href="https://waterh2p.cn/2018/08/04/maths%204%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/#3.%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E6%9C%80%E5%80%BC" target="_blank">
+
+<br>
+
+###### 1、无条件极值
+
+<br>
+
+###### 2、条件极（最）值与拉格朗日乘数法
+
+
+
+
+
+
 
 <br>
 

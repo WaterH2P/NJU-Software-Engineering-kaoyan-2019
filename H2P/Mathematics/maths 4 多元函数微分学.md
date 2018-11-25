@@ -133,7 +133,7 @@ real-date: 2018-10-7
        - 函数形式
          - 给出 $z = z(x, y)$（显式）
          - $z = z(x, y)$ 由 $f(x, y, z) = 0$ 确定（隐式）
-       1. 写 $\begin{cases} z'_x = 0 \\\\ z'_y = 0 \end{cases} \implies Pi(i = 1, 2, \ldots, n)$ 
+       1. 写 $\begin{array}{l} \\ \begin{cases} z'_x = 0 \\\\ z'_y = 0 \end{cases} \implies Pi(i = 1, 2, \ldots, n) \\ & \end{array}$ 
        2. 写 $\begin{cases} \left. z''_{xx} \right|_{P_i} = A_i \\\\  \left. z''_{xy} \right|_{P_i} = B_i \\\\ \left. z''_{xx} \right|_{P_i} = C_i \end{cases} \implies \Delta_i = B_i^2 - A_i C_i$
      - 方程两边对 $x$ 求偏导 $2x - 6y - 2y \cdot z'_x - 2z \cdot z'_x = 0 \implies z'_x = \dfrac{x - 3y}{y + z}$ 
      - 方程两边对 $y$ 求偏导 $-6x + 20y -2z - 2y \cdot z'_y - 2z \cdot z'_y = 0 \implies z'_y = \dfrac{-3x + 10y - z}{y + z}$ 
