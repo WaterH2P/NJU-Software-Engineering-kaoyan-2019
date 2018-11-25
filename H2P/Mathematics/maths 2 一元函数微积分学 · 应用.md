@@ -45,7 +45,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-#### Ⅱ、拐点
+#### ㊁、拐点
 
 凹曲线和凸曲线的分界点
 
@@ -61,13 +61,13 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-#### Ⅲ、渐近线
+#### ㊂、渐近线
 
 <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%B8%90%E8%BF%91%E7%BA%BF.png" width="80%">
 
 <br>
 
-#### Ⅳ、最值点
+#### ㊃、最值点
 
 <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%9C%80%E5%80%BC%E7%82%B9.png" width="80%">
 
@@ -81,17 +81,17 @@ $(0, \pi)$
 
 <br>
 
-#### Ⅴ、平面图形的面积
+#### ㊄、平面图形的面积
 
 <br>
 
-#### Ⅵ、旋转体的体积
+#### ㊅、旋转体的体积
 
 <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%97%8B%E8%BD%AC%E4%BD%93%E4%BD%93%E7%A7%AF%201.png" width="60%">
 
 <br>
 
-#### Ⅶ、⭐平均值
+#### ㊆、⭐平均值
 
 $f(x)$ 在 $[a, \, b]$ 上的平均值 $\overline{f} = \dfrac{ \int_a^b f(x) \, {\rm d}x }{b-a}$ 。
 
@@ -101,19 +101,25 @@ $f(x)$ 在 $[a, \, b]$ 上的平均值 $\overline{f} = \dfrac{ \int_a^b f(x) \, 
 
 <br>
 
-#### Ⅰ、中值定理
+#### ㊀、中值定理
 
+<br>
 
+#### ㊁、方程根
 
+<img src="./images/方程根.png" width="60%">
 
+⭐罗尔原话
 
+$$
+\text{若 } f^{(n)}(x) = 0 \text{ 至多 } k \text{ 个根，则 } f^{(n-1)}(x) = 0 \text{ 至多 } k+1 \text{ 个根}
+$$
 
+<br>
 
+## 三、不等式
 
-
-
-
-
+核心工具是求导研究性态
 
 
 
@@ -130,13 +136,13 @@ $f(x)$ 在 $[a, \, b]$ 上的平均值 $\overline{f} = \dfrac{ \int_a^b f(x) \, 
 
 <br>
 
-#### 渐近线
+#### ㊀、渐近线
 
 曲线 $y = \sqrt{4x^2 + x} \ln \left( 2 + \dfrac{1}{x} \right)$ 的渐近线有 ________ 条。
 
 <br>
 
-#### 平面图形的面积
+#### ㊁、平面图形的面积
 
 设 
 
@@ -148,7 +154,7 @@ $$
 
 <br>
 
-#### 旋转体的体积
+#### ㊂、旋转体的体积
 
 设
 
@@ -160,14 +166,41 @@ $$
 
 <br>
 
-#### 中值定理
+#### ㊃、中值定理
+
+<br>
+
+###### 1
 
 设 $x>0$，若 $xe^y = e^x - 1$，证明 $0<y<x$。
 
+<br>
 
+###### 2
 
+设 $f(x)$ 在 $[0, \, 1]$ 上连续，$(0, \, 1)$ 内可导，$f(0)=0, \, f(1)=1$。证明存在不同的 $\xi_1, \, \xi_2, \, \xi_3 \in (0, \, 1)$，使 $f'(\xi_1) + f'(\xi_2) + f'(\xi_3) = 3$。
 
+<br>
 
+#### ㊄、方程根
+
+证明 
+
+$$
+\ln x - e^x + \int_0^\pi \sqrt{ 1 - \cos 2x } \, {\rm d}x = 0
+$$
+
+有且仅有两个根。
+
+<br>
+
+#### ㊅、不等式
+
+已知常数 $k \geq \ln 2 - 1$，证明：
+
+$$
+(x-1)(x - \ln^2 x + 2k \ln x - 1) \geq 0
+$$
 
 
 
@@ -184,13 +217,13 @@ $$
 
 <br>
 
-#### 渐近线
+#### ㊀、渐近线
 
 $3$ 条，$1$ 条铅垂，$2$ 条倾斜。
 
 <br>
 
-#### 平面图形的面积
+#### ㊁、平面图形的面积
 
 1️⃣ 
 
@@ -208,7 +241,7 @@ $\begin{array}{l} S &= 2 \int_0^{+\infty} \left[ \dfrac{ \sqrt{\pi} }{2} - \int_
 
 <br>
 
-#### 旋转体的体积
+#### ㊂、旋转体的体积
 
 $f(x) = \begin{cases} 0, \quad & x<0 \\\\ -\dfrac{x}{x^2+1}, \quad & x>0 \end{cases}$ 
 
@@ -222,9 +255,53 @@ $\begin{array}{l} V &= \int_0^1 \pi \left( \dfrac{x}{x^2+1} \right)^2 \, {\rm d}
 
 <br>
 
-#### 中值定理
+#### ㊃、中值定理
 
+<br>
 
+###### 1
 
+$\begin{array}{l} & e^y = \dfrac{e^x - e^0}{x-0} = e^\xi, \; (0<\xi<x) \\\\ \implies & y = \xi \implies 0<y<x \end{array}$ 
 
+<br>
+
+###### 2
+
+将 $[0, \, 1]$ 三等分为 $(0, \dfrac{1}{3}), \; (\dfrac{1}{3}, \dfrac{2}{3}), \; (\dfrac{2}{3}, 1)$，分别对其使用拉格朗日中值定理。
+
+<br>
+
+#### ㊄、
+
+$$
+\int_0^\pi \sqrt{ 1 - \cos 2x } \, {\rm d}x = \int_0^\pi \sqrt{2} \sin x \, {\rm d}x = 2\sqrt{2}
+$$
+
+设 $f(x) = \ln x - e^x + 2\sqrt{2}$，$\begin{cases} \lim\limits_{x \to 0} f(x) = -\infty \\\\ f(1) = 2\sqrt{2} - e > 0 \\\\ \lim\limits_{x \to +\infty} f(x) = -\infty \end{cases}$，所以 $f(x)$ 在 $(0, \, 1), \, (1, \, +\infty)$ 至少两个零点。
+
+由于 $f'(x) = \dfrac{1}{x} - e^x = 0$ 求不出解，所以更换方法。
+
+$f''(x) = -\left( \dfrac{1}{x^2} + e^x \right) \not= 0$，所以 $f''(x)$ 至多 $0$ 个零点，所以 $f(x)$ 至多 $2$ 个零点。
+
+综上，所以 $f(x)$ 有且仅有 $2$ 个零点。
+
+<br>
+
+#### ㊅、不等式
+
+$$
+(x-1)(x - \ln^2 x + 2k \ln x - 1) \geq 0
+$$
+
+令 $f(x) = x - \ln^2 x + 2k \ln x - 1, \; f'(x) = \dfrac{1}{x} \left( x - 2 \ln x + 2k \right)$，令 $g(x) = x - 2 \ln x + 2k$。
+
+1⃣️ 
+
+$x=1$ 时，成立。
+
+2⃣️ 
+
+$\begin{array}{l} \begin{cases} g'(x) = 1 - \dfrac{2}{x} = 0 \implies x = 2 \\\\ g''(x) = \dfrac{2}{x^2} > 0 & \end{cases} \\ & \end{array}$，所以 $x=2$ 是 $g(x)$ 在 $(0, \, +\infty)$ 上的极小值，也是最小值。由于 $g(2) = 2 \left[ k - (\ln 2 - 1) \right] \geq 0$，所以 $g(x) > 0, \; x \not= 2$，所以  $f'(x) > 0, \; x \not= 2$。
+
+$f(1) = 1 - 1 = 0$，所以 $0<x<1$ 时，$f(x)<0$；$x>1$ 时，$f(x)>0$。得证。
 
