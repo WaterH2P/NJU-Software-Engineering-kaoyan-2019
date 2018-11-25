@@ -89,7 +89,7 @@ $\begin{array}{l} \end{array}$
 
 ######  1、概念
 
-- 形如 $y' + p(x)y = q(x)$ ，$P(x), \, q(x)$ 为已知的连续函数。
+- 形如 $y' + p(x)y = q(x)$ ，$p(x), \, q(x)$ 为已知的连续函数。
    - $\begin{array}{l} \\ (uv)' = u'v + uv' \text{ 且 } ( e^🐶 )' = e^🐶 \cdot (🐶)' \\ & \end{array}$ 
       - $\begin{array}{l} ( e^{ 🐶 } y )' = e^🐶 ( 🐶' + 🐶 y' ) \\\\ (🐶)' = p(x) \implies 🐶 = \int p(x) \, {\rm d}x \\ & \end{array}$ 
    - $\begin{array}{l} \\ \implies e^{ \int p(x) \, {\rm d}x } \cdot y' + e^{ \int p(x) \, {\rm d}x } \cdot p(x)y = e^{ \int p(x) \, {\rm d}x } \cdot q(x) \\\\ \implies \left( y \cdot e^{ \int px(x) \, {\rm d}x } \right)' = e^{ \int p(x) \, {\rm d}x } \cdot q(x) \\\\ \implies y = e^{ -\int p(x) \, {\rm d}x } \left\{ \int \left[ e^{ \int p(x) \, {\rm d}x } \cdot q(x) \right] {\rm d}x + C \right\} \end{array}$ 
