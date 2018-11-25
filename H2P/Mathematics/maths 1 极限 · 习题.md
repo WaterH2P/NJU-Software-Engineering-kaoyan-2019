@@ -103,6 +103,15 @@ $\begin{array}{l} ( {\rm A} ) \, -36 \quad & ( {\rm B} ) \, 36 \quad & ( {\rm C}
 
 $f(x) = \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid}$ 的可去间断点的个数为 ________ 。
 
+<br>
+
+#### Ⅹ
+
+设 $f(x)$ 二阶可导，$f'(0)=0, \, f''(0)=2$，计算
+
+$$
+\lim\limits_{x \to 0} \dfrac{ f(\sin x) - f(x) }{x^4}
+$$
 
 
 
@@ -271,6 +280,11 @@ $\begin{array}{l} \lim\limits_{x \to 0} \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln
 
 所以 $x=0, \, 1$ 是可去间断点。
 
+<br>
+
+#### Ⅹ
+
+$\begin{array}{l} \lim\limits_{x \to 0} \dfrac{ f(\sin x) - f(x) }{x^4} &= \lim\limits_{x \to 0} \dfrac{1}{x^3} \left[ \dfrac{ f(\sin x) - f(0) }{\sin x} \cdot \dfrac{\sin x}{x} - \dfrac{f(x) - f(0)}{x-0} \right] \\\\ &= \lim\limits_{x \to 0} \dfrac{1}{x^3} \left[ f'(x) \cdot \dfrac{\sin x}{x} - f'(x) \right] \\\\ &= \lim\limits_{x \to 0} \dfrac{1}{x^3} \cdot f'(x) \cdot \dfrac{\sin x - x}{x} \\\\ &= \lim\limits_{x \to 0} -\dfrac{1}{6} \cdot \dfrac{ f'(x) - f'(0) }{x} \\\\ &= \lim\limits_{x \to 0} -\dfrac{1}{6} f''(x) \\\\ &= -\dfrac{1}{3} \end{array}$ 
 
 
 
