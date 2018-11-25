@@ -25,7 +25,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-#### Ⅰ、极值
+#### ㊀、极值
 
 <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%9E%81%E5%80%BC%E5%88%A4%E5%88%AB%E6%B3%95.jpg" width="70%">
 
