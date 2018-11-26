@@ -31,6 +31,8 @@ $\begin{array}{l} \end{array}$
 
 计算（直角坐标系，极坐标系）：10
 
+【沉浸在计算当中】
+
 <br>
 
 ## 一、概念
@@ -56,6 +58,13 @@ $\begin{array}{l} \end{array}$
 - 若将 $D$ 中的 $x$ 与 $y$ 对调发现 $D$ 不变，则 $\iint\limits_D f(x, y) \, {\rm d}x {\rm d}y = \iint\limits_D f(y, x) \, {\rm d}x {\rm d}y$ 
    - 关于 $y = x$ 对称
 
+<br>
+
+#### ㊂、平面图形的形心
+
+$$
+\overline{x} = \dfrac{ \iint\limits_D x \, {\rm d}\sigma }{ \iint\limits_D \, {\rm d}\sigma }, \quad \overline{y} = \dfrac{ \iint\limits_D y \, {\rm d}\sigma }{ \iint\limits_D \, {\rm d}\sigma }
+$$
 
 
 

@@ -56,7 +56,7 @@ real-date: 2018-10-10
    - $\implies I_1 = a + b$ 
 - 2⃣️
    - $\iint\limits_D ( e^{\lambda x} - e^{- \lambda y} ) \, {\rm d} \sigma = \iint\limits_D ( e^{\lambda y} - e^{- \lambda x} ) \, {\rm d} \sigma$ 
-   - $\implies \begin{array}{l} 2I_2 & = \iint\limits_D \left[ ( e^{\lambda x} - e^{- \lambda x} ) + ( e^{\lambda y} - e^{- \lambda y} ) \right] {\rm d}\sigma \\\\ & = \iint\limits_D ( e^{\lambda x} - e^{- \lambda x} ) \, {\rm d}\sigma + \iint\limits_D ( e^{\lambda y} - e^{- \lambda y} ) \, {\rm d}\sigma\end{array}$ 
+   - $\implies \begin{array}{l} \\ 2I_2 & = \iint\limits_D \left[ ( e^{\lambda x} - e^{- \lambda x} ) + ( e^{\lambda y} - e^{- \lambda y} ) \right] {\rm d}\sigma \\\\ & = \iint\limits_D ( e^{\lambda x} - e^{- \lambda x} ) \, {\rm d}\sigma + \iint\limits_D ( e^{\lambda y} - e^{- \lambda y} ) \, {\rm d}\sigma \\ & \end{array}$ 
       - 考察 $g(x, y) = e^{\lambda x} - e^{-\lambda x}$ 
          - 由于积分区域 $D$ 关于 $y$ 轴对称
          - 且 $g(x, y) = -g(-x, y)$ 
@@ -172,7 +172,7 @@ real-date: 2018-10-10
 计算 $I = \iint\limits_D \sqrt{ 1 - r^2 \cos 2 \theta } \text{ } r^2 \sin \theta \text{ } {\rm d}r {\rm d}\theta$ ，其中 $D = \left\lbrace \left. (r, \theta) \right| 0 \leq r \leq \sec \theta, 0 \leq \theta \leq \dfrac{\pi}{4} \right\rbrace$ 。
 - 分析
    - $r \leq \sec \theta \implies r \cos \theta \leq 1 \implies x \leq 1$ 
-- $\begin{array}{l} I & = \iint\limits_{D} \sqrt{ 1 - r^2 \cos^2 \theta + r^2 \sin^2 \theta} \cdot r \sin \theta \cdot r  {\rm d}r \, {\rm d}\theta \\\\ & = \iint\limits_D y \sqrt{1 - x^2 + y^2} \text{ } {\rm d}x {\rm d}y \\\\ & = \dfrac{1}{2} \int_0^1 {\rm d}x \int_0^x \sqrt{1 - x^2 + y^2} \text{ } {\rm d}( 1 - x^2 + y^2 ) \\\\ & = \dfrac{1}{2} \cdot \dfrac{2}{3} \cdot \int_0^1 \left[ \left. (1 - x^2 + y^2)^{ \frac{3}{2} } \right|_{y = 0}^{y = x} \right] {\rm d}x \\\\ & = \dfrac{1}{3} - \dfrac{1}{3} \int_0^1 (1 - x^2)^{ \frac{3}{2} } {\rm d}x = \dfrac{1}{3} - \dfrac{1}{3} \int_0^{ \frac{\pi}{2} } \cos^4 t {\rm d} t \\\\ & = \dfrac{1}{3} - \dfrac{\pi}{16} \end{array}$ 
+- $\begin{array}{l} \\ I & = \iint\limits_{D} \sqrt{ 1 - r^2 \cos^2 \theta + r^2 \sin^2 \theta} \cdot r \sin \theta \cdot r  {\rm d}r \, {\rm d}\theta \\\\ & = \iint\limits_D y \sqrt{1 - x^2 + y^2} \text{ } {\rm d}x {\rm d}y \\\\ & = \dfrac{1}{2} \int_0^1 {\rm d}x \int_0^x \sqrt{1 - x^2 + y^2} \text{ } {\rm d}( 1 - x^2 + y^2 ) \\\\ & = \dfrac{1}{2} \cdot \dfrac{2}{3} \cdot \int_0^1 \left[ \left. (1 - x^2 + y^2)^{ \frac{3}{2} } \right|_{y = 0}^{y = x} \right] {\rm d}x \\\\ & = \dfrac{1}{3} - \dfrac{1}{3} \int_0^1 (1 - x^2)^{ \frac{3}{2} } {\rm d}x = \dfrac{1}{3} - \dfrac{1}{3} \int_0^{ \frac{\pi}{2} } \cos^4 t {\rm d} t \\\\ & = \dfrac{1}{3} - \dfrac{\pi}{16} \end{array}$ 
 
 
 
