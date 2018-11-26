@@ -174,7 +174,7 @@ $\begin{array}{l} ( {\rm A} ) \, \text{ 间断点 } \qquad & ( {\rm B} ) \, \tex
 即设 $f(x)$ 在 $I$ 上连续，证明
 
 $$
-F(x) = \int_a^x f(t) \, {\rm d}t, \quad (a, x \in I)
+F(x) = \int_a^x f(t) \, {\rm d}t + C, \quad (a, x \in I)
 $$
 
 必可导，且 $F'(x) = f(x), \quad \forall x \in I$。
@@ -199,7 +199,7 @@ $\begin{array}{l} ( {\rm A} ) \, f(x) \text{ 与 } g(x) \text{ 都存在原函�
 
 设 $f(x)$ 在 $(-\infty, ++\infty)$ 内连续，以 ${\rm T}$ 为周期，证明
 
-$\begin{array}{l} 1) \; \text{ 可导 } f(x) \text{ 以 } {\rm T} \text{ 为周期 } \implies f'(x) \text{ 以 } {\rm T} \text{ 为周期 } \\\\ 2) \; \int_a^{a+T} f(x) \, {\rm d}x = \int_0^T f(x) \, {\rm d}x \quad (\, \forall \, a \in {\rm R} \, ) \\\\ 3) \; \int_0^x f(x) \, {\rm d}t \text{ 以 } {\rm T} \text{ 为周期 } \iff \int_0^T f(x) \, {\rm d}x = 0 \\\\ 4) \; \int f(x) \, {\rm d}x \, \text{ （即 } f(x) \text{ 的全体原函数） } \text{ 周期为 } {\rm T} \iff \int_0^T f(x) \, {\rm d}x = 0 \end{array}$
+$\begin{array}{l} 1) \; \text{ 可导 } f(x) \text{ 以 } {\rm T} \text{ 为周期 } \implies f'(x) \text{ 以 } {\rm T} \text{ 为 } \\\\ 2) \; \int_a^{a+T} f(x) \, {\rm d}x = \int_0^T f(x) \, {\rm d}x \quad (\, \forall \, a \in {\rm R} \, ) \\\\ 3) \; \int_0^x f(x) \, {\rm d}t \text{ 以 } {\rm T} \text{ 为周期 } \iff \int_0^T f(x) \, {\rm d}x = 0 \\\\ 4) \; \int f(x) \, {\rm d}x \, \text{ （即 } f(x) \text{ 的全体原函数） } \text{ 周期为 } {\rm T} \iff \int_0^T f(x) \, {\rm d}x = 0 \end{array}$
 
 <br>
 
@@ -441,8 +441,8 @@ $$
   - 跳跃间断点的变限积分存在尖点（不可导点）
   - 可去间断点的变限积分处处可导
 - 含振荡间断点的 $f(x)$ 在此区间可能有也可能没有原函数。
-  - $f(x) = \begin{cases} 2x \sin \dfrac{1}{x} - \cos \dfrac{1}{x}, \quad & x \not= 0 \\\\ 0, \quad & x=0 \end{cases}$ 的原函数是 $F(x) = \begin{cases} x^2 \sin \dfrac{1}{x}, \quad & x\not= 0 \\\\ 0, \quad & x=0 \end{cases}$ 。
-  - $f(x) = \begin{cases} \dfrac{1}{x} \sin \dfrac{1}{x}, \quad & x \not= 0 \\\\ 0, \quad & x=0 \end{cases}$ 在包含 $(0, \, 0)$ 的任何区间上没有原函数。
+  - $\begin{array}{l} \\ f(x) = \begin{cases} 2x \sin \dfrac{1}{x} - \cos \dfrac{1}{x}, & x \not= 0 \\\\ 0, & x=0 \end{cases}\\ & \end{array}$ 的原函数是 $F(x) = \begin{cases} x^2 \sin \dfrac{1}{x}, & x\not= 0 \\\\ 0, & x=0 \end{cases}$ 。
+  - $f(x) = \begin{cases} \dfrac{1}{x} \sin \dfrac{1}{x}, & x \not= 0 \\\\ 0, & x=0 \end{cases}$ 在包含 $(0, \, 0)$ 的任何区间上没有原函数。
 
 <br>
 

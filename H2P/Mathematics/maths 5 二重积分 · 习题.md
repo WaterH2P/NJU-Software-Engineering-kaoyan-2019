@@ -123,7 +123,7 @@ $\begin{array}{l} \\ & \iint\limits_D y f(y) \, {\rm d}\sigma > \iint\limits_D x
 
 #### ㊁
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%20%E6%91%86%E7%BA%BF.png" width="80%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%20%E6%91%86%E7%BA%BF.png" width="60%">
 
 由于 $D$ 关于 $x=\pi$ 对称
 

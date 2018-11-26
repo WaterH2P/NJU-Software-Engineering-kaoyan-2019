@@ -22,7 +22,7 @@ $\begin{array}{l} \end{array}$
 
 1. 含有未知函数的导数（或者微分）的方程称为**微分方程** 
   - 一般写成 $F(x, y, y', y'', \ldots, y^{ (n) }) = 0$ 
-2. 阶数：方程中 $y$ 的最高阶导数的阶数
+2. 阶数：方程中 $y$ 的最高阶导数的阶数 $\begin{cases} n=1, \quad & \text{ 一阶 } \\\\ n \geq 2, \quad & \text{ 高阶 } \end{cases}$
 3. 通解
    - 解中所含独立常数的个数 = 方程的阶数
    - $\begin{array}{l} \\ \begin{cases} 独立常数 \not= 任意常数 \\\\ 通解 \not= 全部解 \end{cases} \\ & \end{array}$ 
@@ -56,7 +56,7 @@ $\begin{array}{l} \end{array}$
       - 通解为 $y^2 = C (x - 1)^2 + 1 \quad ( C \not= 0 )$ 
          - 考研**只考通解**，不考虑奇解
       - 但是 $y = \pm 1$ 也是上述方程的解，成为**奇解**
-   - $\begin{array}{l} \\ \begin{cases} \text{线性} & \text{通解} = \text{全部解} \\\\ \text{非线性} & \text{通解} \not= \text{全部解} \end{cases} \end{array}$ 
+   - $\begin{array}{l} \\ \begin{cases} \text{线性：} & \text{通解} = \text{全部解} \\\\ \text{非线性：} & \text{通解} \not= \text{全部解} \end{cases} \end{array}$ 
 
 <br>
 
@@ -131,12 +131,12 @@ $\begin{array}{l} \end{array}$
       - $y_{ \text{通解} } = y_{ \text{齐次通解} } + y_{ \text{非齐次特解} }$ 
       1. 照搬 ㊀ 求 $y_{ \text{齐次通解} }$ 
       2. $y^\ast = e^{\alpha x} \cdot Q_n(x) \cdot x^k$ 
-         - $ Q_n(x)$ 为 $x$ 的 $n$ 次待定系数的一般多项式
-            - 若 $P_3 (x) = x^3 - 1$ ，则 $ Q_3(x) = ax^3 + bx^2 + cx + d$ 。
+         - $Q_n(x)$ 为 $x$ 的 $n$ 次待定系数的一般多项式
+            - 若 $P_3 (x) = x^3 - 1$ ，则 $Q_3(x) = ax^3 + bx^2 + cx + d$ 。
          - $k$ 值的确定
             1. 看：自由项 $e^{\alpha x} P_n(x)$ 中的 $\alpha$ 
             2. 计算： $\lambda_1, \lambda_2$ （在上面已经计算过了）
-            3. 比较： $\begin{array}{l} \\ k = \begin{cases} 0 , & \alpha \not= \lambda_1, \alpha \not= \lambda_2 \\ 1, & \alpha = \lambda_1 \text{ 或 } \lambda_2 \\ 2, & \alpha = \lambda_1 = \lambda_2 \end{cases} \end{array}$ 
+            3. 比较： $\begin{array}{l} \\ k = \begin{cases} 0 , & \alpha \not= \lambda_1, \alpha \not= \lambda_2 \\\\ 1, & \alpha = \lambda_1 \text{ 或 } \lambda_2 \\\\ 2, & \alpha = \lambda_1 = \lambda_2 \end{cases} \end{array}$ 
 
 <br>
 
