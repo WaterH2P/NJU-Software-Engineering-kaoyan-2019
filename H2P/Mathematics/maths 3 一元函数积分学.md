@@ -255,8 +255,8 @@ $$
 
 1. $I =  \int_1^4 \dfrac{1}{ 1 + \sqrt{x} } {\rm d}x$ 
    - $I = 2( 1 - \ln 3 + \ln 2 )$ 
-2. ⭐️ $I_n = \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x$ ，$ n $ 为大于 $ 1$ 的整数。
-   - 正弦曲线一股的面积是 $ 2 $，半股的面积是 $ 1$。
+2. ⭐️ $I_n = \int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x$ ，$n$ 为大于 $1$ 的整数。
+   - 正弦曲线一股的面积是 $2$，半股的面积是 $1$。
      - $\int_0^{ \frac{\pi}{2} } \sin x {\rm d}x = 1$ 
    - 证 $\int_0^{ \frac{\pi}{2} } \sin^n x {\rm d}x = \int_0^{ \frac{\pi}{2} } \cos^n x {\rm d}x$ 。
      - 令 $x = \dfrac{\pi}{2} - t$ 
