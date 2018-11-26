@@ -99,11 +99,27 @@ $$
 
 #### ㊁、二阶常系数非齐次线性微分方程
 
+<br>
+
+###### 2
+
 $$
 y'' + py' + qy = e^{\alpha x}P_m(x) \qquad ( \, P_m(x) \text{ 为 } x \text{ 的 } m \text{ 次多项式 })
 $$ 
 
+<br>
 
+###### 2
+
+$$
+y'' + py' + qy = e^{\alpha x} \left[ \, P_m(x) \cos \beta x + P_n(x) \sin \beta x \, \right]
+$$ 
+
+$y^* = e^{\alpha x}\left[ \, Q_{l1}(x) \cos \beta x + Q_{l2}(x) \sin \beta x \, \right] x^k, \qquad l1 = l2 = \max\{ m, \, n \}$ 
+
+1. 一看：自由项中的 $\alpha, \, \beta \implies \alpha \pm \beta i$ 
+2. 二算：$\lambda_1, \, \lambda_2$ 
+3. 三比：$k = \begin{cases} 1, & \lambda_1, \lambda_2 = \alpha \pm \beta i \\\\ 0 & \lambda_1, \lambda_2 \not= \alpha \pm \beta i \end{cases}$ 
 
 
 
