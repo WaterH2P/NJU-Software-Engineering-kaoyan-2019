@@ -28,6 +28,15 @@ $\begin{vmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{vmatrix}$
 
 #### ㊁、定义
 
+$$
+\begin{vmatrix} 
+  a_{11} & a_{12} & \cdots & a_{1n} \\ 
+  a_{21} & a_{22} & \cdots & a_{2n} \\ 
+  \vdots & \vdots &  & \vdots \\ 
+  a_{n1} & a_{n2} & \cdots & a_{nn} 
+\end{vmatrix}
+$$ 
+
 - $n$ 阶行列式由 $n$ 个 $n$ 维向量 $\alpha_1 = \left[ a_{11}, a_{12}, \cdots, a_{1n} \right]$，$\alpha_2 = \left[ a_{21}, a_{22}, \cdots, a_{2n} \right]$，$\cdots$，$\alpha_n = \left[ a_{n1}, a_{n2}, \cdots, a_{nn} \right]$ 组成，其结果为以这 $n$ 个向量为邻边的 $n$ 维图形的体积（ $n$ 维体积 ）。
 
 <br>
@@ -323,7 +332,7 @@ $$
 
 - 宽边行列式
 1. 计算 $D_5 = \begin{vmatrix} 1-x & x & 0 & 0 & 0 \\ -1 & 1-x & x & 0 & 0 \\ 0 & -1 & 1-x & x & 0 \\ 0 & 0 & -1 & 1-x & x \\ 0 & 0 & 0 & -1 & 1-x \end{vmatrix}$ 。
-   - $\begin{array}{l} D_5 & = (1 - x) \cdot (-1)^{1+1} \cdot D_4 + x \cdot (-1)^{1+2} \cdot \begin{vmatrix} -1 & x & 0 & 0 \\ 0 & 1-x & x & 0 \\ 0 & -1 & 1-x & x \\ 0 & 0 & -1 & 1-x \end{vmatrix} \\\\ & = (1-x)D_4 + (-x) \cdot (-1) \cdot (-1)^{1+1} \cdot D_3 \\\\ & = (1-x)D_4 + xD_3 \\\\ & = D_4 - xD_4 + xD_3 \end{array}$ 
+   - $\begin{array}{l} \\ D_5 & = (1 - x) \cdot (-1)^{1+1} \cdot D_4 + x \cdot (-1)^{1+2} \cdot \begin{vmatrix} -1 & x & 0 & 0 \\ 0 & 1-x & x & 0 \\ 0 & -1 & 1-x & x \\ 0 & 0 & -1 & 1-x \end{vmatrix} \\\\ & = (1-x)D_4 + (-x) \cdot (-1) \cdot (-1)^{1+1} \cdot D_3 \\\\ & = (1-x)D_4 + xD_3 \\\\ & = D_4 - xD_4 + xD_3 \\ & \end{array}$ 
    - $D_5 - D_4 = -x (D_4 - D_3) = (-x)^2 (D_3 - D_2) = (-x)^3 (D_2 - D_1)$
       - $D_1 = 1-x$，$D_2 = \begin{vmatrix} 1-x & x \\ -1 & 1-x \end{vmatrix} = 1 - x + x^2$ 
       - $\begin{cases} D_5 - D_4 = -x^5 \\\\ D_4 - D_3 = x^4 \\\\ D_3 - D_2 = -x^3 \end{cases} \implies D_5 = 1 - x + x^2 - x^3 + x^4 - x^5$ 
@@ -333,7 +342,7 @@ $$
 ###### 4、范式行列式
 
 1. 计算 $D_{n+1} = \begin{vmatrix}  a_1^n & a_1^{n-1}b_1 & a_1^{n-2}b_1^2 & \cdots & a_1b_1^{n-1} & b_1^n \\ a_2^n & a_2^{n-1}b_2 & a_2^{n-2}b_2^2 & \cdots & a_2b_2^{n-1} & b_2^n \\ \vdots & \vdots & \vdots & & \vdots & \vdots \\ a_{n+1}^n & a_{n+1}^{n-1}b_{n+1} & a_{n+1}^{n-2}b_{n+1}^2 & \cdots & a_{n+1}b_{n+1}^{n-1} & b_{n+1}^n \end{vmatrix}, \quad (a_1, a_2, \cdots, a_n \not= 0)$ 
-   - $D_{n+1} = \prod\limits_{i=1}^{n+1} a_i^n \cdot \begin{vmatrix}  1 & \dfrac{b_1}{a_1} & \left( \dfrac{b_1}{a_1} \right)^2 & \cdots & \left( \dfrac{b_1}{a_1} \right)^n \\ 1 & \dfrac{b_2}{a_2} & \left( \dfrac{b_2}{a_2} \right)^2 & \cdots & \left( \dfrac{b_2}{a_2} \right)^n \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & \dfrac{ b_{n+1} }{ a_{n+1} } & \left( \dfrac{ b_{n+1} }{ a_{n+1} } \right)^2 & \cdots & \left( \dfrac{ b_{n+1} }{ a_{n+1} } \right)^n \end{vmatrix}$ 
+   - $\begin{array}{l} \\ D_{n+1} = \prod\limits_{i=1}^{n+1} a_i^n \cdot \begin{vmatrix}  1 & \dfrac{b_1}{a_1} & \left( \dfrac{b_1}{a_1} \right)^2 & \cdots & \left( \dfrac{b_1}{a_1} \right)^n \\ 1 & \dfrac{b_2}{a_2} & \left( \dfrac{b_2}{a_2} \right)^2 & \cdots & \left( \dfrac{b_2}{a_2} \right)^n \\ \vdots & \vdots & \vdots & & \vdots \\ 1 & \dfrac{ b_{n+1} }{ a_{n+1} } & \left( \dfrac{ b_{n+1} }{ a_{n+1} } \right)^2 & \cdots & \left( \dfrac{ b_{n+1} }{ a_{n+1} } \right)^n \end{vmatrix} \\ & \end{array}$ 
    - $D_{n+1} = \prod\limits_{i=1}^{n+1} a_i^n \cdot \prod\limits_{ 1 \leq i < j \leq (n+1) } \left( \dfrac{b_j}{a_j} - \dfrac{b_i}{a_i} \right)$ 
 
 <br>
@@ -413,7 +422,7 @@ $$
    2. 设 A 是 n 阶矩阵，满足 $A^2 = A$ ，且 $A \not= E$ ，证明 $|A| = 0$ 。
       -  $A^2 = A \implies A(A-E) = O$ 
       -  因为 $A \not= E$ ，所以 $A-E \not= O$ 。
-      -  将 $A-E$ 按列分块，设 $A-E = \begin{bmatrix} \xi_1, \xi_2, \cdots, \xi_n \end{bmatrix}$ ，则 $A-E$ 的每一列 $\xi_i(i=1, 2, \cdots, n)$ 均是方程组 $Ax = 0$ 的解向量，由于 $A-E \not= O $ ，所以 $A-E$ 中至少有一列 $\xi_i $ 不为零向量，故 $Ax = 0$ 存在非零解，从而得证 $|A|=0$ 。
+      -  将 $A-E$ 按列分块，设 $A-E = \begin{bmatrix} \xi_1, \xi_2, \cdots, \xi_n \end{bmatrix}$ ，则 $A-E$ 的每一列 $\xi_i(i=1, 2, \cdots, n)$ 均是方程组 $Ax = 0$ 的解向量，由于 $A-E \not= O$ ，所以 $A-E$ 中至少有一列 $\xi_i$ 不为零向量，故 $Ax = 0$ 存在非零解，从而得证 $|A|=0$ 。
 
 
 

@@ -234,12 +234,12 @@ $$
 $$
 
 - 推导
-   - 想对 $A$ 做什么变换，可以先对 $ E$ 做同样的变化得到矩阵 $ P $ 
-   - 然后计算 $ PA$ 得到结果
+   - 想对 $A$ 做什么变换，可以先对 $E$ 做同样的变化得到矩阵 $P$ 
+   - 然后计算 $PA$ 得到结果
    - 例如
       - $A = \begin{bmatrix} 4 & 6 \\ 2 & 1 \end{bmatrix}$ ，想将第二行的 $ -2 $ 倍加到第一行
-      - 先对 $ E = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ 做该变换，得到 $ P = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix}$ 
-      - $ PA = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 4 & 6 \\ 2 & 1 \end{bmatrix} = \begin{bmatrix} 0 & 4 \\ 2 & 1 \end{bmatrix}$ 
+      - 先对 $E = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$ 做该变换，得到 $P = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix}$ 
+      - $PA = \begin{bmatrix} 1 & -2 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 4 & 6 \\ 2 & 1 \end{bmatrix} = \begin{bmatrix} 0 & 4 \\ 2 & 1 \end{bmatrix}$ 
    - 根据【Th】
       - $\begin{array}{l} & P_s \cdots P_2P_1A = E \\\\ \implies & P_s \cdots P_2P_1AA^{-1} = EA^{-1} \\\\ \implies & P_s \cdots P_2P_1E = A^{-1} \end{array}$ 
 
@@ -248,7 +248,7 @@ $$
 ###### 3、例题
 
 1. 设 $A = \begin{bmatrix} 0 & 2 & -1 \\ 1 & 1 & 2 \\ -1 & -1 & -1 \end{bmatrix}$ ，求 $A^{-1}$。
-   - $\begin{array}{l} \begin{pmatrix} A \mid E \end{pmatrix} = & \begin{pmatrix} 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ -1 & -1 & -1 & \vdots & 0 & 0 & 1 \end{pmatrix} \\\\ \underrightarrow{1 \leftrightarrow 2 \\ 3 + 1 } & \begin{pmatrix} 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\\\ \underrightarrow{2 + 3 \\ \frac{1}{2} 2 } & \begin{pmatrix} 1 & 1 & 0 & \vdots & 0 & -1 & -2 \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\\\ \underrightarrow{1-2} & \begin{pmatrix} 1 & 0 & 0 & \vdots & -\frac{1}{2} & -\frac{3}{2} & -\frac{5}{2} \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} = \begin{pmatrix} E \mid A^{-1} \end{pmatrix} \end{array}$ 
+   - $\begin{array}{l} \begin{pmatrix} A \mid E \end{pmatrix} = & \begin{pmatrix} 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ -1 & -1 & -1 & \vdots & 0 & 0 & 1 \end{pmatrix} \\\\ \begin{array}{l} 1 \leftrightarrow 2 \\ \underrightarrow{ 3 + 1 } \end{array} & \begin{pmatrix} 1 & 1 & 2 & \vdots & 0 & 1 & 0 \\ 0 & 2 & -1 & \vdots & 1 & 0 & 0 \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\\\ \begin{array}{l} 2 + 3 \\ \underrightarrow{ \frac{1}{2} \cdot 2 } \end{array} & \begin{pmatrix} 1 & 1 & 0 & \vdots & 0 & -1 & -2 \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} \\\\ \underrightarrow{1-2} & \begin{pmatrix} 1 & 0 & 0 & \vdots & -\frac{1}{2} & -\frac{3}{2} & -\frac{5}{2} \\ 0 & 1 & 0 & \vdots & \frac{1}{2} & \frac{1}{2} & \frac{1}{2} \\ 0 & 0 & 1 & \vdots & 0 & 1 & 1 \end{pmatrix} = \begin{pmatrix} E \mid A^{-1} \end{pmatrix} \end{array}$ 
 
 <br>
 
