@@ -192,17 +192,63 @@ D_n =
 (n+1)a^n
 $$
 
+<br>
 
+#### ㊄、抽象型行列式
 
+<br>
 
+###### 1、
 
+已知 $n$ 阶行列式 $\mid A \mid = a$，$\begin{vmatrix} & A & \beta & \\\\ & \beta^{\rm T} & b & \end{vmatrix} = 0$，其中 $\beta$ 是 $n$ 维列向量，则 $\begin{vmatrix} & A & \beta & \\\\ & \beta^{\rm T} & c & \end{vmatrix} =$ ________ 。
 
+<br>
 
+###### 2、
 
+已知 $n$ 阶矩阵 $\mid A \mid = a$，将 $\mid A \mid$ 中的每一列减去其余各列得到的行列式记为 $\mid B \mid$，则 $\mid B \mid =$ ________ 。 
 
+<br>
 
+#### ㊅、展开式法的逆运用
 
+设 
 
+$$
+\mid A \mid = 
+\begin{vmatrix} 
+    & -2 & 2 & -2  & 2 & \\\\
+    & 1 & 2 & 3 & 4 & \\\\
+    & 1 & 1 & 1 & 1 & \\\\
+    & 2 & -1 & 3 & 5
+\end{vmatrix}
+$$
+
+计算 1⃣️ $A_{41} + A_{42} + A_{43} + A_{44}$；2⃣️ $M_{31}+M_{32}+M_{33}+M_{34}$。
+
+<br>
+
+#### ㊆、行列式的逆序数法定义
+
+<img src="./images/行列式 逆序数.png" width="80%">
+
+<br>
+
+###### 1、
+
+设行列式 
+
+$$
+D_4 = 
+\begin{vmatrix} 
+    & 5x & 1 & 2 & 3 & \\\\
+    & 2 & 1 & x & 3 & \\\\
+    & x & x & 2 & 3 & \\\\
+    & 1 & 2 & 1 & -3x & 
+\end{vmatrix}
+$$
+
+则 $D_4$ 的展开式中，$x^4$ 的系数是 ________ ，$x^3$ 的系数是 ________ 。
 
 
 
@@ -289,5 +335,50 @@ $n=k$ 时
 $\begin{array}{l}      D_k &=& 2aD_{k-1} + (-1)^{1+2} \cdot a^2 \cdot D_{k-2} \\\\      &=& 2a \cdot (k-1+1)a^{k-1} - a^2 \cdot (k-2+1)a^{k-2} \\\\      &=& (k+1)a^k \end{array}$
 
 所以 $n=k$ 时成立。
+
+<br>
+
+#### ㊄、抽象型行列式
+
+<br>
+
+###### 1、
+
+$\begin{array}{l}      \begin{vmatrix} & A & \beta & \\\\ & \beta^{\rm T} & c & \end{vmatrix} &=& \begin{vmatrix} & A & \beta & \\\\ & \beta^{\rm T} & b+c-b & \end{vmatrix} \\\\      &=& \begin{vmatrix} & A & \beta & \\\\ & \beta^{\rm T} & b & \end{vmatrix} + \begin{vmatrix} & A & 0 & \\\\ & \beta^{\rm T} & c-b & \end{vmatrix} \\\\      &=& 0 + (c-b) \cdot (-1)^{n+1+n+1} \cdot \mid A \mid \\\\      &=& (c-b)a \end{array}$
+
+<br>
+
+###### 2、
+
+$\begin{array}{l}      \mid B \mid &=& \begin{vmatrix} & \alpha_1 - \sum\limits_{i \not= 1} \alpha_i & \alpha_2 - \sum\limits_{i \not= 2} \alpha_i & \cdots & \alpha_n - \sum\limits_{i \not= n} \alpha_i & \end{vmatrix} \\\\      &=& \begin{vmatrix} \begin{pmatrix} & \alpha_1 & \alpha_2 & \cdots & \alpha_n & \end{pmatrix} \cdot \begin{pmatrix} & 1 & -1 & -1 & \cdots & -1 & \\\\ & -1 & 1 & -1 & \cdots & -1 & \\\\ & -1 & -1 & 1 & \cdots & -1 \\\\ & \vdots & \vdots & \vdots & & \vdots & \\\\ & -1 & -1 & -1 & \cdots & 1 & \end{pmatrix} \end{vmatrix} \\\\      &=& \begin{vmatrix} & \alpha_1 & \alpha_2 & \cdots & \alpha_n & \end{vmatrix} \cdot \begin{vmatrix} & 1 & -1 & -1 & \cdots & -1 & \\\\ & -1 & 1 & -1 & \cdots & -1 & \\\\ & -1 & -1 & 1 & \cdots & -1 \\\\ & \vdots & \vdots & \vdots & & \vdots & \\\\ & -1 & -1 & -1 & \cdots & 1 & \end{vmatrix} \\\\      &=& a \cdot (2-n) \cdot \begin{vmatrix} & 1 & -1 & -1 & \cdots & -1 & \\\\ & 1 & 1 & -1 & \cdots & -1 & \\\\ & 1 & -1 & 1 & \cdots & -1 \\\\ & \vdots & \vdots & \vdots & & \vdots & \\\\ & 1 & -1 & -1 & \cdots & 1 & \end{vmatrix} \\\\      &=& a \cdot (2-n) \cdot 2^{n-1} \end{array}$
+
+<br>
+
+#### ㊅、展开式法的逆运用
+
+<br>
+
+#### ㊆、行列式的逆序数法定义
+
+<br>
+
+###### 1、
+
+$15$， $-3$。
+
+$$
+D_4 = 
+\begin{vmatrix} 
+    & 5x & 1 & 2 & 3 & \\\\
+    & 2 & 1 & x & 3 & \\\\
+    & x & x & 2 & 3 & \\\\
+    & 1 & 2 & 1 & -3x & 
+\end{vmatrix}
+$$
+
+$\begin{cases} - & 5x & \cdot & x & \cdot & x & \cdot & (-3x) & = 15x^4 \\\\ - & a_{11} & \cdot & a_{23} & \cdot & a_{32} & \cdot & a_{44} \end{cases} \qquad \tau(1324) = 1$ 
+
+
+$\begin{cases} + & 1 & \cdot & x & \cdot & x & \cdot & (-3x) & = 15x^4 \\\\ + & a_{12} & \cdot & a_{23} & \cdot & a_{31} & \cdot & a_{44} \end{cases} \qquad \tau(2314) = 2$ 
 
 

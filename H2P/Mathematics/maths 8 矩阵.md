@@ -82,7 +82,7 @@ $$
 ###### 1、归纳法
 
 1. 设 $A = \begin{bmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{bmatrix}$ ，计算 $A^n$ 。
-   - $\begin{array}{l} A^2 &= AA \\\\ &= \begin{pmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{pmatrix} \begin{pmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{pmatrix} \\\\ &= \begin{pmatrix} 4 & 0 & 0 & 0 \\ 0 & 4 & 0 & 0 \\ 0 & 0 & 4 & 0 \\ 0 & 0 & 0 & 4 \end{pmatrix} = 4E \end{array}$ 
+   - $\begin{array}{l} \\ A^2 &= AA \\\\ &= \begin{pmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{pmatrix} \begin{pmatrix} 1 & -1 & -1 & -1 \\ -1 & 1 & -1 & -1 \\ -1 & -1 & 1 & -1 \\ -1 & -1 & -1 & 1 \end{pmatrix} \\\\ &= \begin{pmatrix} 4 & 0 & 0 & 0 \\ 0 & 4 & 0 & 0 \\ 0 & 0 & 4 & 0 \\ 0 & 0 & 0 & 4 \end{pmatrix} = 4E \\ & \end{array}$ 
       - $A^n = \begin{cases} 4^k \cdot E \quad & ( n = 2k ) \\\\ 4^k \cdot A \quad & ( n = 2k + 1 ) \end{cases}$ 
 
 <br>
@@ -94,12 +94,12 @@ $$
       - $A = \begin{pmatrix} 1 \\ -2 \\ 3 \end{pmatrix} \begin{pmatrix} 1 & 2 & -1 \end{pmatrix}$ 
    - 记 $\alpha = \begin{pmatrix} 1 \\ -2 \\ 3 \end{pmatrix}, \beta = \begin{pmatrix} 1 \\ 2 \\ -1 \end{pmatrix}$ 
       - 代数中，习惯上写【列向量】
-      - $A = \alpha \beta^T $ 
+      - $A = \alpha \beta^T$ 
    - $A^2 = A \cdot A = \alpha \beta^T \alpha \beta^T = \alpha \left( \beta^T \alpha \right) \beta^T = \alpha \left( -6 \right) \beta^T = -6A$ 
    - $A^n = (-6)^{n-1} \cdot A$
    - 【注】
       - 称 $\sum\limits_{i=1}^n a_{ii} = {\rm tr} (A)$ ，叫 $A$ 的迹（trace）。
-      - 若 $ {\rm r}( A_{n \times n} ) = 1 $ （秩为 $ 1 $ ），即 $n$ 行元素均称比例。
+      - 若 ${\rm r}( A_{n \times n} ) = 1$ （秩为 $1$ ），即 $n$ 行元素均称比例。
          - 则 $A^n = \left[ \, {\rm tr}(A) \, \right]^{n-1} \cdot A$ 
 
 <br>
@@ -112,7 +112,7 @@ $$
    - $A = B + E = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix}$ 
    - $B^2 = \begin{bmatrix} 0 & 0 & 1 \\ 0 & 0 & 0 \\ 0& 0 & 0 \end{bmatrix}, \quad B^3 = O​$ 
       - $\therefore \, B^i = O \quad (i=3, 4, \cdots, n)$ 
-   - $\begin{array}{l} A^n &= E + nB + \dfrac{ n(n-1) }{2}B^2 \\\\ &= \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & n & 0 \\ 0 & 0 & n \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 0 & 0 & \frac{ n(n-1) }{2} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \\\\ &= \begin{bmatrix} 1 & n & \frac{ n(n-1) }{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \end{bmatrix} \end{array}$ 
+   - $\begin{array}{l} \\ A^n &= E + nB + \dfrac{ n(n-1) }{2}B^2 \\\\ &= \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix} + \begin{bmatrix} 0 & n & 0 \\ 0 & 0 & n \\ 0 & 0 & 0 \end{bmatrix} + \begin{bmatrix} 0 & 0 & \frac{ n(n-1) }{2} \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{bmatrix} \\\\ &= \begin{bmatrix} 1 & n & \frac{ n(n-1) }{2} \\ 0 & 1 & n \\ 0 & 0 & 1 \end{bmatrix} \end{array}$ 
 
 <br>
 
@@ -217,7 +217,7 @@ $$
 
 - 任何可逆矩阵一定可通过若干次**初等行变换**化成同阶单位矩阵
    - 行最简阶梯型矩阵
-      - 可逆矩阵 $\longrightarrow$ 不存在 $ 0$ 行
+      - 可逆矩阵 $\longrightarrow$ 不存在 $0$ 行
 
 <br>
 
