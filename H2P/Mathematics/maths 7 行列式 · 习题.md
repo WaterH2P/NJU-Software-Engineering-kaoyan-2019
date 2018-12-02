@@ -230,7 +230,7 @@ $$
 
 #### ㊆、行列式的逆序数法定义
 
-<img src="./images/行列式 逆序数.png" width="80%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E8%A1%8C%E5%88%97%E5%BC%8F%20%E9%80%86%E5%BA%8F%E6%95%B0.jpg" width="80%">
 
 <br>
 
