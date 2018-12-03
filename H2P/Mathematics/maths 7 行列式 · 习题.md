@@ -228,7 +228,7 @@ $$
 
 <br>
 
-#### ㊆、行列式的逆序数法定义
+#### ㊆、行列式的逆序数法定义
 
 <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E8%A1%8C%E5%88%97%E5%BC%8F%20%E9%80%86%E5%BA%8F%E6%95%B0.jpg" width="80%">
 
@@ -248,7 +248,7 @@ D_4 =
 \end{vmatrix}
 $$
 
-则 $D_4$ 的展开式中，$x^4$ 的系数是 ________ ，$x^3$ 的系数是 ________ 。
+则 $D_4$ 的展开式中，$x^4$ 的系数是 ________ ，$x^3$ 的系数是 ________ 。
 
 
 
@@ -358,7 +358,7 @@ $\begin{array}{l}      \mid B \mid &=& \begin{vmatrix} & \alpha_1 - \sum\limits_
 
 <br>
 
-#### ㊆、行列式的逆序数法定义
+#### ㊆、行列式的逆序数法定义
 
 <br>
 

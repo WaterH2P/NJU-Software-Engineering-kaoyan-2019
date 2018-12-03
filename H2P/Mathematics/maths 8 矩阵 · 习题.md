@@ -85,7 +85,7 @@ $$
 
 <br>
 
-#### ㊇、⭐️ 正交阵
+#### ㊇、⭐️ 正交阵
 
 $$
 AA^{\rm T} = A^{\rm T}A = E \iff A^{\rm T} = A^{-1}
@@ -113,7 +113,7 @@ $$
 
 <br>
 
-## 三、伴随阵
+## 三、伴随阵
 
 <br>
 
@@ -138,7 +138,7 @@ $$
 
 <br>
 
-#### 二、常用结论及其推论
+#### 二、常用结论及其推论
 
 （ $\mid A \mid \not= 0 \iff A$ 可逆 ）
 
@@ -148,7 +148,7 @@ $\begin{array}{l} \\ & A^{\rm T} \cdot ( A^{\rm T} )^\ast = \mid A^{\rm T} \mid 
 
 <br>
 
-## 四、初等阵
+## 四、初等阵
 
 <br>
 
@@ -176,7 +176,7 @@ $$
 
 <br>
 
-## 五、求 A 的逆
+## 五、求 A 的逆
 
 <br>
 
@@ -206,6 +206,8 @@ $$
 
 1⃣️ 求 $\mid A \mid$；2⃣️ 求 $A^\ast$；3⃣️ 写 $A^{-1} = \dfrac{1}{ \mid A \mid }A^\ast$。
 
+$\begin{cases} (kA)^\ast = k^{n-1} A^\ast \\\\ (A^\ast)^\ast = \mid A \mid^{n-2} \cdot A \end{cases}$
+
 ###### 1、
 
 $$
@@ -224,6 +226,108 @@ $$
 $\Longrightarrow \begin{pmatrix} A \mid E \end{pmatrix} \implies \begin{pmatrix} E \mid A^{-1} \end{pmatrix} \quad \text{ 行变换 }$。
 
 ⭐️【验证 $A^{-1}$】
+
+<br>
+
+## 六、矩阵方程
+
+$\begin{cases} AX=B \\\\ XA = B \\\\ AXB = C \end{cases}$ 
+
+<br>
+
+## 七、分块矩阵
+
+<br>
+
+#### ①、定义
+
+用若干纵横线将一个矩阵分成若干小块，称这些小块为子矩阵，**将子矩阵看作原矩阵的元素**，就得分块阵。
+
+已知 $B$ 是 $r \times r$ 可逆矩阵，$C$ 是 $s \times s$ 可逆矩阵 
+
+$$
+\begin{array}{c}
+    A = \begin{pmatrix} B & O \\\\ D & C \end{pmatrix} \implies A^{-1} = \begin{pmatrix} B^{-1} & O \\\\ -C^{-1}DB^{-1} & C^{-1} \end{pmatrix} \\\\
+    A = \begin{pmatrix} B & D \\\\ O & C \end{pmatrix} \implies A^{-1} = \begin{pmatrix} B^{-1} & -B^{-1}DC^{-1} \\\\ O & C^{-1} \end{pmatrix} \\\\
+    \hline \\
+    A = \begin{pmatrix} O & B \\\\ C & D \end{pmatrix} \implies A^{-1} = \begin{pmatrix} -C^{-1}DB^{-1} & C^{-1} \\\\ B^{-1} & O \end{pmatrix} \\\\
+    A = \begin{pmatrix} O & B \\\\ C & D \end{pmatrix} \implies A^{-1} = \begin{pmatrix} O & C^{-1} \\\\ B^{-1} & -B^{-1}DC^{-1} \end{pmatrix} \\\\
+    \hline \\
+    \text{ 左乘同行，右乘同列，添一负号 }
+\end{array}
+$$
+
+副对角线分块矩阵的逆
+
+$$
+\begin{array}{l} \\
+A = 
+\begin{bmatrix}
+    & & & A_1 \\
+    & & A_2 \\
+    & \dots \\
+    A_s
+\end{bmatrix} \implies
+A^{-1} = 
+\begin{bmatrix}
+    & & & A_s^{-1} \\
+    & & \cdots \\
+    & A_2^{-1} \\
+    A_1^{-1}
+\end{bmatrix}
+\end{array}
+$$
+
+#### ②、拉普拉斯展开式
+
+$$
+\begin{array}{c}
+    \begin{vmatrix}
+        A_{m \times m} & O \\
+        O & B_{n \times n}
+    \end{vmatrix} = 
+    \begin{vmatrix}
+        A & C \\
+        O & B
+    \end{vmatrix} = 
+    \begin{vmatrix}
+        A & O \\
+        C & B
+    \end{vmatrix} = 
+    |A||B| \\\\
+    \begin{vmatrix}
+        O & A_{n \times n} \\
+        B_{m \times m} & O
+    \end{vmatrix} = 
+    \begin{vmatrix}
+        C & A \\
+        B & O
+    \end{vmatrix} = 
+    \begin{vmatrix}
+        O & A \\
+        B & C
+    \end{vmatrix} = 
+    (-1)^{mn}|A||B|
+\end{array}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -246,15 +350,15 @@ $\Longrightarrow \begin{pmatrix} A \mid E \end{pmatrix} \implies \begin{pmatrix}
 
 <br>
 
-###### 1
+###### 1
 
-设 $A$ 是 $3$ 阶可逆矩阵，交换 $A$ 的第 $1$ 列和第 $2$ 列得到 $B$，$A6\ast, \, B^\ast$ 分别是 $A, \, B$ 的伴随矩阵，则 $B^\ast$ 可由 $(\quad)$ 。
+设 $A$ 是 $3$ 阶可逆矩阵，交换 $A$ 的第 $1$ 列和第 $2$ 列得到 $B$，$A6\ast, \, B^\ast$ 分别是 $A, \, B$ 的伴随矩阵，则 $B^\ast$ 可由 $(\quad)$ 。
 
 $\begin{array}{l} ( {\rm A} ) \, A^\ast \text{ 的第 } 1 \text{ 列与第 } 2 \text{ 列互换得到 } \qquad & ( {\rm B} ) \, A^\ast \text{ 的第 } 1 \text{ 行与第 } 2 \text{ 行互换得到 } \\\\ ( {\rm C} ) \, -A^\ast \text{ 的第 } 1 \text{ 列与第 } 2 \text{ 列互换得到 } \qquad & ( {\rm D} ) \, -A^\ast \text{ 的第 } 1 \text{ 行与第 } 2 \text{ 行互换得到 } \end{array}$ 
 
 <br>
 
-###### 2、
+###### 2、
 
 $$
 A = 
@@ -283,7 +387,7 @@ $$
 
 <br>
 
-###### 1、利用定义求逆矩阵
+###### 1、利用定义求逆矩阵
 
 $A, \, B$ 均是 $n$ 阶矩阵，且 $AB = A+B$。证明 $A-E$ 可逆，并求 $(A-E)^{-1}$。
 
@@ -291,7 +395,51 @@ $A, \, B$ 均是 $n$ 阶矩阵，且 $AB = A+B$。证明 $A-E$ 可逆，并求 $
 
 ###### 2、
 
-设 $A, \, B$ 是同阶可逆方阵，且 $A^{-1} + B^{-1}$ 是可逆矩阵，证明 $A+B$ 是可逆矩阵，并求 $(A+B)^{-1}$。
+设 $A, \, B$ 是同阶可逆方阵，且 $A^{-1} + B^{-1}$ 是可逆矩阵，证明 $A+B$ 是可逆矩阵，并求 $(A+B)^{-1}$。
+
+<br>
+
+#### 六、矩阵方程
+
+设 $A = \begin{pmatrix} & 1 & 1 & -1 & \\\\      & -1 & 1 & 1 & \\\\      & 1 & -1 & 1 & \end{pmatrix}$，$A^\ast B \left( \dfrac{1}{2} A^\ast \right)^\ast = 8A^{-1}B+12E$，则矩阵 $B =$ ________ 。
+
+<br>
+
+#### 七、分块矩阵
+
+设 $n$ 阶矩阵
+
+$$
+A = 
+\begin{pmatrix} 
+    & 0 & 1 & 0 & \cdots & 0 & \\\\
+    & 0 & 0 & \dfrac{1}{2} & \cdots & 0 & \\\\
+    & \vdots & \vdots & \vdots & & \vdots \\\\
+    & 0 & 0 & 0 & \cdots & \dfrac{1}{n-1} \\\\
+    & \dfrac{1}{n} & 0 & 0 & \cdots & 0 &
+\end{pmatrix}
+$$
+
+求 $\begin{array}{l} \\ & (1) & \mid A \mid \text{ 中所有元素的代数余子式之和，即 } \sum\limits_{i=1}^n \sum\limits_{j=1}^n A_{ij} \\\\      & (2) & \mid A \mid \text{ 中第 } k \text{ 行元素代数余子式之和，即 } \sum\limits_{j=1}^n A_{kj} \end{array}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -309,11 +457,11 @@ $A, \, B$ 均是 $n$ 阶矩阵，且 $AB = A+B$。证明 $A-E$ 可逆，并求 $
 
 <br>
 
-#### 四、㊂、左行右列定理
+#### 四、㊂、左行右列定理
 
 <br>
 
-###### 1、
+###### 1、
 
 $({\rm D})$。
 
@@ -327,20 +475,55 @@ $\begin{array}{l} \\ B^\ast &= \mid B \mid B^{-1} \\\\      &= - \mid A \mid \cd
 
 <br>
 
-###### 1、利用定义求逆矩阵
+###### 1、利用定义求逆矩阵
 
 $\begin{array}{l} & AB = A+B \\\\ \implies & (A-E)B = A \\\\ \implies & (A-E)(B-E) = E \\\\ \implies & (A-E)^{-1} = B-E \end{array}$
 
 <br>
 
-###### 2、
+###### 2、
 
 $A+B = A(E+A^{-1} B) = A( B^{-1} + A^{-1} )B$ 
 
 所以 $(A+B)^{-1} = B^{-1}( A^{-1} + B^{-1} )^{-1} A^{-1}$。
 
+<br>
 
+#### 六、矩阵方程
 
+$-3\begin{pmatrix} & 0 & 1 & 0 & \\\\ & 0 & 0 & 1 & \\\\ & 1 & 0 & 0 & \end{pmatrix}$
 
+<br>
 
+#### 七、分块矩阵
 
+1️⃣ 
+
+实际上求 $A^\ast = \mid A \mid A^{-1}$
+
+令 
+
+$$
+B = 
+\begin{pmatrix} 
+    & 1 & 0 & \cdots & 0 & \\\\
+    & 0 & \dfrac{1}{2} & \cdots & 0 & \\\\
+    & \vdots & \vdots & & \vdots \\\\
+    & 0 & 0 & \cdots & \dfrac{1}{n-1} \\\\
+    & 0 & 0 & \cdots & 0 &
+\end{pmatrix}, \;
+C = 
+\begin{pmatrix} \dfrac{1}{n} \end{pmatrix}
+$$
+
+$A = \begin{pmatrix} O & B \\\\ C & O \end{pmatrix}$ 
+
+$\mid A \mid = (-1)^{n-1} \mid B \mid \mid C \mid = \dfrac{ (-1)^{n-1} }{n!}$ 
+
+$\begin{array}{l} \\ A^{-1} &= \begin{pmatrix} O & C^{-1} \\\\ B^{-1} & O \end{pmatrix} \\\\      &= \begin{pmatrix}  & 0 & 0 & \cdots & 0 & n & \\\\ & 1 & 0 & \cdots & 0 & 0 & \\\\ & 0 & 2 & \cdots & 0 & 0 & \\\\ & \vdots & \vdots & & \vdots & \vdots \\\\ & 0 & 0 & \cdots & 0 & 0 \\\\ & 0 & 0 & \cdots & n-1 & 0 & \end{pmatrix} \\ & \end{array}$ 
+
+$\begin{array}{l} & A^\ast = \dfrac{ (-1)^{n-1} }{n!} \cdot \begin{pmatrix}  & 0 & 0 & \cdots & 0 & n & \\\\ & 1 & 0 & \cdots & 0 & 0 & \\\\ & 0 & 2 & \cdots & 0 & 0 & \\\\ & \vdots & \vdots & & \vdots & \vdots \\\\ & 0 & 0 & \cdots & 0 & 0 \\\\ & 0 & 0 & \cdots & n-1 & 0 & \end{pmatrix} \\\\      \implies & \begin{array}{l} & \sum\limits_{i=1}^n \sum\limits_{j=1}^n A_{ij} &= \dfrac{ (-1)^{n-1} }{n!} \cdot \dfrac{ n(n+1) }{2} \\\\      &&= (-1)^{n-1} \cdot \dfrac{n+1}{2(n-1)!} \end{array} \end{array}$ 
+
+2️⃣ 
+
+$\sum\limits_{j=1}^n A_{kj} = (-1)^{n-1} \cdot \dfrac{1}{n!}  \cdot k, \; (k=1, 2, \cdot, n)$ 
