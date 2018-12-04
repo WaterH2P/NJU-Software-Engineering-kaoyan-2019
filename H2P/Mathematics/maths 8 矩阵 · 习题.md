@@ -48,7 +48,7 @@ $$
     & & \ddots & & \\\\ 
     & O & & \lambda_n & 
 \end{vmatrix}_{n \times n}
-$$ 
+$$
 
 $$
 \begin{pmatrix} 
@@ -69,7 +69,7 @@ $$
 
 $$
 A = A^{\rm T} \iff a_{ij} = a_{ji}
-$$ 
+$$
 
 <br>
 
@@ -81,7 +81,7 @@ A = -A^{\rm T} \iff
     a_{ii} = 0 \\\\ 
     a_{ij} = a_{ji}, \; i \not= j 
 \end{cases}
-$$ 
+$$
 
 <br>
 
@@ -89,7 +89,7 @@ $$
 
 $$
 AA^{\rm T} = A^{\rm T}A = E \iff A^{\rm T} = A^{-1}
-$$ 
+$$
 
 $n$ 阶正交阵 $A$ 由 $n$ 个两两正交的单位向量组（规范正交基）组成。
 
@@ -311,35 +311,6 @@ $$
 \end{array}
 $$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br>
 
 ## 六、练习题
@@ -422,35 +393,6 @@ $$
 
 求 $\begin{array}{l} \\ & (1) & \mid A \mid \text{ 中所有元素的代数余子式之和，即 } \sum\limits_{i=1}^n \sum\limits_{j=1}^n A_{ij} \\\\      & (2) & \mid A \mid \text{ 中第 } k \text{ 行元素代数余子式之和，即 } \sum\limits_{j=1}^n A_{kj} \end{array}$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br>
 
 ## 七、参考答案
@@ -527,3 +469,45 @@ $\begin{array}{l} & A^\ast = \dfrac{ (-1)^{n-1} }{n!} \cdot \begin{pmatrix}  & 0
 2️⃣ 
 
 $\sum\limits_{j=1}^n A_{kj} = (-1)^{n-1} \cdot \dfrac{1}{n!}  \cdot k, \; (k=1, 2, \cdot, n)$ 
+
+<br>
+
+## 八、矩阵关系
+
+<br>
+
+#### ㊀、等价
+
+$A, \, B$ 是同型矩阵，则
+
+$$
+\begin{array}{l}
+    A, \, B \text{ 等价 } & \iff & A \text{ 经过有限次初等行变换得 } B \\\\
+    & \iff & \text{ 有可逆矩阵 } P, \, Q \text{ 使得 } PAQ = B \\\\
+    & \iff & {\rm r}(A) = {\rm r}(B)
+\end{array}
+$$
+
+<br>
+
+#### ㊁、相似
+
+$A, \, B$ 是同阶矩阵，则
+
+$$
+A, \, B \text{ 相似 } \iff \text{ 有可逆矩阵 } P \text{ 使得 } P^{-1} A P = B
+$$
+
+<br>
+
+#### ㊂、合同
+
+$A, \, B$ 是同阶矩阵，则
+
+$$
+\begin{array}{l}
+    A, \, B \text{ 合同 } & \iff & \text{ 有可逆矩阵 } C \text{ 使得 } C^{\rm T} A C = B \\\\
+    & \iff & x^{\rm T} A x, \, x^{\rm T} B x \text{ 有相同的正、负惯性指数 } \\\\
+    & \iff & x^{\rm T} A x, \, x^{\rm T} B x \text{ 有相同的秩 }
+\end{array}
+$$

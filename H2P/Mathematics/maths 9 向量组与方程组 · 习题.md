@@ -113,10 +113,52 @@ $n$ 维空间由 $n$ 个 $n$ 维线性无关向量组表示
 
 （3）若 $\beta_1, \, \cdots, \, \beta_s$ 可由 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_t$ 表出，且 $\beta_1, \, \cdots, \, \beta_s$ 无关，则 $s \leq t$。
 
+<br>
 
+## 三、极大线性无关组
 
+<br>
 
+#### ㊀、定义
 
+$\alpha_{i1}, \, \alpha_{i2}, \, \cdots, \, \alpha_{ir} \; (r \leq s)$ 满足 $\begin{cases} (1) \; \text{ 取自 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \\\\      (2) \; \text{ 线性无关 } \\\\      (3) \; \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \text{ 中任一 } a_i \text{ 均可由其表示 } \end{cases}$，则 $\alpha_{i1}, \, \alpha_{i2}, \, \cdots, \, \alpha_{ir}$ 为 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 组的**一个**（往往不唯一）极大线性无关组。
+
+$r$ 唯一，叫 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 向量组的秩，是向量组中独立的向量个数。
+
+<br>
+
+#### ㊁、求法
+
+（1）构造 $A = \begin{pmatrix} \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \end{pmatrix}$
+
+（2）作初等行变换，化行阶梯型 $B = (\beta_1, \, \beta_2, \, \cdots, \, \beta_s)$，得 ${\rm r}(A) =$ 台阶数，按列找出一个秩为 ${\rm r}(A)$ 的子矩阵，即得极大线性无关组。
+
+<br>
+
+## 四、等价向量组
+
+<br>
+
+#### ㊀、定义
+
+设 $(\, {\rm I} \,) \, \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$，$(\, {\rm II} \,) \, \beta_1, \, \beta_2, \, \cdots, \, \beta_t$ 同维（不要求 $s=t$）。
+
+则 $(\, {\rm I} \,) \, (\, {\rm II} \,)$ 等价 $\iff$ $(\, {\rm I} \,)$ 与 $(\, {\rm II} \,)$ 可互相线性表示。
+
+<br>
+
+#### ㊁、⭐重要结论
+
+【Th】⭐$(\, {\rm I} \,) \, (\, {\rm II} \,)$ 等价 $\iff$ ${\rm r}(\, {\rm I} \,) = {\rm r}(\, {\rm II} \,) = {\rm r}(\, {\rm I} \mid {\rm II} \,)$ 
+
+<br>
+
+## 五、齐次 AX=0 和 非齐次 AX=β 的求解
+
+<div class="div-message div-desc" style="padding: 0 0 25px 10px ">
+    <br>
+    解法见：<a href="https://waterh2p.cn/2018/08/09/maths%209%20%E6%96%B9%E7%A8%8B%E7%BB%84/" target="_blank">方程组【大题】</a>
+</div>
 
 
 
@@ -140,12 +182,21 @@ $n$ 维空间由 $n$ 个 $n$ 维线性无关向量组表示
 
 #### 一、向量组的线性相关性
 
-设向量组 $\alpha_1 = (1, \, t_1, \, \cdots, \, t_1^{n-1})^{\rm T}, \, \alpha_2 = (1, \, t_2, \, \cdots, \, t_2^{n-1})^{\rm T}, \, \cdots, \, \alpha_r = (1, \, t_r, \, \cdots, \, t_r^{n-1})^{\rm T}$，其中 $t_1, \, t_2, \, \cdots, t_r$ 是互不相同的数，且 $r \leq n$。证明 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_r$ 线性无关。
+设向量组 $\alpha_1 = (1, \, t_1, \, \cdots, \, t_1^{n-1})^{\rm T}$，$\alpha_2 = (1, \, t_2, \, \cdots, \, t_2^{n-1})^{\rm T}$，$\cdots$，$\alpha_r = (1, \, t_r, \, \cdots, \, t_r^{n-1})^{\rm T}$，其中 $t_1, \, t_2, \, \cdots, t_r$ 是互不相同的数，且 $r \leq n$。证明 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_r$ 线性无关。
 
+<br>
 
+#### 二、㊁、重要结论
 
+设向量组 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性相关，$\alpha_2, \, \cdots, \, \alpha_s, \, \alpha_{s+1}$ 线性无关，问 1️⃣ $\alpha_1$ 能否由 $\alpha_2, \, \cdots, \, \alpha_s$ 线性表出，证明你的结论；2️⃣ $\alpha_{s+1}$ 能否由 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性表出，证明你的结论。
 
+<br>
 
+#### 四、㊁、重要结论
+
+设向量组 $(\, {\rm I} \,) \begin{cases} \alpha_1 = \begin{bmatrix} 1 & 0 & 2 \end{bmatrix}^{\rm T} \\\\      \alpha_2 = \begin{bmatrix} 0 & 1 & 1 \end{bmatrix}^{\rm T} \\\\      \alpha_3 = \begin{bmatrix} 2 & -1 & a+4 \end{bmatrix}^{\rm T} \end{cases}$，设向量组 $(\, {\rm II} \,) \begin{cases} \beta_1 = \begin{bmatrix} 1 & 2 & 4 \end{bmatrix}^{\rm T} \\\\      \beta_2 = \begin{bmatrix} 1 & -1 & a+2 \end{bmatrix}^{\rm T} \\\\      \beta_3 = \begin{bmatrix} 3 & 3 & 10 \end{bmatrix}^{\rm T} \end{cases}$，矩阵 $A = \begin{bmatrix} & 1 & 0 & 2 & \\\\ & 0 & 1 & -1 & \\\\ & 2 & 1 & a+4 & \end{bmatrix}$，$B = \begin{bmatrix} & 1 & 1 & 3 & \\\\ & 2 & -1 & 3 & \\\\ & 4 & a+2 & 10 & \end{bmatrix}$。
+
+问：1️⃣ $A, \, B$ 是否等价，说明理由；2️⃣ 向量组 $(\, {\rm I} \,) \alpha_1, \, \alpha_3, \, \alpha_3$ 与 $(\, {\rm II} \,) \beta_1, \, \beta_3, \, \beta_3$ 是否等价，说明理由。
 
 
 
@@ -198,4 +249,50 @@ $$
 
 由 $1^\circ$ 可知 $\beta_1, \, \beta_2, \, \cdots, \, \beta_r$ 线性无关，则 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_r$ 线性无关。
 
+<br>
 
+#### 二、㊁、重要结论
+
+1️⃣ 
+
+$\alpha_2, \, \cdots, \, \alpha_s, \, \alpha_{s+1}$ 线性无关 $\implies$ $\alpha_2, \, \cdots, \, \alpha_s$ 线性无关
+
+且 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性相关 $\implies$ $\alpha_1$ 可以由 $\alpha_2, \, \cdots, \, \alpha_s$ （唯一）线性表出。
+
+2️⃣ 
+
+由 1️⃣ 设 $\alpha_1 = k_2 \alpha_2 + \cdots + k_s \alpha_s$。
+
+假设 $\alpha_{s+1}$ 可以由 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性表出，所以 $\begin{array}{l} \alpha_{s+1} &= \lambda_1 \alpha_1 + \lambda_2 \alpha_2 + \cdots + \lambda_s \alpha_s \\\\ &= (\lambda_1  k_2 + \lambda_2) \alpha_2 + \cdots + (\lambda_s k_s + \lambda_s) \alpha_s \end{array}$，所以 $\alpha_2, \, \cdots, \, \alpha_s, \, \alpha_{s+1}$ 线性相关，矛盾。
+
+所以 $\alpha_{s+1}$ 不能由 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性表出
+
+<br>
+
+#### 四、㊁、重要结论
+
+1️⃣ 
+
+$A, \, B$ 等价 $\iff$ ${\rm r}(A) = {\rm r}(B)$。
+
+$A = \begin{bmatrix} & 1 & 0 & 2 & \\\\ & 0 & 1 & -1 & \\\\ & 2 & 1 & a+4 & \end{bmatrix} \to \begin{bmatrix} & 1 & 0 & 2 & \\\\ & 0 & 1 & -1 & \\\\ & 0 & 0 & a+1 & \end{bmatrix}$ 
+
+$B = \begin{bmatrix} & 1 & 1 & 3 & \\\\ & 2 & -1 & 3 & \\\\ & 4 & a+2 & 10 & \end{bmatrix} \to \begin{bmatrix} & 1 & 1 & 3 & \\\\ & 0 & 1 & 1 & \\\\ & 0 & 0 & 4 & \end{bmatrix}$ 
+
+$1^\circ \quad$ 若 $a \not= -1 \text{ 且 } a \not= 0$ 时，${\rm r}(A) = {\rm r}(B) = 3$ $\implies$ $A, \, B$ 等价。
+
+$2^\circ \quad$ 若 $a = -1$ 时，${\rm r}(A) = 2 \not= {\rm r}(B) = 3$ $\implies$ $A, \, B$ 不等价。
+
+$3^\circ \quad$ 若 $a = 0$ 时，${\rm r}(A) = 3 \not= {\rm r}(B) = 2$ $\implies$ $A, \, B$ 不等价。
+
+2️⃣ 
+
+$(\, {\rm I} \,), \, (\, {\rm II} \,)$ 等价 $\iff$ ${\rm r}(A) = {\rm r}(B) = {\rm r}(A \mid B)$。
+
+$\begin{array}{l} (A \mid B) &= \begin{pmatrix} & 1 & 0 & 2 & 1 & 1 & 3 & \\\\ & 0 & 1 & -1 & 2 & -1 & 3 & \\\\ & 2 & 1 & a+4 & 4 & a+2 & 10 \end{pmatrix} \\\\      &\to \begin{pmatrix} & 1 & 0 & 2 & 1 & 1 & 3 & \\\\ & 0 & 1 & -1 & 2 & -1 & 3 & \\\\ & 0 & 1 & a & 2 & a & 4 \end{pmatrix} \\\\      &\to \begin{pmatrix} & 1 & 0 & 2 & 1 & 1 & 3 & \\\\ & 0 & 1 & -1 & 2 & -1 & 3 & \\\\ & 0 & 0 & a+1 & 0 & a+1 & 1 \end{pmatrix} \end{array}$ 
+
+$1^\circ \quad$ 若 $a \not= -1 \text{ 且 } a \not= 0$ 时，${\rm r}(A) = {\rm r}(B) = {\rm r}(A \mid B) = 3$ $\implies$ $(\, {\rm I} \,), \, (\, {\rm II} \,)$ 等价。
+
+$2^\circ \quad$ 若 $a = -1$ 时，${\rm r}(A) = 2 \not= {\rm r}(B) = 3$ $\implies$ $(\, {\rm I} \,), \, (\, {\rm II} \,)$ 不等价。
+
+$3^\circ \quad$ 若 $a = 0$ 时，${\rm r}(A) = 3, \not= {\rm r}(B) = 2$ $\implies$ $(\, {\rm I} \,), \, (\, {\rm II} \,)$ 不等价。
