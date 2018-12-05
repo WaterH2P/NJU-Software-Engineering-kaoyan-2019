@@ -189,6 +189,47 @@ $$
 \end{array}
 $$
 
+<br>
+
+## 六、关于秩的等式与不等式专题总结
+
+<br>
+
+#### ㊀、定义
+
+对于 $A_{m \times n}$，存在 $k$ 阶子式不为 $0$，任意 $k+1$ 阶子式全为 $0$，则 ${\rm r}(A) = k$ $\iff$ 有且仅有 $k$ 个线性无关的向量。
+- ⭐️ 子式：子行列式
+
+故秩本质上就是线性无关的向量个数
+
+<br>
+
+#### ㊁、⭐️ 重要公式
+
+$$
+\begin{array}{l}
+    1^\circ \quad & 
+    \begin{cases}
+        0 \leq {\rm r}(A_{m \times n}) \leq \min\{m, \, n\} \\\\ 
+        {\rm r}(A_{m \times n}) = 0 \iff A = O
+    \end{cases} \\\\
+    2^\circ \quad & k \not= 0, \; {\rm r}(kA) = {\rm r}(A) \\\\
+    3^\circ \quad & \forall \, A_{m \times n}, \; {\rm r}(A) = {\rm r}( A^{\rm T} ) = {\rm r}( A A^{\rm T} ) = {\rm r}( A^{\rm T} A ) \\\\
+    4^\circ \quad & A_{n \times n} \implies {\rm r}(A^n) = {\rm r}( A^{n+1} ) \\\\
+    5^\circ \quad & \max \{ {\rm r}(A), \, {\rm r}(B) \} \leq {\rm r}(A \mid B) \leq {\rm r}(A) + {\rm r}(B) \\\\
+    6^\circ \quad & {\rm r}(A+B) \leq {\rm r}(A) + {\rm r}(B) \\\\
+    7^\circ \quad & {\rm r}(AB) \leq \min \{ {\rm r}(A), \, {\rm r}(B) \} \\\\
+    8^\circ \quad & \text{ 若 } AB=O \text{ ，则 } {\rm r}(A) + {\rm r}(B) \leq n, \, ( n \text{ 为 } A \text{ 的列数 } ) \\\\
+    9^\circ \quad & \text{ 给 } A_{n \times n}, \, {\rm r}(A^\ast) = \begin{cases} n, & {\rm r}(A) = n; \\\\ 1, & {\rm r}(A) = n-1; \\\\ 0, & {\rm r}(A) < n-1 \end{cases} \\\\
+\end{array}
+$$
+
+$3^\circ, \, 6^\circ, \, 7^\circ, \, 8^\circ, \, 9^\circ$ 相对考的频率更高。
+
+
+
+
+
 
 
 
@@ -285,6 +326,70 @@ $$
 ###### 3、
 
 设 $4$ 阶矩阵 $A = \begin{pmatrix} \alpha_1, \, \alpha_2, \, \alpha_3, \, \alpha_4 \end{pmatrix}$，方程组 $Ax = \beta$ 的通解为 $\begin{pmatrix} 1 \\ 2 \\ 2 \\ 1 \end{pmatrix}+ c \begin{pmatrix} 1 \\ -2 \\ 4 \\ 0 \end{pmatrix}$，其中 $c$ 为任意常数。记 $B = (\alpha_3, \, \alpha_2, \, \alpha_1, \, \beta - \alpha_4)$。求方程组 $Bx = \alpha_1 - \alpha_2$ 的通解。 
+
+<br>
+
+#### 六、㊁、重要公式
+
+<br>
+
+###### 第四个公式
+
+证明
+
+$$
+A_{n \times n} \implies {\rm r}(A^n) = {\rm r}(A^{n+1})
+$$
+
+<br>
+
+###### 第六个公式
+
+证明
+
+$$
+{\rm r}(A+B) \leq {\rm r}(A) + {\rm r}(B)
+$$
+
+<br>
+
+###### 第七个公式
+
+证明
+
+$$
+{\rm r}(AB) \leq \min \{ {\rm r}(A), \, {\rm r}(B) \}
+$$
+
+<br>
+
+###### 第八个公式
+
+证明
+
+$$
+\text{ 若 } AB=O \text{ ，则 } {\rm r}(A) + {\rm r}(B) \leq n, \, ( n \text{ 为 } A \text{ 的列数 } )
+$$
+
+<br>
+
+###### 第九个公式
+
+$$
+\text{ 给 } A_{n \times n}, \, {\rm r}(A^\ast) = \begin{cases} n, & {\rm r}(A) = n; \\\\ 1, & {\rm r}(A) = n-1; \\\\ 0, & {\rm r}(A) < n-1 \end{cases}
+$$
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -427,4 +532,125 @@ $\begin{array}{l} & \begin{bmatrix} 2 \\ 1 \\ 0 \\ 1 \end{bmatrix} + k\begin{bma
 
 所以 $k_1 \alpha_1 + k_2 \alpha_2 + \cdots + k_m \alpha_m = 0$，又由于 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_m$ 线性无关，所以 $k_1 = k_2 = \cdots = k_m = 0$。
 
-所以 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_m, \, \beta^{\rm T}$ 线性无关。 
+所以 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_m, \, \beta^{\rm T}$ 线性无关。
+
+<br>
+
+###### 3、
+
+由题可知
+
+$1^\circ \;$ $\begin{pmatrix} 1 \\ -2 \\ 4 \\ 0 \end{pmatrix}$ 是 $AX=0$ 的解 $\implies$ $\alpha_1 - 2\alpha_2 + 4\alpha_3 = 0$ $\implies$ $\alpha_1 = 2\alpha_2 - 4\alpha_3$ 
+
+$2^\circ \;$ $\begin{pmatrix} 1 \\ 2 \\ 2 \\ 1 \end{pmatrix}$ 是 $AX = \beta$ 的解 $\implies$ $\alpha_1 + 2\alpha_2 + 2\alpha_3 + \alpha_4 = \beta$ $\implies$ $\beta - \alpha_4 = 4\alpha_2 - 2\alpha_3$ 
+
+$3^\circ \;$ $1=S=n-{\rm r}(A)$ $\implies$ ${\rm r}(A) = 3$，且由于 $\alpha_1, \, \alpha_2, \, \alpha_3$ 线性相关，所以 ${\rm r}(\alpha_1, \, \alpha_2, \, \alpha_3) = 2$ 
+
+所以 $B = (\alpha_3, \, \alpha_2, \, 2\alpha_2 - 4\alpha_3, \, 4\alpha_2 - 2\alpha_3)$ $\implies$ ${\rm r}(B) = 2$。
+
+对于 $BX = \alpha_1 - \alpha_2$，即 $(\alpha_3, \, \alpha_2, \, 2\alpha_2 - 4\alpha_3, \, 4\alpha_2 - 2\alpha_3)X = (\alpha_2 - 4\alpha_3)$，$S = n-{\rm r}(B) = 2$。
+- $BX=0$ 的两个解为 $\begin{cases} \xi_1 = \begin{pmatrix} 4 & -1 & 1 & 0\end{pmatrix}^{\rm T} \\\\ \xi_2 = \begin{pmatrix} 2 & -4 & 0 & 1 \end{pmatrix}^{\rm T} \end{cases}$。
+   - 所以 $BX=0$ 的通解为 $\begin{array}{l} \\ k_1 \xi_1 + k_2 \xi_2, \, (k_1, \, k_2 \in {\rm R}) \\ & \end{array}$。
+- $BX=\alpha_1 - \alpha_2$ 的一个特解为 $\eta = \begin{pmatrix} -4 & 1 & 0 & 0\end{pmatrix}^{\rm T}$。
+
+所以 $Bx = \alpha_1 - \alpha_2$ 的通解为 $k_1 \xi_1 + k_2 \xi_2 + \eta, \, (k_1, \, k_2 \in {\rm R})$。
+
+<br>
+
+#### 六、㊁、重要公式
+
+<br>
+
+###### 第四个公式
+
+由于 $\begin{cases} AX=0 \\\\ BX=0 \end{cases} \text{同解} \iff {\rm r}(A) = {\rm r}(B) = {\rm r}\begin{pmatrix} A \\ B \end{pmatrix}$，所以构造 $\begin{cases} A^n X = 0 \\\\ A^{n+1} X = 0 \end{cases}$。
+
+$1^\circ$ 
+
+假设 $\eta$ 是 $A^n X = 0$ 的解，即 $A^n \eta = 0$， 由于 $A^{n+1} \eta = A \cdot A^n \eta = 0$，所以 $\eta$ 也是 $A^{n+1} X = 0$ 的解。
+
+$2^\circ$ 
+
+假设 $\gamma$ 是 $A^{n+1} X = 0$ 的解，即 $A^{n+1} \gamma = 0$， 同时假设 $\gamma$ 不是 $A^n X = 0$ 的解，即 $A^n \gamma \not= 0$。
+
+若存在一组数 $k_0, \, k_1, \, \cdots, \, k_{n-1}$ 使得 $k_0 \gamma + k_1 A \gamma + \cdots + k_{n-1} A^{n-1} \gamma \not= 0$ 
+- 两边同时乘以 $A^{n}$ 得 $k_0 A^n \gamma + 0 = 0$，由于 $A^n \gamma \not= 0$，所以 $k_0 = 0$。
+- 同理，两边同时乘以 $A^{n-1}$ 得 $k_1 = 0$。$\begin{array}{l} \\ & \\ & \end{array}$ 
+- 同理得 $k_0 = k_1 = \cdots = k_{n-1} = 0$，所以 $\gamma, \, A \gamma, \, \cdots, \, A^{n-1} \gamma$ 线性无关。
+
+由于 $n+1$ 个 $n$ 维向量必线性相关，所以 $\gamma, \, A \gamma, \, \cdots, \, A^{n-1} \gamma, \, A^n \gamma$ 线性相关。
+
+所以存在一组数 $q_0, \, q_1, \, \cdots, \, q_{n-1}$ 使得 $q_0 \gamma + q_1 A \gamma + \cdots + q_{n-1} A^{n-1} = A^n \gamma$ 
+- 两边同时乘以 $A^{n}$ 得 $q_0 A^n \gamma + 0 = 0$，由于 $A^n \gamma \not= 0$，所以 $q_0 = 0$。
+- 同理，两边同时乘以 $A^{n-1}$ 得 $q_1 = 0$。$\begin{array}{l} \\ & \\ & \end{array}$ 
+- 同理可得 $q_0 = q_1 = \cdots = q_{n-1} = 0$，所以 $A^n \gamma = 0$，矛盾。
+
+所以假设不成立，$A^n \gamma = 0$。
+
+所以 $A^n X = 0$ 和 $A^{n+1} X = 0$ 是同解方程，所以 ${\rm r}(A^n) = {\rm r}( A^{n+1} )$。
+
+<br>
+
+###### 第六个公式
+
+由公式 $5^\circ$ 可知，${\rm r}(A \mid B) \leq {\rm r}(A) + {\rm r}(B)$。
+
+设 $A = (\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_n)$，$B = (\beta_1, \, \beta_2, \, \cdots, \, \beta_n)$ 
+
+因为
+
+$$
+(\alpha_1 + \beta_1, \, \alpha_2 + \beta_2, \, \cdots, \, \alpha_n + \beta_n) = 
+(\alpha_1, \, \cdots, \, \alpha_n, \, \beta_1, \, \cdots, \, \beta_n) \cdot 
+\begin{pmatrix} 
+    & 1 & \cdots & 0 & \\\\
+    & 0 & \cdots & 0 & \\\\
+    & \vdots & & \vdots & \\\\
+    & 0 & \cdots & 1 & \\\\
+    & 1 & \cdots & 0 & \\\\
+    & 0 & \cdots & 0 & \\\\
+    & \vdots & & \vdots & \\\\
+    & 0 & \cdots & 1 &
+\end{pmatrix}
+$$
+
+左边可以由右边表出 $\implies$ ${\rm r}(A + B) \leq {\rm r}(A \mid B) \leq {\rm r}(A) + {\rm r}(B)$ 
+
+⭐️ 两向量组，被表出的秩不大。
+
+<br>
+
+###### 第七个公式
+
+令 $C = AB$，$C^{\rm T} = B^{\rm T} A^{\rm T}$
+
+由于 $C$ 可以由 $A$ 表出，所以 ${\rm r}(C) \leq {\rm r}(A)$。
+
+由于 $C^{\rm T}$ 可以由 $B^{\rm T}$ 表出，所以 ${\rm r}( C^{\rm T} ) \leq {\rm r}( B^{\rm T} )$ $\implies$ ${\rm r}(C) \leq {\rm r}(B)$。
+
+所以 $\begin{cases} {\rm r}(AB) \leq {\rm r}(A) \\\\ {\rm r}(AB) \leq {\rm r}(B) \end{cases}$ $\implies$ ${\rm r}(AB) \leq \min \{ {\rm r}(A), \, {\rm r}(B) \}$。
+
+<br>
+
+###### 第八个公式
+
+$AB = O$ $\implies$ $A(\beta_1, \, \beta_2, \, \cdots, \, \beta_n) = (0, \, 0, \, \cdots, \, 0)$ 
+
+所以 $A \beta_i = 0$，其中 $\beta_i$ 均为 $AX = 0$ 的解，且是其部分解，所以 ${\rm r}(B) \leq n - {\rm r}(A)$ $\implies$ ${\rm r}(A) + {\rm r}(B) \leq n$。
+
+<br>
+
+###### 第九个公式
+
+${\rm r}(A) = n$ 时：
+
+- $\mid A \mid \not= 0$，所以 $\mid A^\ast \mid = \mid A \mid^{n-1} \not= 0$，所以 ${\rm r}(A^\ast) = n$。
+
+${\rm r}(A) = n-1$ 时：
+
+- $AA^\ast = O$ $\implies$ ${\rm r}(A^\ast) \leq n - {\rm r}(A) = 1$，又因为 ${\rm r}(A) = n-1$，所以存在一个 $n-1$ 阶子式不为 $0$，即存在某一 $M_{ij}\not= 0$，即 $A_{ij} \not= 0$，所以 $A^\ast \not= O$ $\implies$ ${\rm r}(A^\ast) = 1$。
+
+${\rm r}(A) < n-1$ 时：
+
+- 同上证明 ${\rm r}(A^\ast) = 0$。
+
