@@ -155,10 +155,44 @@ $r$ 唯一，叫 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 向量组的秩
 
 ## 五、齐次 AX=0 和 非齐次 AX=β 的求解
 
+<br>
+
+#### ㊀、齐次线性方程组
+
 <div class="div-message div-desc" style="padding: 0 0 25px 10px ">
     <br>
-    解法见：<a href="https://waterh2p.cn/2018/08/09/maths%209%20%E6%96%B9%E7%A8%8B%E7%BB%84/" target="_blank">方程组【大题】</a>
+    解法见：<a href="https://waterh2p.cn/2018/08/09/maths%209%20%E6%96%B9%E7%A8%8B%E7%BB%84/#%E4%B8%80.%20%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84" target="_blank">齐次线性方程组</a>
 </div>
+
+<br>
+
+#### ㊁、非齐次线性方程组
+
+<div class="div-message div-desc" style="padding: 0 0 25px 10px ">
+    <br>
+    解法见：<a href="https://waterh2p.cn/2018/08/09/maths%209%20%E6%96%B9%E7%A8%8B%E7%BB%84/#%E4%BA%8C.%20%E9%9D%9E%E9%BD%90%E6%AC%A1%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84" target="_blank">非齐次线性方程组</a>
+</div>
+
+<br>
+
+#### ㊂、同解方程组
+
+若两个方程 $A_{m \times n} x = 0$ 和 $B_{s \times n} x = 0$ 有完全相同的解，则称为同解方程组。
+
+于是
+
+$$
+\begin{array}{l}
+    & Ax=0, \, Bx=0 \text{ 是同解方程组 } \\\\
+    \iff & \begin{cases}Ax=0 \text{ 的解满足 } Bx=0 \\\\ Bx=0 \text{ 的解满足 } Ax=0 \end{cases} \qquad & \text{ 抽象型 } \\\\
+    \iff &  {\rm r}(A) = {\rm r}(B) = {\rm r} \left( \begin{bmatrix} A \\ B \end{bmatrix} \right) \qquad & \text{ 具体型 }
+\end{array}
+$$
+
+
+
+
+
 
 
 
@@ -198,13 +232,59 @@ $r$ 唯一，叫 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 向量组的秩
 
 问：1️⃣ $A, \, B$ 是否等价，说明理由；2️⃣ 向量组 $(\, {\rm I} \,) \alpha_1, \, \alpha_3, \, \alpha_3$ 与 $(\, {\rm II} \,) \beta_1, \, \beta_3, \, \beta_3$ 是否等价，说明理由。
 
+<br>
 
+#### 五、㊂、同解方程组
 
+设 $A$ 是 $n$ 阶实矩阵，$A^{\rm T}$ 是 $A$ 的转置矩阵。证明：方程组 $(\, {\rm I} \,) Ax=0$ 和 $(\, {\rm II} \,) A^{\rm T}Ax=0$ 是同解方程组。
 
+<br>
 
+#### 五、㊃、综合题
 
+<br>
 
+###### 1、
 
+已知线性方程组
+
+$$
+\begin{cases}
+    a_{11}x_1 + a_{12}x_2 + a_{13}x_3 + a_{14}x_4 = a_{15} \\\\
+    a_{21}x_1 + a_{22}x_2 + a_{23}x_3 + a_{24}x_4 = a_{25} \\\\
+    a_{31}x_1 + a_{32}x_2 + a_{33}x_3 + a_{34}x_4 = a_{35} \\\\
+    a_{41}x_1 + a_{42}x_2 + a_{43}x_3 + a_{44}x_4 = a_{45}
+\end{cases}
+$$
+
+的通解为 $\begin{bmatrix} 2 \\ 1 \\ 0 \\ 1 \end{bmatrix} + k\begin{bmatrix} 1 \\ -1 \\ 2 \\ 0 \end{bmatrix}$。记 $\alpha_j = \begin{bmatrix} a_{1j} \\ a_{2j} \\ a_{3j} \\ a_{4j} \end{bmatrix}, \, (j=1, \, 2, \cdots, \, 5)$。问：
+
+- 1️⃣ $\alpha_4$ 能否由 $\alpha_1, \, \alpha_2, \, \alpha_3, \, \alpha_5$ 线性表出，说明理由；
+
+- 2️⃣ $\alpha_4$ 能否由 $\alpha_1, \, \alpha_2, \, \alpha_3$ 线性表出，说明理由。
+
+<br>
+
+###### 2、
+
+设 $\alpha_i = \begin{bmatrix} a_{i1}, \, a_{i2}, \, \cdots, \, a_{in} \end{bmatrix} \; (i=1, \, 2, \, \cdots, \, m)$ 为齐次线性方程组
+
+$$
+\begin{cases}
+    a_{11} x_1 + a_{12} x_2 + \cdots + a_{1n} x_n = 0 \\\\
+    a_{21} x_1 + a_{22} x_2 + \cdots + a_{2n} x_n = 0 \\\\
+    \cdots \cdots \\\\
+    a_{m1} x_1 + a_{m2} x_2 + \cdots + a_{mn} x_n = 0 
+\end{cases} \qquad ({\rm I})
+$$
+
+的行向量，已知方程组 $({\rm I})$ 有非零解 $\beta = \begin{bmatrix} b_1, \, b_2, \, \cdots, \, b_n \end{bmatrix}^{\rm T}$，且行向量组的秩 ${\rm r}(\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_m) = m$。证明：向量组 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_m, \, \beta^{\rm T}$ 线性无关。 
+
+<br>
+
+###### 3、
+
+设 $4$ 阶矩阵 $A = \begin{pmatrix} \alpha_1, \, \alpha_2, \, \alpha_3, \, \alpha_4 \end{pmatrix}$，方程组 $Ax = \beta$ 的通解为 $\begin{pmatrix} 1 \\ 2 \\ 2 \\ 1 \end{pmatrix}+ c \begin{pmatrix} 1 \\ -2 \\ 4 \\ 0 \end{pmatrix}$，其中 $c$ 为任意常数。记 $B = (\alpha_3, \, \alpha_2, \, \alpha_1, \, \beta - \alpha_4)$。求方程组 $Bx = \alpha_1 - \alpha_2$ 的通解。 
 
 
 
@@ -296,3 +376,55 @@ $1^\circ \quad$ 若 $a \not= -1 \text{ 且 } a \not= 0$ 时，${\rm r}(A) = {\rm
 $2^\circ \quad$ 若 $a = -1$ 时，${\rm r}(A) = 2 \not= {\rm r}(B) = 3$ $\implies$ $(\, {\rm I} \,), \, (\, {\rm II} \,)$ 不等价。
 
 $3^\circ \quad$ 若 $a = 0$ 时，${\rm r}(A) = 3, \not= {\rm r}(B) = 2$ $\implies$ $(\, {\rm I} \,), \, (\, {\rm II} \,)$ 不等价。
+
+<br>
+
+#### 五、㊂、同解方程组
+
+$1^\circ \;$ 设 $\eta$ 为 $(\, {\rm I} \,)$ 的任一解，即 $A \eta = 0 \implies A^{\rm T}A \eta = 0$，故 $\eta$ 也为 $(\, {\rm II} \,)$ 的解。
+
+$2^\circ \;$ 设 $\gamma$ 为 $(\, {\rm II} \,)$ 的任一解，即 $A^{\rm T}A \gamma = 0$ $\implies$ $\gamma^{\rm T}A^{\rm T}A \gamma = 0$ $\implies$ $(A\gamma)^{\rm T}A\gamma = 0$ $\implies$ $\begin{Vmatrix} A\gamma \end{Vmatrix} = 0$ $\implies$ $A\gamma=0$，故 $\gamma$ 也为 $(\, {\rm I} \,)$ 的解。
+
+- $\begin{Vmatrix} \alpha \end{Vmatrix} = 0 \iff \alpha = 0$ 
+
+【注】
+- 此题 $A_{m \times n}$ 时亦成立结论。
+- $\begin{array}{l} \\ & \begin{cases} (\, {\rm I} \,) \; AX=0 \\\\ (\, {\rm II} \,) \; A^{\rm T}AX=0 \end{cases} \text{ 同解 } \implies \begin{cases} (\, {\rm I} \,) \\\\ (\, {\rm II} \,) \end{cases} \text{ 的基础解系等价 } \\\\      \implies & S_1 = S_2 \\\\      \implies & n - {\rm r}(A) = n - {\rm r}(A^{\rm T} A) \\\\      \implies & {\rm r}(A) = {\rm r}(A^{\rm T} A) \\ & \end{array}$ 
+   - $\begin{array}{l} \text{ 又 } \begin{cases} {\rm r}(A^{\rm T}) = {\rm r}(AA^{\rm T}) \\\\ {\rm r}(A) = {\rm r}(A^{\rm T}) \end{cases} \\ & \end{array}$ 
+   - ⭐ 故 $A_{m \times n}$，均有 ${\rm r}(A) = {\rm r}(A^{\rm T}) = {\rm r}(A^{\rm T} A) = {\rm r}(AA^{\rm T})$
+
+<br>
+
+#### 五、㊃、综合题
+
+<br>
+
+###### 1、
+
+1️⃣ 
+
+$\begin{array}{l} & \begin{bmatrix} 2 \\ 1 \\ 0 \\ 1 \end{bmatrix} + k\begin{bmatrix} 1 \\ -1 \\ 2 \\ 0 \end{bmatrix} = \begin{bmatrix} 2+k \\ 1-k \\ 2k \\ 1 \end{bmatrix} \\\\      \implies & (2+k) \alpha_1 + (1-k) \alpha_2 + 2k \alpha_3 + \alpha_4 = \alpha_5 \\\\ \implies & \alpha_4 = -(2+k) \alpha_1 - (1-k) \alpha_2 - 2k \alpha_3 + \alpha_5 \end{array}$
+
+2️⃣ 
+
+令 $A = \begin{pmatrix} \alpha_1, \, \alpha_2, \, \alpha_3, \, \alpha_4 \end{pmatrix}$ 
+
+由题可知 $\begin{array}{l} \begin{cases} S = n - {\rm r}(A) \\\\ S=1 \\\\ n=4 \end{cases} \implies {\rm r}(A) = 3 \end{array}$ 
+
+又 $\begin{pmatrix} 1 \\ -1 \\ 2 \\ 0 \end{pmatrix}$ 是 $AX=0$ 的解，$\alpha_1 - \alpha_2 + 2 \alpha_3 = 0 \implies {\rm r}(\alpha_1, \, \alpha_2, \, \alpha_3) < 3$ 
+
+若 $\alpha_4$ 可以由 $\alpha_1, \, \alpha_2, \, \alpha_3$ 表示 $\implies$ ${\rm r}(\alpha_1, \, \alpha_2, \, \alpha_3, \, \alpha_4) = {\rm r}(\alpha_1, \, \alpha_2, \, \alpha_3) < 3$，矛盾。
+
+所以 $\alpha_4$ 不可以由 $\alpha_1, \, \alpha_2, \, \alpha_3$ 表示。
+
+<br>
+
+###### 2、
+
+由于 $\beta$ 是方程组的解，所以 $\alpha_i \beta = 0, \, (i=1, \, 2, \, \cdots, \, m)$。
+
+假设存在 $k_0, \, k_1, \, k_2, \, \cdots, \, k_m$ 使得 $k_0 \beta^{\rm T} + k_1 \alpha_1 + k_2 \alpha_2 + \cdots + k_m \alpha_m = 0$，在等式两边同时乘以 $\beta$ 得 $\begin{array}{l} \\ & k_0 \beta^{\rm T} \beta + k_1 \alpha_1 \beta + k_2 \alpha_2 \beta + \cdots + k_m \alpha_m \beta = 0 \\\\      \implies & k_0 \beta^{\rm T} \beta = 0 \\\\      \implies & k_0 \begin{Vmatrix} \beta \end{Vmatrix} = 0 \\\\      \implies & k_0 = 0 \end{array}$。
+
+所以 $k_1 \alpha_1 + k_2 \alpha_2 + \cdots + k_m \alpha_m = 0$，又由于 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_m$ 线性无关，所以 $k_1 = k_2 = \cdots = k_m = 0$。
+
+所以 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_m, \, \beta^{\rm T}$ 线性无关。 
