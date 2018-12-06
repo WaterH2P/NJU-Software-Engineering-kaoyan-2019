@@ -290,54 +290,6 @@ $$
 
 将 $\beta_1, \, \beta_2, \, \cdots, \, \beta_n$ 单位化，得 $\eta_1 = \dfrac{ \beta_1 }{ \begin{Vmatrix} \beta_1 \end{Vmatrix} }$，$\eta_2 = \dfrac{ \beta_2 }{ \begin{Vmatrix} \beta_2 \end{Vmatrix} }$，$\cdots$，$\eta_n = \dfrac{ \beta_n }{ \begin{Vmatrix} \beta_n \end{Vmatrix} }$，则 $\eta_1, \, \eta_2, \, \cdots, \, \eta_n$ 是规范正交基。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- ㊄ ㊅ ㊆ ㊇ ㊈
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br>
 
 ## 七、练习题
@@ -473,58 +425,6 @@ $$
 ###### 例题
 
 对于 $A_{m \times n}$，$AX = \beta$ 有唯一解，证明 $A^{\rm T}A$ 可逆，并求 $X$。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <br>
 
