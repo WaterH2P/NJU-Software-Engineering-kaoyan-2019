@@ -1,12 +1,12 @@
 ---
 title: 矩阵 · 习题
 date: 2018-8-8
-updated: 2018-12-2
+updated: 2018-12-4
 tags: [maths,线代,kaoyan]
 mathjax: true
 
 description: 做笔记，喝凉茶，看线代
-real-date: 2018-12-2
+real-date: 2018-12-4
 ---
 
 <!-- 

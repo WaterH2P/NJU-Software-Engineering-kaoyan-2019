@@ -25,6 +25,7 @@ $$
 
 则称 $\lambda$ 是 A 的特征值，$\xi$ 是 A 的对应于特征值 $\lambda$ 的特征向量。
 由 $(Ⅰ)$ 式，得
+
 $$
 \begin{array}{l}
   \lambda \xi - A \xi = 0 &\implies (\lambda E - A)\xi = 0 \\\\

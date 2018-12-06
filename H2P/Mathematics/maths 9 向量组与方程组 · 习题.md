@@ -1,7 +1,7 @@
 ---
 title: 向量组与方程组 · 习题
 date: 2018-8-9
-updated: 2018-12-4
+updated: 2018-12-6
 tags: [maths,线代,kaoyan]
 mathjax: true
 
@@ -33,7 +33,7 @@ $\begin{bmatrix} \end{bmatrix}$
 <img src="" width="80%">
 ️ -->
 
-11 分
+11 分大题
 
 <br>
 
@@ -65,9 +65,9 @@ $$
 
 #### ㊀、定义
 
-1⃣️ $\exists \;$ 一组不全为 $0$ 的数 $x_1, \, x_2, \, \cdots, \, x_s$，使 $x_1 \alpha_1, \, x_2 \alpha_2, \, \cdots, \, x_s \alpha_s = 0$ 成立称 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性相关。$\iff$ $\begin{pmatrix} \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \end{pmatrix} \begin{pmatrix} x_1 \\\\ \vdots \\\\ x_s \end{pmatrix}$ 有非零解。
+1️⃣ $\exists \;$ 一组不全为 $0$ 的数 $x_1, \, x_2, \, \cdots, \, x_s$，使 $x_1 \alpha_1, \, x_2 \alpha_2, \, \cdots, \, x_s \alpha_s = 0$ 成立称 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性相关。$\iff$ $\begin{pmatrix} \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \end{pmatrix} \begin{pmatrix} x_1 \\\\ \vdots \\\\ x_s \end{pmatrix}$ 有非零解。
 
-2⃣️ 若要使 $x_1 \alpha_1, \, x_2 \alpha_2, \, \cdots, \, x_s \alpha_s = 0$ 成立，必须有 $x_1 = x_2 = \cdots = x_s = 0$ ，称 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性无关。 $\iff$ $\begin{pmatrix} \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \end{pmatrix} \begin{pmatrix} x_1 \\\\ \vdots \\\\ x_s \end{pmatrix}$ 只有零解。
+2️⃣ 若要使 $x_1 \alpha_1, \, x_2 \alpha_2, \, \cdots, \, x_s \alpha_s = 0$ 成立，必须有 $x_1 = x_2 = \cdots = x_s = 0$ ，称 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性无关。 $\iff$ $\begin{pmatrix} \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \end{pmatrix} \begin{pmatrix} x_1 \\\\ \vdots \\\\ x_s \end{pmatrix}$ 只有零解。
 
 <br>
 
@@ -224,7 +224,96 @@ $$
 \end{array}
 $$
 
-$3^\circ, \, 6^\circ, \, 7^\circ, \, 8^\circ, \, 9^\circ$ 相对考的频率更高。
+$3^\circ, \, 6^\circ, \, 7^\circ, \, 8^\circ, \, 9^\circ$ 相对考的频率更高。
+
+<br>
+
+## 七、向量空间
+
+<br>
+
+#### ㊂、
+
+<br>
+
+###### 1、内积
+
+设 $\alpha = \begin{bmatrix} a_1, \, a_2, \, \cdots, \, a_n \end{bmatrix}^{\rm T}$，$\beta = \begin{bmatrix} b_1, \, b_2, \, \cdots, \, b_n \end{bmatrix}^{\rm T}$，则
+
+$$
+\alpha^{\rm T} \beta = \sum\limits_{i=1}^n a_i b_i
+$$
+
+称为向量 $\alpha, \, \beta$ 的内积，记作 $(\alpha, \, \beta)$，即 $(\alpha, \, \beta) = \alpha^{\rm T} \beta$。
+
+<br>
+
+###### 2、正交
+
+非零向量 $\alpha, \, \beta$，且 $(\alpha, \, \beta) = 0$。
+
+<br>
+
+###### 3、模
+
+$\begin{Vmatrix} \alpha \end{Vmatrix} = \sqrt{ \sum\limits_{i=1}^n a_i^2 }$ 称为向量 $\alpha$ 的模（长度）。
+
+<br>
+
+###### 4、规范正交基
+
+若向量组 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 满足
+
+$$
+\alpha_i^{\rm T} \alpha_j = \begin{cases} 0, & i \not= j \\\\ 1, & i = j \end{cases}
+$$
+
+则称 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 为规范正交基（标准或单位正交向量组）。
+
+<br>
+
+#### ㊃、施密特标准正交化
+
+线性无关向量组 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_n$ 的标准正交化公式为
+
+$$
+\begin{array}{l}
+    \beta_1 = \alpha_1 \\\\
+    \beta_2 = \alpha_2 - \dfrac{ (\alpha_2, \, \beta_1) }{ (\beta_1, \, \beta_1) } \beta_1 \\\\
+    \beta_3 = \alpha_3 - \dfrac{ (\alpha_3, \, \beta_2) }{ (\beta_2, \, \beta_2) } \beta_2 - \dfrac{ (\alpha_3, \, \beta_1) }{ (\beta_1, \, \beta_1) } \beta_1 \\\\
+    \cdots \cdots \\\\
+    \beta_n = \alpha_n - \dfrac{ (\alpha_n, \, \beta_{n-1}) }{ (\beta_{n-1}, \, \beta_{n-1}) } \beta_{n-1} - \dfrac{ (\alpha_n, \, \beta_{n-2}) }{ (\beta_{n-2}, \, \beta_{n-2}) } \beta_{n-2} - \cdots - \dfrac{ (\alpha_n, \, \beta_1) }{ (\beta_1, \, \beta_1) } \beta_1
+\end{array}
+$$
+
+得到的 $\beta_1, \, \beta_2, \, \cdots, \, \beta_n$ 是正交向量组。
+
+将 $\beta_1, \, \beta_2, \, \cdots, \, \beta_n$ 单位化，得 $\eta_1 = \dfrac{ \beta_1 }{ \begin{Vmatrix} \beta_1 \end{Vmatrix} }$，$\eta_2 = \dfrac{ \beta_2 }{ \begin{Vmatrix} \beta_2 \end{Vmatrix} }$，$\cdots$，$\eta_n = \dfrac{ \beta_n }{ \begin{Vmatrix} \beta_n \end{Vmatrix} }$，则 $\eta_1, \, \eta_2, \, \cdots, \, \eta_n$ 是规范正交基。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ ㊄ ㊅ ㊆ ㊇ ㊈
+
+
+
+
+
+
 
 
 
@@ -251,7 +340,7 @@ $3^\circ, \, 6^\circ, \, 7^\circ, \, 8^\circ, \, 9^\circ$ 相对考的频率更
 
 <br>
 
-## 、练习题
+## 七、练习题
 
 <br>
 
@@ -261,13 +350,13 @@ $3^\circ, \, 6^\circ, \, 7^\circ, \, 8^\circ, \, 9^\circ$ 相对考的频率更
 
 <br>
 
-#### 二、㊁、重要结论
+#### 二㊁、重要结论
 
 设向量组 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性相关，$\alpha_2, \, \cdots, \, \alpha_s, \, \alpha_{s+1}$ 线性无关，问 1️⃣ $\alpha_1$ 能否由 $\alpha_2, \, \cdots, \, \alpha_s$ 线性表出，证明你的结论；2️⃣ $\alpha_{s+1}$ 能否由 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 线性表出，证明你的结论。
 
 <br>
 
-#### 四、㊁、重要结论
+#### 四㊁、重要结论
 
 设向量组 $(\, {\rm I} \,) \begin{cases} \alpha_1 = \begin{bmatrix} 1 & 0 & 2 \end{bmatrix}^{\rm T} \\\\      \alpha_2 = \begin{bmatrix} 0 & 1 & 1 \end{bmatrix}^{\rm T} \\\\      \alpha_3 = \begin{bmatrix} 2 & -1 & a+4 \end{bmatrix}^{\rm T} \end{cases}$，设向量组 $(\, {\rm II} \,) \begin{cases} \beta_1 = \begin{bmatrix} 1 & 2 & 4 \end{bmatrix}^{\rm T} \\\\      \beta_2 = \begin{bmatrix} 1 & -1 & a+2 \end{bmatrix}^{\rm T} \\\\      \beta_3 = \begin{bmatrix} 3 & 3 & 10 \end{bmatrix}^{\rm T} \end{cases}$，矩阵 $A = \begin{bmatrix} & 1 & 0 & 2 & \\\\ & 0 & 1 & -1 & \\\\ & 2 & 1 & a+4 & \end{bmatrix}$，$B = \begin{bmatrix} & 1 & 1 & 3 & \\\\ & 2 & -1 & 3 & \\\\ & 4 & a+2 & 10 & \end{bmatrix}$。
 
@@ -275,13 +364,13 @@ $3^\circ, \, 6^\circ, \, 7^\circ, \, 8^\circ, \, 9^\circ$ 相对考的频率更
 
 <br>
 
-#### 五、㊂、同解方程组
+#### 五㊂、同解方程组
 
 设 $A$ 是 $n$ 阶实矩阵，$A^{\rm T}$ 是 $A$ 的转置矩阵。证明：方程组 $(\, {\rm I} \,) Ax=0$ 和 $(\, {\rm II} \,) A^{\rm T}Ax=0$ 是同解方程组。
 
 <br>
 
-#### 五、㊃、综合题
+#### 五㊃、综合题
 
 <br>
 
@@ -329,7 +418,7 @@ $$
 
 <br>
 
-#### 六、㊁、重要公式
+#### 六㊁、重要公式
 
 <br>
 
@@ -379,6 +468,44 @@ $$
 \text{ 给 } A_{n \times n}, \, {\rm r}(A^\ast) = \begin{cases} n, & {\rm r}(A) = n; \\\\ 1, & {\rm r}(A) = n-1; \\\\ 0, & {\rm r}(A) < n-1 \end{cases}
 $$
 
+<br>
+
+###### 例题
+
+对于 $A_{m \times n}$，$AX = \beta$ 有唯一解，证明 $A^{\rm T}A$ 可逆，并求 $X$。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -401,7 +528,7 @@ $$
 
 <br>
 
-## 、参考答案
+## 八、参考答案
 
 <br>
 
@@ -436,7 +563,7 @@ $$
 
 <br>
 
-#### 二、㊁、重要结论
+#### 二㊁、重要结论
 
 1️⃣ 
 
@@ -454,7 +581,7 @@ $\alpha_2, \, \cdots, \, \alpha_s, \, \alpha_{s+1}$ 线性无关 $\implies$ $\al
 
 <br>
 
-#### 四、㊁、重要结论
+#### 四㊁、重要结论
 
 1️⃣ 
 
@@ -484,7 +611,7 @@ $3^\circ \quad$ 若 $a = 0$ 时，${\rm r}(A) = 3, \not= {\rm r}(B) = 2$ $\impli
 
 <br>
 
-#### 五、㊂、同解方程组
+#### 五㊂、同解方程组
 
 $1^\circ \;$ 设 $\eta$ 为 $(\, {\rm I} \,)$ 的任一解，即 $A \eta = 0 \implies A^{\rm T}A \eta = 0$，故 $\eta$ 也为 $(\, {\rm II} \,)$ 的解。
 
@@ -500,7 +627,7 @@ $2^\circ \;$ 设 $\gamma$ 为 $(\, {\rm II} \,)$ 的任一解，即 $A^{\rm T}A 
 
 <br>
 
-#### 五、㊃、综合题
+#### 五㊃、综合题
 
 <br>
 
@@ -557,7 +684,7 @@ $3^\circ \;$ $1=S=n-{\rm r}(A)$ $\implies$ ${\rm r}(A) = 3$，且由于 $\alpha_
 
 <br>
 
-#### 六、㊁、重要公式
+#### 六㊁、重要公式
 
 <br>
 
@@ -653,4 +780,13 @@ ${\rm r}(A) = n-1$ 时：
 ${\rm r}(A) < n-1$ 时：
 
 - 同上证明 ${\rm r}(A^\ast) = 0$。
+
+<br>
+
+###### 例题
+
+${\rm r}(A) = {\rm r}(A \mid B) = n$，且 ${\rm r}(A^{\rm T} A) = {\rm r}(A) = n$，$\implies$ $A^{\rm T}A$ 是可逆矩阵。
+
+故 $A^{\rm T}AX = A^{\rm T}\beta$ $\implies$ $X = (A^{\rm T}A)^{-1} A^{\rm T} \beta$
+
 
