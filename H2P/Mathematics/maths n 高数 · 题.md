@@ -9,6 +9,30 @@ description: 做笔记，喝凉茶，做习题
 real-date: 2018-11-15
 ---
 
+<!-- 
+$\begin{array}{l} ( {\rm A} ) \, 1 \qquad & ( {\rm B} ) \, 2 \\\\ ( {\rm C} ) \, 3 \qquad & ( {\rm D} ) \, 4 \end{array}$ 
+-->
+
+<!-- 
+$\begin{array}{l} \end{array}$
+
+$\begin{vmatrix} \end{vmatrix}$
+
+$\begin{pmatrix} \end{pmatrix}$
+
+$\begin{bmatrix} \end{bmatrix}$
+
+\begin{array}{l} \\ 
+ \\ & \end{array}
+-->
+
+<!-- 
+⭐
+㊀ ㊁ ㊂ ㊃ ㊄ ㊅ ㊆ ㊇ ㊈
+
+<img src="" width="80%">
+️ -->
+
 ## 习题
 
 <br>
@@ -36,6 +60,7 @@ $$
 <br>
 
 #### 3
+
 【6.4】
 设线性无关的函数 $y_1(x), \, y_2(x), \, y_3(x)$ 均是方程 $y'' + p(x)y' + q(x)y = f(x)$ 的解，$C_1, \, C_2$ 是任意常数，则该方程的通解是 $( \quad )$ 。
 
@@ -45,6 +70,52 @@ $$
 	\text{ (C) } C_1 y_1 + C_2 y_2 - ( 1 - C_1 - C_2 ) y_3 \qquad & \text{ (D) } C_1 y_1 + C_2 y_2 + ( 1 - C_1 - C_2 ) y_3 
 \end{array}
 $$
+
+<br>
+
+#### 4、八套卷二（12）
+
+设函数 $z = f(x, \, y) \, (xy \not= 0)$ 满足 $f(xy, \, \dfrac{y}{x}) = y^2 (x^2 - 1)$，则 ${\rm d}z =$ ________ 。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
 
@@ -117,9 +188,13 @@ Y 是 $y'' + p(x)y' + q(x)y = f(x)$ 的解得充要条件是 $A + B + C = 1$；
 
 Y 是 $y'' + p(x)y' + q(x)y = 0$ 的解得充要条件是 $A + B + C = 0$ 。
 
+<br>
 
+#### 4、八套卷二（12）
 
+令 $\begin{cases} u = xy \\\\ v = \dfrac{y}{x} \end{cases}$ $\implies$ $\begin{cases} x^2 = \dfrac{u}{v} \\\\ y^2 = uv \end{cases}$，则 $f(u, \, v) = uv(\dfrac{u}{v} - 1) = u^2 - uv$，即 $z = f(x, \, y) = x^2 - xy$。
 
+所以 ${\rm d}z = (2x - y){\rm d}x - x{\rm d}y$。
 
 
 
