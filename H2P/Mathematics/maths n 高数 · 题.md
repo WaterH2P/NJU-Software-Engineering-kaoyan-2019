@@ -1,7 +1,7 @@
 ---
 title: 高数 · 题
 date: 2018-8-30
-updated: 2018-11-15
+updated: 2018-12-9
 tags: [maths,高数,kaoyan]
 mathjax: true
 
@@ -77,6 +77,15 @@ $$
 
 设函数 $z = f(x, \, y) \, (xy \not= 0)$ 满足 $f(xy, \, \dfrac{y}{x}) = y^2 (x^2 - 1)$，则 ${\rm d}z =$ ________ 。
 
+<br>
+
+#### 5、李林四套卷二（15）
+
+计算 
+
+$$
+\lim\limits_{x \to 0} \left[ \left( \left. \dfrac{1}{2} \int_0^2 x \sqrt{ 4 - x^2 u^2 } {\rm d}u - 2x \right) \right/  \ln(1 + x^3) \right]
+$$
 
 
 
@@ -196,6 +205,11 @@ Y 是 $y'' + p(x)y' + q(x)y = 0$ 的解得充要条件是 $A + B + C = 0$ 。
 
 所以 ${\rm d}z = (2x - y){\rm d}x - x{\rm d}y$。
 
+<br>
+
+#### 5、李林四套卷二（15）
+
+$\begin{array}{l} \text{原式} &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \int_0^2 \sqrt{ 4 - (xu)^2 } \, {\rm d}(xu) - 2x }{ \ln(1 + x^3) } \\\\     \text{令 } t=xu &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \int_0^{2x} \sqrt{ 4 - t^2 } \, {\rm d}t -2x }{x^3} \\\\      \text{洛必达} &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \sqrt{ 4 - 4x^2 } \cdot 2 - 2 }{3x^2} \\\\      &= 2 \lim\limits_{x \to 0} \dfrac{ \sqrt{ 1 - x^2 } - 1 }{3x^2} \\\\      &= 2 \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} (-x^2) }{ 3x^2 } \\\\      &= -\dfrac{1}{3} \end{array}$
 
 
 
