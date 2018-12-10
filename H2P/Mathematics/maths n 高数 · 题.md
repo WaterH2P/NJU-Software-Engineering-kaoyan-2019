@@ -87,8 +87,27 @@ $$
 \lim\limits_{x \to 0} \left[ \left( \left. \dfrac{1}{2} \int_0^2 x \sqrt{ 4 - x^2 u^2 } {\rm d}u - 2x \right) \right/  \ln(1 + x^3) \right]
 $$
 
+<br>
 
+#### 5、李林四套卷一
 
+<br>
+
+###### (4)
+
+设 $y=y(x)$ 是 $y''+2y'+y = e^{3x}$ 满足 $y(0) = y'(0) = 0$ 的解，则当 $x \to 0$ 时，与 $y(x)$ 为等价无穷小的是 $(\qquad)$。
+
+$\begin{array}{l} ( {\rm A} ) \, \sin x^2 \qquad & ( {\rm B} ) \, \sin x \qquad & ( {\rm C} ) \, \ln(1 + x^2) \qquad & ( {\rm D} ) \, \ln \sqrt{1 + x^2} \end{array}$ 
+
+<br>
+
+###### (10)
+
+设函数 $y = f(x)$ 由参数方程 $\begin{cases} x = t^2 + 1 \\\\ y = 4t - t^2 \end{cases}, (t \geq 0)$ 确定，则计算极限
+
+$$
+\lim\limits_{n \to \infty} n \left[ f \left( \dfrac{2n+1}{n} \right) - 3 \right]
+$$
 
 
 
@@ -211,5 +230,41 @@ Y 是 $y'' + p(x)y' + q(x)y = 0$ 的解得充要条件是 $A + B + C = 0$ 。
 
 $\begin{array}{l} \text{原式} &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \int_0^2 \sqrt{ 4 - (xu)^2 } \, {\rm d}(xu) - 2x }{ \ln(1 + x^3) } \\\\     \text{令 } t=xu &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \int_0^{2x} \sqrt{ 4 - t^2 } \, {\rm d}t -2x }{x^3} \\\\      \text{洛必达} &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \sqrt{ 4 - 4x^2 } \cdot 2 - 2 }{3x^2} \\\\      &= 2 \lim\limits_{x \to 0} \dfrac{ \sqrt{ 1 - x^2 } - 1 }{3x^2} \\\\      &= 2 \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} (-x^2) }{ 3x^2 } \\\\      &= -\dfrac{1}{3} \end{array}$
 
+<br>
 
+#### 5、李林四套卷一
+
+<br>
+
+###### (4)
+
+$({\rm D})$。
+
+由 $y''+2y'+y = e^{3x}$ 得 
+
+$$
+\lim\limits_{x \to 0} y''(x) = \lim\limits_{x \to 0} \left[ e^{3x} -2y'(x) - y(x) \right] = 1
+$$ 
+
+故 
+
+$\begin{array}{l} \lim\limits_{x \to 0} \dfrac{ \ln \sqrt{1 + x^2} }{y(x)} &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \ln (1 + x^2) }{y(x)} = \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} x^2 }{y(x)} \\\\      &= \lim\limits_{x \to 0} \dfrac{x}{y'(x)} = \lim\limits_{x \to 0} \dfrac{1}{y''(x)} \\\\      &= 1 \end{array}$
+
+<br>
+
+###### (10)
+
+$({\rm 1})$。
+
+$$
+\lim\limits_{n \to \infty} \left[ f \left( \dfrac{2n+1}{n} \right) - 3 \right] = \lim\limits_{n \to \infty} \dfrac{ f \left( \dfrac{2n+1}{n} \right) - 3 }{ \dfrac{1}{n} }
+$$
+
+由已知条件，当 $x=2$ 时，$t=1$，$y=3$，故
+
+$$
+\lim\limits_{n \to \infty} \dfrac{ f \left( \dfrac{2n+1}{n} \right) - 3}{ \dfrac{1}{n} } = \lim\limits_{n \to \infty} \dfrac{ f \left( 2 + \dfrac{1}{n} \right) - f(2) }{ \dfrac{1}{n} } = f'(2)
+$$
+
+而 $\left. \dfrac{ {\rm d}y }{ {\rm d}x } \right|_{x=2} = \left. \dfrac{4 - 2t}{2t} \right|_{t=1} = 1$，所以 $f'(2) = 1$。
 
