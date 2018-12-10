@@ -105,7 +105,7 @@ $$
 
 $$
 y'' + py' + qy = e^{\alpha x}P_m(x) \qquad ( \, P_m(x) \text{ 为 } x \text{ 的 } m \text{ 次多项式 })
-$$ 
+$$
 
 <br>
 
@@ -113,7 +113,7 @@ $$
 
 $$
 y'' + py' + qy = e^{\alpha x} \left[ \, P_m(x) \cos \beta x + P_n(x) \sin \beta x \, \right]
-$$ 
+$$
 
 $y^* = e^{\alpha x}\left[ \, Q_{l1}(x) \cos \beta x + Q_{l2}(x) \sin \beta x \, \right] x^k, \qquad l1 = l2 = \max\{ m, \, n \}$ 
 
@@ -130,7 +130,7 @@ $y^* = e^{\alpha x}\left[ \, Q_{l1}(x) \cos \beta x + Q_{l2}(x) \sin \beta x \, 
 
 <br>
 
-## 、练习题
+## 四、练习题
 
 <br>
 
@@ -179,7 +179,7 @@ $$
 
 <br>
 
-## 、参考答案
+## 五、参考答案
 
 <br>
 
