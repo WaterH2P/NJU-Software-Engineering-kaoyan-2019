@@ -39,6 +39,21 @@ $\begin{array}{l} ( 1 + x )^\alpha = 1 + \alpha x + \dfrac{ a(a-1) }{2!} x^2 + \
 
 <br>
 
+#### 麦克劳林公式
+
+$\begin{array}{l} \sin x = x - \dfrac{1}{3!}x^3 + o(x^3) \\\\       \arcsin x = x + \dfrac{1}{3!}x^3 + o(x^3) \end{array}$
+
+$\begin{array}{l} \tan x = x + \dfrac{1}{3}x^3 + o(x^3) \\\\      \arctan x = x - \dfrac{1}{3}x^3 + o(x^3) \end{array}$
+
+
+$\begin{array}{l} \cos x = 1 - \dfrac{1}{2!}x^2 + \dfrac{1}{4!}x^4 + o(x^4) \end{array}$
+
+$\begin{array}{l} \ln(1 + x) = x - \dfrac{x^2}{2} + \dfrac{x^3}{3} - \dfrac{x^4}{4} + o(x^4) \\\\      \dfrac{1}{1 - x} = 1 + x + x^2 + x^3 + o(x^3), \quad (| x| < 1) \end{array}$
+
+$\begin{array}{l} e^x = 1 + x + \dfrac{x^2}{2!} + \dfrac{x^3}{3!} + o(x^3)  \end{array}$
+
+<br>
+
 ## 导数计算
 
 <br>

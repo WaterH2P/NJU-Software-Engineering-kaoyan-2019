@@ -1,7 +1,7 @@
 ---
 title: 高数 · 题
 date: 2018-8-30
-updated: 2018-12-9
+updated: 2018-12-14
 tags: [maths,高数,kaoyan]
 mathjax: true
 
@@ -109,9 +109,41 @@ $$
 \lim\limits_{n \to \infty} n \left[ f \left( \dfrac{2n+1}{n} \right) - 3 \right]
 $$
 
+<br>
 
+#### 6、2013 年
 
+<br>
 
+###### 3
+
+设函数 $f(x) = \begin{cases} \sin x, & 0 \leq x < \pi \\\\ 2, & \pi \leq x \leq 2 \pi \end{cases}$，$F(x) = \int_0^x f(t) \, {\rm d}t$，则 $(\quad)$
+
+$\begin{array}{l} ( {\rm A} ) \, x=\pi \text{ 是函数 } F(x) \text{ 的跳跃间断点 } \qquad & ( {\rm B} ) \, x=\pi \text{ 是函数 } F(x) \text{ 的可去间断点 } \\\\ ( {\rm C} ) \, F(x) \text{ 在 } x=\pi \text{ 处连续但不可导 } \qquad & ( {\rm D} ) \, F(x) \text{ 在 } x=\pi \text{ 处可导 } \end{array}$ 
+
+<br>
+
+###### 7
+
+设 $A, \, B, \, C$ 均为 $n$ 阶矩阵，若 $AB = C$，且 $B$ 可逆，则
+
+$\begin{array}{l} ( {\rm A} ) \, \text{ 矩阵 } C \text{ 的行向量组与矩阵 } A \text{ 的行向量组等价 } \\\\ ( {\rm B} ) \, \text{ 矩阵 } C \text{ 的列向量组与矩阵 } A \text{ 的列向量组等价 } \\\\ ( {\rm C} ) \, \text{ 矩阵 } C \text{ 的行向量组与矩阵 } B \text{ 的行向量组等价 } \\\\ ( {\rm D} ) \, \text{ 矩阵 } C \text{ 的列向量组与矩阵 } B \text{ 的列向量组等价 } \end{array}$ 
+
+<br>
+
+###### 18（二）
+
+设奇函数 $f(x)$ 在 $[-1, \, 1]$ 上具有二阶导数，且 $f(1) = 1$。存在 $\xi \in (0, \, 1)$，使得 $f'(\xi) = 1$。
+
+证明：存在 $\eta \in (-1, \, 1)$，使得 $f''(\eta) + f'(\eta) = 1$。
+
+<br>
+
+###### 21
+
+设曲线 $L$ 的方程为 $y = \dfrac{1}{4} x^2 - \dfrac{1}{2} \ln x \quad (1 \leq x \leq e)$。
+
+设 $D$ 是由曲线 $L$，直线 $x=1, \; x=3$ 及 $x$ 轴所围平面图形，求 $D$ 的形心的横坐标。
 
 
 
@@ -268,3 +300,68 @@ $$
 
 而 $\left. \dfrac{ {\rm d}y }{ {\rm d}x } \right|_{x=2} = \left. \dfrac{4 - 2t}{2t} \right|_{t=1} = 1$，所以 $f'(2) = 1$。
 
+<br>
+
+#### 6、2013 年
+
+<br>
+
+###### 3
+
+$({\rm C})$。
+
+$\begin{array}{l} F(x) &= \begin{cases} \int_0^x \sin t \, {\rm d}t, & 0 \leq x < \pi \\\\ \int_0^\pi \sin t \, {\rm d}t + \int_\pi^x 2 \, {\rm d}t, & \pi \leq x \leq 2 \pi \end{cases} \\\\      &= \begin{cases} 1 - \cos x, & 0 \leq x < \pi \\\\ 2 + 2(x - \pi), & \pi \leq x \leq 2 \pi \end{cases} \end{array}$ 
+
+$\lim\limits_{x \to \pi^-} F(x) = \lim\limits_{x \to \pi^-}(1 - \cos x) = 2$ 
+
+$\lim\limits_{x \to \pi^+} F(x) = 2 + \lim\limits_{x \to \pi^+}2(x - \pi) = 2$ 
+
+则 $F(x)$ 在 $x = \pi$ 处连续
+
+$\begin{array}{l} F'_{\_}(\pi) &= \lim\limits_{x \to \pi^-} \dfrac{ 1 - \cos x - 2 }{ x - \pi } \\\\      &= \lim\limits_{x \to \pi^-} \dfrac{\sin x}{1} \\\\      &= 0 \end{array}$ 
+
+$F'_{+}(\pi) = \lim\limits_{x \to \pi^+} \dfrac{ 2 + 2(x - \pi) - 2 }{ x - \pi } = 2$ 
+
+故 $F(x)$ 在 $x=\pi$ 处不可导
+ 
+<br>
+
+###### 7
+
+$({\rm B})$。
+
+对矩阵 $A, \, C$ 分别按列分块，记 $A = \begin{pmatrix} \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_n \end{pmatrix}$，$C = \begin{pmatrix} \gamma_1, \, \gamma_2, \, \cdots, \, \gamma_n \end{pmatrix}$。
+
+由 $AB = C$ 有
+
+$$
+\begin{pmatrix} \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_n \end{pmatrix} \begin{bmatrix} b_{11} & b_{12} & \cdots & b_{1n} \\\\ b_{21} & b_{22} & \cdots & b_{2n} \\\\ \vdots & \vdots & & \vdots \\\\ b_{n1} & b_{n2} & \cdots & b_{nn} \end{bmatrix} = \begin{pmatrix} \gamma_1, \, \gamma_2, \, \cdots, \, \gamma_n \end{pmatrix}
+$$
+
+可见 $\begin{cases} \gamma_1 = b_{11} \alpha_1 + b_{21} \alpha_2 + \cdots + b_{n1} \alpha_n \\\\ \gamma_2 = b_{12} \alpha_1 + b_{22} \alpha_2 + \cdots + b_{n2} \alpha_n \\\\ \cdots \cdots \\\\ \gamma_n = b_{1n} \alpha_1 + b_{2n} \alpha_2 + \cdots + b_{nn} \alpha_n \end{cases}$ 
+
+即 $C$ 的列向量可以由 $A$ 的列向量线性表出。
+
+因为 $B$ 可逆，有 $CB^{-1} = A$。
+
+类似地，$A$ 的列向量组也可以由 $C$ 的列向量组线性表出。
+
+<br>
+
+###### 18（二）
+
+因为 $f(x)$ 是奇函数，所以 $f'(x)$ 是偶函数，故 $f'(-\xi) = f'(\xi) = 1$。
+
+令 $F(X) = [ f'(x) - 1 ] e^x$，则 $F(x)$ 可导，且 $F(-\xi) = F(\xi) = 0$。
+
+根据罗尔定理，存在 $\eta \in (-\xi, \, \xi) \subset (-1, \, 1)$，使得 $F'(\eta) = 0$。
+
+由 $F'(\eta) = \left[ f''(\eta) + f'(\eta) - 1 \right] e^\eta$ 且 $e^\eta \not= 0$，得 $f''(\eta) + f'(\eta) = 1$。
+
+<br>
+
+###### 21
+
+$$
+\text{ 形心横坐标 } = \left. \iint\limits_D x \, {\rm d}x {\rm d}y \right/ \iint\limits_D \, {\rm d}x {\rm d}y
+$$
