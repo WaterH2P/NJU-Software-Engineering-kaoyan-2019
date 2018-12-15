@@ -73,13 +73,17 @@ $$
 
 <br>
 
-#### 4、八套卷二（12）
+#### 4、张宇八套卷（二）（12）
 
 设函数 $z = f(x, \, y) \, (xy \not= 0)$ 满足 $f(xy, \, \dfrac{y}{x}) = y^2 (x^2 - 1)$，则 ${\rm d}z =$ ________ 。
 
 <br>
 
-#### 5、李林四套卷二（15）
+#### 5、李林四套卷（二）
+
+<br>
+
+#### 15
 
 计算 
 
@@ -89,7 +93,7 @@ $$
 
 <br>
 
-#### 5、李林四套卷一
+#### 5、李林四套卷（一）
 
 <br>
 
@@ -145,8 +149,26 @@ $\begin{array}{l} ( {\rm A} ) \, \text{ 矩阵 } C \text{ 的行向量组与矩�
 
 设 $D$ 是由曲线 $L$，直线 $x=1, \; x=3$ 及 $x$ 轴所围平面图形，求 $D$ 的形心的横坐标。
 
+<br>
 
+#### 7、张宇四套卷（一）
 
+<br>
+
+###### 8
+
+$$
+\begin{array}{l}
+	g(y_1, \, y_2, \, y_3) &= y_2^2 + 2y_1 y_3 \\\\
+	&= y_2^2 + \dfrac{1}{2} (y_1 + y_2)^2 - \dfrac{1}{2} (y_1 - y_2)^2
+\end{array}
+$$
+
+<br>
+
+###### 10
+
+满足微分方程 $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ 2xy }{ x^2 + y^2 }$ 及初始条件 $y(2)=1$ 的特解 $y =$ ________。
 
 
 
@@ -250,7 +272,7 @@ Y 是 $y'' + p(x)y' + q(x)y = 0$ 的解得充要条件是 $A + B + C = 0$ 。
 
 <br>
 
-#### 4、八套卷二（12）
+#### 4、张宇八套卷（二）（12）
 
 令 $\begin{cases} u = xy \\\\ v = \dfrac{y}{x} \end{cases}$ $\implies$ $\begin{cases} x^2 = \dfrac{u}{v} \\\\ y^2 = uv \end{cases}$，则 $f(u, \, v) = uv(\dfrac{u}{v} - 1) = u^2 - uv$，即 $z = f(x, \, y) = x^2 - xy$。
 
@@ -258,13 +280,17 @@ Y 是 $y'' + p(x)y' + q(x)y = 0$ 的解得充要条件是 $A + B + C = 0$ 。
 
 <br>
 
-#### 5、李林四套卷二（15）
+#### 5、李林四套卷（二）
+
+<br>
+
+#### 15
 
 $\begin{array}{l} \text{原式} &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \int_0^2 \sqrt{ 4 - (xu)^2 } \, {\rm d}(xu) - 2x }{ \ln(1 + x^3) } \\\\     \text{令 } t=xu &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \int_0^{2x} \sqrt{ 4 - t^2 } \, {\rm d}t -2x }{x^3} \\\\      \text{洛必达} &= \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} \sqrt{ 4 - 4x^2 } \cdot 2 - 2 }{3x^2} \\\\      &= 2 \lim\limits_{x \to 0} \dfrac{ \sqrt{ 1 - x^2 } - 1 }{3x^2} \\\\      &= 2 \lim\limits_{x \to 0} \dfrac{ \dfrac{1}{2} (-x^2) }{ 3x^2 } \\\\      &= -\dfrac{1}{3} \end{array}$
 
 <br>
 
-#### 5、李林四套卷一
+#### 5、李林四套卷（一）
 
 <br>
 
@@ -365,3 +391,30 @@ $$
 $$
 \text{ 形心横坐标 } = \left. \iint\limits_D x \, {\rm d}x {\rm d}y \right/ \iint\limits_D \, {\rm d}x {\rm d}y
 $$
+
+<br>
+
+#### 7、张宇四套卷（一）
+
+<br>
+
+###### 10
+
+令 $y=ux$，有 $\dfrac{ {\rm d}y }{ {\rm d}x } = u + x \dfrac{ {\rm d}u }{ {\rm d}x }$，原方程化为
+
+$$
+u + x \dfrac{ {\rm d}u }{ {\rm d}x } = \dfrac{ 2u }{ 1 + u^2 }
+$$
+
+$\begin{array}{l} & u + x \dfrac{ {\rm d}u }{ {\rm d}x } = \dfrac{ 2u }{ 1 + u^2 } \\\\      \implies & x \dfrac{ {\rm d}u }{ {\rm d}x } = \dfrac{ u - u^3 }{ 1 + u^2 } \\\\      \implies & \dfrac{ 1 + u^2 }{ u(1-u^2) } \, {\rm d}u = \dfrac{ {\rm d}x }{x} \\\\      \implies & \left( \dfrac{1}{u} + \dfrac{2u}{ 1-u^2 } \right) {\rm d}u = \dfrac{ {\rm d}x }{x} \qquad & ⭐ \end{array}$ 
+
+两边积分得
+
+$\begin{array}{l} \implies & \ln \mid u \mid - \ln \mid 1 - u^2 \mid = \ln \mid Cx \mid \\\\      \implies & \dfrac{u}{1-u^2} = Cx \qquad & ⭐ \\\\      \implies & \dfrac{y}{x^2 - y^2} = C \end{array}$ 
+
+由于 $y(2) = 1$，所以 $C = \dfrac{1}{3}$ $\implies$ $y^2 + 3y = x^2$。
+
+$\begin{array}{l} \implies & y^2 + 3y + \dfrac{9}{4} = x^2 + \dfrac{9}{4} \\\\      \implies & (y + \dfrac{3}{2})^2 = x^2 + \dfrac{9}{4} \\\\      \implies & y = \pm \sqrt{ x^2 + \dfrac{9}{4} } - \dfrac{3}{2} \end{array}$ 
+
+由于 $y(2) = 1$，所以 $y = \sqrt{ x^2 + \dfrac{9}{4} } - \dfrac{3}{2}$。
+
