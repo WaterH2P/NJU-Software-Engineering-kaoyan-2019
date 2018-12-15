@@ -170,6 +170,33 @@ $$
 
 满足微分方程 $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ 2xy }{ x^2 + y^2 }$ 及初始条件 $y(2)=1$ 的特解 $y =$ ________。
 
+<br>
+
+###### 11
+
+计算
+
+$$
+I = \int_0^{1/3} {\rm d}y \int_0^{ \sqrt{y/3} } \sqrt{ x^2 + y } \, {\rm d}x + \int_{1/3}^1 {\rm d}y + \int_0^{ (1-y)/2 } \sqrt{ x^2 + y } \, {\rm d}x
+$$
+
+<br>
+
+###### 17
+
+设数列 $\{a_n\}$ 满足 $a_1 = 2, \, a_n = \dfrac{2n}{2n+1} a_{n-1} \, (n=2, \, 3, \, \cdots)$。
+
+$\lim\limits_{n \to \infty} a_n$ 存在，计算 $\lim\limits_{n \to \infty} a_n$。
+
+<br>
+
+###### 18
+
+设 $f(x)$ 在区间 $[-1, \, 1]$ 上具有二阶导数，证明：至少存在一点 $\xi \in (-1 ,\, 1)$，使得
+
+$$
+f(-1) - 2f(0) + f(1) = f''(\xi)
+$$
 
 
 
@@ -418,3 +445,54 @@ $\begin{array}{l} \implies & y^2 + 3y + \dfrac{9}{4} = x^2 + \dfrac{9}{4} \\\\  
 
 由于 $y(2) = 1$，所以 $y = \sqrt{ x^2 + \dfrac{9}{4} } - \dfrac{3}{2}$。
 
+<br>
+
+###### 11
+
+画出该累次积分的积分区域如图中阴影部分所示：
+
+$$
+D = \left\{ \; (x, \, y) \; \left| \; 3x^2 \leq y \leq 1 - 2x, \; 0 \leq x \leq \dfrac{1}{3} \right. \; \right\}
+$$
+
+<img src="./images/高数-题-张宇四套卷-11.jpg" width="50%">
+
+交换积分次序，得
+
+$\begin{array}{l} I &= \iint\limits_D \sqrt{x^2 + y} \, {\rm d} \sigma \\\\      &= \int_0^{1/3} {\rm d}x \int_{3x^2}^{1-2x} \sqrt{ x^2 + y } \, {\rm d}y \\\\      &= \left. \dfrac{2}{3} \int_0^{1/3} (x^2 + y)^{3/2} \right|_{y=3x^2}^{y=1-2x} \, {\rm d}x \\\\      &= \dfrac{2}{3} \int_0^{1/3} [ \, (x^2 - 2x + 1)^{3/2} - 8x^3 \, ] \, {\rm d}x \\\\      &= \dfrac{2}{3} \int_0^{1/3} [ \, (1-x)^3 - 8x^3 \, ] \, {\rm d}x \\\\      &= \left. \dfrac{2}{3} \left[ -\dfrac{ (1-x)^4 }{4} - 2x^4 \right] \right|_0^{1/3} \\\\ &= \dfrac{19}{162} \end{array}$ 
+
+<br>
+
+###### 17
+
+由 $a_n = \dfrac{2n}{2n+1}a_{n-1}$，递推下去，有
+
+$\begin{array}{l} a_n &= \dfrac{2n}{2n+1}a_{n-1} \\\\      &= \dfrac{2n}{2n+1} \cdot \dfrac{2n-2}{2n-1} a_{n-2} \\\\    &= \dfrac{2n}{2n+1} \cdot \dfrac{2n-2}{2n-1} \cdots \dfrac{4}{5} \cdot a_1 \end{array}$ 
+
+$\begin{array}{l} a_n^2 &= \dfrac{2n}{2n+1} \cdot \dfrac{2n}{2n+1} \cdot \dfrac{2n-2}{2n-1} \cdot \dfrac{2n-2}{2n-1} \cdots \dfrac{4}{5} \cdot \dfrac{4}{5} \cdot a_1 \cdot a_1 \qquad & (\ast) \end{array}$ 
+
+由于 $2k(2k+2)<(2k+1)^2$ $\implies$ $\dfrac{2k}{2k+1}<\dfrac{2k+1}{2k+2}$ 
+
+所以对于 $(\ast)$ 式，每隔一个因子放大，得
+
+$\begin{array}{l} a_n^2 &< \dfrac{2n+1}{2n+2} \cdot \dfrac{2n}{2n+1} \cdot \dfrac{2n-1}{2n} \cdot \dfrac{2n-2}{2n-1} \cdots \dfrac{5}{6} \cdot \dfrac{4}{5} \cdot a_1^2 \\\\      &= \dfrac{8}{n+1} \end{array}$ 
+
+$a_n < 2 \sqrt{ \dfrac{2}{n+1} }, \, (n=2, \, 3, \, \cdots)$ 
+
+从而由夹逼定理知 $\lim\limits_{n \to \infty} a_n = 0$。
+
+<br>
+
+###### 18
+
+令 $\varphi(x) = f(x+1) - f(x)$
+
+有 $\varphi(0) = f(1) - f(0)$，$\varphi(-1) = f(0) - f(-1)$。
+
+$\varphi(0) - \varphi(-1) = f(1) - 2f(0) + f(-1)$ 
+
+由拉格朗日中值定理，至少存在一点 $\xi_1 \in (-1, \, 0)$，使得
+
+$\begin{array}{l} \varphi(0) - \varphi(-1) &= \varphi'(\xi_1) [ \, 0 - (-1) \, ] = \varphi'(\xi_1) \\\\      &= f'(\xi_1+1) - f'(\xi_1) = f''(\xi)(\xi_1 + 1 - \xi_1) \\\\      &= f''(\xi), \quad \xi \in (\xi_1 \, \xi_1 + 1) \subset (-1, \, 1) \end{array}$ 
+
+所以至少存在一点 $\xi \in (-1, \, 1)$，使得 $f(1) - 2f(0) + f(-1) = f''(\xi)$。
