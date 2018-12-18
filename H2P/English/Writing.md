@@ -25,7 +25,7 @@ $\begin{array}{l} \end{array}$
 ㊀ ㊁ ㊂ ㊃ ㊄ ㊅ ㊆ ㊇ ㊈
 ️ -->
 
-## 一、
+## 一、概述
 
 <br>
 
@@ -111,9 +111,185 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
+###### 3、内容第三
+
+1. 不跑题
+
+<br>
+
 ## 、简单句
 
+<br>
 
+#### ㊀、被动句
+
+```
+当汉语中出现 我们、人们、大家、有人 等人称代词作为主语时都可以考虑写为被动
+
+本句型推荐写在
+（1）第一段最后一句话，引出文章中心时使用
+（2）第三段的第一句话，文章总结的时候使用
+但只在一处使用
+```
+
+Parents should be respected by us.
+
+- parents
+   - superiors
+   - the elderly
+   - senior citizens
+
+- should
+   - ought to
+   - be supposed to
+   - be obliged to
+
+- we / us / people
+   - human beings
+   - the public
+   - private individuals
+   - teenagers and youngsters （年轻人）
+   - undergraduates（大学生）
+   - youngsters on campus（大学生）
+   - children / kids
+   - offspring（子孙后代）
+   - descendants（子孙后代）
+   - businessman
+   - experts and professors
+   - all children and adults
+   - men and women in all walks（各行各业的男男女女）
+
+【我们不应该盲目追星】
+
+Celebrties are not supposed to be pursued by teenagers and youngsters.
+
+- not
+   - never
+   - by no means
+   - under no circumstances
+   - fail to
+
+Environmental contamination is thought very serious by an increasing amount of experts and professors.
+
+- think
+   - argue
+   - presume
+   - assert
+   - cling to the perspective that
+
+- very
+   - exceedingly
+   - outstandingly
+   - extraordinarily
+
+- serious
+   - grave
+   - severe
+   - fearful
+   - be of great severity
+
+<br>
+
+#### ㊁、there be 句型
+
+there exist / seem / remain
+
+```
+本句型推荐写在
+（1）第二段的第一句话，引出原因分析时使用
+（2）第三段的最后一句话，喊口号时使用
+```
+
+There exist many reasons explaining my idea.
+
+- many
+   - a sea of
+   - a train of
+   - an army of
+   - immense amounts of
+   - plentiful
+
+- reason
+   - cause
+   - factor
+   - element
+
+- explain
+   - account for
+   - contribute to
+   - be responsible for
+
+- idea
+   - viewpoint
+   - perspective
+
+<br>
+
+#### ㊂、比较结构
+
+<br>
+
+###### 1、as...as...
+
+```
+只要文中出现 adj/adv 的地方
+
+本句型推荐写在
+（1）第一段的最后一句话，写出文章中心时使用
+（2）第三段的第一句话，文章总结时使用
+```
+
+She is as beautiful as a red red rose, which manages to take away the breath of a sea of children and adults.
+
+He is as ugly as a standing toad, which ...
+
+- be
+   - look / feel / appear / seem
+   - keep / remain
+   - become / get
+   - prove
+
+- beautiful
+   - graceful
+   - elegant
+   - attractive
+   - charming
+   - gorgeous
+
+Confidence proves as important as sunshine, which plays an essential role in the normal growth of all creatures.
+
+- important
+   - fundamental
+   - indispensable
+   - significant
+   - play a key role in sth
+   - be of great importance
+
+Sth becomes as grave as AIDS, which has threatened the health of patients or taken away their lives.
+
+```
+没有特指的一个人就用 one，没有特指的多数人就用 those。
+```
+
+<br>
+
+###### 2、the more ... the more ...
+
+the + adj/adv 比较级 + 句子，the + adj/adv 比较级 + 句子
+   - 主句用一般将来时，从句用一般现在时
+
+```
+本句型推荐写在
+（1）文章第二段，分析原因的时候使用
+```
+
+The higher one ascends, the farther he will overlook.
+
+The more diligent one keeps, the more easily he will achieve glories.
+
+The harder all children and adults remian, the more fortunate they will become.
+
+The more frequently cultures are exchanged, the more rapidly Chinese economy will develop.
 
 <br>
 
@@ -122,6 +298,46 @@ $\begin{array}{l} \end{array}$
 <br>
 
 #### ㊀、and / but
+
+```
+本句型推荐写在
+（1）作文第一段，描述【一幅图、两个主体、两个动作】时使用
+（2）作文第一段，描述【两幅图】时使用
+```
+
+- and
+   - likewise / similarly
+   - in the meanwhile
+
+- but
+   - by contrast,
+   - unfortunately
+   - nevertheless
+
+```
+描述图画的分类
+1. 一幅图
+   （1）一个主体，两个动作
+   （2）两个主体，两个动作
+2. 两幅图
+```
+
+```
+在描述图画时，除非有明显的过去的时间，描述图画都用现在进行时。
+
+在描述图表时，如果没有明确的现在的时间，就用一般过去时。
+```
+
+In the picture, the goal keeper is imaging himself exceedingly small, on the contray, the player is assuming his rival as big as a hill.
+
+In the former picture, the flower in the greenhouse is growing healthily, conversely, in the latter one, it is dying.
+
+- picture
+   - cartoon
+   - drawing
+   - painting
+   - caricature
+   - photograph
 
 <br>
 
