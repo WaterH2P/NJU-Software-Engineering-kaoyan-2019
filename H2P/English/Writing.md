@@ -117,7 +117,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-## 、简单句
+## 二、简单句
 
 <br>
 
@@ -293,7 +293,7 @@ The more frequently cultures are exchanged, the more rapidly Chinese economy wil
 
 <br>
 
-## 、并列句
+## 三、并列句
 
 <br>
 
@@ -371,7 +371,7 @@ Cooperation not only enables all children and adults to make more intimate frien
 
 <br>
 
-## 、复合句
+## 四、复合句
 
 <br>
 
@@ -453,7 +453,7 @@ The evidence that farmers can enjoy high-quality life manifests that most of the
 
 <br>
 
-#### ㊂、定于和定语从句
+#### ㊂、定语和定语从句
 
 <br>
 
@@ -675,7 +675,7 @@ The hotpot delicious as well as healthy, smoking in the center of the vivid cart
 
 <br>
 
-## 、英语的特殊结构
+## 五、英语的特殊结构
 
 <br>
 
@@ -760,3 +760,646 @@ Sth 很严重
 ```
 本句型推荐写在第一段的最后一句话，引出文章中心的时候使用；或者是第三段的第一句话，文章总结的时候使用。
 ```
+
+<br>
+
+###### 2、排比
+
+```
+本句型推荐写在第三段的最后一句话，喊口号的时候使用
+```
+
+Action is supposed to be adopted quickly, effectively and actively.
+
+<br>
+
+#### ㊄、虚拟语气
+
+<br>
+
+###### 1、if 引导的虚拟语气
+
+```
+如何把一个不虚拟的句子变成虚拟语气，只需要把已经写好的句子变成过去式。
+
+本句型推荐写在作文
+（1）第二段的最后一句话，反面论证的时候使用
+（2）第三段的第一句话，文章总结的时候使用
+```
+
+如果你要远行， 我会掩上所有的窗户。
+
+- If you travel to a long distance, I will close all my windows.
+
+- If you traveled to a long distance, I would close all my windows.
+
+If every one of teenager and youngster abandoned himself to surfing on the Internet, he would pay a heavy price in the near future.
+
+- 沉溺于
+
+   - be indulged in
+
+   - be addicted to
+
+   - abandon onself to doing
+
+<br>
+
+###### 2、从句用 should 表示虚拟
+
+It is imperative / essential / urgent that
+
+```
+本句型推荐写在作文的第三段，具体措施的时候使用
+```
+
+It is urgent that kids should be educated / inspired to do sth （中心词）
+
+<br>
+
+#### ㊅、倒装
+
+把一句话写成一般疑问句的形式
+
+<br>
+
+###### 1、否定词放在句首用到装
+
+我从来不是一个彪悍外向的女人
+
+- I am never a woman tough and outgoing.
+
+   - Never am I a woman tough and outgoing.
+
+他不但看起来很贫穷，而且事实上他的内心也很贫穷。
+
+- He not only looks poor but also in fact is poor in his mind.
+
+   - Not only does he look poor but also in fact is poor in his mind.
+
+Respecting parents keeps not only a Chinese conventional virtue but also proves the duty of their offspring.
+
+- Not only does respecting parents keep a Chinese conventional virtue but also proves the duty of their offspring.
+
+<br>
+
+###### 2、so ... that ... 倒装
+
+```
+把 so 引导的部分放在句首
+```
+
+My maom is kind that she will ...
+
+- So kind is my mom that ...
+
+Sth keeps so significant / fearful that the issue should have been brought into the limelight(聚光灯).
+
+- So significant / fearful does sth keep that the issue should have been brought into the limelight.
+
+<br>
+
+###### 3、only + 状语的倒装
+
+只有通过采取这些措施，这个问题才能得到改善。
+
+- Only by taking those action can the issue be improved a lot.
+
+只有这个问题得到改善，人们才能安居乐业。
+
+- Only when the issue can be improved a lot can the common lead a happy and comfortable life.
+
+<br>
+
+## 六、段落
+
+<br>
+
+### （一）段落的论证方式
+
+也就是写作无话可说的时候怎么办
+
+<br>
+
+#### ㊀、定义和解释
+
+- 第一个原因分析
+
+   - 中心词 + is + 具体情况 + which means that + 三个并列的简单句（主语一致） + when 引导的时间状语从句
+
+      - 具体情况
+
+            - a severe global issue
+            - a Chinese conventional virtue
+            - a social pervasive trend
+            - an active / negative mentality
+            - a hot social topic
+
+   - 什么是美女？
+
+      - Beauty is a woman
+      - who has big eyes
+      - who has an attractive figure
+   
+   - 什么叫追星？
+
+      - Pursuing stars is a social trend which means that we listen to their songs, we buy theirs CDs and we imitate their hairstyle when we have passion for them.
+      
+         - 排比句主语尽量一致
+
+   - 什么叫孝敬父母
+
+      - Supporting the elderly is a Chinese conventional virtue which means that we cook for them, we buy gifts for them and we wash feet for them when they becoming gradually old.
+
+<br>
+
+#### ㊁、统计和事实
+
+- In line with the current survey by (the Chinese academy of social science) / (the department of social science in ** University), an increasing amount of 人 habor the idea that + 文章中心句
+
+- Officical figures released by the ministry of transportation / education show that ...
+
+<br>
+
+#### ㊂、引用名人名言
+
+- Once, these seemed a writer who has gained great reputation in ** named ** stating that + 推荐句型
+
+   - 推荐句型（五选一）
+
+      - 比喻
+      - as ... as ...
+      - the more ... the more ...
+      - so ... that ... （倒装）
+      - if 引导的虚拟语气
+
+<br>
+
+#### ㊃、举例
+
+作文举例时需要注意：
+
+1. 通常都写为一般过去式
+
+2. 注意逻辑关键词的正确使用
+
+3. 所有写不来的单词都写成自己会的词汇
+
+<br>
+
+###### 1、举小例子
+
+```
+such as + 三个名词
+
+所有的复数名词的后面都可以举小例子
+```
+
+- I love reading masterpieces（名著） such as gone with the wind, pride and prejudice.
+
+
+<br>
+
+###### 2、大例子
+
+```
+for example
+```
+
+- Although so abundant cases can support my simple view, the following one is most favorable.
+
+- Such stimulating / less impressive cases / stories are not rare in our daily life.
+
+爱心就像一盏灯，在越黑暗的地方越闪光。
+
+- For example, I, the other day, had a fever, unexpectedly, no relatives or roommates took care of me. At that moment, a teacher entered to give me some pills. At last, I recovered.
+
+<br>
+
+#### ㊄、其他方式
+
+除了以上的四种论证方式，也可以用一下的句型来写原因分析。
+
+1. the more ... the more ...
+
+2. not only ... but also ...
+
+3. the evidence
+
+4. although
+
+5. if 引导的虚拟语气
+
+如果某个原因分析写出来比较短，就加【which 引导的非限制性定语从句】或【万能状语】把它拉长。
+
+```
+上面四种论证方式和五种其他方式
+（1）从四种论证中选择一个，如果是【定义和解释】就作为第一个原因分析，其他的就作为第二个原因分析
+（2）从五种其他方式中选择两个
+```
+
+<br>
+
+## 七、文章
+
+<br>
+
+#### ㊀、图画作文
+
+<br>
+
+###### 1、第一段
+
+【描述图画 + 中心总结】（三到四句话）
+
+- 第一第二句话
+
+   - 用主语从句引出描述图画
+         
+      - what is obvious is that
+
+   1. 一幅图、一个主体、两个动作
+
+      - In the easy and simple cartoon, sb（定）, doing sth1 次要动作（定、状）, is doing sth2（主要动作）（定、状）
+
+   2. 一幅图、两个主体、两个动作
+
+      - In the easy and simple cartoon, sb1（定）is doing sth1 次要动作（定、状）; and/but sb2 （定）is doing sth2（定 / 状）
+
+   3. 两幅图
+
+      - In the former picture, sb1（定）is doing sth1; and/but in the latter one, sb2（定）is doing sth2.
+
+- 第三句话
+
+   - 引出文章中心的过渡语
+
+      - the message conveyed in the picture seems to
+
+- 第四句话：寓意表达
+
+   - 四种类型
+
+      - We should do sth
+      - We should never do sth
+      - Sth is very important
+      - Sth is very serious
+
+   - 推荐句型
+
+      - as ... as ...
+      - 被动
+      - so ... that ...
+      - 比喻
+
+   - 加工
+
+      - 再用【插入语】、【双重否定】或者是【强调句型】对它稍作加工。
+
+- 范文
+
+```
+What looks beyond dispute is that in the easy and simple painting, graduates young, as well as ambitious, standing on the intersection of their life, are confronted with choices such as hunting for jobs and going abroad. The symbolic meaning of the picture is quite self-evident: options, to my knowledge, are claimed extraordinarily crucial under modern conditions
+```
+
+<br>
+
+###### 2、第二段
+
+【原因分析】（四句话）
+
+- 第一句话
+
+   - 引出原因分析的总述句
+
+   - 推荐句型
+
+      - There be 句型
+      - However, recognize the problem is the first step in finding solutions.
+      - 
+
+   - 加工
+
+      - 再用【插入语】、【双重否定】或者是【强调句型】对它稍作加工。
+
+- 二、三、四句话
+
+   - 具体的原因分析（9 选 3）
+
+   - 首先
+
+      - first and foremost
+      - What appears as the first reason is that
+
+   - 齐次
+
+      - in addition
+      - furthermore
+      - what is more
+
+   - 最后
+
+      - consequently
+      - at the last place
+      - as a consequence
+
+<br>
+
+###### 3、第三段
+
+【总结段】（四句话）
+
+- 第一句话
+
+   - 总结句
+
+      - in brief
+      - to sum up
+
+   - 推荐句型
+
+      - 被动
+      - as ... as ...
+      - so that ...
+      - 比喻
+      - if 引导的虚拟语气
+
+   - 再用【插入语】、【双重否定】或者是【强调句型】对它稍作加工。
+
+- 二、三句话（具体措施）
+
+   - 父母
+
+      - for one thing, it seems necessary that kids should be educated/inspired to do sth
+
+   - 个人
+
+      - for another, we can not have failed to do sth（准确）
+
+         - 一定要做
+
+- 第四句话
+
+   - 喊口号
+
+      - 总结法
+      - 建议法
+      - 反问法
+         
+         - Shouldn't we pay more attention to the issue of sth?
+
+<br>
+
+#### ㊁、图表作文
+
+描述时
+
+- 一幅画、一个主体，必须两个动作
+
+   - 取两个极端，忽略中间
+
+- 一幅图、两个主体
+
+<br>
+
+###### 1、第一段
+
+【描述图表 + 中心总结】
+
+- 第一二句话
+
+   - 用主语从句引出描述图表
+
+      - 只抓典型数据进行对立，中间的数据省略。
+      - 描述图表通常套用【一幅图、两个主体、两个动作】模板。
+
+- 第三句话
+
+   - 引出文章中心的过渡语（完全同图画作文）
+   
+- 第四句话
+
+   - 文章中心
+
+- 范文
+
+2011 年
+
+```
+What looks beyond dispute is that in the easy and simple chart, the amount of Chinese cars, form the year of 2008 to 2009, rocketed by 9 percent. On the contray, the quantity of cars made in Japan, in the meanwhile, shrank to 25 percent. The symbolic meaning of the graph seems that cars of China, to my knowledge, become popular in the market.
+```
+
+<br>
+
+###### 2、第二段
+
+【原因分析段】（完全同图画作文）
+
+- 增加
+
+   - augment
+      - agumented
+
+   - rocket
+      -  rocketed
+
+- 减少
+
+   - diminish
+      - diminished
+
+   - shrink
+      - shrank
+      - shrunken
+
+- 大幅度
+
+   - by a large margin
+   - by leaps and bounds
+
+- 慢慢地
+
+   - laxly
+   - by inches
+
+<br>
+
+###### 3、第三段
+
+【总结段】（完全同图画作文）
+
+<br>
+
+#### ㊂、公务书信
+
+<br>
+
+###### 1、称呼
+
+文中已给出
+
+- Dear + 文中已给出
+
+文中未给出
+
+- Dear Sir or Madam（单位）
+
+- Dear Mr president / professor / editor
+
+<br>
+
+###### 2、正文
+
+1. 第一段（自我介绍 + 写作目的）
+
+   - 自我介绍
+
+      - 文中已给出
+
+         - I am + 文中已给出
+      
+      - 文中未给出
+
+         - I am clerk in a university
+
+         - I am a senior from the departmant of Software Engineering / Physical Education in the/a university
+            - the 对内
+            - a 对外
+
+   - 写作目的
+
+      - I, to be frank（插入语）, am writing the letter in order to ...
+
+         - in order to 后面的内容文中一定已给出，只需要抄
+         
+2. 第二段
+
+   - 文中一定已经给出要求，按照要求来写
+
+   - 直接写出理由
+
+   - 模板
+
+      - 第一个原因分析
+         - 主语, to begin with, be so ... that ...
+      
+      - 第二个原因分析
+         - 连词连接两个并列句
+
+      - 第三个原因分析
+         - 主语从句
+
+   - 范文
+
+```
+The salary, to begin with, keeps so low that I fail to support my families. In addition, the world proves exceedingly extensive. Consequently, I desire to travel around. Last but not least, it has been widely accepted that + （简单句） the company is too far from my home.
+```
+
+3. 第三段（两句话）
+
+   - 文中已经作出要求
+
+      - 第一句话来写文中要求的内容
+      - 第二句话，表示感谢或期待回信
+
+   - 未给出要求
+      
+      - 表示感谢
+
+         - My thanks to you for your generous assistance are beyond words.
+         - Words fail me when I desire to express my sincere gratitude to you for your kind consideration of my requirement/application/complaint.
+      
+      - 期待回信
+
+         - I am looking forward to your answer
+
+<br>
+
+###### 3、落款
+
+- 右下角
+
+   - Yours Truly,
+   - 名称
+
+<br>
+
+#### ㊃、私人书信
+
+<br>
+
+###### 1、称呼
+
+- Dear + 文中已给出
+
+<br>
+
+###### 2、正文
+
+1. 第一段（问候语 + 写作目的）
+
+   - 问候语（随便写）
+
+   - 写作目的（完全同公务书信写作目的）
+
+2. 第二段（完全同公务书信）
+
+3. 第三段
+
+   - 祝福语
+   
+      - 未给出
+
+         - Please bring my best wishes to your family.
+         - I wish you good health and lots of happiness.
+         - I wish every success for your career/study in the future.
+
+   - 期待回信（完全同公务书信）
+
+<br>
+
+###### 3、落款
+
+（完全同公务书信）
+
+<br>
+
+#### ㊄、告示
+
+<br>
+
+###### 1、标题
+
+正中间写个【Notice】
+
+<br>
+
+###### 2、称呼（无）
+
+<br>
+
+###### 3、正文
+
+- 第一段（写作目的 + 具体论述）
+
+   - 写作目的
+
+      - We are to + 文中已给出
+      - First second third
+
+- 第二段（欢迎加入 + 联系方式）
+
+   - 欢迎加入
+
+      - welcome to join us
+      - we are waiting for your coming
+
+   - 联系方式
+
+      - if you intend to join us, please call xxx for us
+
+<br>
+
+###### 3、落款
+
+单位名称（文中已给出）
