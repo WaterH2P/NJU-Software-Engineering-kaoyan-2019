@@ -1,7 +1,7 @@
 ---
 title: 一元函数微分学
 date: 2018-8-2
-updated: 2018-11-2
+updated: 2018-12-20
 tags: [maths,高数,kaoyan]
 mathjax: true
 
@@ -14,52 +14,85 @@ real-date: 2018-9-26
 
 - $\lim\limits_{\Delta x \to 0} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$ 记为 $f'(x_0)$ ：（瞬时）变化率。
 
-  - $f $ 对 $x$ 的变化率：$\dfrac{ {\rm d} f}{ {\rm d} x} = f'_x$ 。
-  - $\begin{cases} \lim\limits_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\\\ \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases}$ 
+   - $f$ 对 $x$ 的变化率：$\dfrac{ {\rm d} f}{ {\rm d} x} = f'_x$ 。
+  
+   - $\begin{cases} \lim\limits_{\Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} & \to \text{增量式} \\\\ \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} & \to \text{差值式} \end{cases}$ 
+
 - 【注】
-  1. 【左右有别】
-    - $\lim\limits_{\Delta x \to 0^+} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'_+(x_0)$ 右导数
-    - $\lim\limits_{\Delta x \to 0^-} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'_-(x_0)$ 左导数
-    - **因此 $f'(x_0)$ 存在 $\iff$ $f'_-(x_0) = f'_+(x_0)$ 。** 
-      - 只有单侧极限，不能确定导数存在。
+  
+   1. 【左右有别】
+    
+      - $\lim\limits_{\Delta x \to 0^+} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'_+(x_0)$ 右导数
+    
+      - $\lim\limits_{\Delta x \to 0^-} \dfrac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'_-(x_0)$ 左导数
+    
+      - **因此 $f'(x_0)$ 存在 $\iff$ $f'_-(x_0) = f'_+(x_0)$ 。** 
+      
+         - 只有单侧极限，不能确定导数存在。
 
-  2. $\Delta x \to$ （广义化）🐶
-     - $f'(x_0) = \lim\limits_{🐶 \to 0}\dfrac{f(x_0 + 🐶) - f(x_0)}{🐶}$ 
-     - 三个 🐶 一摸一样（凑定义）
+  
+   2. $\Delta x \to$ （广义化）🐶
+     
+      - $f'(x_0) = \lim\limits_{🐶 \to 0}\dfrac{f(x_0 + 🐶) - f(x_0)}{🐶}$ 
+     
+      - 三个 🐶 一摸一样（凑定义）
 
-  3. 一静一动原则
+  
+   3. 一静一动原则
 
-     - 不可违反此原则
+      - 不可违反此原则
 
-     - $\lim\limits_{2 \Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0 - \Delta x)}{2 \Delta x} = f'(x_0)$ 就是典型错误
+      - $\lim\limits_{2 \Delta x \to 0}\dfrac{f(x_0 + \Delta x) - f(x_0 - \Delta x)}{2 \Delta x} = f'(x_0)$ 就是典型错误
 
-  4. 等价写法（换元法）
+   4. 等价写法（换元法）
 
-     - 令 $x_0 + \Delta x = x \implies \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} = f'(x_0)$ 。 
+      - 令 $x_0 + \Delta x = x \implies \lim\limits_{x \to x_0}\dfrac{f(x) - f(x_0)}{x - x_0} = f'(x_0)$ 。 
 
 - 例题
-  1. 下列函数中，在 $x = 0$ 处不可导的是 $( \text{ D } )$ 。【具体型】
-    - $\begin{array}{l} A. f(x) = |x| \sin |x| & B. f(x) = |x| \sin \sqrt{|x|} \\\\ C. f(x) = \cos |x| & D. f(x) = \cos \sqrt{|x|} \end{array}$ 
-    - 分析
-      - 只要见到 $f'(x_0)$ $\implies$ 先写导数定义。
-        - 当题目给出 $f(x)$ ，写【差值式】。
-        - 有界值 $\times $ 无穷小 = 无穷小
-  2. 设 $f(0) = 0$ ，以下极限存在能确定 $f(x)$ 在点 $x = 0$ 可导的是 $( \text{ B } )$ 。【抽象型】
-    - $\begin{array}{l} A. \lim\limits_{h \to 0}\dfrac{f(1 - \cos h)}{h^2} & B. \lim\limits_{h \to 0}\dfrac{f(1 - e^h)}{h} \\\\ C. \lim\limits_{h \to 0}\dfrac{f(h - \sin h)}{h^2} &  D. \lim\limits_{h \to 0}\dfrac{f(2h) - f(h)}{h}\end{array}$ 
-    - 分析
-      - 抽象型使用【增量式】
-      - $f'(0) = \lim\limits_{🐶 \to 0}\dfrac{f(0 + 🐶) - f(0)}{🐶}$ 
-      - $h \to 0$ 时，$1 - \cos h \to 0^+$ 。
-        - $\because \cos h \leq 1$ 
-        - 天生【单侧极限】
-      - $D$ 反例
-        - $f(x) = \begin{cases} 1, & x\not= 0 \\\\ 0, & x = 0 \end{cases}$ 
-      - $\begin{cases} f'(0) \cdot n = \exists & \implies f'(0) \, \exists \\\\ f'(0) \cdot \infty = \exists & \implies f'(0) \, \exists = 0 \\\\ f'(0) \cdot 0 = \exists & \not\implies f'(0) \, \exists \end{cases}$ 
-    - 【注】
-      - $🐶 \to 0$ 时，$\dfrac{|🐶|}{🐶}$ 有界，但 $\lim\limits_{🐶 \to 0}\dfrac{|🐶|}{🐶}$ 不存在。
-  3. 若 $f(x)$ 是可导的偶函数，证明 $f'(x)$ 的奇函数。【记】
-    - $\begin{array}{l}f'(x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(x + \Delta x) - f(x)}{\Delta x} \\\\ f'(-x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(-x + \Delta x) - f(-x)}{\Delta x} \\\\ & = \lim\limits_{\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{\Delta x} \\\\ & = -\lim\limits_{-\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{-\Delta x} \\\\ & = -f'(x) \end{array}$ 
-    - 若 $f(x)$ 是可导的奇函数，证明 $f'(x)$ 的偶函数。
+  
+   1. 下列函数中，在 $x = 0$ 处不可导的是 $( \text{ D } )$ 。【具体型】
+    
+      - $\begin{array}{l} A. f(x) = |x| \sin |x| & B. f(x) = |x| \sin \sqrt{|x|} \\\\ C. f(x) = \cos |x| & D. f(x) = \cos \sqrt{|x|} \end{array}$ 
+    
+      - 分析
+      
+         - 只要见到 $f'(x_0)$ $\implies$ 先写导数定义。
+        
+            - 当题目给出 $f(x)$ ，写【差值式】。
+        
+            - 有界值 $\times $ 无穷小 = 无穷小
+  
+   2. 设 $f(0) = 0$ ，以下极限存在能确定 $f(x)$ 在点 $x = 0$ 可导的是 $( \text{ B } )$ 。【抽象型】
+    
+      - $\begin{array}{l} A. \lim\limits_{h \to 0}\dfrac{f(1 - \cos h)}{h^2} & B. \lim\limits_{h \to 0}\dfrac{f(1 - e^h)}{h} \\\\ C. \lim\limits_{h \to 0}\dfrac{f(h - \sin h)}{h^2} &  D. \lim\limits_{h \to 0}\dfrac{f(2h) - f(h)}{h}\end{array}$ 
+    
+      - 分析
+      
+         - 抽象型使用【增量式】
+      
+         - $f'(0) = \lim\limits_{🐶 \to 0}\dfrac{f(0 + 🐶) - f(0)}{🐶}$ 
+      
+         - $h \to 0$ 时，$1 - \cos h \to 0^+$ 。
+        
+            - $\because \cos h \leq 1$ 
+        
+            - 天生【单侧极限】
+      
+         - $D$ 反例
+        
+            - $f(x) = \begin{cases} 1, & x\not= 0 \\\\ 0, & x = 0 \end{cases}$ 
+      
+         - $\begin{cases} f'(0) \cdot n = \exists & \implies f'(0) \, \exists \\\\ f'(0) \cdot \infty = \exists & \implies f'(0) \, \exists = 0 \\\\ f'(0) \cdot 0 = \exists & \not\implies f'(0) \, \exists \end{cases}$ 
+    
+      - 【注】
+      
+         - $🐶 \to 0$ 时，$\dfrac{|🐶|}{🐶}$ 有界，但 $\lim\limits_{🐶 \to 0}\dfrac{|🐶|}{🐶}$ 不存在。
+  
+   3. 若 $f(x)$ 是可导的偶函数，证明 $f'(x)$ 的奇函数。【记】
+    
+      - $\begin{array}{l}f'(x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(x + \Delta x) - f(x)}{\Delta x} \\\\ f'(-x) & = \lim\limits_{\Delta x \to 0} \dfrac{f(-x + \Delta x) - f(-x)}{\Delta x} \\\\ & = \lim\limits_{\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{\Delta x} \\\\ & = -\lim\limits_{-\Delta x \to 0} \dfrac{f(x+(-\Delta x) - f(x)}{-\Delta x} \\\\ & = -f'(x) \end{array}$ 
+    
+      - 若 $f(x)$ 是可导的奇函数，证明 $f'(x)$ 的偶函数。
 
 <br>
 
@@ -73,9 +106,7 @@ $\begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\\\ (\tan x)' = \sec
 
 $\begin{array}{l} (\arcsin x)' = \dfrac{1}{ \sqrt{1 - x^2} } & (\arccos x)' = - \dfrac{1}{ \sqrt{1 - x^2} } \\\\ (\arctan x)' = \dfrac{1}{1 + x^2} & ( {\rm arccot} x)' = - \dfrac{1}{1 + x^2} \end{array}$
 
-$\begin{array}{l} \left( \ln(x + \sqrt{x^2 + 1}) \right)' = \dfrac{1}{ \sqrt{x^2 + 1} } \end{array}$ 
-
-$\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2 - 1} } \end{array}$ 
+$\begin{array}{l} \left( \ln(x + \sqrt{x^2 \pm 1}) \right)' = \dfrac{1}{ \sqrt{x^2 \pm 1} } \end{array}$ 
 
 <br>
 
@@ -92,7 +123,9 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
 ###### 2、隐函数求导
 
 - 显函数：$y = f(x)$ ，隐函数：$F(x, y) = 0$ 。
+
 - 方法：在 $F(x, y) = 0$ 两边同时对 $x$ 求导，只需注意 $y = y(x)$ 即可（复合求导）。
+
 - 例题
    - 设 $y = y(x)$ 是由 $\sin xy = \ln \dfrac{x + e}{y} + 1$ 确定的隐函数，求 $y'(0)$ 和 $y''(0)$ 的值。
 
@@ -101,6 +134,7 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
 ###### 3、对数求导法
 
 - 方法：对于多项相乘、相除、开方、乘方得来的式子，先取对数再求导。
+
 - 例题
    - 设 $y = (\dfrac{a}{b})^x \cdot (\dfrac{b}{x})^a \cdot (\dfrac{x}{a})^b \quad (a>0, b>0)$ ，求 $y'$ 。
 
@@ -109,19 +143,33 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
 ###### 4、反函数求导
 
 - 注意写法即可
+
 - 例题
+   
    1. 设函数 $f(y)$ 的反函数 $f^{-1}(x)$ 及 $f'[f^{-1}(x)]$ 与 $f''[f^{-1}(x)]$ 都存在，且 $f'[f^{-1}(x)] \not= 0$ 。证明：$\dfrac{ {\rm d}^2 f^{-1}(x) }{ {\rm d} x^2 } = -\dfrac{ f''[f^{-1}(x)] }{ \{f'[f^{-1}(x)]\}^3 }$ 。
+      
       - $\because x = f(y) \implies y = f^{-1}(x), \quad \therefore \dfrac{ {\rm d}^2 f^{-1}(x) }{ {\rm d} x^2 } = \dfrac{ {\rm d}^2 y }{ {\rm d} x^2 }$ 。
+      
       - $x = f(y)$ 两边对 $x$ 求导，$1 = f'(y) \cdot \dfrac{ {\rm d} y }{ {\rm d} x } \implies \dfrac{ {\rm d} y }{ {\rm d} x } = \dfrac{1}{f'(y)}$ 。
+      
       - $\dfrac{ {\rm d}^2 y }{ {\rm d} x^2 } = \dfrac{ {\rm d} ( \dfrac{ {\rm d} y }{ {\rm d} x } ) }{ {\rm d} x }$ 
+      
       - 由于 $\dfrac{ {\rm d} y}{ {\rm d} x } = \dfrac{1}{f'(y)}$ 是关于 $y$ 的函数，所以 $\dfrac{ {\rm d} y}{ {\rm d} x }$ 只能对 $y$ 求导。
+      
       - $\begin{array}{l}\dfrac{ {\rm d}^2 y }{ {\rm d} x^2 } & = \dfrac{ {\rm d} ( \dfrac{ {\rm d} y }{ {\rm d} x } ) / {\rm d} y }{ {\rm d} x / {\rm d} y } = \dfrac{ {\rm d} ( \dfrac{1}{f'(y)} ) }{ {\rm d} y } \cdot \dfrac{ {\rm d} y }{ {\rm d} x } \\\\ & = -\dfrac{ f''(y) }{ [f'(y)]^2 } \cdot \dfrac{1}{f'(y)} \\\\ & = -\dfrac{ f''(y) }{ [f'(y)]^3 } =-\dfrac{ f''(f^{-1}(x)) }{ \{f'[f^{-1}(x)]\}^3 } \end{array}$ 
+   
    2. 求 $y = \dfrac{1}{2}\arctan \sqrt[4]{1 + x^4} + \ln\sqrt[4]{ \dfrac{ \sqrt[4]{1 + x^4} + 1 }{ \sqrt[4]{1 + x^4} - 1} }$ 的反函数的导数。
+      
       - $\dfrac{ {\rm d} y }{ {\rm d} x } = \dfrac{1}{ \dfrac{ {\rm d} x }{ {\rm d} y } } \implies y'_x = \dfrac{1}{x'_y}$ 
+      
       - 令 $u =  \sqrt[4]{1 + x^4}$ ，$y = \dfrac{1}{2} \arctan u + \ln \sqrt[4]{ \dfrac{u + 1}{u - 1} }$ 。
+      
       - $y = \dfrac{1}{2} \arctan u + \dfrac{1}{4}( \ln (u + 1) - \ln(u - 1) )$ 
+      
       - $y'_x = [\dfrac{1}{2} \cdot \dfrac{1}{u^2 + 1} + \dfrac{1}{4}(\dfrac{1}{u + 1} - \dfrac{1}{u - 1})] \cdot u'_x = - \dfrac{u'_x}{u^4 - 1}$ 
+      
       - 将 $u = \sqrt[4]{1 + x^4}$ 代入得： $y'_x = - \dfrac{ \frac{1}{4} (1 + x^4)^{ -\frac{3}{4} } \cdot 4x^3 }{1 + x^4 - 1} = -\dfrac{1}{ x(1 + x^4)^{ \frac{3}{4} } }$ 。
+      
       - 所以 $x'_y = \dfrac{1}{y'_x} = -x(1 + x^4)^{ \frac{3}{4} }$ 。
 
 <br>
@@ -129,14 +177,23 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
 ###### 5、参数方程求导
 
 - $\begin{cases} x = x(t) \\\\ y = y(t) \end{cases}$ ，$t$ 为参数
+
 - $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ {\rm d}y / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{y'_t}{x'_t}$ ，类似于反函数求导，是谁的函数就对谁求导，缺什么补什么。
+
 - 例题
+   
    1. 设函数 $y = f(x)$ 由参数方程 $\begin{cases} x = 2t + t^2 \\\\ y = \varphi(t) \end{cases} , (t > -1)$ 所确定，其中 $\varphi(t)$ 具有二阶导数，且已知 $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{3}{4(1 + t)}$ ，证明：函数 $\varphi(t)$ 满足方程 $\varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
+      
       - $\dfrac{ {\rm d}y }{ {\rm d}x } = \dfrac{ {\rm d}y / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{\varphi'(t)}{2 + 2t}$ 
+      
       - $\dfrac{ {\rm d}^2 y }{ {\rm d}x^2 } = \dfrac{ {\rm d}(\dfrac{ {\rm d}y }{ {\rm d}x }) }{ {\rm d}x } = \dfrac{ {\rm d}(\dfrac{ {\rm d}y }{ {\rm d}x }) / {\rm d}t }{ {\rm d}x / {\rm d}t } = \dfrac{ \dfrac{ \varphi''(t)(2 + 2t) - 2\varphi'(t) }{(2 + 2t)^2} }{2 + 2t}$ 
+      
       - $\therefore \dfrac{ \varphi''(t)(2 + 2t) - 2\varphi'(t) }{(2 + 2t)^3 } = \dfrac{ \varphi''(t)(1 + 1t) - \varphi'(t) }{4(1 + t)^3 } = \dfrac{3}{4(1 + t)}$ 
+      
       - $\implies \varphi''(t) - \dfrac{1}{1 + t} \varphi'(t) = 3(1 + t)$ 。
-   2. 设 $\begin{cases} x = t + e^t \\\\ y = \sin t \end{cases}$ ，则 $\left. \dfrac{ {\rm d}^2 y}{ {\rm d}x^2 } \right|_{t = 0} =$ \_\_\_\_\_\_。
+   
+   2. 设 $\begin{cases} x = t + e^t \\\\ y = \sin t \end{cases}$ ，则 $\left. \dfrac{ {\rm d}^2 y}{ {\rm d}x^2 } \right|_{t = 0} =$ ________。
+      
       - $-\dfrac{1}{8}$ 
 
 <br>
@@ -144,16 +201,27 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
 ###### 6、高阶导数
 
 - $\text{高阶导数} \begin{cases} \text{莱布尼兹公式} \\\\ \text{找规律用数学归纳法} \\\\ \text{展开式法} \end{cases}$ 
+
 - 莱布尼兹公式
+   
    - $\begin{cases} (u \pm v)^{(n)} & = u^{(n)} \pm v^{(n)} \\\\ (uv)^{(n)} & = \sum\limits_{k=0}^{n} C_n^k u^{(n - k)} v^{(k)} \\\\ & = u^{(n)}v + n \cdot u^{(n - 1)}v' + \dfrac{n(n - 1)}{2} \cdot u^{(n - 2)}v'' + ... + uv^{(n)} \end{cases}$ 
+   
    - $(a^x)^{(n)} = a^x(\ln a)^n, \quad (e^x)^{(n)} = e^x$ 
+   
    - $(\sin kx)^{(n)} = k^n \sin( kx + \frac{\pi}{2} \cdot n  )$ 
+   
    - $(\cos kx)^{(n)} = k^n \cos( kx + \frac{\pi}{2} \cdot n  )$ 
+   
    - $(\ln x)^{(n)} = (-1)^{(n - 1)} \cdot \dfrac{(n - 1)!}{x^n}, (x > 0)$ 
+   
    - $[\ln(x + 1)]^{(n)} = (-1)^{(n - 1)} \cdot \dfrac{(n - 1)!}{(1 + x)^n}, (x > -1)$ 
+   
    - $(\dfrac{1}{x + a})^{(n)} = (-1)^n \cdot \dfrac{n!}{ (x + a)^{(n + 1)} }$ 
+
 - 例题
-   1. $y = x^2 \sin 2x$ ，求 $y^{(50)}$ 。
+   
+   - $y = x^2 \sin 2x$ ，求 $y^{(50)}$ 。
+      
       - $\begin{array}{l} y^{(50)} & = x^2 \cdot (\sin 2x)^{(50)} + 50(x^2)' \cdot (\sin 2x)^{(49)} + \dfrac{50 \cdot 49}{2}(x^2)'' \cdot (\sin 2x)^{(48)} \\\\ & = -2^{50}x^2 \sin 2x + 50 \cdot 2^{50}x \cos 2x + 50 \cdot 49 \cdot 2^{48} \sin 2x \end{array}$ 
 
 <br>
@@ -166,53 +234,81 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
 
 <br>
 
-###### 1、涉及到 $f(x)$ 的定理
+###### 1、涉及到 f(x) 的定理
 
 - 设 $f(x)$ 在 $[a,b]$ 连续，则：
    1. 有界性定理
-      - $\exists K > 0$ ，使 $|f(x)| \leq K$ ，$\forall x \in [a, b]$ 。
+      - $\exists \, K > 0$ ，使 $\mid f(x) \mid \leq K$ ，$\forall x \in [a, b]$ 。
       - 连续函数在闭区间上有界。
    2. **最值定理**
-      - $m \leq f(x) \leq M$ ，其中 $m$ ，$M$ 分别为 $f(x)$ 在 $[a, b]$ 上的最小、最大值。
+      - $m \leq f(x) \leq M$ ，其中 $m, \, M$ 分别为 $f(x)$ 在 $[a, b]$ 上的最小、最大值。
    3. **介值定理**
-      - 当 $m \leq \mu \leq M$ 时，则 $\exists \xi \in [a, b]$ ，使 $f(\xi) = \mu$ 。
+      - 当 $m \leq \mu \leq M$ 时，则 $\exists \, \xi \in [a, b]$ ，使 $f(\xi) = \mu$ 。
    4. **零点定理**
       - 当在 $f(a) \cdot f(b) < 0$ 时，则 $\exists \, \xi \in (a, b)$ ，使 $f(\xi) = 0$ 。
       - （方程的根）
 
 <br>
 
-###### 2、涉及 $f'(x)$ 的定理
+###### 2、涉及 f'(x) 的定理
 
 5. 费马定理
-   - 设 $f(x)$ 在 $x = x_0$ 处 $\begin{cases} 1) \text{可导} \\\\ 2) \text{取极值} \end{cases} \implies f'(x_0) = 0$ 。
+   
+   - 设 $f(x)$ 在 $x = x_0$ 处 $\begin{cases} (1) & \text{可导} \\\\ (2) & \text{取极值} \end{cases} \implies f'(x_0) = 0$ 。
+   
    - 《费马大定理》
+   
    - 证明见《高数 18 讲》
+
 6. **罗尔定理**
 
-   -  设 $f(x)$ 满足以下三条 $\begin{cases} 1) \; [a, b] \text{ 连续} \\\\ 2) \; (a, b) \text{ 内可导} \\\\ 3) \; f(a) = f(b) \end{cases} \implies \exists \, \xi \in (a, b) \text{ 使 } f'(\xi) = 0$ 。
+   -  设 $f(x)$ 满足以下三条 $\begin{cases} (1) & [a, b] \text{ 连续} \\\\ (2) & (a, b) \text{ 内可导} \\\\ (3) & f(a) = f(b) \end{cases}$ $\implies$ $\exists \, \xi \in (a, b) \text{ 使 } f'(\xi) = 0$ 。
+
 7. 拉格朗日中值定理
-   - 设 $f(x)$ 满足 $\begin{cases}  1) [a, b] \text{上连续} \\\\ 2) (a, b) \text{内可导}\end{cases}$ ，则 $\exists \xi \in (a, b)$ ，使 $f'(\xi) = \dfrac{f(b) - f(a)}{b - a}$ 。
+   
+   - 设 $f(x)$ 满足 $\begin{cases} (1) & [a, b] \text{上连续} \\\\ (2) & (a, b) \text{内可导}\end{cases}$ ，则 $\exists \, \xi \in (a, b)$ ，使 $f'(\xi) = \dfrac{f(b) - f(a)}{b - a}$ 。
+      
       - 若 $f(b) = f(a)$ ，则 $f'(\xi) = 0$ ，即为罗尔定理。
+
 8. 柯西中值定理
-   - 设 $f(x)$ ， $g(x)$ 满足 $\begin{cases} 1) \; [a, b] \text{连续} \\\\ 2) \; (a, b) \text{内可导} \\\\ g'(x) \not= 0 \end{cases}$ ，则 $\dfrac{f'(\xi)}{g'(\xi)} = \dfrac{f(b) - f(a)}{g(b) - g(a)}$ 。
+   
+   - 设 $f(x), \, g(x)$ 满足 $\begin{cases} (1) & [a, b] \text{连续} \\\\ (2) & (a, b) \text{内可导} \\\\ (3) & g'(x) \not= 0 \end{cases}$ ，则 $\dfrac{f'(\xi)}{g'(\xi)} = \dfrac{f(b) - f(a)}{g(b) - g(a)}$ 。
+   
    - 若取 $g(x) = x \implies \dfrac{f(b) - f(a)}{b - a} = \dfrac{f'(\xi)}{1}$ ，即为拉格朗日中值定理。
+      
       - 柯西中值定理 $\implies$ 拉格朗日中值定理 $\implies$ 罗尔定理
+
 9. 泰勒定理（泰勒公式）
-   - 任何可导函数 $f(x) = \sum a_n x^n $ 。
+   
+   - 任何可导函数 $f(x) = \sum a_n x^n$ 。
+   
    1. 带拉格朗日余项的泰勒公式
+      
       - 证明 / 推证某些结果
+      
       - $f(x)$  $n + 1$ 阶可导：
+      
       - $f(x) = f(x_0) + f'(x_0)(x - x_0) + \dfrac{ f''(x_0) }{ 2! }(x - x_0)^2 + ... + \dfrac{ f^{(n)}(x_0) }{ n! }(x - x_0)^n + \dfrac{ f^{(n + 1)}(\xi) }{ (n + 1)! }(x - x_0)^{n + 1}$ 
-         - $\dfrac{ f^{(n)}(x_0) }{ n! }(x - x_0)^n $ 是通项。
-         - $\dfrac{ f^{(n + 1)}(\xi) }{ (n + 1)! }(x - x_0)^{n + 1}$ 是拉格朗日余项。
+         
+         - $\dfrac{ f^{(n)}(x_0) }{ n! }(x - x_0)^n$ 是通项。
+         
+         - $\dfrac{ f^{(n + 1)}(\xi) }{ (n + 1)! }(x - x_0)^{n + 1}$ 是拉格
+         朗日余项。
+         
          - $x_0$ 介于 $x$ 和 $x_0$ 之间。
+      
       - 当 $x_0 = 0$ 时，泰勒公式成为麦克劳林公式
+         
          - $f(x) = f(0) + f'(0)x + \dfrac{ f''(0) }{ 2! }x^2 + ... + \dfrac{ f^{(n)}(0) }{ n! } x^n + \dfrac{ f^{(n + 1)}(\xi) }{ (n + 1)! }x^{n + 1}$
+   
    2. 带佩亚诺余项的泰勒公式
+      
       - 用于计算
-      - $f(x)$  $n $ 阶可导：
+      
+      - $f(x)$ $n$ 阶可导：
+      
       - $f(x) = f(x_0) + f'(x_0)(x - x_0) + \dfrac{ f''(x_0) }{ 2! }(x - x_0)^2 + ... + \dfrac{ f^{(n)}(x_0) }{ n! }(x - x_0)^n + o( (x - x_n)^n )$ 
+
 10. 积分中值定理
 
 <br>
@@ -338,7 +434,7 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
 
 <br>
 
-###### 5、泰勒公式的应用——信号 $f^{(n)}(\xi), n \geq 2^n $ 。
+###### 5、泰勒公式的应用——信号 $f^{(n)}(\xi), n \geq 2^n$ 。
 1. 设 $f(x)$ 在 $[0, 1]$ 上二阶可导，且 $\int_0^1 f(x) {\rm d}x = 0$，则
    - $A. $ 当 $f'(x) < 0$ 时，$f(\frac{1}{2}) < 0$ 
    - $B. $ 当 $f''(x) < 0$ 时，$f(\frac{1}{2}) < 0$ 
@@ -483,7 +579,7 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 - 1}) \right)' = \dfrac{1}{ \sqrt{x^2
       - $S = xy + \dfrac{\pi}{8}x^2 = 5 \implies y = \dfrac{5}{x} - \dfrac{\pi}{8}x > 0 \implies x < \sqrt{ \dfrac{40}{\pi} }$ 
       - $L = x + 2y + \dfrac{\pi}{2}x = \dfrac{10}{x} + ( \dfrac{\pi}{4} + 1 ) x, \quad x \in ( 0, \sqrt{ \dfrac{40}{\pi} } )$ 
       - $L' = -\dfrac{10}{x^2} + \dfrac{\pi}{4} + 1 = 0 \implies x = \sqrt{ \dfrac{40}{\pi + 4} }$ 
-   2. 求函数 $f(x) =nx(1 - x)^n $ 在 $[0, 1]$ 上的最大值 $ M(n)$ 及 $\lim\limits_{n \to \infty} M(n)$ 。
+   2. 求函数 $f(x) =nx(1 - x)^n$ 在 $[0, 1]$ 上的最大值 $ M(n)$ 及 $\lim\limits_{n \to \infty} M(n)$ 。
       - $f(0) = f(1) = 0$ 。
       - $f'(x) = n(1 - x)^n + nx \cdot n(1 - x)^{(n -1)} = n [ 1 - ( n + 1 )x ]( 1- x )^{(n - 1)}$ 
          - $f'(x) = 0 \implies x_0 = \dfrac{1}{n + 1} \in (0, 1)$

@@ -199,7 +199,7 @@ $\begin{array}{l} ( {\rm A} ) \, f(x) \text{ 与 } g(x) \text{ 都存在原函�
 
 设 $f(x)$ 在 $(-\infty, ++\infty)$ 内连续，以 ${\rm T}$ 为周期，证明
 
-$\begin{array}{l} 1) \; \text{ 可导 } f(x) \text{ 以 } {\rm T} \text{ 为周期 } \implies f'(x) \text{ 以 } {\rm T} \text{ 为 } \\\\ 2) \; \int_a^{a+T} f(x) \, {\rm d}x = \int_0^T f(x) \, {\rm d}x \quad (\, \forall \, a \in {\rm R} \, ) \\\\ 3) \; \int_0^x f(x) \, {\rm d}t \text{ 以 } {\rm T} \text{ 为周期 } \iff \int_0^T f(x) \, {\rm d}x = 0 \\\\ 4) \; \int f(x) \, {\rm d}x \, \text{ （即 } f(x) \text{ 的全体原函数） } \text{ 周期为 } {\rm T} \iff \int_0^T f(x) \, {\rm d}x = 0 \end{array}$
+$\begin{array}{l} 1) \; \text{ 可导 } f(x) \text{ 以 } {\rm T} \text{ 为周期 } \implies f'(x) \text{ 以 } {\rm T} \text{ 为周期 } \\\\ 2) \; \int_a^{a+T} f(x) \, {\rm d}x = \int_0^T f(x) \, {\rm d}x \quad (\, \forall \, a \in {\rm R} \, ) \\\\ 3) \; \int_0^x f(x) \, {\rm d}t \text{ 以 } {\rm T} \text{ 为周期 } \iff \int_0^T f(x) \, {\rm d}x = 0 \\\\ 4) \; \int f(x) \, {\rm d}x \, \text{ （即 } f(x) \text{ 的全体原函数） } \text{ 周期为 } {\rm T} \iff \int_0^T f(x) \, {\rm d}x = 0 \end{array}$
 
 <br>
 
@@ -278,7 +278,7 @@ $$
 
 设 $f(x), \, g(x)$ 二阶可导，$g''(x)<0$，若 $g'(x_0)=a$ 是 $g(x)$ 的极值，则 $f \left[ \, g(x) \, \right]$ 在 $x_0$ 取极大值的一个充分条件是 $(\quad)$。
 
-$\begin{array}{l} ( {\rm A} ) \, f'(a)<0 \qquad & ( {\rm B} ) \, f'(a)>0 \\\\ ( {\rm C} ) \, f''(a)<0 \qquad & ( {\rm D} ) \, f''(a)>0 \end{array}$ 
+$\begin{array}{l} ( {\rm A} ) & f'(a)<0 \qquad & ( {\rm B} ) & f'(a)>0 \\\\ ( {\rm C} ) & f''(a)<0 \qquad & ( {\rm D} ) & f''(a)>0 \end{array}$ 
 
 <br>
 
@@ -408,7 +408,7 @@ ${\rm C}$。
 
 $\mid f(0) \mid \leq 0 \implies f(0)=0$ 
 
-$\begin{array}{l} \mid f(x) \mid \leq x^2 &\implies 0 \leq \, \mid \dfrac{ f(x) }{x} \mid \, \leq \dfrac{x^2}{\mid x \mid} \\\\ & \implies 0 \leq \lim\limits_{x \to 0} \mid \dfrac{ f(x) }{x} \mid \leq \lim\limits_{x \to 0} \dfrac{x^2}{\mid x \mid} = 0 \\\\ & \implies \lim\limits_{x \to 0} \dfrac{ f(x) }{x} = 0 \end{array}$ 
+$\begin{array}{l} \mid f(x) \mid \leq x^2 &\implies 0 \leq \, \left| \dfrac{ f(x) }{x} \right| \, \leq \dfrac{x^2}{\mid x \mid} \\\\ & \implies 0 \leq \lim\limits_{x \to 0} \left| \dfrac{ f(x) }{x} \right| \leq \lim\limits_{x \to 0} \dfrac{x^2}{\mid x \mid} = 0 \\\\ & \implies \lim\limits_{x \to 0} \dfrac{ f(x) }{x} = 0 \end{array}$ 
 
 所以 $f'(0) = \lim\limits_{x \to 0} \dfrac{ f(x) - f(0) }{x-0} = \lim\limits_{x \to 0} \dfrac{ f(x) }{x} = 0$ 
 
@@ -438,11 +438,16 @@ $$
 $$
 
 - 含跳跃、可去、无穷间断点的 $f(x)$ 在此区间无原函数。
-  - 跳跃间断点的变限积分存在尖点（不可导点）
-  - 可去间断点的变限积分处处可导
+   
+   - 跳跃间断点的变限积分存在尖点（不可导点）
+   
+   - 可去间断点的变限积分处处可导
+
 - 含振荡间断点的 $f(x)$ 在此区间可能有也可能没有原函数。
-  - $\begin{array}{l} \\ f(x) = \begin{cases} 2x \sin \dfrac{1}{x} - \cos \dfrac{1}{x}, & x \not= 0 \\\\ 0, & x=0 \end{cases}\\ & \end{array}$ 的原函数是 $F(x) = \begin{cases} x^2 \sin \dfrac{1}{x}, & x\not= 0 \\\\ 0, & x=0 \end{cases}$ 。
-  - $f(x) = \begin{cases} \dfrac{1}{x} \sin \dfrac{1}{x}, & x \not= 0 \\\\ 0, & x=0 \end{cases}$ 在包含 $(0, \, 0)$ 的任何区间上没有原函数。
+
+   - $\begin{array}{l} \\ f(x) = \begin{cases} 2x \sin \dfrac{1}{x} - \cos \dfrac{1}{x}, & x \not= 0 \\\\ 0, & x=0 \end{cases}\\ & \end{array}$ 的原函数是 $F(x) = \begin{cases} x^2 \sin \dfrac{1}{x}, & x\not= 0 \\\\ 0, & x=0 \end{cases}$ 。
+
+   - $f(x) = \begin{cases} \dfrac{1}{x} \sin \dfrac{1}{x}, & x \not= 0 \\\\ 0, & x=0 \end{cases}$ 在包含 $(0, \, 0)$ 的任何区间上没有原函数。
 
 <br>
 
@@ -523,15 +528,17 @@ ${\rm C}$ 反例
 
 ###### 1、
 
+$\dfrac{\pi}{4} + \dfrac{1}{2} \ln 2$。
+
 $\begin{array}{l} \text{原式 } &= \lim\limits_{n \to \infty} \sum\limits_{i=1}^n \dfrac{n+i}{n^2 + i^2} \\\\ &= \lim\limits_{n \to \infty} \sum\limits_{i=1}^n \dfrac{n^2 + ni}{n^2 + i^2} \cdot \dfrac{1}{n} \\\\ &= \lim\limits_{n \to \infty} \sum\limits_{i=1}^n \dfrac{1 + i/n}{1 + (1/n)^2} \cdot \dfrac{1}{n} \\\\ & = \int_0^1 \dfrac{1+x}{1+x^2} {\rm d}x \\\\ &= \int_0^1 \dfrac{1}{1+x^2} {\rm d}x + \int_0^1 \dfrac{x}{1+x^2} {\rm d}x \\\\ &= \left. \arctan x \right|_0^1 + \left. \dfrac{1}{2} \ln (1+x^2) \right|_0^1 \\\\ &= \dfrac{\pi}{4} + \dfrac{1}{2} \ln 2 \end{array}$ 
 
 <br>
 
 ###### 2、
 
-$\dfrac{\pi}{2}$。
+$\dfrac{2}{\pi}$。
 
-$\begin{array}{l} \lim\limits_{n \to \infty} \sum\limits_{i=1}^n \dfrac{ \sin \dfrac{\pi i}{n} }{n+1} &= \lim\limits_{n \to \infty} \dfrac{1}{n+1} \sum\limits_{i=1}^n \sin \dfrac{\pi i}{n} \\\\ &= \lim\limits_{n \to \infty} \dfrac{n}{n+1} \cdot \dfrac{1}{n} \cdot \sum\limits_{i=1}^n \sin (\pi \dfrac{i}{n}) \\\\ &= \lim\limits_{n \to \infty} \cdot \sum\limits_{i=1}^n \sin (\pi \dfrac{i}{n}) \cdot \dfrac{1}{n} \\\\ &= \int_0^1 \sin \pi x \, {\rm d}x \\\\ &= \dfrac{\pi}{2} \end{array}$ 
+$\begin{array}{l} \lim\limits_{n \to \infty} \sum\limits_{i=1}^n \dfrac{ \sin \dfrac{\pi i}{n} }{n+1} &= \lim\limits_{n \to \infty} \dfrac{1}{n+1} \sum\limits_{i=1}^n \sin \dfrac{\pi i}{n} \\\\ &= \lim\limits_{n \to \infty} \dfrac{n}{n+1} \cdot \dfrac{1}{n} \cdot \sum\limits_{i=1}^n \sin (\pi \dfrac{i}{n}) \\\\ &= \lim\limits_{n \to \infty} \cdot \sum\limits_{i=1}^n \sin (\pi \dfrac{i}{n}) \cdot \dfrac{1}{n} \\\\ &= \int_0^1 \sin \pi x \, {\rm d}x \\\\ &= \dfrac{2}{\pi} \end{array}$ 
 
 <br>
 
@@ -555,13 +562,13 @@ $\left( \dfrac{1}{2} \int_0^{x^2} f(u) \, {\rm d}u \right)' = xf(x^2)$
 
 $\alpha \geq 1$ 时，$\dfrac{1}{ x^\alpha }$ 发散
 
-由于 $\lim\limits_{x \to 0} \dfrac{ \ln x / x^\alpha }{ x^\alpha } = \lim\limits_{x \to 0} \ln x = \infty$，所以 $\dfrac{\ln x}{x^\alpha}$ 发散。
+由于 $\lim\limits_{x \to 0} \dfrac{ \ln x }{ x^\alpha } = \lim\limits_{x \to 0} \ln x \cdot \dfrac{1}{ x^\alpha } = \infty$，所以 $\dfrac{\ln x}{x^\alpha}$ 发散。
 
 2️⃣ 
 
 当 $0 < \alpha < 1$ 时，取 $\varepsilon > 0$，使得 $\alpha + \varepsilon < 1$，所以 $\dfrac{1}{ x^{\alpha + \varepsilon} }$ 收敛。
 
-由于 $\lim\limits_{x \to 0} \dfrac{ \ln x / x^\alpha }{ x^{\alpha + \varepsilon} } = \lim\limits_{x \to 0} x^\varepsilon \ln x = 0$，所以 $\dfrac{\ln x}{x^\alpha}$ 收敛。
+由于 $\lim\limits_{x \to 0} \dfrac{ \ln x }{ x^\alpha } \cdot \dfrac{1}{ x^{\alpha + \varepsilon} } = \lim\limits_{x \to 0} x^\varepsilon \ln x = 0$，所以 $\dfrac{\ln x}{x^\alpha}$ 收敛。
 
 <br>
 
@@ -651,7 +658,7 @@ $$
 \int \dfrac{ {\rm d}x }{ (2x+1) \sqrt{3+4x-4x^2} }
 $$
 
-令 $2x-1 = \sin t$，原式 $= \int \dfrac{ \cos t \, {\rm d}t }{ 2(\sin t + 1)2\cos t } = \dfrac{1}{4} \int \dfrac{1}{1+\sin t} {\rm d}t$ 
+令 $2x-1 = 2\sin t$，原式 $= \int \dfrac{ \cos t \, {\rm d}t }{ 2(\sin t + 1)2\cos t } = \dfrac{1}{4} \int \dfrac{1}{1+\sin t} {\rm d}t$ 
 
 $\dfrac{1}{1+\sin t}$ 是正三角形式，化为倒三角形式。
 
