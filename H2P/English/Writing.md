@@ -127,9 +127,9 @@ $\begin{array}{l} \end{array}$
 当汉语中出现 我们、人们、大家、有人 等人称代词作为主语时都可以考虑写为被动
 
 本句型推荐写在
-（1）第一段最后一句话，引出文章中心时使用
+（1）第一段最后一句话，引出文章中心时使用
 （2）第三段的第一句话，文章总结的时候使用
-但只在一处使用
+但只在一处使用
 ```
 
 Parents should be respected by us.
@@ -316,7 +316,7 @@ The more frequently cultures are exchanged, the more rapidly Chinese economy wil
 
 ```
 描述图画的分类
-1. 一幅图
+1. 一幅图
    （1）一个主体，两个动作
    （2）两个主体，两个动作
 2. 两幅图
@@ -1015,7 +1015,7 @@ for example
 - 第一第二句话
 
    - 用主语从句引出描述图画
-         
+     ​    
       - what is obvious is that
 
    1. 一幅图、一个主体、两个动作
@@ -1091,7 +1091,7 @@ What looks beyond dispute is that in the easy and simple painting, graduates you
       - first and foremost
       - What appears as the first reason is that
 
-   - 齐次
+   - 其次
 
       - in addition
       - furthermore
@@ -1145,7 +1145,7 @@ What looks beyond dispute is that in the easy and simple painting, graduates you
       - 总结法
       - 建议法
       - 反问法
-         
+        
          - Shouldn't we pay more attention to the issue of sth?
 
 <br>
@@ -1186,7 +1186,7 @@ What looks beyond dispute is that in the easy and simple painting, graduates you
 2011 年
 
 ```
-What looks beyond dispute is that in the easy and simple chart, the amount of Chinese cars, form the year of 2008 to 2009, rocketed by 9 percent. On the contray, the quantity of cars made in Japan, in the meanwhile, shrank to 25 percent. The symbolic meaning of the graph seems that cars of China, to my knowledge, become popular in the market.
+What looks beyond dispute is that in the easy and simple chart, the amount of Chinese cars, form the year of 2008 to 2009, rocketed by 9 percent. On the contrary, the quantity of cars made in Japan, in the meanwhile, shrank to 25 percent. The symbolic meaning of the graph seems that cars of China, to my knowledge, become popular in the market.
 ```
 
 <br>
@@ -1209,7 +1209,7 @@ What looks beyond dispute is that in the easy and simple chart, the amount of Ch
       - diminished
 
    - shrink
-      - shrank
+      - shrunk
       - shrunken
 
 - 大幅度
@@ -1260,9 +1260,9 @@ What looks beyond dispute is that in the easy and simple chart, the amount of Ch
       
       - 文中未给出
 
-         - I am clerk in a university
+         - I am a clerk in a university
 
-         - I am a senior from the departmant of Software Engineering / Physical Education in the/a university
+         - I am a senior from the department of Software Engineering / Physical Education in the/a university
             - the 对内
             - a 对外
 
@@ -1271,7 +1271,7 @@ What looks beyond dispute is that in the easy and simple chart, the amount of Ch
       - I, to be frank（插入语）, am writing the letter in order to ...
 
          - in order to 后面的内容文中一定已给出，只需要抄
-         
+
 2. 第二段
 
    - 文中一定已经给出要求，按照要求来写
@@ -1282,7 +1282,7 @@ What looks beyond dispute is that in the easy and simple chart, the amount of Ch
 
       - 第一个原因分析
          - 主语, to begin with, be so ... that ...
-      
+
       - 第二个原因分析
          - 连词连接两个并列句
 
@@ -1303,7 +1303,7 @@ The salary, to begin with, keeps so low that I fail to support my families. In a
       - 第二句话，表示感谢或期待回信
 
    - 未给出要求
-      
+     
       - 表示感谢
 
          - My thanks to you for your generous assistance are beyond words.
@@ -1385,6 +1385,9 @@ The salary, to begin with, keeps so low that I fail to support my families. In a
    - 写作目的
 
       - We are to + 文中已给出
+
+   - 具体论述
+
       - First second third
 
 - 第二段（欢迎加入 + 联系方式）
