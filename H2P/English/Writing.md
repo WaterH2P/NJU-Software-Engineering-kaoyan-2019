@@ -1,5 +1,5 @@
 ---
-title: Writing
+'title: Writing
 date: 2018-12-16
 updated: 2018-12-16
 tags: [English,kaoyan]
@@ -47,7 +47,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### 1、小作文
+##### 1、小作文
 
 1. 公务书信
 
@@ -61,7 +61,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### 2、大作文
+##### 2、大作文
 
 1. 图画作文
 
@@ -79,7 +79,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### 1、语言第一
+##### 1、语言第一
 
 1. 单词正确
 
@@ -97,7 +97,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### 2、结构第二
+##### 2、结构第二
 
 1. 三段论
 
@@ -111,7 +111,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### 3、内容第三
+##### 3、内容第三
 
 1. 不跑题
 
@@ -161,7 +161,7 @@ Parents should be respected by us.
 
 【我们不应该盲目追星】
 
-Celebrties are not supposed to be pursued by teenagers and youngsters.
+Celebrities are not supposed to be pursued by teenagers and youngsters.
 
 - not
    - never
@@ -212,7 +212,6 @@ There exist many reasons explaining my idea.
 - reason
    - cause
    - factor
-   - element
 
 - explain
    - account for
@@ -229,7 +228,7 @@ There exist many reasons explaining my idea.
 
 <br>
 
-###### 1、as...as...
+##### 1、as...as...
 
 ```
 只要文中出现 adj/adv 的地方
@@ -263,7 +262,6 @@ Confidence proves as important as sunshine, which plays an essential role in the
    - indispensable
    - significant
    - play a key role in sth
-   - be of great importance
 
 Sth becomes as grave as AIDS, which has threatened the health of patients or taken away their lives.
 
@@ -273,7 +271,7 @@ Sth becomes as grave as AIDS, which has threatened the health of patients or tak
 
 <br>
 
-###### 2、the more ... the more ...
+##### 2、the more ... the more ...
 
 the + adj/adv 比较级 + 句子，the + adj/adv 比较级 + 句子
    - 主句用一般将来时，从句用一般现在时
@@ -311,7 +309,7 @@ The more frequently cultures are exchanged, the more rapidly Chinese economy wil
 
 - but
    - by contrast,
-   - unfortunately
+   - on the contrary
    - nevertheless
 
 ```
@@ -349,7 +347,7 @@ In the former picture, the flower in the greenhouse is growing healthily, conver
 
 <br>
 
-###### 1、养宠物
+##### 1、养宠物
 
 raising pets can reduce the loneliness of senior citizens 
 
@@ -359,13 +357,13 @@ raising pets not only can reduce the loneliness of senior citizens but also can 
 
 <br>
 
-###### 2、孝敬父母
+##### 2、孝敬父母
 
-supporting the elderly not only keeps a chinese conventional but also proves the legal responsibility of their offspring.
+supporting the elderly not only keeps a Chinese conventional virtue but also proves the legal responsibility of their offspring.
 
 <br>
 
-#### 合作
+##### 3、合作
 
 Cooperation not only enables all children and adults to make more intimate friends but also has them achive greater credits.
 
@@ -393,7 +391,7 @@ that you never fail to fascinate me is obvious
 
 <br>
 
-###### 1、显而易见
+##### 1、显而易见
 
 It proves common knowledge that ...
 
@@ -407,7 +405,7 @@ It has been widely accepted that ...
 
 <br>
 
-###### 2、我认为
+##### 2、我认为
 
 It keeps my perspective that ...
 
@@ -417,7 +415,7 @@ It keeps my perspective that ...
 
 <br>
 
-###### 1、名词做同位语
+##### 1、名词做同位语
 
 ```
 本句型推荐写在作文第二段，分析原因的时候使用
@@ -439,7 +437,7 @@ A man, a soccer fan, is writing the name, a symbol of someone, of Beckham, an es
 
 <br>
 
-###### 2、同位语从句
+##### 2、同位语从句
 
 她长着一副大眼睛，这个事实表明她是一个美女
 
@@ -457,7 +455,7 @@ The evidence that farmers can enjoy high-quality life manifests that most of the
 
 <br>
 
-###### 1、定语成分
+##### 1、定语成分
 
 1. 形容词
 
@@ -471,9 +469,12 @@ The evidence that farmers can enjoy high-quality life manifests that most of the
 
 <br>
 
-###### 2、定语在作文中的使用
+##### 2、定语在作文中的使用
 
-只要在作文中见到名词，都可以给它加一个定语的成分把句子拉长。但是在第一段描述图画的时候，只要见到名词，通常都要加定语，使图画的描述显得很生动。
+```
+只要在作文中见到名词，都可以给它加一个定语的成分把句子拉长。
+但是在第一段描述图画的时候，只要见到名词，通常都要加定语，使图画的描述显得很生动。
+```
 
 An American girl young as well as graceful is wearing Chinese conventional costume which keeps pervasive in the south of China.
 
@@ -481,7 +482,7 @@ Immense amounts of children and adults sitting in separate rooms are surfing on 
 
 <br>
 
-###### 3、万能定语
+##### 3、万能定语
 
 （描述图画）
 
@@ -515,11 +516,11 @@ Immense amounts of children and adults sitting in separate rooms are surfing on 
 
 <br>
 
-###### 4、定语从句的满分表达
+##### 4、定语从句的满分表达
 
 他是一个色狼，这是显而易见的。
 
-He looks like a lady-killer, which seems beyond disbute.
+He looks like a lady-killer, which seems beyond dispute.
 
 ```
 定语从句的满分表达就是：
@@ -549,7 +550,7 @@ The lower price of cars made in China becomes, the more Chinese would like to pu
 
 <br>
 
-###### 1、何为状语
+##### 1、何为状语
 
 只要在句子中见到一下：
 
@@ -577,7 +578,7 @@ The lower price of cars made in China becomes, the more Chinese would like to pu
 
 <br>
 
-###### 2、状语在写作中的应用
+##### 2、状语在写作中的应用
 
 ```
 作文中的任何一句话都可以给它加一个状语的成分把句子拉长，但是在第一句在描述图画或图表的时候一定要加状语，使描述完整。
@@ -603,7 +604,7 @@ We are having class
 
 <br>
 
-###### 3、状语从句的满分表达
+##### 3、状语从句的满分表达
 
 1. 让步状语从句（although）
 
@@ -743,7 +744,7 @@ There exists numerous factors here to account for the phenomenon.
 
 <br>
 
-###### 1、比喻
+##### 1、比喻
 
 Sth 很重要
 
@@ -763,7 +764,7 @@ Sth 很严重
 
 <br>
 
-###### 2、排比
+##### 2、排比
 
 ```
 本句型推荐写在第三段的最后一句话，喊口号的时候使用
@@ -777,7 +778,7 @@ Action is supposed to be adopted quickly, effectively and actively.
 
 <br>
 
-###### 1、if 引导的虚拟语气
+##### 1、if 引导的虚拟语气
 
 ```
 如何把一个不虚拟的句子变成虚拟语气，只需要把已经写好的句子变成过去式。
@@ -805,7 +806,7 @@ If every one of teenager and youngster abandoned himself to surfing on the Inter
 
 <br>
 
-###### 2、从句用 should 表示虚拟
+##### 2、从句用 should 表示虚拟
 
 It is imperative / essential / urgent that
 
@@ -823,7 +824,7 @@ It is urgent that kids should be educated / inspired to do sth （中心词）
 
 <br>
 
-###### 1、否定词放在句首用到装
+##### 1、否定词放在句首用到装
 
 我从来不是一个彪悍外向的女人
 
@@ -843,13 +844,13 @@ Respecting parents keeps not only a Chinese conventional virtue but also proves 
 
 <br>
 
-###### 2、so ... that ... 倒装
+##### 2、so ... that ... 倒装
 
 ```
 把 so 引导的部分放在句首
 ```
 
-My maom is kind that she will ...
+My mom is so kind that she will ...
 
 - So kind is my mom that ...
 
@@ -859,7 +860,7 @@ Sth keeps so significant / fearful that the issue should have been brought into 
 
 <br>
 
-###### 3、only + 状语的倒装
+##### 3、only + 状语的倒装
 
 只有通过采取这些措施，这个问题才能得到改善。
 
@@ -947,7 +948,7 @@ Sth keeps so significant / fearful that the issue should have been brought into 
 
 <br>
 
-###### 1、举小例子
+##### 1、举小例子
 
 ```
 such as + 三个名词
@@ -960,7 +961,7 @@ such as + 三个名词
 
 <br>
 
-###### 2、大例子
+##### 2、大例子
 
 ```
 for example
@@ -1008,7 +1009,7 @@ for example
 
 <br>
 
-###### 1、第一段
+##### 1、第一段
 
 【描述图画 + 中心总结】（三到四句话）
 
@@ -1064,7 +1065,7 @@ What looks beyond dispute is that in the easy and simple painting, graduates you
 
 <br>
 
-###### 2、第二段
+##### 2、第二段
 
 【原因分析】（四句话）
 
@@ -1105,7 +1106,7 @@ What looks beyond dispute is that in the easy and simple painting, graduates you
 
 <br>
 
-###### 3、第三段
+##### 3、第三段
 
 【总结段】（四句话）
 
@@ -1162,7 +1163,7 @@ What looks beyond dispute is that in the easy and simple painting, graduates you
 
 <br>
 
-###### 1、第一段
+##### 1、第一段
 
 【描述图表 + 中心总结】
 
@@ -1191,7 +1192,7 @@ What looks beyond dispute is that in the easy and simple chart, the amount of Ch
 
 <br>
 
-###### 2、第二段
+##### 2、第二段
 
 【原因分析段】（完全同图画作文）
 
@@ -1224,7 +1225,7 @@ What looks beyond dispute is that in the easy and simple chart, the amount of Ch
 
 <br>
 
-###### 3、第三段
+##### 3、第三段
 
 【总结段】（完全同图画作文）
 
@@ -1234,7 +1235,7 @@ What looks beyond dispute is that in the easy and simple chart, the amount of Ch
 
 <br>
 
-###### 1、称呼
+##### 1、称呼
 
 文中已给出
 
@@ -1248,7 +1249,7 @@ What looks beyond dispute is that in the easy and simple chart, the amount of Ch
 
 <br>
 
-###### 2、正文
+##### 2、正文
 
 1. 第一段（自我介绍 + 写作目的）
 
@@ -1315,7 +1316,7 @@ The salary, to begin with, keeps so low that I fail to support my families. In a
 
 <br>
 
-###### 3、落款
+##### 3、落款
 
 - 右下角
 
@@ -1328,13 +1329,13 @@ The salary, to begin with, keeps so low that I fail to support my families. In a
 
 <br>
 
-###### 1、称呼
+##### 1、称呼
 
 - Dear + 文中已给出
 
 <br>
 
-###### 2、正文
+##### 2、正文
 
 1. 第一段（问候语 + 写作目的）
 
@@ -1358,7 +1359,7 @@ The salary, to begin with, keeps so low that I fail to support my families. In a
 
 <br>
 
-###### 3、落款
+##### 3、落款
 
 （完全同公务书信）
 
@@ -1368,17 +1369,17 @@ The salary, to begin with, keeps so low that I fail to support my families. In a
 
 <br>
 
-###### 1、标题
+##### 1、标题
 
 正中间写个【Notice】
 
 <br>
 
-###### 2、称呼（无）
+##### 2、称呼（无）
 
 <br>
 
-###### 3、正文
+##### 3、正文
 
 - 第一段（写作目的 + 具体论述）
 
@@ -1403,6 +1404,6 @@ The salary, to begin with, keeps so low that I fail to support my families. In a
 
 <br>
 
-###### 3、落款
+##### 3、落款
 
 单位名称（文中已给出）

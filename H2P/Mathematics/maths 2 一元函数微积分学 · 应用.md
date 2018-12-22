@@ -1,7 +1,7 @@
 ---
 title: 一元函数微积分学 · 应用
 date: 2018-8-2
-updated: 2018-11-25
+updated: 2018-12-22
 tags: [maths,高数,kaoyan]
 mathjax: true
 
@@ -31,7 +31,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### 1、证明判别法二
+##### 1、证明判别法二
 
 构造 $\lim\limits_{x \to x_0} \dfrac{ f(x) - f(x_0) }{ (x-x_0)^2 }$ 
 
@@ -53,7 +53,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### 1、证明判别法二
+##### 1、证明判别法二
 
 构造 $\lim\limits_{x \to x_0} \dfrac{ f''(x) - f''(x_0) }{x-x_0} = f'''(x_0)$ 
 
@@ -73,7 +73,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### sinx 面积
+##### sinx 面积
 
 $(0, \pi)$
 
@@ -83,15 +83,19 @@ $(0, \pi)$
 
 #### ㊄、平面图形的面积
 
+$$
+S = \int_a^b \mid y_2(x) - y_1(x) \mid {\rm d}x
+$$
+
 <br>
 
 #### ㊅、旋转体的体积
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%97%8B%E8%BD%AC%E4%BD%93%E4%BD%93%E7%A7%AF%201.png" width="60%">
+<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%97%8B%E8%BD%AC%E4%BD%93%E4%BD%93%E7%A7%AF.png" width="60%">
 
 <br>
 
-#### ㊆、⭐平均值
+#### ㊆、平均值
 
 $f(x)$ 在 $[a, \, b]$ 上的平均值 $\overline{f} = \dfrac{ \int_a^b f(x) \, {\rm d}x }{b-a}$ 。
 
@@ -120,15 +124,6 @@ $$
 ## 三、不等式
 
 核心工具是求导研究性态
-
-
-
-
-
-
-
-
-
 
 <br>
 
@@ -162,7 +157,7 @@ $$
 f(x) = \lim\limits_{n \to \infty} \dfrac{x}{e^{-nx} - (x^2+1)}
 $$
 
-求曲线 $y=f(x)$ 与直线 $y=-\dfrac{\pi}{2}$ 所围成平面图形绕 $x$ 轴旋转所成旋转体的体积。
+求曲线 $y=f(x)$ 与直线 $y=-\dfrac{x}{2}$ 所围成平面图形绕 $x$ 轴旋转所成旋转体的体积。
 
 <br>
 
@@ -170,13 +165,13 @@ $$
 
 <br>
 
-###### 1
+##### 1
 
 设 $x>0$，若 $xe^y = e^x - 1$，证明 $0<y<x$。
 
 <br>
 
-###### 2
+##### 2
 
 设 $f(x)$ 在 $[0, \, 1]$ 上连续，$(0, \, 1)$ 内可导，$f(0)=0, \, f(1)=1$。证明存在不同的 $\xi_1, \, \xi_2, \, \xi_3 \in (0, \, 1)$，使 $f'(\xi_1) + f'(\xi_2) + f'(\xi_3) = 3$。
 
@@ -236,7 +231,9 @@ $f(x)$ 为奇函数，且水平渐近线为 $y = \dfrac{ \sqrt{\pi} }{2}$ 和 $y
 $\begin{array}{l} S &= 2 \int_0^{+\infty} \left[ \dfrac{ \sqrt{\pi} }{2} - \int_0^x e^{-t^2} \, {\rm d}t \right] \, {\rm d}x \\\\ &= 2x \left. \left[ \dfrac{ \sqrt{\pi} }{2} - \int_0^x e^{-t^2} \, {\rm d}t \right] \right|_0^{+\infty} + 2 \int_0^{+\infty} x e^{-x^2} \, {\rm d}x \\\\ &= 2 \lim\limits_{x \to +\infty} x \left[ \dfrac{ \sqrt{\pi} }{2} - \int_0^x e^{-t^2} \, {\rm d}t \right] + 1 \\\\ &= 1 \end{array}$ 
 
 - 其中：
+  
    - $\begin{array}{l} \lim\limits_{x \to +\infty} x \left[ \dfrac{ \sqrt{\pi} }{2} - \int_0^x e^{-t^2} \, {\rm d}t \right] &= \lim\limits_{x \to +\infty} \dfrac{ \dfrac{ \sqrt{\pi} }{2} - \int_0^x e^{-t^2} \, {\rm d}t }{ 1/x } \\\\ &= \lim\limits_{x \to +\infty} \dfrac{x^2}{ e^{x^2} } = 0 \end{array}$ 
+   
    - $\begin{array}{l} 2 \int_0^{+\infty} x e^{-x^2} \, {\rm d}x &= -\int_0^{+\infty} e^{-x^2} \, {\rm d}(-x^2) \\\\ &= \left. -e^{-x^2} \right|_0^{+\infty} \\\\ &= 1 \end{array}$ 
 
 <br>
@@ -250,7 +247,9 @@ $f(x) = \begin{cases} 0, \quad & x<0 \\\\ -\dfrac{x}{x^2+1}, \quad & x>0 \end{ca
 $\begin{array}{l} V &= \int_0^1 \pi \left( \dfrac{x}{x^2+1} \right)^2 \, {\rm d}x - \dfrac{1}{3} \cdot \pi \cdot \left( \dfrac{1}{2} \right)^2 \\\\ &= \dfrac{\pi^2}{8} - \dfrac{\pi}{4} - \dfrac{\pi}{12} \\\\ &= \dfrac{\pi^2}{8} - \dfrac{\pi}{3} \end{array}$
 
 - 其中
+  
    - 令 $x=\tan t$ 
+   
    - $\begin{array}{l} \int_0^1 \pi \left( \dfrac{x}{x^2+1} \right)^2 \, {\rm d}x &= \pi \int_0^{\pi/4} \dfrac{\tan^2 t}{\sec^4 t} \cdot \sec^2 t \, {\rm d}t \\\\ &= \pi \int_0^{\pi/4} \sin^2 t \, {\rm d}t \\\\ &= \dfrac{\pi^2}{8} - \dfrac{\pi}{4} \end{array}$
 
 <br>
@@ -259,13 +258,13 @@ $\begin{array}{l} V &= \int_0^1 \pi \left( \dfrac{x}{x^2+1} \right)^2 \, {\rm d}
 
 <br>
 
-###### 1
+##### 1
 
 $\begin{array}{l} & e^y = \dfrac{e^x - e^0}{x-0} = e^\xi, \; (0<\xi<x) \\\\ \implies & y = \xi \implies 0<y<x \end{array}$ 
 
 <br>
 
-###### 2
+##### 2
 
 将 $[0, \, 1]$ 三等分为 $(0, \dfrac{1}{3}), \; (\dfrac{1}{3}, \dfrac{2}{3}), \; (\dfrac{2}{3}, 1)$，分别对其使用拉格朗日中值定理。
 

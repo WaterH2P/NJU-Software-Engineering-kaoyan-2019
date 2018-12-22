@@ -18,21 +18,27 @@ real-date: 2018-10-7
 
 <br>
 
-######  1、概念
+#####  1、概念
 
 - 设 $f(x, y)$ 的定义域为 $D$ ，$P_0(x_0, y_0)$ 是 $D$ 的聚点。
+
 - $\forall \varepsilon > 0$ ， $\exists \, \delta > 0$ , 当 $P(x, y) \in D \bigcap \bigcup\limits^o ( P_0, \delta )$ 时，恒有 $| f(x, y) - A | < \varepsilon \implies \lim\limits_{x \to x_0 \atop y \to y_0} f(x, y) = A$ 。
 
 <br>
 
-######  2、例题
+#####  2、例题
 
 1. 求 $I = \lim\limits_{x \to 0 \atop y \to 0} \dfrac{ \sqrt{xy + 1} - 1 }{xy}$ 。
+   
    - 其他教材（ $P(x, y) \in \bigcup\limits^o ( P_0, \delta )$ ）
-     - $x = 0 / y = 0$ 时，极限不存在
-     - 所以极限不存在
+      
+      - $x = 0 / y = 0$ 时，极限不存在
+      
+      - 所以极限不存在
+   
    - 同济七版教材（考研参考教材）
-     - $I = \lim\limits_{x \to 0 \atop y \to 0} \dfrac{xy}{ xy ( \sqrt{xy + 1} + 1 ) } = \dfrac{1}{2}$ 。
+      
+      - $I = \lim\limits_{x \to 0 \atop y \to 0} \dfrac{xy}{ xy ( \sqrt{xy + 1} + 1 ) } = \dfrac{1}{2}$ 。
 
 <br>
 
@@ -40,10 +46,12 @@ real-date: 2018-10-7
 
 <br>
 
-######  1、概念
+#####  1、概念
 
 - 若 $\lim\limits_{x \to x_0 \atop y \to y_0} f(x, y) = f(x_0, y_0)$ ，则称 $f(x, y)$ 在 $(x_0, y_0)$ 处连续。
+
 - 【注】
+   
    - 若 $\lim\limits_{x \to x_0 \atop y \to y_0} f(x, y) \not= f(x_0, y_0)$ ，叫不连续，不讨论间断类型。
 
 <br>
@@ -52,20 +60,26 @@ real-date: 2018-10-7
 
 <br>
 
-######  1、概念
+#####  1、概念
 
 - $z = f(x, y)$
+
 - $\left. \dfrac{ \partial f }{ \partial x } \right|_{ (x_0, y_0) } = f'_x(x_0, y_0) = \lim\limits_{ \Delta x \to 0 } \dfrac{ f(x_0 + \Delta x, y_0) - f(x_0, y_0) }{\Delta x}$ 。 
 
 <br>
 
-######  2、例题
+#####  2、例题
 
 1. 设 $f(x, y) = e^{ \sqrt{ x^2 + y^6 } }$ ，求 $f'_x(0, 0)$ ， $f'_y(0, 0)$ 。
+   
    - ⭐️ 见到 $f'_x(x_0, y_0), f'_y(x_0, y_0) \implies$ 先写定义再说。
+   
    - $\begin{array}{l} f'_x(0, 0) &= \lim\limits_{\Delta x \to 0} \dfrac{ f(0 + \Delta x, 0) - f(0, 0) }{\Delta x} \\\\ &= \lim\limits_{\Delta x \to 0} \dfrac{ e^{ |\Delta x| } - 1 }{\Delta x} \\\\ &= \lim\limits_{\Delta x \to 0} \dfrac{ |\Delta x| }{\Delta x} \implies f'_x(0, 0) \text{ 不存在 } \end{array}$ 
+   
    - $\begin{array}{l} f'_y(0, 0) &= \lim\limits_{\Delta y \to 0} \dfrac{ f(0, 0 + \Delta y) - f(0, 0) }{\Delta y} \\\\ &= \lim\limits_{\Delta y \to 0} \dfrac{ e^{ |\Delta y|^3 } - 1 }{\Delta y} \\\\ &= \lim\limits_{\Delta y \to 0} \dfrac{ |\Delta y|^3 }{\Delta y} = 0 \end{array}$ 
-2. 设 $f(x, y) = \begin{cases} \dfrac{1}{xy} \sin (x^2 y), & xy \not= 0 \\\\ 0, & xy = 0 \end{cases}$ ，则 $f'_x(0, 1) =  $\_\_\_\_\_\_\_\_ 。
+
+2. 设 $f(x, y) = \begin{cases} \dfrac{1}{xy} \sin (x^2 y), & xy \not= 0 \\\\ 0, & xy = 0 \end{cases}$ ，则 $f'_x(0, 1) =$ ________ 。
+   
    - $\begin{array}{l} f'_x(0, 1) &= \lim\limits_{\Delta x \to 0} \dfrac{ f(0 + \Delta x, 1) - f(0, 1) }{\Delta x} \\\\ &= \lim\limits_{\Delta x \to 0} \dfrac{ \dfrac{1}{\Delta x} \sin \left( (\Delta x)^2 \right) - 0 }{\Delta x} \\\\ &= 1 \end{array}$ 
 
 <br>
@@ -78,11 +92,14 @@ real-date: 2018-10-7
 
 <br>
 
-######  1、概念
+#####  1、概念
 
 - 设 $z = f(u, v, w), u = u(y), v = v(x, y), w = w(x)$ 。
+
 - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/4-2%20%E9%93%BE%E5%BC%8F%E6%B1%82%E5%AF%BC%E5%85%B3%E7%B3%BB%E5%9B%BE.png" width="50%">
+
 - 称 $x, y$ 叫自变量，$u, v, w$ 叫中间变量，$z$ 叫因变量。
+
 - $\dfrac{ \partial z }{ \partial x } = \dfrac{ \partial z }{ \partial v } \dfrac{ \partial v }{ \partial x } + \dfrac{ \partial z }{ \partial w } \dfrac{ {\rm d}w }{ {\rm d}x } \quad ( \text{ 分叉写 } \partial，\text{ 不分叉写 } {\rm d} )$ 
 
 <br>
@@ -91,19 +108,24 @@ real-date: 2018-10-7
 
 <br>
 
-######  1、【注】
+#####  1、【注】
 
 - 不论 $z$ 对谁求导，也不论 $z$ 已经求了几阶导，求导之后的新函数仍与 $z$ 有相同的复合结构。
 
 <br>
 
-######  2、例题
+#####  2、例题
 
 1. 设 $f(u, v)$ 对其变元 $u, v$ 具有二阶连续偏导数，并设 $z = F( \dfrac{y}{x}, x^2 + y^2)$ ，则 $\dfrac{ \partial^2 z }{ \partial x \partial y } =$ ________。
+   
    - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/4-2.2%20%E9%AB%98%E9%98%B6%E5%81%8F%E5%AF%BC%E6%95%B0%E4%BE%8B%E9%A2%981.jpg" width="50%">
+   
    - $\dfrac{ \partial z }{ \partial x } = F'_1 \cdot ( - \dfrac{y}{x^2} ) + F'_2 \cdot 2x$ 
+   
    - $\dfrac{ \partial^2 z }{ \partial x \partial y } = \dfrac{ \partial ( \dfrac{ \partial z }{ \partial x } ) }{\partial y} = - \dfrac{1}{x^2} F'_1 - \dfrac{y}{x^3} F''_{11} + (2 - \dfrac{2y^2}{x^2} ) F''_{12} + 4xy F''_{22}$ 
+
 2. 设 $f(u, v)$ 二阶偏导数连续，$z = f(x^2y, \cos x \sin y)$ ，求 $\dfrac{ \partial^2 z }{ \partial x \partial y }$ 。
+   
    - $\begin{array}{l} \\ & 2xf'_1 - \sin x \cos y f'_2 + 2 x^3 y f''_{11} \\ +& (2xy \cos x \cos y - x^2 \sin x \sin y)f''_{12} - \sin x \cos x \sin y \ cos y f''_{22} \end{array}$ 
 
 <br>
@@ -112,42 +134,63 @@ real-date: 2018-10-7
 
 <br>
 
-######  1、概念
+#####  1、概念
 
 - 一个点没有去心邻域是不可以谈论极值性的。
 
 <br>
 
-######  2、无条件的极值
+#####  2、无条件的极值
 
 1. 必要条件
+   
    - 设 $z = f(x, y)$ 在点 $(x_0, y_0)$ 处 $\begin{cases} 一阶偏导数存在 \\\\ 取极值 \end{cases}$ ，则 $f'_x(x_0, y_0) = 0, f'_y(x_0, y_0) = 0$ 。
+   
    - 【注】
+     
      - 适用于三元及以上（常考 2 -5 元）
+
 2. 充分条件
+   
    - $\left. \begin{array}{l} f''_{xx} (x_0, y_0) = A \\\\  f''_{xy} (x_0, y_0) = B \\\\  f''_{yy} (x_0, y_0) = C \end{array} \right\} \implies \Delta = B^2 - AC \begin{cases} < 0 \begin{cases} A > 0 \implies \text{极小值点} \\\\ A < 0 \implies \text{极大值点} \end{cases} \\\\ > 0 \implies \text{不是极值点} \\\\ = 0 \implies 该法失效，另谋他法 \end{cases}$ 
+     
      - 只适用于二元
+
 3. 例题
+   
    1. 设函数 $z = z(x, y)$ 是由方程 $x^2 - 6xy + 10y^2 - 2yz - z^2 + 32 = 0$ 确定，讨论函数 $z(x, y)$ 的极大值与极小值。
+     
      - 无条件极值的解题步骤
+       
        - 函数形式
+         
          - 给出 $z = z(x, y)$（显式）
+         
          - $z = z(x, y)$ 由 $f(x, y, z) = 0$ 确定（隐式）
+       
        1. 写 $\begin{array}{l} \\ \begin{cases} z'_x = 0 \\\\ z'_y = 0 \end{cases} \implies Pi(i = 1, 2, \ldots, n) \\ & \end{array}$ 
+       
        2. 写 $\begin{cases} \left. z''_{xx} \right|_{P_i} = A_i \\\\  \left. z''_{xy} \right|_{P_i} = B_i \\\\ \left. z''_{xx} \right|_{P_i} = C_i \end{cases} \implies \Delta_i = B_i^2 - A_i C_i$
+     
      - 方程两边对 $x$ 求偏导 $2x - 6y - 2y \cdot z'_x - 2z \cdot z'_x = 0 \implies z'_x = \dfrac{x - 3y}{y + z}$ 
+     
      - 方程两边对 $y$ 求偏导 $-6x + 20y -2z - 2y \cdot z'_y - 2z \cdot z'_y = 0 \implies z'_y = \dfrac{-3x + 10y - z}{y + z}$ 
+     
      - $\begin{cases} z'_x = 0 \\\\ z'_y = 0 \end{cases} \implies \begin{cases} x = 3y \\\\ z = y \end{cases}$ 带入方程解得：$\begin{cases} x = 12 \\\\ y = 4 \\\\ z = 4 \end{cases}$ 和 $\begin{cases} x = -12 \\\\ y = -4 \\\\ z = -4 \end{cases}$ 。
+     
      - 解得 $\begin{cases} z''_{xx} = \dfrac{1}{y + z} - \dfrac{ (z'_x)^2 }{y+z} \\\\ z''_{xy} = - \dfrac{3}{y + z} - \dfrac{ ( 1 + z'_y ) \cdot z'_x }{y + z} \\\\ z''_{yy} = \dfrac{10}{y + z} - \dfrac{z'_y}{y + z} - \dfrac{ (1 + z'_y) \cdot z'_y }{y + z} \end{cases} \implies B^2 - AC = -\dfrac{1}{4y^2} < 0 ​$ 
 
    2. 求二元函数 $f(x, y) = x^2(2 + y^2) + y \ln y$ 的极值。
+     
      - $\begin{cases} f'_x = 2x(2 + y^2) = 0 \\\\ f'_y = 2x^2y + \ln y + 1 = 0 \end{cases} \implies \begin{cases} x = 0 \\\\ y = \dfrac{1}{e} \end{cases}$ （唯一解）
+     
      - $\begin{cases} f''_{xx} = 4 + 2y^2 \\\\ f''_{xy} = 4xy \\\\ f''_{yy} = 2x^2 + \dfrac{1}{y} \end{cases} \implies \begin{cases} A = 4 + \dfrac{2}{e^2} \\\\ B = 0 \\\\ C = e \end{cases} \implies B^2 - AC = -4e - \dfrac{2}{e} < 0$
+     
      - 极小值 $f( 0, \dfrac{1}{e} ) = -\dfrac{1}{e}$ 
 
 <br>
 
-######  3、条件极（最）值
+#####  3、条件极（最）值
 
 1. 概念
    - 求目标函数 $u = f(x, y, z)$ 在约束条件 $\begin{cases} \varphi(x, y, z) = 0 \\\\ \psi(x, y, z) = 0 \end{cases}$ 下的极（最）值。
@@ -180,7 +223,7 @@ real-date: 2018-10-7
 
 <br>
 
-######  4、例题
+#####  4、例题
 
 1. 某公司可通过电台和报纸两种方式做销售某种商品的广告，根据统计资料，销售收入 $R$ （万元）与电台广告费用 $x_1$ （万元）及报纸广告费用 $x_2$ （万元）之间的关系有如下经验公式：$R = 15 + 14x_1 + 32x_2 - 8 x_1 x_2 - 2x_1^2 - 10x_2^2$ 。1️⃣  在广告费用不限的情况下，求最优广告策略；2️⃣  若提供的广告费用为 $1.5$ 万元，求相应的最优广告策略。
    - 令利润函数为：$\begin{array}{l} z = f(x_1, x_2) & = R - x_1 - x_2 \\\\ & = 15 + 13x_1 + 31x_2 - 8 x_1 x_2 - 2x_1^2 - 10x_2^2 \end{array}$ 

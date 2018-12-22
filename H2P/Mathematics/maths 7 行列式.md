@@ -35,7 +35,7 @@ $$
   \vdots & \vdots &  & \vdots \\ 
   a_{n1} & a_{n2} & \cdots & a_{nn} 
 \end{vmatrix}
-$$ 
+$$
 
 - $n$ 阶行列式由 $n$ 个 $n$ 维向量 $\alpha_1 = \left[ a_{11}, a_{12}, \cdots, a_{1n} \right]$，$\alpha_2 = \left[ a_{21}, a_{22}, \cdots, a_{2n} \right]$，$\cdots$，$\alpha_n = \left[ a_{n1}, a_{n2}, \cdots, a_{nn} \right]$ 组成，其结果为以这 $n$ 个向量为邻边的 $n$ 维图形的体积（ $n$ 维体积 ）。
 

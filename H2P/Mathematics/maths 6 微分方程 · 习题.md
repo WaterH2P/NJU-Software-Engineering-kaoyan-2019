@@ -57,7 +57,7 @@ $\begin{array}{l} \end{array}$
 #### ㊀、变量可分离型
 
 $$
-\dfrac{ {\rm  d}y }{ {\rm d}x } = f(x, y) = g(x) h(y)
+\dfrac{ {\rm  d}y }{ {\rm d}x } = f(x, y) = g(x) \, h(y)
 $$
 
 <br>
@@ -73,7 +73,7 @@ $$
 #### ㊂、一阶线性型
 
 $$
-y' + p(x)y = q(x), \qquad ( \, p(x), \, q(x) \text{ 为已知的连续函数 } )
+y' + p(x)y = q(x), \qquad ( \; p(x), \, q(x) \text{ 为已知的连续函数 } )
 $$
 
 <br>
@@ -93,7 +93,6 @@ $$
 $$
 y'' + py' + qy = 0 \qquad ( \, p, \, q \text{ 为常数 } )
 $$
-
 
 <br>
 
@@ -115,7 +114,7 @@ $$
 y'' + py' + qy = e^{\alpha x} \left[ \, P_m(x) \cos \beta x + P_n(x) \sin \beta x \, \right]
 $$
 
-$y^* = e^{\alpha x}\left[ \, Q_{l1}(x) \cos \beta x + Q_{l2}(x) \sin \beta x \, \right] x^k, \qquad l1 = l2 = \max\{ m, \, n \}$ 
+$y^* = e^{\alpha x}\left[ \, Q_{l1}(x) \cos \beta x + Q_{l2}(x) \sin \beta x \, \right] x^k, \qquad l1 = l2 = \max\{ m, \, n \}​$ 
 
 1. 一看：自由项中的 $\alpha, \, \beta \implies \alpha \pm \beta i$ 
 2. 二算：$\lambda_1, \, \lambda_2$ 

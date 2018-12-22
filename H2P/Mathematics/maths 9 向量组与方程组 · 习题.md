@@ -87,7 +87,7 @@ $$
 
 #### ㊂、重要结论（判别法的补充）
 
-$\begin{array}{l} (1) \text{ 部分相关，整体必相关 } \\\\ \text{ 若 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \text{ 线性相关，则 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s, \alpha_{s+1} \text{ 线性相关 }  \\\\      (2) \text{ 整体无关，则部分无关 } \\\\ \text{ 若 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s, \, \alpha_{s+1} \text{ 线性相关，则 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \text{ 线性无关 } \\\\      (3) \text{ 原来相关，缩短必无关 } \\\\      (4) \text{ 原来无关，延长必无关 } \end{array}$
+$\begin{array}{l} (1) \text{ 部分相关，整体必相关 } \\\\ \text{ 若 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \text{ 线性相关，则 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s, \alpha_{s+1} \text{ 线性相关 }  \\\\      (2) \text{ 整体无关，则部分无关 } \\\\ \text{ 若 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s, \, \alpha_{s+1} \text{ 线性相关，则 } \alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s \text{ 线性无关 } \\\\      (3) \text{ 原来相关，缩短必相关 } \\\\      (4) \text{ 原来无关，延长必无关 } \end{array}$ 
 
 <br>
 
@@ -107,7 +107,7 @@ $\begin{array}{l} (1) \text{ 部分相关，整体必相关 } \\\\ \text{ 若 } 
 
 $n$ 维空间由 $n$ 个 $n$ 维线性无关向量组表示
 
-（1） 若 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 无关，但 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s, \, \beta$ 相关，则 $\beta$ 可由 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 唯一表示。
+（1）若 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 无关，但 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s, \, \beta$ 相关，则 $\beta$ 可由 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_s$ 唯一表示。
 
 （2）若 $\beta_1, \, \cdots, \, \beta_s$ 可由 $\alpha_1, \, \alpha_2, \, \cdots, \, \alpha_t$ 表出，且 $s > t$，则 $\beta_1, \, \cdots, \, \beta_s$ 必相关。（以少表多，多的相关）
 

@@ -57,7 +57,7 @@ $$
 
 <br>
 
-#### 4、⭐️矩阵的乘法
+#### 4、⭐️ 矩阵的乘法
 
 - 设 $A$ 是 $m \times s$ 矩阵， $B$ 是 $s \times n$ 矩阵（矩阵 $A$ 的列数必须与矩阵 $B$ 的行数相等），则 $A, B$ 可乘，乘积 $AB$ 是 $m \times n$ 矩阵，记 $c = AB = ( c_{ij} )_{m \times n}$ ，$C$ 的第 $ i $ 行第 $ j $ 列元素 $c_{ij}$ 是 $A$ 的第 $ i $ 行的 $s$ 个元素与 $B$ 的第 $ j $ 列的 $s$ 个对应元素两两相乘之和，即 $c_{ij} = \sum\limits_{k = 1}^s a_{ik}b_{kj} = a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{is}b_{sj} \quad (i=1, 2, \cdots, m; \, j=1, 2, \cdots, n)$ 。
 - 向量内积

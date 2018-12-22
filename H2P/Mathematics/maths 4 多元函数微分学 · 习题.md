@@ -49,7 +49,7 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-###### 1、定义法
+##### 1、定义法
 
 $z=f(x, y)$ 
 
@@ -59,7 +59,7 @@ $\begin{array}{l} f'_y(x_0, \, y_0) &= \lim\limits_{\Delta y \to 0} \dfrac{ f(x_
 
 <br>
 
-###### 2、公式法
+##### 2、公式法
 
 使用求导公式
 
@@ -71,7 +71,7 @@ $z = f(x, \, y)$
 
 （1）全增量：$\Delta z = f(x + x_0, \, y + y_0) - f(x_0, \, y_0)$ 
 
-（2）线性增量：$A \Delta x + B \Delta y = \begin{cases} A = f'_x(x_0, \, y_0) \\\\ B = f'_y(x_0, \, y_0) \end{cases}$
+（2）线性增量：$A \Delta x + B \Delta y = \begin{cases} A = f'_x(x_0, \, y_0) \\\\ B = f'_y(x_0, \, y_0) \end{cases}$ 
 
 （3）$\lim\limits_{x \to x_0 \atop y\to y_0} \dfrac{ \Delta z - (A \Delta x + B \Delta y) }{ \sqrt{ (\Delta x)^2 + (\Delta y)^2 } } = 0$ $\implies$ $f(x)$ 在 $(x_0, \, y_0)$ 处可微。
 - $\sqrt{ (\Delta x)^2 + (\Delta y)^2 }$ 是 $(x_0, \, y_0)$ 和 $(x_0 + \Delta x, \, y_0 + \Delta y)$ 之间的距离。
@@ -80,7 +80,7 @@ $\Delta z = (A \Delta x + B \Delta y) + o( \sqrt{ (\Delta x)^2 + (\Delta y)^2 } 
 
 <br>
 
-###### ⭐️ 全微分
+##### ⭐️ 全微分
 
 $\left. {\rm d}z \right|_{ (x_0, \, y_0) } = f'_x(x_0, \, y_0){\rm d}x + f'_y(x_0, \, y_0){\rm d}y$ 
 
@@ -100,21 +100,15 @@ $\left. {\rm d}z \right|_{ (x_0, \, y_0) } = f'_x(x_0, \, y_0){\rm d}x + f'_y(x_
 
 #### ㊄、极最值
 
-<a href="https://waterh2p.cn/2018/08/04/maths%204%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/#3.%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E6%9C%80%E5%80%BC" target="_blank">
+<a href="https://waterh2p.cn/2018/08/04/maths%204%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/#3.%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E6%9C%80%E5%80%BC" target="_blank">极最值</a>
 
 <br>
 
-###### 1、无条件极值
+##### 1、无条件极值
 
 <br>
 
-###### 2、条件极（最）值与拉格朗日乘数法
-
-
-
-
-
-
+##### 2、条件极（最）值与拉格朗日乘数法
 
 <br>
 
@@ -179,14 +173,6 @@ $$
 $$
 
 为某二元函数 $u(x, \, y)$ 的全微分。1⃣️ 求 $f(x)$；2⃣️ 求 $u(x, \, y)$ 的一般表达式。
-
-
-
-
-
-
-
-
 
 <br>
 

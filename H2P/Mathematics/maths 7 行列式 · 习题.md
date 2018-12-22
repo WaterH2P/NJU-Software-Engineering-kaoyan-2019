@@ -79,7 +79,7 @@ $\begin{bmatrix} \end{bmatrix}$
 
 <br>
 
-## 二、⭐️⭐️⭐️行列式计算
+## 二、⭐️⭐️⭐️ 行列式计算
 
 <br>
 
@@ -200,7 +200,7 @@ $$
 
 ###### 1、
 
-已知 $n$ 阶行列式 $\mid A \mid = a$，$\begin{vmatrix} & A & \beta & \\\\ & \beta^{\rm T} & b & \end{vmatrix} = 0$，其中 $\beta$ 是 $n$ 维列向量，则 $\begin{vmatrix} & A & \beta & \\\\ & \beta^{\rm T} & c & \end{vmatrix} =$ ________ 。
+已知 $n$ 阶行列式 $\mid A \mid = a$，$\begin{vmatrix} A & \beta \\ \beta^{\rm T} & b \end{vmatrix} = 0$，其中 $\beta$ 是 $n$ 维列向量，则 $\begin{vmatrix} A & \beta \\ \beta^{\rm T} & c \end{vmatrix} =$ ________ 。
 
 <br>
 
