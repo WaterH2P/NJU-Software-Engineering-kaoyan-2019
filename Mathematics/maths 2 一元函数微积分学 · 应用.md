@@ -1,37 +1,19 @@
 ---
-title: 一元函数微积分学 · 应用
-date: 2018-8-2
+date: 2018-11-25
 updated: 2018-12-22
-tags: [maths,高数,kaoyan]
-mathjax: true
-
-description: 做笔记，喝凉茶，做习题
-real-date: 2018-11-25
 ---
 
-<!-- 
-$\begin{array}{l} ( {\rm A} ) \, 1 \qquad & ( {\rm B} ) \, 2 \\\\ ( {\rm C} ) \, 3 \qquad & ( {\rm D} ) \, 4 \end{array}$ 
--->
-
-<!-- 
-$\begin{array}{l} \end{array}$
--->
-
-<!-- 
-⭐
-️ -->
-
-## 一、几何应用
+# 一、几何应用
 
 <br>
 
-#### ㊀、极值
+## ㊀、极值
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%9E%81%E5%80%BC%E5%88%A4%E5%88%AB%E6%B3%95.jpg" width="70%">
+<img src="./images/2-极值判别法.jpg" width="70%">
 
 <br>
 
-##### 1、证明判别法二
+### 1、证明判别法二
 
 构造 $\lim\limits_{x \to x_0} \dfrac{ f(x) - f(x_0) }{ (x-x_0)^2 }$ 
 
@@ -45,15 +27,15 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-#### ㊁、拐点
+## ㊁、拐点
 
 凹曲线和凸曲线的分界点
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%8B%90%E7%82%B9%E5%88%A4%E5%88%AB%E6%B3%95.png" width="70%">
+<img src="./images/2-拐点判别法.png" width="70%">
 
 <br>
 
-##### 1、证明判别法二
+### 1、证明判别法二
 
 构造 $\lim\limits_{x \to x_0} \dfrac{ f''(x) - f''(x_0) }{x-x_0} = f'''(x_0)$ 
 
@@ -61,27 +43,27 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-#### ㊂、渐近线
+## ㊂、渐近线
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%B8%90%E8%BF%91%E7%BA%BF.png" width="80%">
-
-<br>
-
-#### ㊃、最值点
-
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%9C%80%E5%80%BC%E7%82%B9.png" width="80%">
+<img src="./images/2-渐近线.png" width="80%">
 
 <br>
 
-##### sinx 面积
+## ㊃、最值点
+
+<img src="./images/2-最值点.png" width="80%">
+
+<br>
+
+### sinx 面积
 
 $(0, \pi)$
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/sinx%20%E9%9D%A2%E7%A7%AF.png" width="60%">
+<img src="./images/2-sinx 面积.png" width="60%">
 
 <br>
 
-#### ㊄、平面图形的面积
+## ㊄、平面图形的面积
 
 $$
 S = \int_a^b \mid y_2(x) - y_1(x) \mid {\rm d}x
@@ -89,29 +71,29 @@ $$
 
 <br>
 
-#### ㊅、旋转体的体积
+## ㊅、旋转体的体积
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E6%97%8B%E8%BD%AC%E4%BD%93%E4%BD%93%E7%A7%AF.png" width="60%">
+<img src="./images/2-旋转体体积.png" width="60%">
 
 <br>
 
-#### ㊆、平均值
+## ㊆、平均值
 
 $f(x)$ 在 $[a, \, b]$ 上的平均值 $\overline{f} = \dfrac{ \int_a^b f(x) \, {\rm d}x }{b-a}$ 。
 
 <br>
 
-## 二、逻辑证明
+# 二、逻辑证明
 
 <br>
 
-#### ㊀、中值定理
+## ㊀、中值定理
 
 <br>
 
-#### ㊁、方程根
+## ㊁、方程根
 
-<img src="./images/方程根.png" width="60%">
+<img src="./images/2-方程根.png" width="70%">
 
 ⭐罗尔原话
 
@@ -121,23 +103,23 @@ $$
 
 <br>
 
-## 三、不等式
+# 三、不等式
 
 核心工具是求导研究性态
 
 <br>
 
-## 四、练习题
+# 四、练习题
 
 <br>
 
-#### ㊀、渐近线
+## ㊀、渐近线
 
 曲线 $y = \sqrt{4x^2 + x} \ln \left( 2 + \dfrac{1}{x} \right)$ 的渐近线有 ________ 条。
 
 <br>
 
-#### ㊁、平面图形的面积
+## ㊁、平面图形的面积
 
 设 
 
@@ -149,7 +131,7 @@ $$
 
 <br>
 
-#### ㊂、旋转体的体积
+## ㊂、旋转体的体积
 
 设
 
@@ -161,23 +143,23 @@ $$
 
 <br>
 
-#### ㊃、中值定理
+## ㊃、中值定理
 
 <br>
 
-##### 1
+### 1
 
 设 $x>0$，若 $xe^y = e^x - 1$，证明 $0<y<x$。
 
 <br>
 
-##### 2
+### 2
 
 设 $f(x)$ 在 $[0, \, 1]$ 上连续，$(0, \, 1)$ 内可导，$f(0)=0, \, f(1)=1$。证明存在不同的 $\xi_1, \, \xi_2, \, \xi_3 \in (0, \, 1)$，使 $f'(\xi_1) + f'(\xi_2) + f'(\xi_3) = 3$。
 
 <br>
 
-#### ㊄、方程根
+## ㊄、方程根
 
 证明 
 
@@ -189,7 +171,7 @@ $$
 
 <br>
 
-#### ㊅、不等式
+## ㊅、不等式
 
 已知常数 $k \geq \ln 2 - 1$，证明：
 
@@ -197,28 +179,19 @@ $$
 (x-1)(x - \ln^2 x + 2k \ln x - 1) \geq 0
 $$
 
+<br>
 
-
-
-
-
-
-
-
+# 五、参考答案
 
 <br>
 
-## 五、参考答案
-
-<br>
-
-#### ㊀、渐近线
+## ㊀、渐近线
 
 $3$ 条，$1$ 条铅垂，$2$ 条倾斜。
 
 <br>
 
-#### ㊁、平面图形的面积
+## ㊁、平面图形的面积
 
 1️⃣ 
 
@@ -238,11 +211,11 @@ $\begin{array}{l} S &= 2 \int_0^{+\infty} \left[ \dfrac{ \sqrt{\pi} }{2} - \int_
 
 <br>
 
-#### ㊂、旋转体的体积
+## ㊂、旋转体的体积
 
 $f(x) = \begin{cases} 0, \quad & x<0 \\\\ -\dfrac{x}{x^2+1}, \quad & x>0 \end{cases}$ 
 
-<img src="./images/旋转体体积 例题.jpg" width="60%">
+<img src="./images/2-旋转体体积 例题.jpg" width="60%">
 
 $\begin{array}{l} V &= \int_0^1 \pi \left( \dfrac{x}{x^2+1} \right)^2 \, {\rm d}x - \dfrac{1}{3} \cdot \pi \cdot \left( \dfrac{1}{2} \right)^2 \\\\ &= \dfrac{\pi^2}{8} - \dfrac{\pi}{4} - \dfrac{\pi}{12} \\\\ &= \dfrac{\pi^2}{8} - \dfrac{\pi}{3} \end{array}$
 
@@ -254,23 +227,23 @@ $\begin{array}{l} V &= \int_0^1 \pi \left( \dfrac{x}{x^2+1} \right)^2 \, {\rm d}
 
 <br>
 
-#### ㊃、中值定理
+## ㊃、中值定理
 
 <br>
 
-##### 1
+### 1
 
 $\begin{array}{l} & e^y = \dfrac{e^x - e^0}{x-0} = e^\xi, \; (0<\xi<x) \\\\ \implies & y = \xi \implies 0<y<x \end{array}$ 
 
 <br>
 
-##### 2
+### 2
 
 将 $[0, \, 1]$ 三等分为 $(0, \dfrac{1}{3}), \; (\dfrac{1}{3}, \dfrac{2}{3}), \; (\dfrac{2}{3}, 1)$，分别对其使用拉格朗日中值定理。
 
 <br>
 
-#### ㊄、
+## ㊄、
 
 $$
 \int_0^\pi \sqrt{ 1 - \cos 2x } \, {\rm d}x = \int_0^\pi \sqrt{2} \sin x \, {\rm d}x = 2\sqrt{2}
@@ -286,7 +259,7 @@ $f''(x) = -\left( \dfrac{1}{x^2} + e^x \right) \not= 0$，所以 $f''(x)$ 至多
 
 <br>
 
-#### ㊅、不等式
+## ㊅、不等式
 
 $$
 (x-1)(x - \ln^2 x + 2k \ln x - 1) \geq 0
@@ -303,4 +276,3 @@ $x=1$ 时，成立。
 $\begin{array}{l} \begin{cases} g'(x) = 1 - \dfrac{2}{x} = 0 \implies x = 2 \\\\ g''(x) = \dfrac{2}{x^2} > 0 & \end{cases} \\ & \end{array}$，所以 $x=2$ 是 $g(x)$ 在 $(0, \, +\infty)$ 上的极小值，也是最小值。由于 $g(2) = 2 \left[ k - (\ln 2 - 1) \right] \geq 0$，所以 $g(x) > 0, \; x \not= 2$，所以  $f'(x) > 0, \; x \not= 2$。
 
 $f(1) = 1 - 1 = 0$，所以 $0<x<1$ 时，$f(x)<0$；$x>1$ 时，$f(x)>0$。得证。
-

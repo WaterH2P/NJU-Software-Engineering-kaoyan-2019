@@ -1,19 +1,13 @@
 ---
-title: 二次型
-date: 2018-8-11
+date: 2018-10-27
 updated: 2018-10-27
-tags: [maths,线代,kaoyan]
-mathjax: true
-
-description: 做笔记，喝凉茶，看线代
-real-date: 2018-10-27
 ---
 
-## 一、二次型
+# 一、二次型
 
 <br>
 
-#### 1、定义
+## 1、定义
 
 n 元变量 $x_1, x_2, \cdots, x_n$ 的二次齐次多项式
 $$
@@ -63,30 +57,35 @@ $(\ast\ast\ast)$ 式称为二次型 $f(x_1, x_2, \cdots, x_n)$ 的矩阵表达�
 
 <br>
 
-#### 2、例题
+## 2、例题
 
 <br>
 
-###### 1
+### 1
 
 写出三元二次型
 $$
 f(x_1, x_2, x_3) = 2x_1^2 + 2x_2^2 + 2x_3^2 - 2x_1x_2 - 2x_2x_3 + 2x_1x_3
 $$
 的二次型矩阵 $A$。
+
 - 先写模子：$\begin{pmatrix} x_1 & x_2 & x_3 \end{pmatrix} \begin{pmatrix} \ast & \ast & \ast \\ \ast & \ast & \ast \\ \ast & \ast & \ast \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}$ 
+
 - 主对角线位置抄【平方项】前的系数
+
    - $\begin{pmatrix} x_1 & x_2 & x_3 \end{pmatrix} \begin{pmatrix} 2 & \ast & \ast \\ \ast & 2 & \ast \\ \ast & \ast & 2 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}$ 
+
 - 把混合项 $x_ix_j \, (i \not= j)$ 前的系数平分，写在 $a_{ij}$ 和 $a_{ji}$ 的位置
+
    - $\begin{pmatrix} x_1 & x_2 & x_3 \end{pmatrix} \begin{pmatrix} 2 & -1 & 1 \\ -1 & 2 & -1 \\ 1 & -1& 2 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}$ 
 
 <br>
 
-## 二、线性变换
+# 二、线性变换
 
 <br>
 
-#### 1、定义
+## 1、定义
 
 对于 n 元二次型 $f(x_1, x_2, \cdots, x_n)$，若令
 $$
@@ -117,37 +116,56 @@ $$
 
 <br>
 
-#### 2、例题
+## 2、例题
 
 <br>
 
-###### 1
+### 1
 
 已知二次型 $f(x_1, x_2, x_3) = 4x_2^2 - 3x_3^2 + 4x_1x_2 - 4x_1x_3 + 8x_2x_3$ ，1️⃣ 写出二次型 $f$ 的矩阵表达式；2️⃣ 用正交变换把二次型 $f$ 化为标准形，并写出相应的正交矩阵。
+
 - 1️⃣ 
+
    - $a = \begin{pmatrix} 0 & 2 & -2 \\ 2 & 4 & 4 \\ -2 & 4 & -3 \end{pmatrix}$ 
+
    - $f(x_1, x_2, x_3) = \begin{pmatrix} x_1 & x_2 & x_3 \end{pmatrix} \begin{pmatrix} 0 & 2 & -2 \\ 2 & 4 & 4 \\ -2 & 4 & -3 \end{pmatrix} \begin{pmatrix} x_1 \\ x_2 \\ x_3 \end{pmatrix}$ 
+
 - 2️⃣ 
+
    - $\begin{vmatrix} \lambda E - A \end{vmatrix} = 0 \implies \begin{cases} \lambda_1 = -6, & \xi_1 = \begin{pmatrix} 1 & -1 & 2 \end{pmatrix}^{\rm T} \\\\ \lambda_2 = 1, & \xi_2 = \begin{pmatrix} -2 & 0 & 1 \end{pmatrix}^{\rm T} \\\\ \lambda_3 = 6, & \xi_3 = \begin{pmatrix} 1 & 5 & 2 \end{pmatrix}^{\rm T} \end{cases}$ 
+
    - ⭐️ 写出正交阵 P
+
       - $\xi_1, \xi_2, \xi_3$ 正交化 $and$ 单位化
+
       - $P = \begin{pmatrix} \dfrac{1}{ \sqrt{6} } & -\dfrac{2}{ \sqrt{5} } & \dfrac{1}{ \sqrt{30} } \\\\ -\dfrac{1}{ \sqrt{6} } & 0 & \dfrac{5}{ \sqrt{30} } \\\\ \dfrac{2}{ \sqrt{6} } & \dfrac{1}{ \sqrt{5} } & \dfrac{2}{ \sqrt{30} } \end{pmatrix}$ ，则 $P^{-1} = P^{\rm T}$ 。
+
    - 令 $x = PY \implies \begin{array}{l} \\ f &= X^{\rm T}AX &= (PY)^{\rm T} A PY \\\\ &= Y^{\rm T}P^{\rm T}APY &= Y^{\rm T}P^{-1}APY \\\\ &= Y^{\rm T} \Lambda Y \\ & \end{array}$
+
    - $f = \begin{pmatrix} y_1 & y_2 & y_3 \end{pmatrix} \begin{pmatrix} -6 & & \\ & 1 & \\ & & 6 \end{pmatrix} \begin{pmatrix} y_1 \\ y_2 \\ y_3 \end{pmatrix} = -6y_1^2 + y_2^2 + 6y_3^3$
 
 <br>
 
-###### 2、施式正交法
+### 2、施式正交法
 
 - $\xi_1 \not\bot \xi_2, \, \xi_1 \bot \xi_3, \, \xi_2 \bot \xi_3 \implies \eta_1 \bot \eta_2, \, \eta_1 \bot \eta_3, \, \eta_2 \bot \eta_3$ ，其中 $\eta_3$ 就是 $\xi_3$ ，对 $\xi_1, \, \xi_2$ 正交化。
+
 - 例题
+
    1. $a \implies \begin{cases} \xi_1 = \begin{pmatrix} -2 & 1 & 0 \end{pmatrix}^{\rm T} \\\\ \xi_2 = \begin{pmatrix} 2 & 0 & 1 \end{pmatrix}^{\rm T} \\\\ \xi_3 = \begin{pmatrix} 1 & 2 & -2 \end{pmatrix}^{\rm T} \end{cases}$ ，$\xi_1 \not\bot \xi_2, \, \xi_1 \bot \xi_3, \, \xi_2 \bot \xi_3$ 
+
       - 令 $\eta_1 = \xi_1, \, \eta_3 = \xi_3$ 
+
       - $\xi_2$ 减去 $\xi_2 \text{ 在 } \xi_1$ 上的投影，得到的向量与 $\xi_1$ 垂直
-         - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/11-2.2%20%E5%90%91%E9%87%8F%E6%AD%A3%E4%BA%A4%E5%8C%96.png" width="50%">
+
+         - <img src="./images/11-2.2 向量正交化.png" width="50%">
+
       - $\begin{array}{l} \xi_2 \text{ 在 } \xi_1 \text{ 上的投影 } &= \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta \, \xi_1^o \\\\ &= \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta \dfrac{ \xi_1 }{ \begin{Vmatrix} \xi_1 \end{Vmatrix} } &= \dfrac{ \begin{Vmatrix} \xi_1 \end{Vmatrix} \begin{Vmatrix} \xi_2 \end{Vmatrix} \cos \theta }{ \begin{Vmatrix} \xi_1 \end{Vmatrix} \begin{Vmatrix} \xi_1 \end{Vmatrix} } \xi_1 \\\\ &= \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi_1 \end{array}$ 
+         
          - $\theta \text{ 是 } \xi_1, \, \xi_2$ 的夹角，$\xi_1^o \text{ 是 } \xi_1$ 方向上的单位向量 
+
       - 所以：$\begin{array}{l} \\ \eta_2 &= \xi_2 - \dfrac{ (\xi_2, \xi_1) }{ (\xi_1, \xi_1) } \xi_1 \\\\ &= \begin{pmatrix} 2 \\ 0 \\ 1 \end{pmatrix} - \dfrac{-4}{5} \begin{pmatrix} -2 \\ 1 \\ 0 \end{pmatrix} \\\\ &= \begin{pmatrix} \dfrac{2}{5} & \dfrac{4}{5} & 1 \end{pmatrix}^{\rm T} \\ & \end{array}$ 
+
       - $\eta_1, \, \eta_2, \, \eta_3$ 正交 
 
 

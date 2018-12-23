@@ -1,44 +1,25 @@
 ---
-title: 微分方程 · 习题
-date: 2018-8-6
-updated: 2018-11-26
-tags: [maths,高数,kaoyan]
-mathjax: true
-
-description: 做笔记，喝凉茶，做习题
-real-date: 2018-11-26
+date: 2018-11-26
+updated: 2018-12-23
 ---
 
-<!-- 
-$\begin{array}{l} ( {\rm A} ) \, 1 \qquad & ( {\rm B} ) \, 2 \\\\ ( {\rm C} ) \, 3 \qquad & ( {\rm D} ) \, 4 \end{array}$ 
--->
-
-<!-- 
-$\begin{array}{l} \end{array}$
-
-\begin{array}{l} \\ 
- \\ & \end{array}
--->
-
-<!-- 
-⭐
-㊀ ㊁ ㊂ ㊃ ㊄ ㊅ ㊆ ㊇ ㊈
-
-<img src="" width="80%">
-️ -->
 
 微分方程：10
 
 <br>
 
-## 一、引言
+# 一、引言
 
 按类求解，对号入座
 
 1. 一阶方程
+   
    - 可分离变量、齐次型、一阶线性型、可降价
+
 2. 高阶方程
+  
    - 齐次、非齐次
+
 3. 应用题
 
 【注】
@@ -47,14 +28,13 @@ $\begin{array}{l} \end{array}$
 
 2⃣️ 
 
+<br>
+
+# 二、一阶方程的求解
 
 <br>
 
-## 二、一阶方程的求解
-
-<br>
-
-#### ㊀、变量可分离型
+## ㊀、变量可分离型
 
 $$
 \dfrac{ {\rm  d}y }{ {\rm d}x } = f(x, y) = g(x) \, h(y)
@@ -62,7 +42,7 @@ $$
 
 <br>
 
-#### ㊁、齐次型方程
+## ㊁、齐次型方程
 
 $$
 \dfrac{ {\rm d}y }{ {\rm d}x } = f \left( \dfrac{y}{x} \right)
@@ -70,7 +50,7 @@ $$
 
 <br>
 
-#### ㊂、一阶线性型
+## ㊂、一阶线性型
 
 $$
 y' + p(x)y = q(x), \qquad ( \; p(x), \, q(x) \text{ 为已知的连续函数 } )
@@ -78,17 +58,17 @@ $$
 
 <br>
 
-#### ㊃、可降阶
+## ㊃、可降阶
 
 <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E5%8F%AF%E9%99%8D%E9%98%B6.jpg" width="60%">
 
 <br>
 
-## 三、二阶方程的求解
+# 三、二阶方程的求解
 
 <br>
 
-#### ㊀、二阶常系数齐次线性微分方程
+## ㊀、二阶常系数齐次线性微分方程
 
 $$
 y'' + py' + qy = 0 \qquad ( \, p, \, q \text{ 为常数 } )
@@ -96,11 +76,11 @@ $$
 
 <br>
 
-#### ㊁、二阶常系数非齐次线性微分方程
+## ㊁、二阶常系数非齐次线性微分方程
 
 <br>
 
-###### 2
+### 2
 
 $$
 y'' + py' + qy = e^{\alpha x}P_m(x) \qquad ( \, P_m(x) \text{ 为 } x \text{ 的 } m \text{ 次多项式 })
@@ -108,7 +88,7 @@ $$
 
 <br>
 
-###### 2
+### 2
 
 $$
 y'' + py' + qy = e^{\alpha x} \left[ \, P_m(x) \cos \beta x + P_n(x) \sin \beta x \, \right]
@@ -117,23 +97,18 @@ $$
 $y^* = e^{\alpha x}\left[ \, Q_{l1}(x) \cos \beta x + Q_{l2}(x) \sin \beta x \, \right] x^k, \qquad l1 = l2 = \max\{ m, \, n \}​$ 
 
 1. 一看：自由项中的 $\alpha, \, \beta \implies \alpha \pm \beta i$ 
+
 2. 二算：$\lambda_1, \, \lambda_2$ 
+
 3. 三比：$k = \begin{cases} 1, & \lambda_1, \lambda_2 = \alpha \pm \beta i \\\\ 0 & \lambda_1, \lambda_2 \not= \alpha \pm \beta i \end{cases}$ 
 
+<br>
 
-
-
-
-
-
+# 四、练习题
 
 <br>
 
-## 四、练习题
-
-<br>
-
-#### 、齐次型方程
+## 、齐次型方程
 
 已知函数 $y(x) \, (x>0)$ 可微且满足方程 
 
@@ -145,7 +120,7 @@ $$
 
 <br>
 
-#### 、一阶线性型
+## 、一阶线性型
 
 已知微分方程 $y' + y = f(x)$，其中 $f(x)$ 是 ${\rm R}$ 上的连续函数。
 
@@ -155,34 +130,23 @@ $$
 
 <br>
 
-#### 、可降阶
+## 、可降阶
 
 求 $2yy'' = (y')^2 + y^2$ 满足 $\begin{cases} y(0) = 1, \\\\ y'(0) = -1 \end{cases}$ 的特解。 
 
 <br>
 
-#### 、二阶常系数齐次线性微分方程
+## 、二阶常系数齐次线性微分方程
 
 设 $\cos x$ 与 $xe^x$ 为 $4$ 阶常系数线性其次微分方程的两个解，则首项系数为 $1$ 的该方程为 ________ 。
 
+<br>
 
-
-
-
-
-
-
-
-
-
+# 五、参考答案
 
 <br>
 
-## 五、参考答案
-
-<br>
-
-#### 、齐次型方程
+## 、齐次型方程
 
 对 $y(x) - 1 = \int_1^x \left[ \dfrac{ y^2(t) }{t^2} + \dfrac{ y(t) }{t} \right] \, {\rm d}t$ 两边求导得：$y' = \dfrac{y^2}{x^2} + \dfrac{y}{x}$。
 
@@ -196,7 +160,7 @@ $\begin{array}{l} \implies & 1 = - \dfrac{1}{0+C} \implies C=-1 \\\\ \implies & 
 
 <br>
 
-#### 、一阶线性型
+## 、一阶线性型
 
 1⃣️ 
 
@@ -228,7 +192,7 @@ $\begin{array}{l} \therefore && y(x+T) - y(x) \\\\ & = & e^{-x} \left[ \left( \d
 
 <br>
 
-#### 、可降阶
+## 、可降阶
 
 求 $2yy'' = (y')^2 + y^2$ 满足 $\begin{cases} y(0) = 1, \\\\ y'(0) = -1 \end{cases}$ 的特解。
 
@@ -238,7 +202,7 @@ $\begin{array}{l} \implies & 2y \cdot \dfrac{ {\rm d}p }{ {\rm d}y } p = p^2 + y
 
 <br>
 
-#### 、二阶常系数齐次线性微分方程
+## 、二阶常系数齐次线性微分方程
 
 $4$ 阶方程分解为一个二阶方程乘另一个二阶方程。
 
@@ -247,11 +211,3 @@ $4$ 阶方程分解为一个二阶方程乘另一个二阶方程。
 $xe^x = (0 + 1 \cdot x) e^{1 \cdot x} \implies \lambda_1 = \lambda_2 = 1$，所以该方程为 $(\lambda - 1)^2 = 0$。
 
 $\begin{array}{l} \\ & (\lambda^2 + 1)(\lambda - 1)^2 \\\\ = & \lambda^4 - 2\lambda^3 + 2\lambda^2 - 2\lambda + 1 = 0 \\\\ \implies & y^{(4)} - 2y''' + 2y'' - 2y' + y = 0 \end{array}$ 
-
-
-
-
-
-
-
-

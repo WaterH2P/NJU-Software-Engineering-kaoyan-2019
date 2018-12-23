@@ -1,20 +1,14 @@
 ---
-title: 一元函数积分学
-date: 2018-8-3
+date: 2018-10-2
 updated: 2018-11-5
-tags: [maths,高数,kaoyan]
-mathjax: true
-
-description: 做笔记，喝凉茶，看高数
-real-date: 2018-10-2
 ---
 
 
-## 一、定义
+# 一、定义
 
 <br>
 
-#### ㊀、不定积分【 +C 】
+## ㊀、不定积分【 +C 】
 
 - $\forall x \in I$ ，使 $F'(x) = f(x)$ ，则称 $F(x)$ 是 $f(x)$ 在 $I$ 上的一个原函数。
 
@@ -22,7 +16,7 @@ real-date: 2018-10-2
 
 <br>
 
-#### ㊁、定积分
+## ㊁、定积分
 
 黎曼积分 
 
@@ -33,7 +27,7 @@ $$
 
 <br>
 
-#### ㊂、小结
+## ㊂、小结
 
 牛顿—莱布尼茨公式
 
@@ -43,15 +37,15 @@ $$
 
 <br>
 
-## 二、计算
+# 二、计算
 
 <br>
 
-#### ㊀、凑微分法
+## ㊀、凑微分法
 
 <br>
 
-######  1、基本积分公式
+### 1、基本积分公式
 
 - $\int x^k {\rm d}x = \dfrac{1}{k + 1}x^{k + 1} + C, \quad ( k \not= -1 )$ 
    - $\begin{cases} \int \dfrac{1}{x^2} \, {\rm d}x = -\dfrac{1}{x} + C \\\\ \int \dfrac{1}{ \sqrt{x} } \, {\rm d}x = 2 \sqrt{x} + C \end{cases}$ 
@@ -70,7 +64,7 @@ $$
 
 <br>
 
-######  2、例题
+### 2、例题
 
 1. $\int \dfrac{1}{ (2 - x) \sqrt{1 - x} } \, {\rm d}x$ 
    
@@ -81,7 +75,6 @@ $$
 2. $\int \dfrac{x}{ (2 - x^2) \sqrt{1 - x^2} } \, {\rm d}x$ 
 
 3. $\int \dfrac{ \cos^2 x - \sin x }{ \cos x(1 + \cos x e^{\sin x}) } \, {\rm d}x$ 
-   
    
    - **定理** 
      
@@ -115,13 +108,13 @@ $$
 
 <br>
 
-#### ㊁、换元法
+## ㊁、换元法
 
 当凑微分法不成功时，考虑换元。
 
 <br>
 
-######  1、三角换元
+### 1、三角换元
 
 - 方法
    
@@ -157,7 +150,7 @@ $$
 
 <br>
 
-######  2、倒带换
+### 2、倒带换
 
 $(x = \dfrac{1}{t})$
 
@@ -169,7 +162,7 @@ $(x = \dfrac{1}{t})$
 
 <br>
 
-######  3、复杂部分代换
+### 3、复杂部分代换
 
 - 令复杂部分 $= t$（举重若轻）
 
@@ -207,7 +200,7 @@ $(x = \dfrac{1}{t})$
 
 <br>
 
-#### ㊂、分部积分法
+## ㊂、分部积分法
 
 $\underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarrow{ \text{更容易求导} \to \text{更容易积分} } \implies \int u {\rm d}v = uv - \int v {\rm d}u$  
 
@@ -215,7 +208,7 @@ $\underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarro
 
 <br>
 
-######  1、⭐️方法
+### 1、⭐️方法
 
 1. 被积函数为 $P_n(x) \cdot e^{kx}$ ，$P_n(x) \sin ax$ ，$P_n(x) \cos ax$ ，选 $P_n(x) = u$ ，其中 $P_n(x)$ 为幂函数多项式。
    
@@ -239,7 +232,7 @@ $\underrightarrow{ \text{反、对、幂、指、三} } \implies \underrightarro
 
    - 最后一项（列）相乘再积分
 
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-2.3%20%E5%88%86%E9%83%A8%E7%A7%AF%E5%88%86%E5%85%AC%E5%BC%8F%E7%9A%84%E6%8E%A8%E5%B9%BF.jpg" width="70%">
+   - <img src="./images/3-2.3 分部积分公式的推广.jpg" width="70%">
 
 $$
 \begin{array}{|c|c|c|c|c|c|}
@@ -253,7 +246,7 @@ $$
 
 <br>
 
-######  2、例题
+### 2、例题
 
 1. 求 $\int x^2 \arctan x \, {\rm d}x$ 
    
@@ -271,17 +264,17 @@ $$
 
 <br>
 
-#### ㊃、有理函数积分
+## ㊃、有理函数积分
 
 <br>
 
-######  1、定义
+### 1、定义
 
 - 形如 $\int \dfrac{ P_n(x) }{ Q_m(x) } \, {\rm d}x, \quad (n < m)$ 的积分。 
 
 <br>
 
-######  2、方法
+### 2、方法
 
 1. 将 $Q_m(x)$ 因式分解
 
@@ -289,7 +282,7 @@ $$
 
 <br>
 
-######  3、拆分原则
+### 3、拆分原则
 
 1. $Q_m(x)$ 分解出 $(ax + b)^k \implies$ 产生 $ k $ 项。
    
@@ -301,7 +294,7 @@ $$
 
 <br>
 
-######  4、例题
+### 4、例题
 
 1. 计算 $I = \int \dfrac{ 4x^2 - 6x -1 }{ (x + 1)(2x - 1)^2 } \, {\rm d}x$ 。
    
@@ -311,7 +304,7 @@ $$
     
          - $\begin{cases} \text{ 取 } x = \dfrac{1}{2}, \quad -3 = C( \dfrac{1}{2} + 1 ) & \implies C = -2 \\\\ \text{ 取 } x = -1, \quad 9 = 9A & \implies A = 1 \\\\ \text{ 比较 } x^2 \text{ 的系数}, \quad 4 = 4A + 2B & \implies B = 0 \end{cases}$ 
    
-   - $\begin{array}{l} I &= \int \dfrac{1}{x + 1} \, {\rm d}x - 2 \int \dfrac{1}{ (2x - 1)^2 } \, {\rm d}x \\ &= \ln |x + 1| + \dfrac{1}{2x - 1} + C \\ \end{array}$ 
+   - $\begin{array}{l} I &= \int \dfrac{1}{x + 1} \, {\rm d}x - 2 \int \dfrac{1}{ (2x - 1)^2 } \, {\rm d}x \\\\ &= \ln |x + 1| + \dfrac{1}{2x - 1} + C \\ \end{array}$ 
 
 2. 计算 $I = \int \dfrac{x}{x^3 - x^2 + x - 1} \, {\rm d}x$ 
    
@@ -319,21 +312,21 @@ $$
    
    - $\dfrac{x}{ (x^2 + 1)(x - 1) } = \dfrac{1}{2} \left( \dfrac{-x + 1}{x^2 + 1} + \dfrac{1}{x - 1} \right)$ 
    
-   - $\begin{array}{l} I & = -\dfrac{1}{2} \int \left( \dfrac{ \frac{1}{2} \cdot 2x - 1 }{ x^2 + 1 } \right) {\rm d}x + \dfrac{1}{2} \int \dfrac{1}{x - 1} \, {\rm d}x \\ & = -\dfrac{1}{4} \ln(x^2 + 1) + \dfrac{1}{2} \arctan x + \dfrac{1}{2} \ln |x - 1| + C \end{array}$ 
+   - $\begin{array}{l} I & = -\dfrac{1}{2} \int \left( \dfrac{ \frac{1}{2} \cdot 2x - 1 }{ x^2 + 1 } \right) {\rm d}x + \dfrac{1}{2} \int \dfrac{1}{x - 1} \, {\rm d}x \\\\ & = -\dfrac{1}{4} \ln(x^2 + 1) + \dfrac{1}{2} \arctan x + \dfrac{1}{2} \ln |x - 1| + C \end{array}$ 
 
 3. 计算 $I = \int \dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } {\rm d}t$
       
    - $\dfrac{t^3 - 3t}{ (t - 1)^2(t + 1)^2 } = \dfrac{1}{2} \left[ \dfrac{ 1 }{t - 1} + \dfrac{ -1 }{ (t - 1)^2 } + \dfrac{ 1 }{t + 1} + \dfrac{ 1 }{ (t + 1)^2 } \right]$ 
       
-   - $\begin{array}{l} I & = \dfrac{1}{2} \left( \ln \mid t - 1 \mid + \dfrac{1}{t - 1} + \ln \mid t + 1 \mid - \dfrac{1}{t + 1} \right) + C \\ & = \dfrac{1}{2} \ln \mid t^2 - 1 \mid + \dfrac{1}{t^2 - 1} + C \end{array}$ 
+   - $\begin{array}{l} \\ I & = \dfrac{1}{2} \left( \ln \mid t - 1 \mid + \dfrac{1}{t - 1} + \ln \mid t + 1 \mid - \dfrac{1}{t + 1} \right) + C \\\\ & = \dfrac{1}{2} \ln \mid t^2 - 1 \mid + \dfrac{1}{t^2 - 1} + C \\ & \end{array}$ 
 
 <br>
 
-## 三、定积分的计算
+# 三、定积分的计算
 
 <br>
 
-####  ㊀、定义
+##  ㊀、定义
 
 $$
 \int_a^b f(x) \, {\rm d}x = F(b) - F(a)
@@ -343,7 +336,7 @@ $$
 
 <br>
 
-####  ㊁、例题
+##  ㊁、例题
 
 1. $I = \int_1^4 \dfrac{1}{ 1 + \sqrt{x} } \, {\rm d}x$ 
    
@@ -423,15 +416,15 @@ $$
 
 <br>
 
-## 四、一元函数积分学的应用
+# 四、一元函数积分学的应用
 
 <br>
 
-#### ㊀、用积分表达和计算平面图形的面积
+## ㊀、用积分表达和计算平面图形的面积
 
 <br>
 
-######  1、概念
+### 1、概念
 
 - $y = y_1(x), \, y = y_2(x), \, x = a, \, x = b, \, (a < b)$ 所围成的平面图形的面积。
 
@@ -439,7 +432,7 @@ $$
 
 <br>
 
-######  2、例题
+### 2、例题
 
 1. 设函数 $f(x)$ 在 $[0, 1]$ 上连续，在 $(0, 1)$ 内大于零，并且满足 $xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数})$ ，又曲线 $y = f(x)$ 与 $x = 1, y = 0$ 所围的图形 $S$ 的面积为 $2$ 。1️⃣求函数 $y = f(x)$ 。2️⃣ $a$ 为何值时，图形 $S$ 绕 $x$ 轴旋转一周所得的旋转体的体积最小。
    
@@ -451,21 +444,21 @@ $$
 
 <br>
 
-#### ㊁、用积分表达和计算旋转体的体积
+## ㊁、用积分表达和计算旋转体的体积
 
 <br>
 
-######  1、概念
+### 1、概念
 
 - $y = y(x)$ 与 $x = a, x = b, (a < b)$ 及 $x$ 轴所围图形绕 $x$ 轴旋转一周所得的旋转体体积。
    
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2%20%E7%BB%95x%E8%BD%B4%E6%97%8B%E8%BD%AC%E4%BD%93%E7%9A%84%E4%BD%93%E7%A7%AF.jpg" width="40%">
+   - <img src="./images/3-4.2 绕x轴旋转体的体积.jpg" width="40%">
    
    - $V_x = \int_a^b \pi f^2(x) {\rm d}x$ 
 
 - $y = y(x)$ 与 $x = a, x = b, (a < b)$ 及 $x$ 轴所围图形绕 $y $ 轴旋转一周所得的旋转体体积。
    
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2%20%E7%BB%95y%E8%BD%B4%E6%97%8B%E8%BD%AC%E4%BD%93%E7%9A%84%E4%BD%93%E7%A7%AF.jpg" width="40%"> 
+   - <img src="./images/3-4.2 绕y轴旋转体的体积.jpg" width="40%"> 
    
    - $V_y = \int_a^b 2 \pi x | f(x) | {\rm d}x$
      
@@ -473,7 +466,7 @@ $$
 
 <br>
 
-######  2、例题
+### 2、例题
 
 1. 设函数 $f(x)$ 在 $[0, 1]$ 上连续，在 $(0, 1)$ 内大于零，并且满足 $xf'(x) = f(x) + \dfrac{3a}{2} x^2, (a \text{ 为常数})$ ，又曲线 $y = f(x)$ 与 $x = 1, y = 0$ 所围的图形 $ S$ 的面积为 $ 2 $ 。1️⃣ 求函数 $y = f(x)$ 。2️⃣ $a $ 为何值时，图形 $ S$ 绕 $x$ 轴旋转一周所得的旋转体的体积最小。
    
@@ -491,13 +484,13 @@ $$
 
 2. 设平面图形 $\sigma$ 由 $y = x^2 - 2x, y = 0, x = 1, x = 3$ 围成，求 $\sigma$ 绕 $y$ 轴旋转一周所得的旋转体体积。
    
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2.2.2.jpg" width="40%"> 
+   - <img src="./images/3-4.2.2.2.jpg" width="40%"> 
    
    - $\begin{array}{l} V & = \int_1^3 2 \pi x | f(x) | {\rm d}x \\\\ & = 2 \pi \left[ -\int_1^2 x(x^2 - 2x) {\rm d}x - \int_2^3 x(x^2 - 2x) {\rm d}x \right] \\\\ & = 9 \pi \end{array}$ 
 
 3. 过原点作 $y = e^x$ 的切线，该切线与 $y = e^x$、$x$ 轴所围成的向 $x$ 轴负向无限伸展的平面图形记为 $D$ ，1️⃣ 求 $D$ 的面积 $S$ ，2️⃣ $D$ 绕 $x = 1$ 旋转一周的旋转体的体积 $V$ 。
    
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/3-4.2.2.3.jpg" width="40%">
+   - <img src="./images/3-4.2.2.3.jpg" width="40%">
    
    - 1️⃣ 
      
@@ -515,17 +508,17 @@ $$
 
 <br>
 
-#### ㊂、用积分表达和计算函数的平均值
+## ㊂、用积分表达和计算函数的平均值
 
 <br>
 
-######  1、概念
+### 1、概念
 
 - $y(x)$ 在 $[a, b]$ 上的平均值 $ave = \dfrac{ \int_a^b y(x) {\rm d}x }{b - a}$ 
 
 <br>
 
-######  2、例题
+### 2、例题
 
 1. 函数 $y = \ln x$ 在区间 $[1, e]$ 上的平均值为 ________ 。
    
@@ -533,13 +526,13 @@ $$
 
 <br>
 
-#### ㊃、计算弧长
+## ㊃、计算弧长
 
 【转】<a href="http://math001.com/integral_arc/" target="_blank">积分求平面曲线的弧长</a>
 
 <br>
 
-######  1、参数方程
+### 1、参数方程
 
 设曲线弧由参数方程
 
@@ -577,7 +570,7 @@ $$
 
 <br>
 
-######  2、直角坐标系
+### 2、直角坐标系
 
 $y = f(x) \, (a \leq x \leq b)$ 使 x 为参变量，把函数写成参数方程
 
@@ -596,7 +589,7 @@ $$
 
 <br>
 
-######  3、极坐标
+### 3、极坐标
 
 曲线弧由极坐标
 
@@ -622,14 +615,3 @@ $$
 $$
 s = \int_{\alpha}^{\beta} \sqrt{ {\rm r}^2(\theta) + {\rm r}'^2(\theta) } \, {\rm d}\theta
 $$
-
-
-
-
-
-
-
-
-
-
-

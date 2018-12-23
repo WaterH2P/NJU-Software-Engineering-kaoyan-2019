@@ -9,23 +9,6 @@ description: 做笔记，喝凉茶，做习题
 real-date: 2018-11-26
 ---
 
-<!-- 
-$\begin{array}{l} ( {\rm A} ) \, 1 \qquad & ( {\rm B} ) \, 2 \\\\ ( {\rm C} ) \, 3 \qquad & ( {\rm D} ) \, 4 \end{array}$ 
--->
-
-<!-- 
-$\begin{array}{l} \end{array}$
-
-\begin{array}{l} \\ 
- \\ & \end{array}
--->
-
-<!-- 
-⭐
-㊀ ㊁ ㊂ ㊃ ㊄ ㊅ ㊆ ㊇ ㊈
-
-<img src="" width="80%">
-️ -->
 
 概念与对称性：4
 
@@ -45,7 +28,7 @@ $\begin{array}{l} \end{array}$
 
 #### ㊀、普通对称性
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%20%E6%99%AE%E9%80%9A%E5%AF%B9%E7%A7%B0%E6%80%A7.jpg" width="70%">
+<img src="./images/5-二重积分 普通对称性.jpg" width="70%">
 
 <br>
 
@@ -65,10 +48,6 @@ $\begin{array}{l} \end{array}$
 $$
 \overline{x} = \dfrac{ \iint\limits_D x \, {\rm d}\sigma }{ \iint\limits_D \, {\rm d}\sigma }, \quad \overline{y} = \dfrac{ \iint\limits_D y \, {\rm d}\sigma }{ \iint\limits_D \, {\rm d}\sigma }
 $$
-
-
-
-
 
 <br>
 

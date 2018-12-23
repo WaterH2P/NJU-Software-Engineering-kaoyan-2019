@@ -609,7 +609,7 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 \pm 1}) \right)' = \dfrac{1}{ \sqrt{x
 
 2. ⭐️设 $f(x)$ 连续，其 $f'(x)$ 的图像如下，则 $f(x)$ 有几个极小值点，几个极大值点。
 
-   - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/2-4.1.2.3.png" width="50%">
+   - <img src="./images/2-4.1.2.2.png" width="50%">
 
    - 看图说话
 
@@ -746,7 +746,7 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 \pm 1}) \right)' = \dfrac{1}{ \sqrt{x
 
    1. 防空洞的截面拟建成矩形加半圆（如图所示），截面的面积为 $5 m^2$ ，问底宽 $x$ 为多少时才能使建造时所用的材料最省？
 
-      - <img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/2-4.4.3.1.png" width="40%">
+      - <img src="./images/2-4.4.3.1.png" width="40%">
       
       - 设矩形的高为 $y $，则 $\begin{cases} \text{周长为} L \\\\ \text{面积为} S \end{cases}$ 
       
@@ -773,6 +773,9 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 \pm 1}) \right)' = \dfrac{1}{ \sqrt{x
 # 五、四大块
 
 1. 单调性 + 极值
+
 2. 凹凸性 + 拐点
+
 3. 渐近线
+
 4. 最值问题（综合性）

@@ -1,27 +1,14 @@
 ---
-title: 高数 · 公式
-date: 2018-8-30
+date: 2018-11-16
 updated: 2018-11-16
-tags: [maths,高数,kaoyan]
-mathjax: true
-
-description: 做笔记，喝凉茶，背公式
-real-date: 2018-11-16
 ---
 
-<!-- 
-$\begin{array}{l} \end{array}$
--->
 
-<!-- 
-⭐
-️ -->
-
-## 极限计算
+# 极限计算
 
 <br>
 
-#### ㊀、等价无穷小
+## ㊀、等价无穷小
 
 $$
 (1 + x)^\alpha - 1 \sim \alpha x \implies (1 + 🐶)^\alpha - 1 \sim \alpha 🐶 \; (🐶 \to 0)
@@ -29,7 +16,7 @@ $$
 
 <br>
 
-#### ㊁、泰勒公式
+## ㊁、泰勒公式
 
 $$
 f(x) = \dfrac{ f(a) }{ 0! } + \dfrac{ f'(a) }{1!} (x - a) + \dfrac{ f''(a) }{2!} (x - a)^2 + \cdots + \dfrac{ f^{ (n) }(a) }{n!} (x - a)^n + R(n)
@@ -37,7 +24,7 @@ $$
 
 <br>
 
-#### ㊂、泰勒展开式
+## ㊂、泰勒展开式
 
 $\begin{array}{l} e^x &= \sum\limits_{n=0}^{\infty} \dfrac{1}{n!} x^n \\\\ &= 1 + x + \dfrac{x^2}{2!} + \cdots + \dfrac{x^n}{n!} + \cdots \quad (-\infty < x <+\infty) \\ & \end{array}$ 
 
@@ -55,7 +42,7 @@ $\begin{array}{l} ( 1 + x )^\alpha = 1 + \alpha x + \dfrac{ a(a-1) }{2!} x^2 + \
 
 <br>
 
-#### ㊃、麦克劳林公式
+## ㊃、麦克劳林公式
 
 $\begin{array}{l} \sin x = x - \dfrac{1}{3!}x^3 + o(x^3) \\\\       \arcsin x = x + \dfrac{1}{3!}x^3 + o(x^3) \end{array}$
 
@@ -70,11 +57,11 @@ $\begin{array}{l} e^x = 1 + x + \dfrac{x^2}{2!} + \dfrac{x^3}{3!} + o(x^3)  \end
 
 <br>
 
-## 导数计算
+# 导数计算
 
 <br>
 
-#### ㊀、基本求导公式
+## ㊀、基本求导公式
 
 $\begin{array}{l} (\sin x)' = \cos x & (\cos x)' = -\sin x \\\\ (\tan x)' = \sec^2 x & (\cot x)' = - \csc^2 x \\\\ (\sec x)' = \sec x \tan x & (\csc x)' = - \csc x \cot x \end{array}$ 
 
@@ -84,7 +71,7 @@ $\begin{array}{l} \left( \ln(x + \sqrt{x^2 \pm 1}) \right)' = \dfrac{1}{ \sqrt{x
 
 <br>
 
-#### ㊁、莱布尼兹公式
+## ㊁、莱布尼兹公式
 
 - $(u \pm v)^{(n)} = u^{(n)} \pm v^{(n)}$ 
 
@@ -95,11 +82,11 @@ $$
 
 <br>
 
-## 积分计算
+# 积分计算
 
 <br>
 
-#### ㊀、基本积分公式
+## ㊀、基本积分公式
 
 - $\int x^k {\rm d}x = \dfrac{1}{k + 1}x^{k + 1} + C, \quad ( k \not= -1 )$ 
    
@@ -117,7 +104,7 @@ $$
 
 <br>
 
-#### ㊁、反常积分
+## ㊁、反常积分
 
 $$
 \int_1^{+\infty} \dfrac{1}{x^p} \, {\rm d}x \begin{cases} p>1 & \implies \text{ 收敛 } \\\\ p \leq 1 & \implies \text{ 发散 } \end{cases}
@@ -131,7 +118,7 @@ $$
 
 <br>
 
-#### ㊂、综合性质
+## ㊂、综合性质
 
 $$
 \begin{array}{|c|c|c|c|c|}
@@ -153,7 +140,7 @@ $$
 
 <br>
 
-#### ㊃、定积分精确定义
+## ㊃、定积分精确定义
 
 $n$ 等分 $[a, \, b]$，取右端点的高，则
 

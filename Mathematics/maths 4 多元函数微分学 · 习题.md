@@ -1,29 +1,8 @@
 ---
-title: 多元函数微积分学 · 应用
-date: 2018-8-4
+date: 2018-11-25
 updated: 2018-11-25
-tags: [maths,高数,kaoyan]
-mathjax: true
-
-description: 做笔记，喝凉茶，做习题
-real-date: 2018-11-25
 ---
 
-<!-- 
-$\begin{array}{l} ( {\rm A} ) \, 1 \qquad & ( {\rm B} ) \, 2 \\\\ ( {\rm C} ) \, 3 \qquad & ( {\rm D} ) \, 4 \end{array}$ 
--->
-
-<!-- 
-$\begin{array}{l} \end{array}$
-
-\begin{array}{l} \\ 
- \\ & \end{array}
--->
-
-<!-- 
-⭐
-㊀ ㊁ ㊂ ㊃ ㊄ ㊅ ㊆ ㊇ ㊈
-️ -->
 
 多元函数微分学：4 + 10
 
@@ -33,11 +12,11 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-## 一、概念
+# 一、概念
 
 <br>
 
-#### ㊀、连续性
+## ㊀、连续性
 
 若 $\lim\limits_{x \to x_0 \atop y\to y_0} f(x, y) = f(x_0, \, y_0)$，则称 $f(x, y)$ 在 $(x_0, \, y_0)$ 处连续。
 
@@ -45,11 +24,11 @@ $\begin{array}{l} \end{array}$
 
 <br>
 
-#### ㊁、偏导数
+## ㊁、偏导数
 
 <br>
 
-##### 1、定义法
+### 1、定义法
 
 $z=f(x, y)$ 
 
@@ -59,13 +38,13 @@ $\begin{array}{l} f'_y(x_0, \, y_0) &= \lim\limits_{\Delta y \to 0} \dfrac{ f(x_
 
 <br>
 
-##### 2、公式法
+### 2、公式法
 
 使用求导公式
 
 <br>
 
-#### ㊂、⭐️ 可微性
+## ㊂、⭐️ 可微性
 
 $z = f(x, \, y)$ 
 
@@ -80,16 +59,18 @@ $\Delta z = (A \Delta x + B \Delta y) + o( \sqrt{ (\Delta x)^2 + (\Delta y)^2 } 
 
 <br>
 
-##### ⭐️ 全微分
+### ⭐️ 全微分
 
 $\left. {\rm d}z \right|_{ (x_0, \, y_0) } = f'_x(x_0, \, y_0){\rm d}x + f'_y(x_0, \, y_0){\rm d}y$ 
 
 <br>
 
-#### ㊃、链式求导法则
+## ㊃、链式求导法则
 
 1. 链式求导法则
+
 2. 高阶导数保持复合结构
+
 3. 注意书写规范
 
 一阶偏导数连续：函数可微
@@ -98,31 +79,31 @@ $\left. {\rm d}z \right|_{ (x_0, \, y_0) } = f'_x(x_0, \, y_0){\rm d}x + f'_y(x_
 
 <br>
 
-#### ㊄、极最值
+## ㊄、极最值
 
 <a href="https://waterh2p.cn/2018/08/04/maths%204%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/#3.%20%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E6%9C%80%E5%80%BC" target="_blank">极最值</a>
 
 <br>
 
-##### 1、无条件极值
+### 1、无条件极值
 
 <br>
 
-##### 2、条件极（最）值与拉格朗日乘数法
+### 2、条件极（最）值与拉格朗日乘数法
 
 <br>
 
-## 二、练习题
+# 二、练习题
 
 <br>
 
-#### ㊀、公式法求偏导
+## ㊀、公式法求偏导
 
 设函数 $z=z(x, \, y)$ 由方程 $\ln z + e^{z-1} = xy$ 确定，则 $\left. \dfrac{ \partial z }{ \partial x } \right|_{ (2, \; 1/2) } =$ ________。
 
 <br>
 
-#### ㊁、全微分
+## ㊁、全微分
 
 设连续函数 $z = f(x, \, y)$ 满足
 
@@ -134,25 +115,25 @@ $$
 
 <br>
 
-#### ㊂、链式求导法则
+## ㊂、链式求导法则
 
 设 $u = f(x, \, y, \, z)$ 有连续偏导数，$y=y(x)$ 和 $z=z(x)$ 分别由方程 $e^{xy} - y = 0$ 和 $e^z - xz = 0$ 所确定，求 $\dfrac{ {\rm d}u }{ {\rm d}x }$。
 
 <br>
 
-#### ㊃、
+## ㊃、
 
 设函数 $f(x, \, y)$ 可微，又 $f(0, \, 0) = 0, \, f'_x(0, \, 0) = a, \, f'_y(0, \, 0) = b$，且 $\varphi(t) = f \left[ t, \, f(t, \, t^2) \right]$，求 $\varphi'(0)$。
 
 <br>
 
-#### ㊄、
+## ㊄、
 
 已知 $z=z(u, \, v)$ 对 $u, \, v$ 有二阶连续偏导数，设变换 $\begin{cases} u = x - 2y \\\\ v = x + ay \end{cases}$，可把方程 $6 \dfrac{ \partial^2 z }{ \partial x^2 } + \dfrac{ \partial^2 z }{ \partial x \partial y } - \dfrac{ \partial^2 z }{ \partial y^2 } = 0$ 简化为 $\dfrac{ \partial^2 z }{ \partial u \partial v } = 0$，求 $a$。
 
 <br>
 
-#### ㊅、
+## ㊅、
 
 设函数 $f(x, \, y)$ 的一节偏导数连续，在 $(1, \, 0)$ 的某邻域内有
 
@@ -164,7 +145,7 @@ $$
 
 <br>
 
-#### ㊆、⭐️⭐️⭐️⭐
+## ㊆、⭐️⭐️⭐️⭐
 
 设 $f(x)$ 具有一阶连续导数，$f(0) = 0$，且表达式
 
@@ -176,11 +157,11 @@ $$
 
 <br>
 
-## 三、参考答案
+# 三、参考答案
 
 <br>
 
-#### ㊀、公式法求偏导
+## ㊀、公式法求偏导
 
 $\left. \begin{array}{l} \ln z + e^{z-1} = xy \\\\ x = 2, \, y = \dfrac{1}{2} \end{array} \right\} \implies z=1$ 
 
@@ -188,7 +169,7 @@ $\begin{array}{l} \\ & \ln z + e^{z-1} = xy \\\\ \implies & \dfrac{1}{z} \cdot z
 
 <br>
 
-#### ㊁、全微分
+## ㊁、全微分
 
 $\begin{array}{l} & \lim\limits_{x \to 0 \atop y \to 1} \dfrac{ f(x, \, y) - 2x + y -2 }{ \sqrt{ x^2 + (y-1)^2 } } = 0 \\\\ \implies & \lim\limits_{x \to 0 \atop y \to 1} f(x, \, y) - 2x + y -2 = 0 \\\\ \implies & \lim\limits_{x \to 0 \atop y \to 1} f(x, \, y) = 1 \end{array}$ 
 
@@ -202,7 +183,7 @@ $\therefore \; {\rm d}z |_{ (0, \, 1) } = 2 \, {\rm d}x - {\rm d}y$
 
 <br>
 
-#### ㊂、链式求导法则
+## ㊂、链式求导法则
 
 $\dfrac{ {\rm d}u }{ {\rm d}x } = f'_1 + f'_2 \cdot \dfrac{ {\rm d}y }{ {\rm d}x } + f'_3 \cdot \dfrac{ {\rm d}z }{ {\rm d}x }$ 
 
@@ -212,13 +193,13 @@ $\therefore \; \dfrac{ {\rm d}u }{ {\rm d}x } = f'_1 + \dfrac{ y^2 }{1 - xy} \cd
 
 <br>
 
-#### ㊃、
+## ㊃、
 
 $\begin{array}{l} & \varphi'(t) = f'_1 \left[ t, \, f(t, \, t^2) \right] + f'_2 \left[ t, \, f(t, \, t^2) \right] \cdot \left[ f'_1 ( t, \, t^2 ) + f'_2 ( t, \, t^2 ) \cdot 2t \right] \\\\ \implies & \varphi'(0) = f'_1 \left[ 0, \, f(0, \, 0) \right] + f'_2 \left[ 0, \, f(0, \, 0) \right] \cdot \left[ f'_1 (0, \, 0) + f'_2 (0, \, 0) \cdot 2 \cdot 0 \right] \\\\ \implies & \varphi'(0) = a + ab \end{array}$ 
 
 <br>
 
-#### ㊄、
+## ㊄、
 
 $\left. \begin{array}{l} \dfrac{ \partial z }{ \partial x } = \dfrac{ \partial z }{ \partial u } + \dfrac{ \partial z }{ \partial v } \\\\ \dfrac{ \partial z }{ \partial y } = (-2) \cdot \dfrac{ \partial z }{ \partial u } + a \cdot \dfrac{ \partial z }{ \partial v } \end{array} \right\}$ $\implies$ $\begin{cases} \dfrac{ \partial^2 z }{ \partial x^2 } = \dfrac{ \partial^2 z }{ \partial u^2 } + 2 \cdot \dfrac{ \partial^2 z }{ \partial u \partial v } + \dfrac{ \partial^2 z }{ \partial v^2 } \\\\ \dfrac{ \partial^2 z }{ \partial x \partial y } = (-2) \cdot \dfrac{ \partial^2 z }{ \partial u^2 } + (a-2) \cdot \dfrac{ \partial^2 z }{ \partial u \partial v } + a \cdot \dfrac{ \partial^2 z }{ \partial v^2 } \\\\ \dfrac{ \partial^2 z }{ \partial y^2 } = 4 \cdot \dfrac{ \partial^2 z }{ \partial u^2 } + (-4a) \cdot \dfrac{ \partial^2 z }{ \partial u \partial v } + a^2 \cdot \dfrac{ \partial^2 z }{ \partial v^2 } \end{cases}$ 
 
@@ -228,7 +209,7 @@ $\because \; \dfrac{ \partial^2 z }{ \partial u \partial v } = 0$ $\implies$ $\b
 
 <br>
 
-#### ㊅、
+## ㊅、
 
 ${\rm d}z = z'_x \, {\rm d}x + z'_y \, {\rm d}y$ 
 
@@ -238,7 +219,7 @@ ${\rm d}z = - 2 {\rm d}x - 3 \, {\rm d}y$
 
 <br>
 
-#### ㊆、
+## ㊆、
 
 1⃣️ 
 
