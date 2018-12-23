@@ -1,27 +1,14 @@
 ---
-title: 极限 · 习题
-date: 2018-8-1
-updated: 2018-12-20
-tags: [maths,高数,kaoyan]
-mathjax: true
-
-description: 做笔记，喝凉茶，做习题
-real-date: 2018-11-17
+date: 2018-11-17
+updated: 2018-12-23
 ---
 
-<!-- 
-$\begin{array}{l} ( {\rm A} ) \, 1 \qquad & ( {\rm B} ) \, 2 \\\\ ( {\rm C} ) \, 3 \qquad & ( {\rm D} ) \, 4 \end{array}$ 
--->
-
-<!-- 
-⭐
-️ -->
 
 <br>
 
-## 一、概念
+# 一、概念
 
-#### ㊀
+## ㊀
 
 $$
 \forall \, \alpha > 0, \qquad \lim\limits_{x \to 0^+} x^\alpha \ln x = 0
@@ -33,11 +20,11 @@ $$
 
 <br>
 
-## 二、练习题
+# 二、练习题
 
 <br>
 
-#### ㊀
+## ㊀
 
 设正项数列 $\{ x_n \}$ 满足 $\lim\limits_{n \to \infty} \dfrac{ x_{n+1} }{x_n} = \dfrac{1}{2}$ ，则 $(\quad)$ 。
 
@@ -45,7 +32,7 @@ $\begin{array}{l} (A) \, \lim\limits_{n \to \infty} x_n = 0 & (B) \, \lim\limits
 
 <br>
 
-#### ㊁
+## ㊁
 
 $f(x) = e^{ 1/x } \dfrac{ \sin \pi x }{ (x^2 - 1) \mid x \mid }$ 无界的一个区间是 $( \text{  } )$ 。
 
@@ -53,25 +40,25 @@ $\begin{array}{l} (A) \, (-\infty, -1) & (B) \, (-1, 0) \\\\ (C) \, (0, 1) & (D)
 
 <br>
 
-#### ㊂
+## ㊂
 
 若 $\lim\limits_{x \to 0} \dfrac{ f(x) - f(0) }{ x^2 } = \ln 2$，则 $f(x)$ 在 $x=0$ 处取 ________ 值。
 
 <br>
 
-#### ㊃
+## ㊃
 
 求极限 $\lim\limits_{x \to 1} \dfrac{x - x^x}{1 - x + \ln x}$ 。
 
 <br>
 
-#### ㊄
+## ㊄
 
 求极限 $\lim\limits_{x \to 0} \dfrac{ a \left( x^2 - \sin^2 x \right) + b \arcsin x }{ c \left( e^x - 1 \right) + d \ln( 1 + x^3) }$ 。
 
 <br>
 
-#### ㊅
+## ㊅
 
 如果 $\lim\limits_{x \to 0} \dfrac{ x - \sin x + f(x) }{ x^4 }$ 存在，则 $\lim\limits_{x \to 0} \dfrac{x^3}{ f(x) } = (\quad)$ 。
 
@@ -79,7 +66,7 @@ $\begin{array}{l} ( {\rm A} ) \, -36 \quad & ( {\rm B} ) \, 36 \quad & ( {\rm C}
 
 <br>
 
-#### ㊆
+## ㊆
 
 1️⃣ 设 $f(x)$ 在 $(0, +\infty)$ 内可导，$f'(x) > 0，\, x \in (0, +\infty)$，证明 $f(x)$ 在 $(0, +\infty)$ 内单调增加。
 
@@ -89,7 +76,7 @@ $\begin{array}{l} ( {\rm A} ) \, -36 \quad & ( {\rm B} ) \, 36 \quad & ( {\rm C}
 
 <br>
 
-#### ㊇
+## ㊇
 
 1️⃣ 证明方程 $x = 2 \ln (1+x)$ 在 $(0, +\infty)$ 内有唯一实根 $\xi$ 。
 
@@ -97,13 +84,13 @@ $\begin{array}{l} ( {\rm A} ) \, -36 \quad & ( {\rm B} ) \, 36 \quad & ( {\rm C}
 
 <br>
 
-#### ㊈
+## ㊈
 
 $f(x) = \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln \mid x \mid}$ 的可去间断点的个数为 ________ 。
 
 <br>
 
-#### Ⅹ
+## Ⅹ
 
 设 $f(x)$ 二阶可导，$f'(0)=0, \, f''(0)=2$，计算
 
@@ -111,29 +98,13 @@ $$
 \lim\limits_{x \to 0} \dfrac{ f(\sin x) - f(x) }{x^4}
 $$
 
+<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 三、参考答案
 
 <br>
 
-## 三、参考答案
-
-<br>
-
-#### ㊀
+## ㊀
 
 $({\rm A})$。
 
@@ -155,7 +126,7 @@ $({\rm A})$。
 
 <br>
 
-#### ㊁
+## ㊁
 
 $({rm C})$。
 
@@ -187,7 +158,7 @@ $({rm C})$。
 
 <br>
 
-#### ㊂
+## ㊂
 
 极小。
 
@@ -201,7 +172,7 @@ $({rm C})$。
 
 <br>
 
-#### ㊃
+## ㊃
 
 $2$。
 
@@ -209,7 +180,7 @@ $\begin{array}{l} \lim\limits_{x \to 1} \dfrac{x - x^x}{1 - x + \ln x} &= \lim\l
 
 <br>
 
-#### ㊄
+## ㊄
 
 $\dfrac{b}{c}$。
 
@@ -223,7 +194,7 @@ $\therefore \quad \lim\limits_{x \to 0} \dfrac{ a \left( x^2 - \sin^2 x \right) 
 
 <br>
 
-#### ㊅
+## ㊅
 
 $( {\rm D} )$ 。
 
@@ -235,7 +206,7 @@ $\therefore \quad \lim\limits_{x \to 0} \dfrac{ x^3 }{ f(x) } = -6$
 
 <br>
 
-#### ㊆
+## ㊆
 
 1️⃣
 
@@ -273,7 +244,7 @@ $\begin{array}{l} \lim\limits_{n \to +\infty} n \cdot (n+1)^{-1} = \lim\limits_{
 
 <br>
 
-#### ㊇
+## ㊇
 
 1️⃣
 
@@ -295,7 +266,7 @@ $x_1 > \xi \implies \begin{cases} x_1 > 2 \ln (1 + x_1) = x_2 \\\\ x_2 = 2 \ln (
 
 <br>
 
-#### ㊈
+## ㊈
 
 $2$ 。
 
@@ -307,7 +278,7 @@ $\begin{array}{l} \lim\limits_{x \to 0} \dfrac{\mid x \mid^x - 1}{x \, (x+1) \ln
 
 <br>
 
-#### Ⅹ
+## Ⅹ
 
 $\begin{array}{l} \lim\limits_{x \to 0} \dfrac{ f(\sin x) - f(x) }{x^4} &= \lim\limits_{x \to 0} \dfrac{1}{x^3} \left[ \dfrac{ f(\sin x) - f(0) }{\sin x} \cdot \dfrac{\sin x}{x} - \dfrac{f(x) - f(0)}{x-0} \right] \\\\ &= \lim\limits_{x \to 0} \dfrac{1}{x^3} \left[ f'(x) \cdot \dfrac{\sin x}{x} - f'(x) \right] \\\\ &= \lim\limits_{x \to 0} \dfrac{1}{x^3} \cdot f'(x) \cdot \dfrac{\sin x - x}{x} \\\\ &= \lim\limits_{x \to 0} -\dfrac{1}{6} \cdot \dfrac{ f'(x) - f'(0) }{x} \\\\ &= \lim\limits_{x \to 0} -\dfrac{1}{6} f''(x) \\\\ &= -\dfrac{1}{3} \end{array}$ 
 
