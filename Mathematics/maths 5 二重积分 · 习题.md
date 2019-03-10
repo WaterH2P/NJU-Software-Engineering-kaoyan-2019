@@ -102,7 +102,7 @@ $\begin{array}{l} \\ & \iint\limits_D y f(y) \, {\rm d}\sigma > \iint\limits_D x
 
 #### ㊁
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86%20%E6%91%86%E7%BA%BF.png" width="60%">
+<img src="./images/二重积分 摆线.png" width="60%">
 
 由于 $D$ 关于 $x=\pi$ 对称
 
@@ -116,5 +116,5 @@ $\begin{array}{l} \iint\limits_D (x + 2y) \, {\rm d}x \, {\rm d}y &= \int_0^{2\p
 
 ⭐
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E5%8D%8E%E9%87%8C%E5%A3%AB%E5%85%AC%E5%BC%8F.jpg" width="80%">
+<img src="./images/华里士公式.jpg" width="80%">
 

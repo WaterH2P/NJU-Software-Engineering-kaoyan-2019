@@ -60,7 +60,7 @@ $$
 
 ## ㊃、可降阶
 
-<img src="https://github.com/WaterH2P/WaterH2P.github.io/raw/master/img/images/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%20%E5%8F%AF%E9%99%8D%E9%98%B6.jpg" width="60%">
+<img src="./images/微分方程 可降阶.jpg" width="60%">
 
 <br>
 
